@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Youth Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark mb-4">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1">🧠 Mental Health Youth Dashboard</span>
+            <small class="text-muted">CDC YRBS Data Visualization</small>
+        </div>
+    </nav>
+
+    <!-- Tab Navigation -->
+    <div class="container-fluid mb-4">
+        <ul class="nav nav-tabs" id="mainTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="dashboardTab" data-bs-toggle="tab" data-bs-target="#dashboardContent" type="button" role="tab" aria-controls="dashboardContent" aria-selected="true">
+                    📊 Dashboard
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="treatmentsTab" data-bs-toggle="tab" data-bs-target="#treatmentsContent" type="button" role="tab" aria-controls="treatmentsContent" aria-selected="false">
+                    💊 Evidence-Based Treatments
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="learningTab" data-bs-toggle="tab" data-bs-target="#learningContent" type="button" role="tab" aria-controls="learningContent" aria-selected="false">
+                    📚 How to Build This App
+                </button>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Tab Content -->
+    <div class="tab-content" id="mainTabContent">
+        <!-- Dashboard Tab -->
+        <div class="tab-pane fade show active" id="dashboardContent" role="tabpanel" aria-labelledby="dashboardTab">
+    <div class="container-fluid">
+        <!-- Controls Section -->
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title mb-3">Filter Data</h5>
+                        <div class="row g-3">
+                            <div class="col-md-6 col-lg-3">
+                                <label for="yearSelect" class="form-label">Year</label>
+                                <select id="yearSelect" class="form-select">
+                                    <option value="">All Years</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <label for="stateSelect" class="form-label">State</label>
+                                <select id="stateSelect" class="form-select">
+                                    <option value="">All States</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <label for="ageGroupSelect" class="form-label">Age Group</label>
+                                <select id="ageGroupSelect" class="form-select">
+                                    <option value="">All Age Groups</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <label for="metricSelect" class="form-label">Metric</label>
+                                <select id="metricSelect" class="form-select">
+                                    <option value="">All Metrics</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Charts Section -->
+        <div class="row g-4 mb-4">
+            <div class="col-lg-6">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Trends Over Time</h5>
+                        <canvas id="trendChart"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Comparison by Age Group</h5>
+                        <canvas id="ageGroupChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-4 mb-4">
+            <div class="col-lg-6">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">State Comparison</h5>
+                        <canvas id="stateChart"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Distribution</h5>
+                        <canvas id="distributionChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Data Table Section -->
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Filtered Data</h5>
+                        <div class="table-responsive">
+                            <table class="table table-hover table-sm">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th>Year</th>
+                                        <th>State</th>
+                                        <th>Age Group</th>
+                                        <th>Metric</th>
+                                        <th>Value (%)</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="dataTable">
+                                    <tr><td colspan="5" class="text-center text-muted">Loading data...</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+
+        <!-- Treatments Tab -->
+        <div class="tab-pane fade" id="treatmentsContent" role="tabpanel" aria-labelledby="treatmentsTab">
+            <div class="container-fluid">
+                <!-- Treatments Filter -->
+                <div class="row mb-4">
+                    <div class="col-12">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title mb-3">Browse Treatments</h5>
+                                <div class="row g-3">
+                                    <div class="col-md-6 col-lg-4">
+                                        <label for="conditionSelect" class="form-label">Mental Health Condition</label>
+                                        <select id="conditionSelect" class="form-select">
+                                            <option value="">All Treatments</option>
+                                            <option value="depression">Depression</option>
+                                            <option value="anxiety">Anxiety</option>
+                                            <option value="self_harm">Self-Harm</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4">
+                                        <label for="categorySelect" class="form-label">Treatment Category</label>
+                                        <select id="categorySelect" class="form-select">
+                                            <option value="">All Categories</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4">
+                                        <label for="treatmentAgeSelect" class="form-label">Age Group</label>
+                                        <select id="treatmentAgeSelect" class="form-select">
+                                            <option value="">All Age Groups</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Treatments Grid -->
+                <div class="row g-4 mb-4" id="treatmentsGrid">
+                    <div class="col-12 text-center text-muted">Loading treatments...</div>
+                </div>
+
+                <!-- Treatment Detail Modal -->
+                <div class="modal fade" id="treatmentModal" tabindex="-1">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="treatmentModalTitle"></h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body" id="treatmentModalBody"></div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <a href="#" id="treatmentResourceLink" class="btn btn-primary" target="_blank">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Learning Tab -->
+        <div class="tab-pane fade" id="learningContent" role="tabpanel" aria-labelledby="learningTab">
+            <div class="container-fluid">
+                <div class="row mb-4">
+                    <div class="col-12">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body">
+                                <h2>📚 How to Build This App - A Guide for Teenagers</h2>
+                                <p class="text-muted">Learn web development by understanding how this Mental Health Dashboard was built.</p>
+                                <hr>
+
+                                <div class="learning-content">
+                                    <!-- Part 1 -->
+                                    <h4 class="mt-4">🎯 Part 1: What We're Building</h4>
+                                    <p>A web application that displays real health data, visualizes trends with interactive charts, and provides treatment information from trusted medical sources.</p>
+                                    <p><strong>Technologies:</strong> HTML5, CSS3, JavaScript, JSON, Bootstrap 5, Chart.js</p>
+                                    <p><strong>Why no build tools?</strong> We're using vanilla JavaScript and CDN libraries so you can see exactly how everything works without abstraction layers.</p>
+
+                                    <!-- Part 2 -->
+                                    <h4 class="mt-4">📋 Part 2: Planning the Project</h4>
+                                    <ol>
+                                        <li><strong>Define the Problem:</strong> Youth need mental health data and treatment information</li>
+                                        <li><strong>Research Data Sources:</strong> CDC YRBS provides reliable public data</li>
+                                        <li><strong>Plan Features:</strong> Filters, charts, tables, multiple sections</li>
+                                        <li><strong>Sketch the UI:</strong> Always design on paper before coding!</li>
+                                    </ol>
+
+                                    <!-- Part 3 -->
+                                    <h4 class="mt-4">🗂️ Part 3: Project Structure</h4>
+                                    <pre class="bg-light p-3 rounded"><code>MentalHealth/
+├── index.html         (Main page structure)
+├── css/style.css      (Styling)
+├── js/
+│   ├── app.js         (Main logic)
+│   ├── data-handler.js (Data management)
+│   ├── chart-manager.js (Charting)
+│   ├── treatment-handler.js (Treatment data)
+│   └── treatment-ui.js (Treatment display)
+└── data/
+    ├── yrbs-data.json (Mental health statistics)
+    └── treatments-data.json (Treatment information)</code></pre>
+
+                                    <!-- Part 4 -->
+                                    <h4 class="mt-4">💻 Part 4: How It Works</h4>
+                                    <div class="alert alert-info">
+                                        <strong>Data Flow:</strong>
+                                        <br>1. HTML loads the page structure
+                                        <br>2. JavaScript loads data from JSON files
+                                        <br>3. User interacts with filters
+                                        <br>4. JavaScript filters the data
+                                        <br>5. Charts.js creates visualizations
+                                        <br>6. Results display on screen
+                                    </div>
+
+                                    <!-- Part 5 -->
+                                    <h4 class="mt-4">🔑 Key JavaScript Concepts</h4>
+                                    <ul>
+                                        <li><strong>Classes:</strong> Organize code into reusable objects</li>
+                                        <li><strong>Async/Await:</strong> Handle data loading without freezing the page</li>
+                                        <li><strong>Event Listeners:</strong> React to user clicks and selections</li>
+                                        <li><strong>DOM Manipulation:</strong> Update the page content dynamically</li>
+                                        <li><strong>Filter & Map:</strong> Process arrays of data</li>
+                                        <li><strong>Promises:</strong> Handle asynchronous operations</li>
+                                    </ul>
+
+                                    <!-- Part 6 -->
+                                    <h4 class="mt-4">🎨 CSS Fundamentals</h4>
+                                    <ul>
+                                        <li>Flexbox & Grid for layouts</li>
+                                        <li>Media queries for responsiveness</li>
+                                        <li>Transitions & animations for interactivity</li>
+                                        <li>CSS variables for consistent styling</li>
+                                        <li>Shadow & border-radius for modern look</li>
+                                    </ul>
+
+                                    <!-- Part 7 -->
+                                    <h4 class="mt-4">📊 Adding Features: Step by Step</h4>
+                                    <ol>
+                                        <li><strong>Create Data File</strong> - Define what information you need</li>
+                                        <li><strong>Load Data</strong> - Write code to fetch and parse JSON</li>
+                                        <li><strong>Filter Data</strong> - Create functions to find what users want</li>
+                                        <li><strong>Display Results</strong> - Render filtered data on screen</li>
+                                        <li><strong>Add Interactivity</strong> - Connect buttons/filters to functions</li>
+                                        <li><strong>Style & Animate</strong> - Make it look good and feel responsive</li>
+                                    </ol>
+
+                                    <!-- Part 8 -->
+                                    <h4 class="mt-4">🧪 Testing Your Work</h4>
+                                    <div class="alert alert-warning">
+                                        <strong>Testing Checklist:</strong>
+                                        <br>✓ Open browser console (Ctrl+Shift+J) - watch for errors
+                                        <br>✓ Test on mobile, tablet, desktop
+                                        <br>✓ Test all filters and interactions
+                                        <br>✓ Click all links - do they work?
+                                        <br>✓ Use DevTools to inspect elements
+                                        <br>✓ Check performance - is it fast?
+                                    </div>
+
+                                    <!-- Part 9 -->
+                                    <h4 class="mt-4">🚀 Common Challenges</h4>
+                                    <ul>
+                                        <li><strong>Data won't load:</strong> Check file paths, use console.log()</li>
+                                        <li><strong>CSS not working:</strong> Clear browser cache, check specificity</li>
+                                        <li><strong>Clicks do nothing:</strong> Check event listeners, verify elements exist</li>
+                                        <li><strong>Slow performance:</strong> Profile with DevTools, optimize loops</li>
+                                    </ul>
+
+                                    <!-- Part 10 -->
+                                    <h4 class="mt-4">📚 Learning Resources</h4>
+                                    <ul>
+                                        <li><strong>JavaScript:</strong> MDN Web Docs, JavaScript.info, Codecademy</li>
+                                        <li><strong>CSS:</strong> CSS-Tricks, Bootstrap Docs</li>
+                                        <li><strong>Charts:</strong> Chart.js documentation</li>
+                                        <li><strong>Design:</strong> Figma, Dribbble for inspiration</li>
+                                        <li><strong>Community:</strong> GitHub, CodePen, Stack Overflow</li>
+                                    </ul>
+
+                                    <!-- Part 11 -->
+                                    <h4 class="mt-4">🎓 Real-World Applications</h4>
+                                    <p>These skills apply to:</p>
+                                    <ul>
+                                        <li>Healthcare apps and patient portals</li>
+                                        <li>Financial dashboards and budgeting tools</li>
+                                        <li>Social media platforms</li>
+                                        <li>E-commerce and shopping sites</li>
+                                        <li>Project management tools</li>
+                                        <li>Data analytics dashboards</li>
+                                    </ul>
+
+                                    <!-- Part 12 -->
+                                    <h4 class="mt-4">💡 Next Steps</h4>
+                                    <ol>
+                                        <li>Read the code in this app - understand every line</li>
+                                        <li>Try modifying the data - add new treatments or conditions</li>
+                                        <li>Add a search feature - practice DOM manipulation</li>
+                                        <li>Implement dark mode - learn CSS media queries</li>
+                                        <li>Build your own project using these patterns</li>
+                                        <li>Deploy it - share with others on GitHub or Netlify</li>
+                                    </ol>
+
+                                    <!-- Key Takeaways -->
+                                    <div class="alert alert-success mt-4">
+                                        <h5>🏆 Key Takeaways</h5>
+                                        <ul class="mb-0">
+                                            <li>Plan before you code</li>
+                                            <li>Separate your concerns (data, UI, logic)</li>
+                                            <li>Write code others can understand</li>
+                                            <li>Test on real devices</li>
+                                            <li>Don't be afraid to break things - that's how you learn</li>
+                                            <li>Share your work and get feedback</li>
+                                            <li>Keep learning - technology always evolves</li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- Resources -->
+                                    <h4 class="mt-4">📖 Project Documentation</h4>
+                                    <p>For more detailed information, read:</p>
+                                    <ul>
+                                        <li><strong>PROJECT_CREATION_GUIDE.md</strong> - Complete guide with code examples</li>
+                                        <li><strong>README.md</strong> - Project overview</li>
+                                        <li><strong>IMPLEMENTATION_SUMMARY.md</strong> - Technical details</li>
+                                        <li><strong>TREATMENTS_GUIDE.md</strong> - How to use treatments tab</li>
+                                    </ul>
+
+                                    <!-- Final Message -->
+                                    <div class="alert alert-primary mt-4">
+                                        <h5>💙 Remember</h5>
+                                        <p class="mb-0">
+                                            You don't need to understand everything at first.
+                                            Start with the basics, build projects, make mistakes,
+                                            debug, and keep going. That's how real developers work.
+                                            Most importantly: <strong>have fun and build something meaningful!</strong>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-light py-4 mt-5">
+        <div class="container-fluid text-center text-muted small">
+            <p>Data source: CDC Youth Risk Behavior Survey (YRBS) | All data is for educational purposes</p>
+            <p>Last updated: 2023</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.js"></script>
+    <script src="js/data-handler.js"></script>
+    <script src="js/chart-manager.js"></script>
+    <script src="js/treatment-handler.js"></script>
+    <script src="js/treatment-ui.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

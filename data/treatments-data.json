@@ -1,0 +1,339 @@
+{
+  "metadata": {
+    "source": "SAMHSA, NIMH, American Psychological Association, CDC",
+    "description": "Evidence-based mental health treatments for youth",
+    "note": "Effectiveness percentages based on clinical trials and meta-analyses"
+  },
+  "treatments": [
+    {
+      "id": 1,
+      "name": "Cognitive Behavioral Therapy (CBT)",
+      "category": "Psychotherapy",
+      "conditions": ["depression", "anxiety", "self_harm"],
+      "description": "Evidence-based talk therapy focusing on changing negative thought patterns and behaviors. Highly effective for youth.",
+      "effectiveness": 80,
+      "age_groups": ["9-12", "13-17", "18-25"],
+      "duration": "12-20 sessions",
+      "modality": "Individual",
+      "resources": [
+        "https://www.apa.org/ptsd-guideline/",
+        "https://www.samhsa.gov/"
+      ],
+      "key_benefits": [
+        "Teaches coping skills",
+        "Addresses root causes",
+        "Long-lasting results",
+        "Applicable to multiple conditions"
+      ],
+      "considerations": "Requires motivated participant; may take 8-12 weeks to see full benefits"
+    },
+    {
+      "id": 2,
+      "name": "Dialectical Behavior Therapy (DBT)",
+      "category": "Psychotherapy",
+      "conditions": ["depression", "anxiety", "self_harm"],
+      "description": "Specialized therapy combining CBT with mindfulness and acceptance strategies. Excellent for self-harm and emotional regulation.",
+      "effectiveness": 85,
+      "age_groups": ["13-17", "18-25"],
+      "duration": "12-24 months",
+      "modality": "Individual + Group",
+      "resources": [
+        "https://www.samhsa.gov/dbt",
+        "https://www.nimh.nih.gov/"
+      ],
+      "key_benefits": [
+        "Specifically targets self-harm",
+        "Teaches emotional regulation",
+        "Community support component",
+        "Combines therapy with skills training"
+      ],
+      "considerations": "More intensive; requires 1-2 years commitment; best for moderate-severe cases"
+    },
+    {
+      "id": 3,
+      "name": "Family-Based Treatment (FBT)",
+      "category": "Family Therapy",
+      "conditions": ["depression", "anxiety"],
+      "description": "Involves parents/guardians in treatment to improve family dynamics and support systems. Highly effective for younger youth.",
+      "effectiveness": 75,
+      "age_groups": ["9-12", "13-17"],
+      "duration": "12-16 sessions",
+      "modality": "Family",
+      "resources": [
+        "https://www.samhsa.gov/family-therapy",
+        "https://www.apa.org/science/"
+      ],
+      "key_benefits": [
+        "Improves family communication",
+        "Increases parental support",
+        "Addresses family stressors",
+        "Especially effective for younger teens"
+      ],
+      "considerations": "Requires family involvement; may reveal family conflicts"
+    },
+    {
+      "id": 4,
+      "name": "Interpersonal Therapy (IPT)",
+      "category": "Psychotherapy",
+      "conditions": ["depression", "anxiety"],
+      "description": "Focuses on improving interpersonal relationships and addressing social isolation. Particularly effective for depression.",
+      "effectiveness": 75,
+      "age_groups": ["13-17", "18-25"],
+      "duration": "12-16 sessions",
+      "modality": "Individual",
+      "resources": [
+        "https://www.nimh.nih.gov/",
+        "https://www.apa.org/"
+      ],
+      "key_benefits": [
+        "Addresses isolation",
+        "Improves social skills",
+        "Focuses on relationships",
+        "Reduces rumination"
+      ],
+      "considerations": "Best for depression with social component; requires some social engagement capacity"
+    },
+    {
+      "id": 5,
+      "name": "Selective Serotonin Reuptake Inhibitors (SSRIs)",
+      "category": "Medication",
+      "conditions": ["depression", "anxiety"],
+      "description": "First-line antidepressants. FDA-approved for youth depression and anxiety. Should be combined with therapy.",
+      "effectiveness": 70,
+      "age_groups": ["13-17", "18-25"],
+      "duration": "4-6 weeks to feel effects",
+      "modality": "Medication",
+      "resources": [
+        "https://www.fda.gov/",
+        "https://www.nimh.nih.gov/health/topics/child-and-adolescent-mental-health/index.shtml"
+      ],
+      "key_benefits": [
+        "Well-studied safety profile",
+        "Multiple options available",
+        "Works with minimal side effects",
+        "FDA-approved for youth"
+      ],
+      "considerations": "Requires medical supervision; black box warning on suicidal thoughts in early treatment; works best with therapy"
+    },
+    {
+      "id": 6,
+      "name": "Combination Therapy + Medication",
+      "category": "Integrated Treatment",
+      "conditions": ["depression", "anxiety", "self_harm"],
+      "description": "Gold standard treatment: psychotherapy combined with medication. Superior outcomes vs. either alone.",
+      "effectiveness": 85,
+      "age_groups": ["13-17", "18-25"],
+      "duration": "Ongoing",
+      "modality": "Individual + Medical",
+      "resources": [
+        "https://www.samhsa.gov/",
+        "https://www.nimh.nih.gov/research/"
+      ],
+      "key_benefits": [
+        "Best outcomes in research",
+        "Addresses multiple factors",
+        "Reduces relapse risk",
+        "Faster improvement"
+      ],
+      "considerations": "Requires coordinated care between therapist and psychiatrist; most resource-intensive"
+    },
+    {
+      "id": 7,
+      "name": "Mindfulness-Based Cognitive Therapy (MBCT)",
+      "category": "Psychotherapy",
+      "conditions": ["depression", "anxiety"],
+      "description": "Combines mindfulness practices with cognitive therapy. Effective for preventing relapse and managing stress.",
+      "effectiveness": 70,
+      "age_groups": ["13-17", "18-25"],
+      "duration": "8-12 weeks group program",
+      "modality": "Group",
+      "resources": [
+        "https://www.nimh.nih.gov/",
+        "https://www.apa.org/"
+      ],
+      "key_benefits": [
+        "Accessible and low-cost",
+        "Group support component",
+        "Teaches coping skills",
+        "Reduces stress and anxiety"
+      ],
+      "considerations": "Requires consistent attendance; group setting not suitable for all; benefits build over time"
+    },
+    {
+      "id": 8,
+      "name": "Acceptance and Commitment Therapy (ACT)",
+      "category": "Psychotherapy",
+      "conditions": ["depression", "anxiety", "self_harm"],
+      "description": "Evidence-based therapy teaching acceptance of thoughts/feelings while pursuing valued activities.",
+      "effectiveness": 72,
+      "age_groups": ["13-17", "18-25"],
+      "duration": "12-16 sessions",
+      "modality": "Individual",
+      "resources": [
+        "https://www.samhsa.gov/",
+        "https://www.apa.org/"
+      ],
+      "key_benefits": [
+        "Teaches psychological flexibility",
+        "Reduces avoidance behaviors",
+        "Focuses on values",
+        "Effective for chronic symptoms"
+      ],
+      "considerations": "Different approach than CBT; requires willingness to experience discomfort; growing evidence base"
+    },
+    {
+      "id": 9,
+      "name": "School-Based Mental Health Programs",
+      "category": "Prevention/Early Intervention",
+      "conditions": ["depression", "anxiety"],
+      "description": "Universal prevention programs delivered in schools. Includes counseling, screening, and early intervention.",
+      "effectiveness": 60,
+      "age_groups": ["9-12", "13-17"],
+      "duration": "Ongoing",
+      "modality": "School-Based",
+      "resources": [
+        "https://www.samhsa.gov/school-mental-health",
+        "https://www.cdc.gov/"
+      ],
+      "key_benefits": [
+        "Accessible to all students",
+        "Early identification",
+        "Reduces stigma",
+        "Supports entire school community"
+      ],
+      "considerations": "Variable quality; resource-dependent; best as complement to individual treatment"
+    },
+    {
+      "id": 10,
+      "name": "Peer Support Groups",
+      "category": "Support",
+      "conditions": ["depression", "anxiety", "self_harm"],
+      "description": "Groups of youth with similar experiences. Provides validation, reduces isolation, builds coping skills.",
+      "effectiveness": 65,
+      "age_groups": ["13-17", "18-25"],
+      "duration": "Ongoing",
+      "modality": "Group",
+      "resources": [
+        "https://www.samhsa.gov/support-groups",
+        "https://988lifeline.org/"
+      ],
+      "key_benefits": [
+        "Reduces isolation",
+        "Peer learning",
+        "Low or no cost",
+        "Ongoing support"
+      ],
+      "considerations": "Varies by group quality; works best as complement to professional treatment; not substitute for therapy"
+    },
+    {
+      "id": 11,
+      "name": "Exercise and Physical Activity",
+      "category": "Lifestyle Intervention",
+      "conditions": ["depression", "anxiety"],
+      "description": "Regular physical activity (30+ min, 5x/week). Evidence shows benefits comparable to antidepressants for mild-moderate depression.",
+      "effectiveness": 65,
+      "age_groups": ["9-12", "13-17", "18-25"],
+      "duration": "Ongoing",
+      "modality": "Self-Directed",
+      "resources": [
+        "https://www.cdc.gov/physicalactivity/",
+        "https://www.nih.gov/"
+      ],
+      "key_benefits": [
+        "Free or low-cost",
+        "General health benefits",
+        "Social opportunities",
+        "Improves sleep and mood"
+      ],
+      "considerations": "Requires consistency; may be difficult for severe depression; best combined with other treatments"
+    },
+    {
+      "id": 12,
+      "name": "Sleep Hygiene and Sleep Therapy",
+      "category": "Lifestyle Intervention",
+      "conditions": ["depression", "anxiety"],
+      "description": "Addressing sleep problems through behavioral interventions and consistent sleep schedules. Critical for mental health.",
+      "effectiveness": 68,
+      "age_groups": ["9-12", "13-17", "18-25"],
+      "duration": "Ongoing practice",
+      "modality": "Self-Directed/Behavioral",
+      "resources": [
+        "https://www.nimh.nih.gov/",
+        "https://www.sleepfoundation.org/"
+      ],
+      "key_benefits": [
+        "Improves mood",
+        "Enhances other treatments",
+        "Accessible intervention",
+        "Improves cognitive function"
+      ],
+      "considerations": "Requires habit change; initial adjustment period; may need behavioral therapist guidance"
+    },
+    {
+      "id": 13,
+      "name": "Nutrition and Diet Intervention",
+      "category": "Lifestyle Intervention",
+      "conditions": ["depression", "anxiety"],
+      "description": "Dietary changes supporting mental health: Mediterranean diet, omega-3 supplementation. Evidence growing.",
+      "effectiveness": 50,
+      "age_groups": ["9-12", "13-17", "18-25"],
+      "duration": "Ongoing",
+      "modality": "Self-Directed",
+      "resources": [
+        "https://www.nih.gov/",
+        "https://www.nutrition.gov/"
+      ],
+      "key_benefits": [
+        "Overall health benefits",
+        "May reduce inflammation",
+        "Supports brain function",
+        "No negative side effects"
+      ],
+      "considerations": "Emerging evidence; should not replace evidence-based therapies; cultural dietary considerations"
+    },
+    {
+      "id": 14,
+      "name": "Social Skills Training",
+      "category": "Psychotherapy",
+      "conditions": ["depression", "anxiety"],
+      "description": "Teaches youth to build relationships, communicate effectively, and manage social situations.",
+      "effectiveness": 70,
+      "age_groups": ["9-12", "13-17"],
+      "duration": "8-12 sessions",
+      "modality": "Individual or Group",
+      "resources": [
+        "https://www.samhsa.gov/",
+        "https://www.apa.org/"
+      ],
+      "key_benefits": [
+        "Practical skills",
+        "Reduces social anxiety",
+        "Improves confidence",
+        "Builds connections"
+      ],
+      "considerations": "Often part of larger treatment package; practice needed between sessions; group format enhances learning"
+    },
+    {
+      "id": 15,
+      "name": "Crisis Intervention and Safety Planning",
+      "category": "Crisis Support",
+      "conditions": ["depression", "anxiety", "self_harm"],
+      "description": "Crisis lines, safety plans, and emergency interventions for acute mental health crises. Essential for severe cases.",
+      "effectiveness": 90,
+      "age_groups": ["9-12", "13-17", "18-25"],
+      "duration": "As needed",
+      "modality": "Phone/Text/In-person",
+      "resources": [
+        "https://988lifeline.org/",
+        "https://www.samhsa.gov/find-help/national-helpline"
+      ],
+      "key_benefits": [
+        "Immediate support",
+        "24/7 availability",
+        "Trained counselors",
+        "Prevents suicide"
+      ],
+      "considerations": "For emergencies only; not substitute for ongoing treatment; follow-up care essential"
+    }
+  ]
+}
