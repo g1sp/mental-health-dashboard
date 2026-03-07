@@ -186,11 +186,13 @@ footer {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12) !important;
 }
 
-/* Ensure equal column widths in grid */
-#treatmentsGrid .col-md-6,
-#riskFactorsGrid .col-md-6 {
-    flex: 0 0 calc(50% - 8px);
-    max-width: calc(50% - 8px);
+/* Row flex container */
+#treatmentsGrid,
+#riskFactorsGrid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -8px;
+    margin-left: -8px;
 }
 
 .risk-factor-card .card-footer {
