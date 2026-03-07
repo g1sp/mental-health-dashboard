@@ -155,21 +155,8 @@ footer {
 
 /* Treatment Card Styles */
 .treatment-card {
-    border: 1px solid #e0e0e0;
-    overflow: hidden;
-    max-height: 320px;
-    display: flex;
-    flex-direction: column;
-}
-
-.treatment-card .card-body {
-    max-height: 260px;
-    overflow-y: auto;
-    flex-grow: 1;
-}
-
-.treatment-card .card-footer {
-    flex-shrink: 0;
+    border-radius: 8px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .treatment-card:hover {
@@ -188,27 +175,13 @@ footer {
 
 /* Risk Factor Card Styles */
 .risk-factor-card {
-    border: 1px solid #e0e0e0;
-    overflow: hidden;
-    max-height: 320px;
-    display: flex;
-    flex-direction: column;
-}
-
-.risk-factor-card .card-body {
-    max-height: 260px;
-    overflow-y: auto;
-    flex-grow: 1;
-}
-
-.risk-factor-card .card-footer {
-    flex-shrink: 0;
+    border-radius: 8px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .risk-factor-card:hover {
-    border-color: var(--info-color);
-    transform: translateY(-4px);
-    box-shadow: 0 12px 24px rgba(52, 152, 219, 0.15) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12) !important;
 }
 
 .risk-factor-card .card-footer {
