@@ -158,11 +158,18 @@ footer {
     border: 1px solid #e0e0e0;
     overflow: hidden;
     max-height: 320px;
+    display: flex;
+    flex-direction: column;
 }
 
 .treatment-card .card-body {
     max-height: 260px;
     overflow-y: auto;
+    flex-grow: 1;
+}
+
+.treatment-card .card-footer {
+    flex-shrink: 0;
 }
 
 .treatment-card:hover {
@@ -184,11 +191,18 @@ footer {
     border: 1px solid #e0e0e0;
     overflow: hidden;
     max-height: 320px;
+    display: flex;
+    flex-direction: column;
 }
 
 .risk-factor-card .card-body {
     max-height: 260px;
     overflow-y: auto;
+    flex-grow: 1;
+}
+
+.risk-factor-card .card-footer {
+    flex-shrink: 0;
 }
 
 .risk-factor-card:hover {
