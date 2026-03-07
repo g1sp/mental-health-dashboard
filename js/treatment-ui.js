@@ -33,7 +33,7 @@ class TreatmentUI {
     createTreatmentCard(treatment, details) {
         return `
             <div class="col-lg-6 col-xl-4">
-                <div class="card border-0 shadow-sm h-100 treatment-card" data-treatment-id="${treatment.id}" style="cursor: pointer; transition: all 0.3s ease;">
+                <div class="card border-0 shadow-sm treatment-card" data-treatment-id="${treatment.id}" style="cursor: pointer; transition: all 0.3s ease;">
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-start mb-3">
                             <h5 class="card-title mb-0">${treatment.name}</h5>
