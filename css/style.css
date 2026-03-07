@@ -153,6 +153,13 @@ footer {
     background-color: transparent;
 }
 
+/* Treatment Grid */
+#treatmentsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 1rem;
+}
+
 /* Treatment Card Styles */
 .treatment-card {
     border-radius: 8px;
@@ -171,6 +178,13 @@ footer {
 
 .treatment-card:hover .card-footer {
     background-color: #f0f7ff;
+}
+
+/* Risk Factors Grid */
+#riskFactorsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 1rem;
 }
 
 /* Risk Factor Card Styles */
