@@ -9,13 +9,14 @@ class RiskFactorsHandler {
     async loadRiskFactors() {
         try {
             const response = await fetch('data/risk-factors-data.json');
+            if (!response.ok) throw new Error('Failed to load risk factors');
             const data = await response.json();
             this.riskFactors = data.risk_factors;
             console.log(`Loaded ${this.riskFactors.length} risk factors`);
-            return this.riskFactors;
+            return true;
         } catch (error) {
             console.error('Error loading risk factors:', error);
-            return [];
+            return false;
         }
     }
 
