@@ -32,8 +32,8 @@ class TreatmentUI {
     // Create individual treatment card HTML
     createTreatmentCard(treatment, details) {
         return `
-            <div class="col-md-6" style="flex: 0 0 50%; max-width: 50%; padding-right: 8px; padding-left: 8px; box-sizing: border-box;">
-                <div class="card border-0 shadow-sm treatment-card" data-treatment-id="${treatment.id}" style="cursor: pointer; transition: all 0.3s ease; height: 100%;">
+            <div class="col-lg-6">
+                <div class="card border-0 shadow-sm treatment-card" data-treatment-id="${treatment.id}" style="cursor: pointer; transition: all 0.3s ease;">
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-start mb-3">
                             <h5 class="card-title mb-0">${treatment.name}</h5>

@@ -157,7 +157,6 @@ footer {
 .treatment-card {
     border-radius: 8px;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-    height: 100%;
 }
 
 .treatment-card:hover {
@@ -178,7 +177,6 @@ footer {
 .risk-factor-card {
     border-radius: 8px;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-    height: 100%;
 }
 
 .risk-factor-card:hover {
@@ -186,14 +184,6 @@ footer {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12) !important;
 }
 
-/* Row flex container */
-#treatmentsGrid,
-#riskFactorsGrid {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -8px;
-    margin-left: -8px;
-}
 
 .risk-factor-card .card-footer {
     background-color: #fafafa;
