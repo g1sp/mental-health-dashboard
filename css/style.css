@@ -157,6 +157,7 @@ footer {
 .treatment-card {
     border-radius: 8px;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    height: 100%;
 }
 
 .treatment-card:hover {
@@ -177,11 +178,19 @@ footer {
 .risk-factor-card {
     border-radius: 8px;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    height: 100%;
 }
 
 .risk-factor-card:hover {
     transform: translateY(-2px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12) !important;
+}
+
+/* Ensure equal column widths in grid */
+#treatmentsGrid .col-lg-6,
+#riskFactorsGrid .col-lg-6 {
+    flex: 0 0 calc(50% - 8px);
+    max-width: calc(50% - 8px);
 }
 
 .risk-factor-card .card-footer {
