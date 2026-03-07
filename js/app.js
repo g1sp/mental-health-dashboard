@@ -26,21 +26,35 @@ class MentalHealthApp {
             return;
         }
 
+        // Load risk factors
+        const riskFactorsLoaded = await riskFactorsHandler.loadRiskFactors();
+        if (!riskFactorsLoaded) {
+            console.error('Failed to load risk factors');
+            return;
+        }
+
         // Populate filter dropdowns
         this.populateDropdowns();
 
         // Populate treatment filters
         this.populateTreatmentFilters();
 
+        // Populate risk factor filters
+        this.populateRiskFactorFilters();
+
         // Set up event listeners
         this.setupEventListeners();
         this.setupTreatmentEventListeners();
+        this.setupRiskFactorEventListeners();
 
         // Initial chart load
         this.updateAllCharts();
 
         // Initial treatments load
         this.updateTreatmentsDisplay();
+
+        // Initial risk factors load
+        this.updateRiskFactorsDisplay();
     }
 
     // Populate dropdown selectors with unique values
@@ -92,6 +106,13 @@ class MentalHealthApp {
         this.populateSelect('treatmentAgeSelect', ageGroups);
     }
 
+    // Populate risk factor filter dropdowns
+    populateRiskFactorFilters() {
+        const categories = riskFactorsHandler.getCategories();
+
+        this.populateSelect('riskFactorCategorySelect', categories);
+    }
+
     // Set up event listeners for filters
     setupEventListeners() {
         document.getElementById('yearSelect')?.addEventListener('change', () => this.onFilterChange());
@@ -105,6 +126,13 @@ class MentalHealthApp {
         document.getElementById('conditionSelect')?.addEventListener('change', () => this.onTreatmentFilterChange());
         document.getElementById('categorySelect')?.addEventListener('change', () => this.onTreatmentFilterChange());
         document.getElementById('treatmentAgeSelect')?.addEventListener('change', () => this.onTreatmentFilterChange());
+    }
+
+    // Set up event listeners for risk factor filters
+    setupRiskFactorEventListeners() {
+        document.getElementById('riskFactorConditionSelect')?.addEventListener('change', () => this.onRiskFactorFilterChange());
+        document.getElementById('riskFactorCategorySelect')?.addEventListener('change', () => this.onRiskFactorFilterChange());
+        document.getElementById('resetRiskFactorFilters')?.addEventListener('click', () => this.resetRiskFactorFilters());
     }
 
     // Handle filter changes
@@ -184,6 +212,27 @@ class MentalHealthApp {
         };
         const filtered = treatmentHandler.filterTreatments(filters);
         treatmentUI.updateTreatmentCards(filtered);
+    }
+
+    // Handle risk factor filter changes
+    onRiskFactorFilterChange() {
+        const condition = document.getElementById('riskFactorConditionSelect').value || '';
+        const category = document.getElementById('riskFactorCategorySelect').value || '';
+
+        this.updateRiskFactorsDisplay(condition, category);
+    }
+
+    // Update risk factors display
+    updateRiskFactorsDisplay(condition = '', category = '') {
+        const filtered = riskFactorsHandler.filterRiskFactors(condition, category);
+        riskFactorsUI.updateRiskFactorCards(filtered);
+    }
+
+    // Reset risk factor filters
+    resetRiskFactorFilters() {
+        document.getElementById('riskFactorConditionSelect').value = '';
+        document.getElementById('riskFactorCategorySelect').value = '';
+        this.updateRiskFactorsDisplay();
     }
 }
 

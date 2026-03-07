@@ -1,0 +1,409 @@
+{
+  "metadata": {
+    "source": "CDC, NIMH, SAMHSA, American Psychological Association, National Alliance on Mental Illness",
+    "description": "Risk factors and causes contributing to youth mental health issues",
+    "note": "Evidence-based risk factors from clinical research and epidemiological studies"
+  },
+  "risk_factors": [
+    {
+      "id": 1,
+      "name": "Genetic Predisposition",
+      "category": "Biological",
+      "conditions": ["depression", "anxiety", "self_harm"],
+      "description": "Mental health conditions often run in families. If parents or siblings have depression or anxiety, youth are at higher risk.",
+      "prevalence": "30-40% genetic component",
+      "warning_signs": ["Family history of mental illness", "Multiple relatives affected", "Early onset in family members"],
+      "resources": [
+        "https://www.nimh.nih.gov/health/topics/genetics-of-mental-illness",
+        "https://www.samhsa.gov/"
+      ],
+      "prevention_tips": [
+        "Regular mental health check-ups",
+        "Early intervention if symptoms appear",
+        "Open family communication",
+        "Stress management practices",
+        "Professional support access"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Brain Chemistry Imbalances",
+      "category": "Biological",
+      "conditions": ["depression", "anxiety"],
+      "description": "Imbalances in neurotransmitters like serotonin, dopamine, and norepinephrine can contribute to mental health disorders.",
+      "prevalence": "Affects 20-30% of youth with depression",
+      "warning_signs": ["Persistent low mood", "Loss of interest in activities", "Sleep changes", "Energy fluctuations"],
+      "resources": [
+        "https://www.nimh.nih.gov/health/topics/depression",
+        "https://www.samhsa.gov/"
+      ],
+      "prevention_tips": [
+        "Regular sleep schedule",
+        "Physical exercise",
+        "Healthy diet with omega-3s",
+        "Stress reduction techniques",
+        "Medical evaluation if concerned"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Hormonal Changes During Adolescence",
+      "category": "Biological",
+      "conditions": ["depression", "anxiety"],
+      "description": "Puberty and teenage years involve major hormonal shifts that can trigger mood changes and increase mental health disorder risk.",
+      "prevalence": "Peak onset age 13-18 years",
+      "warning_signs": ["Mood swings", "Emotional sensitivity", "Changes in sleep/appetite", "Social withdrawal"],
+      "resources": [
+        "https://www.aacap.org/",
+        "https://www.samhsa.gov/"
+      ],
+      "prevention_tips": [
+        "Normalize hormonal changes discussion",
+        "Monitor mood patterns",
+        "Regular physical activity",
+        "Consistent sleep schedule",
+        "Professional support if needed"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Sleep Disruption",
+      "category": "Biological",
+      "conditions": ["depression", "anxiety"],
+      "description": "Insufficient or disrupted sleep significantly increases risk for depression and anxiety in adolescents.",
+      "prevalence": "60% of teens get insufficient sleep",
+      "warning_signs": ["Difficulty falling/staying asleep", "Sleeping too much", "Daytime fatigue", "Irritability"],
+      "resources": [
+        "https://www.nimh.nih.gov/",
+        "https://www.cdc.gov/sleep/"
+      ],
+      "prevention_tips": [
+        "Keep consistent sleep schedule",
+        "Limit screen time before bed",
+        "Create dark, cool sleep environment",
+        "Avoid caffeine in afternoons",
+        "Develop bedtime routine"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Academic Stress and Pressure",
+      "category": "Environmental",
+      "conditions": ["depression", "anxiety"],
+      "description": "High academic expectations, testing pressure, and competitive school environments contribute to anxiety and depression.",
+      "prevalence": "40% of students report high academic stress",
+      "warning_signs": ["Test anxiety", "Perfectionism", "Avoidance of school", "Declining grades despite effort"],
+      "resources": [
+        "https://www.samhsa.gov/school-mental-health",
+        "https://www.cdc.gov/mentalhealth/"
+      ],
+      "prevention_tips": [
+        "Develop study skills",
+        "Realistic goal-setting",
+        "Time management practices",
+        "Teacher/counselor communication",
+        "Stress management techniques"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Social Media and Cyberbullying",
+      "category": "Environmental",
+      "conditions": ["depression", "anxiety", "self_harm"],
+      "description": "Excessive social media use, social comparison, and cyberbullying significantly impact youth mental health.",
+      "prevalence": "59% of teens experience cyberbullying",
+      "warning_signs": ["Anxiety when away from phone", "Social comparison behaviors", "Avoidance of real socializing", "Sleep disruption from phone use"],
+      "resources": [
+        "https://www.samhsa.gov/",
+        "https://www.cdc.gov/mentalhealth/"
+      ],
+      "prevention_tips": [
+        "Limit daily screen time",
+        "Curate social media feeds",
+        "Practice digital literacy",
+        "Report cyberbullying",
+        "Balance online/offline time"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Peer Pressure and Social Isolation",
+      "category": "Social",
+      "conditions": ["depression", "anxiety"],
+      "description": "Negative peer influence, social exclusion, and difficulty maintaining friendships increase mental health risks.",
+      "prevalence": "35% of youth experience social anxiety",
+      "warning_signs": ["Social withdrawal", "Fear of judgment", "Difficulty making friends", "Anxiety in social settings"],
+      "resources": [
+        "https://www.samhsa.gov/",
+        "https://www.apa.org/"
+      ],
+      "prevention_tips": [
+        "Build social skills",
+        "Join clubs/activities",
+        "Practice assertiveness",
+        "Seek supportive friend groups",
+        "Professional help if isolated"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Family Conflict and Instability",
+      "category": "Environmental",
+      "conditions": ["depression", "anxiety", "self_harm"],
+      "description": "Parental conflict, divorce, abuse, or family dysfunction creates chronic stress affecting mental health.",
+      "prevalence": "40% of children experience parental conflict effects",
+      "warning_signs": ["Anxiety about home", "Behavioral changes", "Academic decline", "Physical complaints"],
+      "resources": [
+        "https://www.samhsa.gov/family-therapy",
+        "https://www.apa.org/"
+      ],
+      "prevention_tips": [
+        "Family counseling",
+        "Open communication",
+        "Establish routines",
+        "Individual therapy support",
+        "Safe adult relationships"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Trauma and Adverse Experiences",
+      "category": "Environmental",
+      "conditions": ["depression", "anxiety", "self_harm"],
+      "description": "Past or ongoing trauma, abuse, neglect, or significant losses increase depression, anxiety, and PTSD risk.",
+      "prevalence": "70% of youth experience at least one trauma",
+      "warning_signs": ["Flashbacks or nightmares", "Hypervigilance", "Avoidance behaviors", "Emotional numbing"],
+      "resources": [
+        "https://www.samhsa.gov/trauma",
+        "https://www.nimh.nih.gov/"
+      ],
+      "prevention_tips": [
+        "Trauma-focused therapy (TF-CBT)",
+        "Safety planning",
+        "Support groups",
+        "Trusted relationships",
+        "Professional mental health care"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Discrimination and Marginalization",
+      "category": "Social",
+      "conditions": ["depression", "anxiety"],
+      "description": "Experiencing racism, discrimination, or belonging to stigmatized groups increases mental health risks significantly.",
+      "prevalence": "Disproportionate rates in marginalized communities",
+      "warning_signs": ["Internalized shame", "Social withdrawal", "Hypervigilance", "Chronic stress symptoms"],
+      "resources": [
+        "https://www.samhsa.gov/",
+        "https://www.nimh.nih.gov/"
+      ],
+      "prevention_tips": [
+        "Community connection",
+        "Cultural affirmation",
+        "Advocacy/activism",
+        "Culturally-responsive therapy",
+        "Safe communities"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Economic Stress and Poverty",
+      "category": "Environmental",
+      "conditions": ["depression", "anxiety"],
+      "description": "Financial instability, poverty, and economic uncertainty create chronic stress affecting mental health.",
+      "prevalence": "40% of poor youth have mental health conditions",
+      "warning_signs": ["Worry about basic needs", "School absence", "Behavioral problems", "Health neglect"],
+      "resources": [
+        "https://www.samhsa.gov/",
+        "https://www.cdc.gov/mentalhealth/"
+      ],
+      "prevention_tips": [
+        "School-based support",
+        "Community resources",
+        "Mental health services",
+        "Social connections",
+        "Hope-building activities"
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Developmental Brain Changes",
+      "category": "Biological",
+      "conditions": ["depression", "anxiety"],
+      "description": "Adolescent brain development, particularly in emotion regulation and impulse control areas, increases vulnerability.",
+      "prevalence": "Normal developmental process affecting all teens",
+      "warning_signs": ["Increased emotional reactivity", "Impulsivity", "Risk-taking", "Identity confusion"],
+      "resources": [
+        "https://www.nimh.nih.gov/",
+        "https://www.aacap.org/"
+      ],
+      "prevention_tips": [
+        "Understanding brain development",
+        "Structured environment",
+        "Adult guidance",
+        "Skill-building",
+        "Patience with development"
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Identity Formation Challenges",
+      "category": "Developmental",
+      "conditions": ["depression", "anxiety"],
+      "description": "Struggles with sexual orientation, gender identity, or cultural identity can increase mental health vulnerability.",
+      "prevalence": "LGBTQ+ youth have 3-4x higher mental health disorder rates",
+      "warning_signs": ["Identity confusion", "Social withdrawal", "Self-harm", "Isolation from family"],
+      "resources": [
+        "https://www.samhsa.gov/lgbtq",
+        "https://www.trevorproject.org/"
+      ],
+      "prevention_tips": [
+        "Affirming environment",
+        "LGBTQ+-competent therapy",
+        "Community connection",
+        "Family acceptance programs",
+        "Peer support"
+      ]
+    },
+    {
+      "id": 14,
+      "name": "School Transitions and Major Changes",
+      "category": "Developmental",
+      "conditions": ["depression", "anxiety"],
+      "description": "Moving, school changes, parental job loss, or other major life transitions disrupt stability and increase risk.",
+      "prevalence": "Transitions affect most youth at some point",
+      "warning_signs": ["Anxiety about change", "Academic decline", "Social difficulty", "Withdrawal"],
+      "resources": [
+        "https://www.samhsa.gov/school-mental-health",
+        "https://www.cdc.gov/mentalhealth/"
+      ],
+      "prevention_tips": [
+        "Preparation and planning",
+        "Maintain relationships",
+        "Establish new routines",
+        "School counselor support",
+        "Patience with adjustment"
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Substance Use and Experimentation",
+      "category": "Environmental",
+      "conditions": ["depression", "anxiety", "self_harm"],
+      "description": "Alcohol or drug use, often as self-medication, worsens mental health and creates additional health risks.",
+      "prevalence": "25% of teens with mental illness use substances",
+      "warning_signs": ["Increased use", "Behavioral changes", "Academic decline", "New peer groups"],
+      "resources": [
+        "https://www.samhsa.gov/substance-use",
+        "https://988lifeline.org/"
+      ],
+      "prevention_tips": [
+        "Education about risks",
+        "Alternatives to coping",
+        "Trusted adult relationships",
+        "Mental health treatment",
+        "Substance abuse counseling if needed"
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Global Events and News Anxiety",
+      "category": "Environmental",
+      "conditions": ["depression", "anxiety"],
+      "description": "Anxiety about climate, politics, pandemics, and global crises creates significant stress and uncertainty.",
+      "prevalence": "62% of teens worried about future",
+      "warning_signs": ["Constant worry", "News consumption", "Hopelessness", "Difficulty concentrating"],
+      "resources": [
+        "https://www.samhsa.gov/",
+        "https://www.apa.org/"
+      ],
+      "prevention_tips": [
+        "Limit news consumption",
+        "Focus on what's controllable",
+        "Community involvement",
+        "Perspective and context",
+        "Professional support if anxious"
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Perfectionism and High Self-Expectations",
+      "category": "Behavioral",
+      "conditions": ["depression", "anxiety"],
+      "description": "Unrealistic self-expectations and perfectionism lead to chronic stress, anxiety, and depression.",
+      "prevalence": "40% of high-achieving students are perfectionists",
+      "warning_signs": ["Self-criticism", "Anxiety over mistakes", "Avoidance of challenges", "All-or-nothing thinking"],
+      "resources": [
+        "https://www.apa.org/",
+        "https://www.samhsa.gov/"
+      ],
+      "prevention_tips": [
+        "Self-compassion practice",
+        "Cognitive restructuring",
+        "Realistic goal-setting",
+        "Therapy for perfectionism",
+        "Celebrate progress"
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Lack of Physical Activity",
+      "category": "Lifestyle",
+      "conditions": ["depression", "anxiety"],
+      "description": "Sedentary lifestyle increases depression and anxiety risk; exercise is protective.",
+      "prevalence": "75% of teens don't meet exercise guidelines",
+      "warning_signs": ["Sedentary behavior", "Low energy", "Poor mood", "Weight changes"],
+      "resources": [
+        "https://www.cdc.gov/physicalactivity/",
+        "https://www.nimh.nih.gov/"
+      ],
+      "prevention_tips": [
+        "Regular physical activity",
+        "Team sports or group exercise",
+        "Outdoor time",
+        "Dance or creative movement",
+        "Gradual increase in activity"
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Chronic Medical Conditions",
+      "category": "Biological",
+      "conditions": ["depression", "anxiety"],
+      "description": "Youth with chronic illnesses (diabetes, asthma, etc.) have higher rates of depression and anxiety.",
+      "prevalence": "2-3x higher mental health disorder risk",
+      "warning_signs": ["Denial of condition", "Non-adherence to treatment", "Low mood", "Isolation"],
+      "resources": [
+        "https://www.nimh.nih.gov/",
+        "https://www.samhsa.gov/"
+      ],
+      "prevention_tips": [
+        "Integrated care approach",
+        "Mental health support",
+        "Peer support groups",
+        "Coping skill development",
+        "Regular mental health screening"
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Limited Access to Mental Health Services",
+      "category": "Systemic",
+      "conditions": ["depression", "anxiety", "self_harm"],
+      "description": "Lack of insurance, providers, or stigma prevents youth from accessing needed mental health care.",
+      "prevalence": "75% of youth don't receive mental health treatment",
+      "warning_signs": ["Untreated symptoms", "Crisis escalation", "Self-harm", "Academic/social decline"],
+      "resources": [
+        "https://www.samhsa.gov/find-help/national-helpline",
+        "https://988lifeline.org/"
+      ],
+      "prevention_tips": [
+        "School-based mental health",
+        "Telehealth options",
+        "Community resources",
+        "Crisis lines",
+        "Advocacy for access"
+      ]
+    }
+  ]
+}
