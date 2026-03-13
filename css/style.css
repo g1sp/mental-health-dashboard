@@ -316,3 +316,142 @@ footer {
     color: #c7254e;
     font-size: 0.9rem;
 }
+
+/* Crisis Resources Banner */
+#crisisBanner {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+    background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+    color: white;
+    padding: 0.75rem 1rem;
+    font-weight: 600;
+    animation: slideDown 0.3s ease-out;
+}
+
+#crisisBanner .btn-close {
+    filter: brightness(0) invert(1);
+    opacity: 0.8;
+}
+
+#crisisBanner .btn-close:hover {
+    opacity: 1;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Crisis Dashboard Card */
+.crisis-card {
+    border-left: 5px solid var(--danger-color);
+    background: linear-gradient(135deg, #fff 0%, #fff5f5 100%);
+}
+
+.crisis-card .card-title {
+    color: #c0392b;
+    font-size: 1.1rem;
+}
+
+.crisis-card .card-body {
+    padding: 1.5rem;
+}
+
+.crisis-card .border-danger {
+    border-color: #e74c3c !important;
+}
+
+.crisis-card .border-info {
+    border-color: #3498db !important;
+}
+
+.crisis-card .border-success {
+    border-color: #27ae60 !important;
+}
+
+/* Crisis Modal Content */
+.crisis-modal-content {
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+.crisis-resource-item {
+    padding-bottom: 1rem;
+}
+
+.crisis-resource-item h6 {
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+.crisis-resource-item .list-group-item {
+    border: none;
+    background-color: transparent;
+    padding: 0.5rem 0;
+}
+
+.crisis-resource-item a {
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.crisis-resource-item a:hover {
+    text-decoration: underline;
+}
+
+.font-monospace {
+    font-family: 'Courier New', monospace;
+    font-weight: 600;
+    color: #c0392b;
+}
+
+/* Crisis Help Button in Navbar */
+#crisisHelpBtn {
+    background-color: #e74c3c;
+    border-color: #e74c3c;
+    color: white;
+    font-weight: 600;
+    margin-left: 0.5rem;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+    animation: pulse 2s infinite;
+}
+
+#crisisHelpBtn:hover {
+    background-color: #c0392b;
+    border-color: #c0392b;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.8;
+    }
+}
+
+/* Responsive adjustments for crisis components */
+@media (max-width: 768px) {
+    #crisisBanner {
+        padding: 0.5rem 0.75rem;
+        font-size: 0.9rem;
+    }
+
+    .crisis-card .card-body {
+        padding: 1rem;
+    }
+
+    #crisisHelpBtn {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.8rem;
+    }
+}

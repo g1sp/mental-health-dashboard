@@ -12,6 +12,16 @@ class MentalHealthApp {
 
     // Initialize the application
     async init() {
+        // Load crisis resources first (they're critical)
+        const crisisLoaded = await crisisHandler.loadCrisisResources();
+        if (!crisisLoaded) {
+            console.error('Failed to load crisis resources');
+            return;
+        }
+
+        // Initialize crisis UI
+        crisisUI.init();
+
         // Load data
         const dataLoaded = await dataHandler.loadData();
         if (!dataLoaded) {

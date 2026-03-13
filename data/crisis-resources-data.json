@@ -1,0 +1,99 @@
+{
+  "resources": [
+    {
+      "id": "crisis_988",
+      "name": "Crisis Lifeline (988)",
+      "description": "Free, confidential, 24/7 support from trained counselors",
+      "fullDescription": "The 988 Suicide & Crisis Lifeline provides free and confidential support to people in suicidal crisis or emotional distress. Available 24/7, you can talk to a trained crisis counselor anytime.",
+      "methods": [
+        {
+          "type": "Call",
+          "value": "988",
+          "icon": "📞"
+        },
+        {
+          "type": "Text",
+          "value": "Text 'HELLO' to 741741",
+          "icon": "💬"
+        },
+        {
+          "type": "Chat",
+          "value": "988lifeline.org/chat",
+          "icon": "💻"
+        }
+      ],
+      "bestFor": "Suicidal thoughts, emotional crisis, depression, anxiety",
+      "forTeens": true,
+      "icon": "🆘",
+      "color": "danger"
+    },
+    {
+      "id": "emergency_911",
+      "name": "Emergency Services (911)",
+      "description": "For immediate danger to self or others",
+      "fullDescription": "If your child or you are in immediate danger, experiencing suicidal thoughts you plan to act on, or experiencing a mental health crisis, call 911 or go to your nearest emergency room immediately.",
+      "methods": [
+        {
+          "type": "Call",
+          "value": "911",
+          "icon": "📞"
+        },
+        {
+          "type": "Go to",
+          "value": "Nearest hospital/emergency room",
+          "icon": "🏥"
+        }
+      ],
+      "bestFor": "Immediate danger, active suicidal intent, severe crisis",
+      "forTeens": true,
+      "icon": "🚨",
+      "color": "danger"
+    },
+    {
+      "id": "care_solace",
+      "name": "Care Solace",
+      "description": "Find local counselors and therapists near you",
+      "fullDescription": "Care Solace helps you find and connect with mental health professionals in your area. Get support in finding a counselor or therapist that matches your needs and insurance.",
+      "methods": [
+        {
+          "type": "Website",
+          "value": "caresolace.com",
+          "url": "https://www.caresolace.com",
+          "icon": "🔍"
+        },
+        {
+          "type": "Crisis",
+          "value": "1-800-985-5990 (SAMHSA National Helpline)",
+          "icon": "📞"
+        }
+      ],
+      "bestFor": "Finding long-term therapy, counselor matching, ongoing treatment",
+      "forTeens": true,
+      "icon": "👨‍⚕️",
+      "color": "info"
+    },
+    {
+      "id": "say_something",
+      "name": "Say Something",
+      "description": "Crisis prevention through community awareness",
+      "fullDescription": "Say Something is a national initiative that empowers students to see the signs of crisis in their peers and report concerns to a trusted adult. By asking for help, you can prevent tragedies before they happen.",
+      "methods": [
+        {
+          "type": "Website",
+          "value": "saysomething.net",
+          "url": "https://www.saysomething.net",
+          "icon": "🌐"
+        },
+        {
+          "type": "Train",
+          "value": "Learn crisis prevention training",
+          "icon": "📚"
+        }
+      ],
+      "bestFor": "Crisis prevention, peer support, school community engagement",
+      "forTeens": true,
+      "icon": "🤝",
+      "color": "success"
+    }
+  ]
+}
