@@ -1,0 +1,854 @@
+{
+  "state-resources": {
+    "Alabama": [
+      {
+        "id": "al_crisis_1",
+        "name": "Alabama Crisis Center",
+        "type": "hotline",
+        "phone": "1-205-323-7777",
+        "description": "24/7 crisis support and mental health services for Alabama residents"
+      },
+      {
+        "id": "al_crisis_2",
+        "name": "Alabama Department of Mental Health",
+        "type": "organization",
+        "phone": "1-800-273-8255",
+        "website": "https://mh.alabama.gov",
+        "description": "State mental health services and resources"
+      }
+    ],
+    "Alaska": [
+      {
+        "id": "ak_crisis_1",
+        "name": "Alaska Crisis Line",
+        "type": "hotline",
+        "phone": "1-907-586-4111",
+        "description": "24/7 crisis support for Alaska residents"
+      },
+      {
+        "id": "ak_crisis_2",
+        "name": "Alaska Native Heritage Center",
+        "type": "organization",
+        "phone": "1-907-330-8000",
+        "website": "https://www.alaskanativeheritagecenter.org",
+        "description": "Cultural support and mental health resources"
+      }
+    ],
+    "Arizona": [
+      {
+        "id": "az_crisis_1",
+        "name": "Arizona Crisis Line",
+        "type": "hotline",
+        "phone": "1-602-222-9444",
+        "description": "24/7 crisis intervention and suicide prevention for Arizona"
+      },
+      {
+        "id": "az_crisis_2",
+        "name": "Empact Prevention Center",
+        "type": "organization",
+        "phone": "1-480-784-1500",
+        "website": "https://www.empactaz.org",
+        "description": "Suicide prevention and crisis services"
+      }
+    ],
+    "Arkansas": [
+      {
+        "id": "ar_crisis_1",
+        "name": "Arkansas Crisis Line",
+        "type": "hotline",
+        "phone": "1-501-521-8000",
+        "description": "24/7 mental health crisis support for Arkansas"
+      },
+      {
+        "id": "ar_crisis_2",
+        "name": "Arkansas Department of Human Services",
+        "type": "organization",
+        "phone": "1-501-682-8722",
+        "website": "https://humanservices.arkansas.gov",
+        "description": "State mental health and substance abuse services"
+      }
+    ],
+    "California": [
+      {
+        "id": "ca_crisis_1",
+        "name": "California Crisis Lifeline",
+        "type": "hotline",
+        "phone": "1-855-242-7654",
+        "description": "24/7 crisis support and suicide prevention for California"
+      },
+      {
+        "id": "ca_crisis_2",
+        "name": "Los Angeles County DMH",
+        "type": "organization",
+        "phone": "1-800-854-7771",
+        "website": "https://dmh.lacounty.gov",
+        "description": "County mental health services and emergency response"
+      }
+    ],
+    "Colorado": [
+      {
+        "id": "co_crisis_1",
+        "name": "Colorado Crisis Services",
+        "type": "hotline",
+        "phone": "1-844-493-8255",
+        "description": "24/7 crisis support, suicide prevention, and mobile crisis teams"
+      },
+      {
+        "id": "co_crisis_2",
+        "name": "Colorado Department of Human Services",
+        "type": "organization",
+        "phone": "1-720-852-5000",
+        "website": "https://cdhs.colorado.gov",
+        "description": "State behavioral health services and support"
+      }
+    ],
+    "Connecticut": [
+      {
+        "id": "ct_crisis_1",
+        "name": "Connecticut Crisis 2-1-1",
+        "type": "hotline",
+        "phone": "211",
+        "description": "24/7 crisis and resource referral service"
+      },
+      {
+        "id": "ct_crisis_2",
+        "name": "Connecticut Department of Mental Health",
+        "type": "organization",
+        "phone": "1-860-418-6000",
+        "website": "https://portal.ct.gov/dmhas",
+        "description": "State mental health and addiction services"
+      }
+    ],
+    "Delaware": [
+      {
+        "id": "de_crisis_1",
+        "name": "Delaware Crisis Line",
+        "type": "hotline",
+        "phone": "1-302-744-9900",
+        "description": "24/7 crisis support and suicide prevention"
+      },
+      {
+        "id": "de_crisis_2",
+        "name": "Delaware Department of Health",
+        "type": "organization",
+        "phone": "1-302-744-4700",
+        "website": "https://dnrec.delaware.gov/health",
+        "description": "State health and mental health services"
+      }
+    ],
+    "Florida": [
+      {
+        "id": "fl_crisis_1",
+        "name": "Florida Crisis Line",
+        "type": "hotline",
+        "phone": "1-850-414-4357",
+        "description": "24/7 suicide prevention and crisis intervention for Florida"
+      },
+      {
+        "id": "fl_crisis_2",
+        "name": "Florida Department of Children and Families",
+        "type": "organization",
+        "phone": "1-850-717-3600",
+        "website": "https://www.myflfamilies.com",
+        "description": "State mental health and family services"
+      }
+    ],
+    "Georgia": [
+      {
+        "id": "ga_crisis_1",
+        "name": "Georgia Crisis and Access Line",
+        "type": "hotline",
+        "phone": "1-800-715-4225",
+        "description": "24/7 crisis support and mental health services"
+      },
+      {
+        "id": "ga_crisis_2",
+        "name": "Georgia Department of Behavioral Health",
+        "type": "organization",
+        "phone": "1-404-657-2252",
+        "website": "https://dbhdd.georgia.gov",
+        "description": "State behavioral health services and support"
+      }
+    ],
+    "Hawaii": [
+      {
+        "id": "hi_crisis_1",
+        "name": "Hawaii Crisis Line",
+        "type": "hotline",
+        "phone": "1-808-832-3100",
+        "description": "24/7 crisis support and mental health services"
+      },
+      {
+        "id": "hi_crisis_2",
+        "name": "Hawaii Department of Health",
+        "type": "organization",
+        "phone": "1-808-586-4400",
+        "website": "https://health.hawaii.gov",
+        "description": "State mental health and behavioral health services"
+      }
+    ],
+    "Idaho": [
+      {
+        "id": "id_crisis_1",
+        "name": "Idaho Crisis Line",
+        "type": "hotline",
+        "phone": "1-208-398-4357",
+        "description": "24/7 crisis support and suicide prevention"
+      },
+      {
+        "id": "id_crisis_2",
+        "name": "Idaho Department of Health and Welfare",
+        "type": "organization",
+        "phone": "1-208-334-0808",
+        "website": "https://www.healthandwelfare.idaho.gov",
+        "description": "State mental health and behavioral health services"
+      }
+    ],
+    "Illinois": [
+      {
+        "id": "il_crisis_1",
+        "name": "Illinois Crisis and Information Line",
+        "type": "hotline",
+        "phone": "1-877-873-4357",
+        "description": "24/7 crisis support for Illinois residents"
+      },
+      {
+        "id": "il_crisis_2",
+        "name": "Illinois Department of Human Services",
+        "type": "organization",
+        "phone": "1-217-782-2715",
+        "website": "https://www2.illinois.gov/dhs",
+        "description": "State mental health and behavioral services"
+      }
+    ],
+    "Indiana": [
+      {
+        "id": "in_crisis_1",
+        "name": "Indiana Crisis Response Line",
+        "type": "hotline",
+        "phone": "1-317-232-7537",
+        "description": "24/7 crisis intervention and referral service"
+      },
+      {
+        "id": "in_crisis_2",
+        "name": "Indiana Family and Social Services",
+        "type": "organization",
+        "phone": "1-317-234-0767",
+        "website": "https://www.in.gov/fssa",
+        "description": "State mental health and family services"
+      }
+    ],
+    "Iowa": [
+      {
+        "id": "ia_crisis_1",
+        "name": "Iowa Crisis Line",
+        "type": "hotline",
+        "phone": "1-855-581-8111",
+        "description": "24/7 crisis support and suicide prevention"
+      },
+      {
+        "id": "ia_crisis_2",
+        "name": "Iowa Department of Human Services",
+        "type": "organization",
+        "phone": "1-515-281-5521",
+        "website": "https://dhs.iowa.gov",
+        "description": "State mental health and behavioral health services"
+      }
+    ],
+    "Kansas": [
+      {
+        "id": "ks_crisis_1",
+        "name": "Kansas Crisis Line",
+        "type": "hotline",
+        "phone": "1-888-363-2522",
+        "description": "24/7 crisis support and mental health services"
+      },
+      {
+        "id": "ks_crisis_2",
+        "name": "Kansas Department for Children and Families",
+        "type": "organization",
+        "phone": "1-785-296-4408",
+        "website": "https://www.dcf.ks.gov",
+        "description": "State mental health and family services"
+      }
+    ],
+    "Kentucky": [
+      {
+        "id": "ky_crisis_1",
+        "name": "Kentucky Crisis Center",
+        "type": "hotline",
+        "phone": "1-502-589-9333",
+        "description": "24/7 crisis support and suicide prevention"
+      },
+      {
+        "id": "ky_crisis_2",
+        "name": "Kentucky Cabinet for Health",
+        "type": "organization",
+        "phone": "1-502-564-2154",
+        "website": "https://chfs.ky.gov",
+        "description": "State mental health and behavioral health services"
+      }
+    ],
+    "Louisiana": [
+      {
+        "id": "la_crisis_1",
+        "name": "Louisiana Crisis Line",
+        "type": "hotline",
+        "phone": "1-225-765-0122",
+        "description": "24/7 crisis support for Louisiana residents"
+      },
+      {
+        "id": "la_crisis_2",
+        "name": "Louisiana Department of Health",
+        "type": "organization",
+        "phone": "1-225-342-2700",
+        "website": "https://www.ldh.la.gov",
+        "description": "State mental health and behavioral health services"
+      }
+    ],
+    "Maine": [
+      {
+        "id": "me_crisis_1",
+        "name": "Maine Crisis Line",
+        "type": "hotline",
+        "phone": "1-207-633-0273",
+        "description": "24/7 crisis support and suicide prevention"
+      },
+      {
+        "id": "me_crisis_2",
+        "name": "Maine Department of Health",
+        "type": "organization",
+        "phone": "1-207-287-3707",
+        "website": "https://www.maine.gov/dhhs",
+        "description": "State mental health and behavioral health services"
+      }
+    ],
+    "Maryland": [
+      {
+        "id": "md_crisis_1",
+        "name": "Maryland Crisis Line",
+        "type": "hotline",
+        "phone": "1-410-273-6699",
+        "description": "24/7 crisis support and mental health services"
+      },
+      {
+        "id": "md_crisis_2",
+        "name": "Maryland Department of Health",
+        "type": "organization",
+        "phone": "1-410-767-6500",
+        "website": "https://mha.maryland.gov",
+        "description": "State behavioral health services and support"
+      }
+    ],
+    "Massachusetts": [
+      {
+        "id": "ma_crisis_1",
+        "name": "Massachusetts Crisis Line",
+        "type": "hotline",
+        "phone": "1-617-738-6200",
+        "description": "24/7 crisis support and suicide prevention"
+      },
+      {
+        "id": "ma_crisis_2",
+        "name": "Massachusetts Department of Mental Health",
+        "type": "organization",
+        "phone": "1-617-626-9000",
+        "website": "https://www.mass.gov/dmh",
+        "description": "State mental health services and support"
+      }
+    ],
+    "Michigan": [
+      {
+        "id": "mi_crisis_1",
+        "name": "Michigan Crisis Text Line",
+        "type": "hotline",
+        "phone": "Text HOME to 741741",
+        "description": "24/7 crisis support via text messaging"
+      },
+      {
+        "id": "mi_crisis_2",
+        "name": "Michigan Department of Health",
+        "type": "organization",
+        "phone": "1-517-335-8000",
+        "website": "https://www.michigan.gov/mdhhs",
+        "description": "State mental health and behavioral health services"
+      }
+    ],
+    "Minnesota": [
+      {
+        "id": "mn_crisis_1",
+        "name": "Minnesota Crisis Connection",
+        "type": "hotline",
+        "phone": "1-844-533-4733",
+        "description": "24/7 crisis support and suicide prevention"
+      },
+      {
+        "id": "mn_crisis_2",
+        "name": "Minnesota Department of Human Services",
+        "type": "organization",
+        "phone": "1-651-296-3993",
+        "website": "https://www.dhs.state.mn.us",
+        "description": "State mental health and family services"
+      }
+    ],
+    "Mississippi": [
+      {
+        "id": "ms_crisis_1",
+        "name": "Mississippi Crisis Line",
+        "type": "hotline",
+        "phone": "1-601-352-6002",
+        "description": "24/7 crisis support and mental health services"
+      },
+      {
+        "id": "ms_crisis_2",
+        "name": "Mississippi Department of Mental Health",
+        "type": "organization",
+        "phone": "1-601-359-1288",
+        "website": "https://www.dmh.ms.gov",
+        "description": "State mental health services and support"
+      }
+    ],
+    "Missouri": [
+      {
+        "id": "mo_crisis_1",
+        "name": "Missouri Crisis Line",
+        "type": "hotline",
+        "phone": "1-877-276-4357",
+        "description": "24/7 crisis support and suicide prevention"
+      },
+      {
+        "id": "mo_crisis_2",
+        "name": "Missouri Department of Health",
+        "type": "organization",
+        "phone": "1-573-751-2000",
+        "website": "https://health.mo.gov",
+        "description": "State mental health and behavioral health services"
+      }
+    ],
+    "Montana": [
+      {
+        "id": "mt_crisis_1",
+        "name": "Montana Crisis Line",
+        "type": "hotline",
+        "phone": "1-877-321-8649",
+        "description": "24/7 crisis support and suicide prevention"
+      },
+      {
+        "id": "mt_crisis_2",
+        "name": "Montana Department of Public Health",
+        "type": "organization",
+        "phone": "1-406-444-3645",
+        "website": "https://dphhs.mt.gov",
+        "description": "State mental health and behavioral health services"
+      }
+    ],
+    "Nebraska": [
+      {
+        "id": "ne_crisis_1",
+        "name": "Nebraska Crisis Line",
+        "type": "hotline",
+        "phone": "1-877-276-4357",
+        "description": "24/7 crisis support and mental health services"
+      },
+      {
+        "id": "ne_crisis_2",
+        "name": "Nebraska Department of Health",
+        "type": "organization",
+        "phone": "1-402-471-3121",
+        "website": "https://dhhs.ne.gov",
+        "description": "State mental health and behavioral health services"
+      }
+    ],
+    "Nevada": [
+      {
+        "id": "nv_crisis_1",
+        "name": "Nevada Crisis Line",
+        "type": "hotline",
+        "phone": "1-775-784-8090",
+        "description": "24/7 crisis support and suicide prevention"
+      },
+      {
+        "id": "nv_crisis_2",
+        "name": "Nevada Department of Health",
+        "type": "organization",
+        "phone": "1-775-684-4000",
+        "website": "https://ndmh.nv.gov",
+        "description": "State mental health services and support"
+      }
+    ],
+    "New Hampshire": [
+      {
+        "id": "nh_crisis_1",
+        "name": "New Hampshire Crisis Line",
+        "type": "hotline",
+        "phone": "1-603-668-1122",
+        "description": "24/7 crisis support and suicide prevention"
+      },
+      {
+        "id": "nh_crisis_2",
+        "name": "NH Department of Health",
+        "type": "organization",
+        "phone": "1-603-271-6623",
+        "website": "https://www.dhhs.nh.gov",
+        "description": "State mental health and behavioral health services"
+      }
+    ],
+    "New Jersey": [
+      {
+        "id": "nj_crisis_1",
+        "name": "New Jersey Crisis Line",
+        "type": "hotline",
+        "phone": "1-855-654-4357",
+        "description": "24/7 crisis support and suicide prevention"
+      },
+      {
+        "id": "nj_crisis_2",
+        "name": "NJ Department of Human Services",
+        "type": "organization",
+        "phone": "1-609-292-7734",
+        "website": "https://www.nj.gov/humanservices",
+        "description": "State mental health and behavioral health services"
+      }
+    ],
+    "New Mexico": [
+      {
+        "id": "nm_crisis_1",
+        "name": "New Mexico Crisis Line",
+        "type": "hotline",
+        "phone": "1-505-768-9191",
+        "description": "24/7 crisis support and mental health services"
+      },
+      {
+        "id": "nm_crisis_2",
+        "name": "NM Department of Health",
+        "type": "organization",
+        "phone": "1-505-827-2613",
+        "website": "https://www.env.nm.gov/public-health",
+        "description": "State mental health and behavioral health services"
+      }
+    ],
+    "New York": [
+      {
+        "id": "ny_crisis_1",
+        "name": "New York Crisis Line",
+        "type": "hotline",
+        "phone": "1-844-863-9314",
+        "description": "24/7 crisis support and suicide prevention for New York"
+      },
+      {
+        "id": "ny_crisis_2",
+        "name": "New York Department of Health",
+        "type": "organization",
+        "phone": "1-518-474-7354",
+        "website": "https://www.health.ny.gov",
+        "description": "State mental health and behavioral health services"
+      }
+    ],
+    "North Carolina": [
+      {
+        "id": "nc_crisis_1",
+        "name": "North Carolina Crisis Line",
+        "type": "hotline",
+        "phone": "1-919-231-4525",
+        "description": "24/7 crisis support and suicide prevention"
+      },
+      {
+        "id": "nc_crisis_2",
+        "name": "NC Department of Health",
+        "type": "organization",
+        "phone": "1-919-733-3556",
+        "website": "https://www.ncdhhs.gov",
+        "description": "State mental health and behavioral health services"
+      }
+    ],
+    "North Dakota": [
+      {
+        "id": "nd_crisis_1",
+        "name": "North Dakota Crisis Line",
+        "type": "hotline",
+        "phone": "1-701-573-6422",
+        "description": "24/7 crisis support and suicide prevention"
+      },
+      {
+        "id": "nd_crisis_2",
+        "name": "ND Department of Human Services",
+        "type": "organization",
+        "phone": "1-701-328-8800",
+        "website": "https://www.hhs.nd.gov",
+        "description": "State mental health and behavioral health services"
+      }
+    ],
+    "Ohio": [
+      {
+        "id": "oh_crisis_1",
+        "name": "Ohio Crisis Line",
+        "type": "hotline",
+        "phone": "1-614-221-5445",
+        "description": "24/7 crisis support and suicide prevention"
+      },
+      {
+        "id": "oh_crisis_2",
+        "name": "Ohio Department of Mental Health",
+        "type": "organization",
+        "phone": "1-614-466-2596",
+        "website": "https://mha.ohio.gov",
+        "description": "State mental health services and support"
+      }
+    ],
+    "Oklahoma": [
+      {
+        "id": "ok_crisis_1",
+        "name": "Oklahoma Crisis Line",
+        "type": "hotline",
+        "phone": "1-877-276-4357",
+        "description": "24/7 crisis support and mental health services"
+      },
+      {
+        "id": "ok_crisis_2",
+        "name": "Oklahoma Department of Mental Health",
+        "type": "organization",
+        "phone": "1-405-522-3908",
+        "website": "https://www.odmhsas.org",
+        "description": "State mental health and substance abuse services"
+      }
+    ],
+    "Oregon": [
+      {
+        "id": "or_crisis_1",
+        "name": "Oregon Crisis Line",
+        "type": "hotline",
+        "phone": "1-503-988-4888",
+        "description": "24/7 crisis support and suicide prevention"
+      },
+      {
+        "id": "or_crisis_2",
+        "name": "Oregon Department of Mental Health",
+        "type": "organization",
+        "phone": "1-503-945-5763",
+        "website": "https://www.oregon.gov/odmh",
+        "description": "State mental health and behavioral health services"
+      }
+    ],
+    "Pennsylvania": [
+      {
+        "id": "pa_crisis_1",
+        "name": "Pennsylvania Crisis Line",
+        "type": "hotline",
+        "phone": "1-717-232-7800",
+        "description": "24/7 crisis support and suicide prevention"
+      },
+      {
+        "id": "pa_crisis_2",
+        "name": "Pennsylvania Department of Human Services",
+        "type": "organization",
+        "phone": "1-717-787-2600",
+        "website": "https://www.dhs.pa.gov",
+        "description": "State mental health and behavioral health services"
+      }
+    ],
+    "Rhode Island": [
+      {
+        "id": "ri_crisis_1",
+        "name": "Rhode Island Crisis Line",
+        "type": "hotline",
+        "phone": "1-401-414-8338",
+        "description": "24/7 crisis support and suicide prevention"
+      },
+      {
+        "id": "ri_crisis_2",
+        "name": "RI Department of Mental Health",
+        "type": "organization",
+        "phone": "1-401-462-3201",
+        "website": "https://bhddh.ri.gov",
+        "description": "State behavioral health and disability services"
+      }
+    ],
+    "South Carolina": [
+      {
+        "id": "sc_crisis_1",
+        "name": "South Carolina Crisis Line",
+        "type": "hotline",
+        "phone": "1-803-536-9333",
+        "description": "24/7 crisis support and mental health services"
+      },
+      {
+        "id": "sc_crisis_2",
+        "name": "SC Department of Mental Health",
+        "type": "organization",
+        "phone": "1-803-898-8100",
+        "website": "https://dmh.sc.gov",
+        "description": "State mental health services and support"
+      }
+    ],
+    "South Dakota": [
+      {
+        "id": "sd_crisis_1",
+        "name": "South Dakota Crisis Line",
+        "type": "hotline",
+        "phone": "1-877-276-4357",
+        "description": "24/7 crisis support and suicide prevention"
+      },
+      {
+        "id": "sd_crisis_2",
+        "name": "SD Department of Health",
+        "type": "organization",
+        "phone": "1-605-773-3737",
+        "website": "https://doh.sd.gov",
+        "description": "State mental health and behavioral health services"
+      }
+    ],
+    "Tennessee": [
+      {
+        "id": "tn_crisis_1",
+        "name": "Tennessee Crisis Line",
+        "type": "hotline",
+        "phone": "1-855-741-1461",
+        "description": "24/7 crisis support and suicide prevention"
+      },
+      {
+        "id": "tn_crisis_2",
+        "name": "Tennessee Department of Mental Health",
+        "type": "organization",
+        "phone": "1-615-741-0201",
+        "website": "https://www.tn.gov/behavioral-health.html",
+        "description": "State mental health and behavioral health services"
+      }
+    ],
+    "Texas": [
+      {
+        "id": "tx_crisis_1",
+        "name": "Texas Crisis Line",
+        "type": "hotline",
+        "phone": "1-888-743-5746",
+        "description": "24/7 crisis support and suicide prevention for Texas"
+      },
+      {
+        "id": "tx_crisis_2",
+        "name": "Texas Health and Human Services",
+        "type": "organization",
+        "phone": "1-512-676-0040",
+        "website": "https://hhs.texas.gov",
+        "description": "State mental health and behavioral health services"
+      }
+    ],
+    "Utah": [
+      {
+        "id": "ut_crisis_1",
+        "name": "Utah Crisis Line",
+        "type": "hotline",
+        "phone": "1-801-532-3254",
+        "description": "24/7 crisis support and suicide prevention"
+      },
+      {
+        "id": "ut_crisis_2",
+        "name": "Utah Department of Human Services",
+        "type": "organization",
+        "phone": "1-801-538-4000",
+        "website": "https://dbh.utah.gov",
+        "description": "State behavioral health and disability services"
+      }
+    ],
+    "Vermont": [
+      {
+        "id": "vt_crisis_1",
+        "name": "Vermont Crisis Line",
+        "type": "hotline",
+        "phone": "1-802-448-4357",
+        "description": "24/7 crisis support and suicide prevention"
+      },
+      {
+        "id": "vt_crisis_2",
+        "name": "Vermont Department of Mental Health",
+        "type": "organization",
+        "phone": "1-802-241-4230",
+        "website": "https://mntalhealth.vermont.gov",
+        "description": "State mental health and behavioral health services"
+      }
+    ],
+    "Virginia": [
+      {
+        "id": "va_crisis_1",
+        "name": "Virginia Crisis Line",
+        "type": "hotline",
+        "phone": "1-804-693-5000",
+        "description": "24/7 crisis support and suicide prevention"
+      },
+      {
+        "id": "va_crisis_2",
+        "name": "Virginia Department of Mental Health",
+        "type": "organization",
+        "phone": "1-804-786-3921",
+        "website": "https://www.dmhmrsas.virginia.gov",
+        "description": "State mental health and substance abuse services"
+      }
+    ],
+    "Washington": [
+      {
+        "id": "wa_crisis_1",
+        "name": "Washington Crisis Line",
+        "type": "hotline",
+        "phone": "1-509-838-4428",
+        "description": "24/7 crisis support and suicide prevention for Washington"
+      },
+      {
+        "id": "wa_crisis_2",
+        "name": "Washington Department of Health",
+        "type": "organization",
+        "phone": "1-360-236-4800",
+        "website": "https://www.doh.wa.gov",
+        "description": "State mental health and behavioral health services"
+      }
+    ],
+    "West Virginia": [
+      {
+        "id": "wv_crisis_1",
+        "name": "West Virginia Crisis Line",
+        "type": "hotline",
+        "phone": "1-877-276-4357",
+        "description": "24/7 crisis support and mental health services"
+      },
+      {
+        "id": "wv_crisis_2",
+        "name": "WV Department of Health",
+        "type": "organization",
+        "phone": "1-304-558-0684",
+        "website": "https://dhhr.wv.gov",
+        "description": "State mental health and behavioral health services"
+      }
+    ],
+    "Wisconsin": [
+      {
+        "id": "wi_crisis_1",
+        "name": "Wisconsin Crisis Line",
+        "type": "hotline",
+        "phone": "1-877-276-4357",
+        "description": "24/7 crisis support and suicide prevention"
+      },
+      {
+        "id": "wi_crisis_2",
+        "name": "Wisconsin Department of Health",
+        "type": "organization",
+        "phone": "1-608-266-2717",
+        "website": "https://www.dhs.wisconsin.gov",
+        "description": "State mental health and behavioral health services"
+      }
+    ],
+    "Wyoming": [
+      {
+        "id": "wy_crisis_1",
+        "name": "Wyoming Crisis Line",
+        "type": "hotline",
+        "phone": "1-307-632-0406",
+        "description": "24/7 crisis support and suicide prevention"
+      },
+      {
+        "id": "wy_crisis_2",
+        "name": "Wyoming Department of Health",
+        "type": "organization",
+        "phone": "1-307-777-7656",
+        "website": "https://health.wyo.gov",
+        "description": "State mental health and behavioral health services"
+      }
+    ]
+  }
+}

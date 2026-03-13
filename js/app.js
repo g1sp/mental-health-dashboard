@@ -19,6 +19,12 @@ class MentalHealthApp {
             return;
         }
 
+        // Load state-specific crisis resources
+        const stateResourcesLoaded = await crisisHandler.loadStateResources();
+        if (!stateResourcesLoaded) {
+            console.error('Failed to load state crisis resources');
+        }
+
         // Initialize crisis UI
         crisisUI.init();
 
@@ -151,6 +157,9 @@ class MentalHealthApp {
         this.currentFilters.state = document.getElementById('stateSelect').value || '';
         this.currentFilters.age_group = document.getElementById('ageGroupSelect').value || '';
         this.currentFilters.metric = document.getElementById('metricSelect').value || '';
+
+        // Update crisis resources by state
+        crisisUI.updateByState(this.currentFilters.state);
 
         this.updateAllCharts();
         this.updateDataTable();

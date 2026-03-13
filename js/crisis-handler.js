@@ -2,6 +2,7 @@
 class CrisisHandler {
     constructor() {
         this.crisisResources = [];
+        this.stateResources = {};
     }
 
     async loadCrisisResources() {
@@ -13,6 +14,19 @@ class CrisisHandler {
             return true;
         } catch (error) {
             console.error('Failed to load crisis resources:', error);
+            return false;
+        }
+    }
+
+    async loadStateResources() {
+        try {
+            const response = await fetch('data/state-crisis-resources.json');
+            const data = await response.json();
+            this.stateResources = data['state-resources'] || {};
+            console.log('State crisis resources loaded for', Object.keys(this.stateResources).length, 'states');
+            return true;
+        } catch (error) {
+            console.error('Failed to load state crisis resources:', error);
             return false;
         }
     }
@@ -32,6 +46,22 @@ class CrisisHandler {
 
     getAllResources() {
         return this.crisisResources;
+    }
+
+    getByState(state) {
+        if (!state || state === '') {
+            return [];
+        }
+        return this.stateResources[state] || [];
+    }
+
+    getCombined(state) {
+        // Returns national resources + state resources
+        const combined = {
+            national: this.crisisResources,
+            state: this.getByState(state)
+        };
+        return combined;
     }
 }
 

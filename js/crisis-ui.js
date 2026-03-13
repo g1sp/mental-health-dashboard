@@ -30,17 +30,28 @@ class CrisisUI {
     }
 
     setupDashboardCard() {
+        this.updateByState('');
+    }
+
+    updateByState(state) {
         const container = document.getElementById('crisisDashboardCard');
         if (!container) return;
 
-        const resources = crisisHandler.getAll();
         const emergencyResources = crisisHandler.getEmergencyResources();
+        const stateResources = crisisHandler.getByState(state);
 
         let html = `
             <div class="card border-0 shadow-sm crisis-card">
                 <div class="card-body">
                     <h5 class="card-title mb-4">
                         <span class="text-danger">🆘</span> Crisis Support Available 24/7
+        `;
+
+        if (state && state !== '') {
+            html += ` <span class="badge bg-info ms-2">${state}</span>`;
+        }
+
+        html += `
                     </h5>
                     <div class="row g-3">
         `;
@@ -68,6 +79,48 @@ class CrisisUI {
             `;
         });
 
+        // Add state-specific resources if available
+        if (stateResources.length > 0) {
+            html += `
+                    </div>
+                    <div class="mt-4 pt-3 border-top">
+                        <h6 class="text-info mb-3">📍 ${state} Local Resources</h6>
+                        <div class="row g-3">
+            `;
+
+            stateResources.forEach(resource => {
+                html += `
+                    <div class="col-md-6">
+                        <div class="card border-1 border-info h-100 bg-light">
+                            <div class="card-body">
+                                <h6 class="card-title text-info">
+                                    📍 ${resource.name}
+                                </h6>
+                                <p class="card-text small mb-2">${resource.description}</p>
+                                <div class="mb-2">
+                                    <strong>📞 Phone:</strong>
+                                    <span class="font-monospace text-dark">${resource.phone}</span>
+                                </div>
+                                ${resource.website ? `
+                                    <div class="mb-0">
+                                        <strong>🌐 Website:</strong>
+                                        <a href="${resource.website}" target="_blank" class="text-decoration-none">
+                                            ${new URL(resource.website).hostname}
+                                        </a>
+                                    </div>
+                                ` : ''}
+                            </div>
+                        </div>
+                    </div>
+                `;
+            });
+
+            html += `
+                        </div>
+                    </div>
+            `;
+        }
+
         html += `
                     </div>
                     <div class="mt-3 text-center">
@@ -83,7 +136,7 @@ class CrisisUI {
 
         // Add event listener for "View All" button
         document.getElementById('viewAllCrisisResources')?.addEventListener('click', () => {
-            this.showCrisisModal();
+            this.showCrisisModal(state);
         });
     }
 
@@ -94,7 +147,7 @@ class CrisisUI {
         }
     }
 
-    showCrisisModal() {
+    showCrisisModal(state = '') {
         if (!this.modal) {
             console.error('Crisis modal not initialized');
             return;
@@ -102,8 +155,12 @@ class CrisisUI {
 
         const modalBody = document.getElementById('crisisModalBody');
         const resources = crisisHandler.getAllResources();
+        const stateResources = crisisHandler.getByState(state);
 
         let html = '<div class="crisis-modal-content">';
+
+        // National resources section
+        html += '<h5 class="mb-4">🆘 National Crisis Resources</h5>';
 
         resources.forEach((resource, index) => {
             html += `
@@ -152,8 +209,51 @@ class CrisisUI {
             `;
         });
 
+        // State resources section
+        if (stateResources.length > 0) {
+            html += `
+                <div class="mt-5 pt-4 border-top">
+                    <h5 class="mb-4">📍 ${state} Local Resources</h5>
+            `;
+
+            stateResources.forEach((resource, index) => {
+                html += `
+                    <div class="crisis-resource-item mb-4 ${index > 0 ? 'border-top pt-4' : ''}">
+                        <h6 class="mb-3 text-info">
+                            <span class="fs-5">📍</span> ${resource.name}
+                        </h6>
+                        <p class="text-muted mb-3">${resource.description}</p>
+
+                        <div class="mb-3">
+                            <strong class="d-block mb-2">Contact Information:</strong>
+                            <div class="list-group list-group-flush">
+                                <div class="list-group-item px-0 py-2">
+                                    <span class="me-2">📞</span>
+                                    <strong>Phone:</strong>
+                                    <span class="font-monospace">${resource.phone}</span>
+                                </div>
+                                ${resource.website ? `
+                                    <div class="list-group-item px-0 py-2">
+                                        <span class="me-2">🌐</span>
+                                        <strong>Website:</strong>
+                                        <a href="${resource.website}" target="_blank" class="text-decoration-none">
+                                            ${new URL(resource.website).hostname}
+                                        </a>
+                                    </div>
+                                ` : ''}
+                            </div>
+                        </div>
+                    </div>
+                `;
+            });
+
+            html += `
+                </div>
+            `;
+        }
+
         html += `
-            <div class="alert alert-info mt-4 mb-0">
+            <div class="alert alert-info mt-5 mb-0">
                 <strong>Remember:</strong> Seeking help is a sign of strength, not weakness.
                 You deserve support, and there are people ready to listen 24/7.
             </div>
