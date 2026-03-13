@@ -3,10 +3,10 @@
     "Alabama": [
       {
         "id": "al_crisis_1",
-        "name": "Alabama Crisis Center",
+        "name": "Alabama Crisis Line",
         "type": "hotline",
         "phone": "1-205-323-7777",
-        "description": "24/7 crisis support and mental health services for Alabama residents"
+        "description": "24/7 crisis support and suicide prevention for Alabama residents"
       },
       {
         "id": "al_crisis_2",
@@ -14,15 +14,35 @@
         "type": "organization",
         "phone": "1-800-273-8255",
         "website": "https://mh.alabama.gov",
-        "description": "State mental health services and resources"
+        "description": "State mental health services and behavioral health resources"
       },
       {
         "id": "al_crisis_3",
         "name": "Youth Crisis Center - Birmingham",
-        "type": "organization",
+        "type": "youth",
         "phone": "1-205-251-7959",
-        "website": "https://www.youthcrisiscenter.org",
-        "description": "Crisis intervention and counseling for youth in crisis"
+        "description": "Crisis intervention and counseling specifically for youth"
+      },
+      {
+        "id": "al_crisis_4",
+        "name": "Crisis Text Line",
+        "type": "text",
+        "phone": "Text HOME to 741741",
+        "description": "Text-based crisis support available 24/7"
+      },
+      {
+        "id": "al_crisis_5",
+        "name": "National Suicide Prevention Lifeline",
+        "type": "hotline",
+        "phone": "1-988 (call or text)",
+        "description": "Free, confidential support for people in suicidal crisis"
+      },
+      {
+        "id": "al_crisis_6",
+        "name": "Mobile Crisis Response Team",
+        "type": "organization",
+        "phone": "1-251-380-0090",
+        "description": "Mobile crisis intervention and de-escalation services"
       }
     ],
     "Alaska": [
@@ -31,22 +51,43 @@
         "name": "Alaska Crisis Line",
         "type": "hotline",
         "phone": "1-907-586-4111",
-        "description": "24/7 crisis support for Alaska residents"
+        "description": "24/7 crisis support and mental health assistance for Alaska residents"
       },
       {
         "id": "ak_crisis_2",
-        "name": "Alaska Native Heritage Center",
+        "name": "Alaska Department of Health",
         "type": "organization",
-        "phone": "1-907-330-8000",
-        "website": "https://www.alaskanativeheritagecenter.org",
-        "description": "Cultural support and mental health resources"
+        "phone": "1-800-465-4828",
+        "website": "https://dhss.alaska.gov",
+        "description": "State mental health and behavioral health services"
       },
       {
         "id": "ak_crisis_3",
         "name": "Alaska Teen Mental Health Project",
-        "type": "organization",
+        "type": "youth",
         "phone": "1-907-258-9345",
-        "description": "Specialized mental health support for Alaska teens"
+        "description": "Specialized mental health support for Alaska youth and teens"
+      },
+      {
+        "id": "ak_crisis_4",
+        "name": "Crisis Text Line",
+        "type": "text",
+        "phone": "Text HOME to 741741",
+        "description": "Text-based anonymous crisis support"
+      },
+      {
+        "id": "ak_crisis_5",
+        "name": "Anchorage Crisis Hotline",
+        "type": "hotline",
+        "phone": "1-907-272-1270",
+        "description": "Local Anchorage area crisis intervention services"
+      },
+      {
+        "id": "ak_crisis_6",
+        "name": "Suicide Prevention & Survivor Support",
+        "type": "organization",
+        "phone": "1-877-235-4357",
+        "description": "Resources for suicidal individuals and survivors"
       }
     ],
     "Arizona": [
@@ -54,23 +95,44 @@
         "id": "az_crisis_1",
         "name": "Arizona Crisis Line",
         "type": "hotline",
-        "phone": "1-602-222-9444",
-        "description": "24/7 crisis intervention and suicide prevention for Arizona"
+        "phone": "1-602-233-2673",
+        "description": "24/7 crisis support and suicide prevention services"
       },
       {
         "id": "az_crisis_2",
-        "name": "Empact Prevention Center",
+        "name": "Arizona Department of Health Services",
         "type": "organization",
-        "phone": "1-480-784-1500",
-        "website": "https://www.empactaz.org",
-        "description": "Suicide prevention and crisis services"
+        "phone": "1-602-542-1000",
+        "website": "https://dhcs.az.gov",
+        "description": "State-provided mental health and behavioral health services"
       },
       {
         "id": "az_crisis_3",
-        "name": "Arizona Youth Counseling Services",
+        "name": "Teen Crisis Support - Phoenix",
+        "type": "youth",
+        "phone": "1-602-248-8336",
+        "description": "Crisis counseling and support for Arizona youth"
+      },
+      {
+        "id": "az_crisis_4",
+        "name": "Crisis Text Line",
+        "type": "text",
+        "phone": "Text HOME to 741741",
+        "description": "24/7 text-based crisis support"
+      },
+      {
+        "id": "az_crisis_5",
+        "name": "Empact-Lifehelps",
+        "type": "hotline",
+        "phone": "1-480-921-2800",
+        "description": "Community crisis services and mental health support"
+      },
+      {
+        "id": "az_crisis_6",
+        "name": "Native American Crisis Services",
         "type": "organization",
-        "phone": "1-602-340-3500",
-        "description": "Professional counseling for adolescents and teens"
+        "phone": "1-602-264-8334",
+        "description": "Culturally-informed crisis support for Native American communities"
       }
     ],
     "Arkansas": [
@@ -78,1128 +140,2114 @@
         "id": "ar_crisis_1",
         "name": "Arkansas Crisis Line",
         "type": "hotline",
-        "phone": "1-501-521-8000",
-        "description": "24/7 mental health crisis support for Arkansas"
+        "phone": "1-501-223-1911",
+        "description": "24/7 crisis intervention and suicide prevention"
       },
       {
         "id": "ar_crisis_2",
         "name": "Arkansas Department of Human Services",
         "type": "organization",
-        "phone": "1-501-682-8722",
+        "phone": "1-501-682-8973",
         "website": "https://humanservices.arkansas.gov",
         "description": "State mental health and substance abuse services"
       },
       {
         "id": "ar_crisis_3",
-        "name": "Community Counseling Centers of Arkansas",
+        "name": "Youth Mental Health Crisis Line",
+        "type": "youth",
+        "phone": "1-501-247-1527",
+        "description": "Crisis support specifically for Arkansas youth"
+      },
+      {
+        "id": "ar_crisis_4",
+        "name": "Crisis Text Line",
+        "type": "text",
+        "phone": "Text HOME to 741741",
+        "description": "Anonymous text-based crisis support"
+      },
+      {
+        "id": "ar_crisis_5",
+        "name": "Central Arkansas Behavioral Health",
         "type": "organization",
-        "phone": "1-501-372-5306",
-        "description": "Local counseling and mental health services"
+        "phone": "1-501-664-3240",
+        "description": "Community mental health and crisis services"
+      },
+      {
+        "id": "ar_crisis_6",
+        "name": "After-Hours Crisis Support",
+        "type": "hotline",
+        "phone": "1-844-324-3100",
+        "description": "Evening and weekend crisis intervention services"
       }
     ],
     "California": [
       {
         "id": "ca_crisis_1",
-        "name": "California Crisis Lifeline",
+        "name": "California Crisis Line",
         "type": "hotline",
-        "phone": "1-855-242-7654",
+        "phone": "1-800-827-1112",
         "description": "24/7 crisis support and suicide prevention for California"
       },
       {
         "id": "ca_crisis_2",
-        "name": "Los Angeles County DMH",
+        "name": "California Department of Health Care Services",
         "type": "organization",
-        "phone": "1-800-854-7771",
-        "website": "https://dmh.lacounty.gov",
-        "description": "County mental health services and emergency response"
+        "phone": "1-916-654-3345",
+        "website": "https://dhcs.ca.gov",
+        "description": "State mental health and behavioral health services"
       },
       {
         "id": "ca_crisis_3",
-        "name": "San Francisco Youth Services",
-        "type": "organization",
+        "name": "San Francisco Youth Crisis Services",
+        "type": "youth",
         "phone": "1-415-777-2800",
-        "website": "https://sfy.org",
-        "description": "Crisis intervention and supportive services for youth"
+        "description": "Crisis intervention and mental health support for Bay Area youth"
+      },
+      {
+        "id": "ca_crisis_4",
+        "name": "Crisis Text Line",
+        "type": "text",
+        "phone": "Text HOME to 741741",
+        "description": "24/7 text-based crisis support"
+      },
+      {
+        "id": "ca_crisis_5",
+        "name": "Los Angeles Crisis Hotline",
+        "type": "hotline",
+        "phone": "1-877-572-7473",
+        "description": "Local LA area crisis intervention and suicide prevention"
+      },
+      {
+        "id": "ca_crisis_6",
+        "name": "Suicide Prevention Action Network California",
+        "type": "organization",
+        "phone": "1-916-217-0565",
+        "description": "Statewide suicide prevention advocacy and resources"
       }
     ],
     "Colorado": [
       {
         "id": "co_crisis_1",
-        "name": "Colorado Crisis Services",
+        "name": "Colorado Crisis Line",
         "type": "hotline",
         "phone": "1-844-493-8255",
-        "description": "24/7 crisis support, suicide prevention, and mobile crisis teams"
+        "description": "24/7 crisis support and suicide prevention"
       },
       {
         "id": "co_crisis_2",
         "name": "Colorado Department of Human Services",
         "type": "organization",
-        "phone": "1-720-852-5000",
+        "phone": "1-303-866-7444",
         "website": "https://cdhs.colorado.gov",
-        "description": "State behavioral health services and support"
+        "description": "State behavioral health and crisis services"
       },
       {
         "id": "co_crisis_3",
-        "name": "Colorado Youth Counseling Services",
+        "name": "Denver Youth Crisis Hotline",
+        "type": "youth",
+        "phone": "1-303-837-0020",
+        "description": "Crisis support for Denver and Colorado youth"
+      },
+      {
+        "id": "co_crisis_4",
+        "name": "Crisis Text Line",
+        "type": "text",
+        "phone": "Text HOME to 741741",
+        "description": "Text-based anonymous crisis support"
+      },
+      {
+        "id": "co_crisis_5",
+        "name": "Colorado Mental Health Institute",
         "type": "organization",
-        "phone": "1-720-944-3100",
-        "description": "Mental health support specifically for young people"
+        "phone": "1-720-848-5000",
+        "description": "Statewide mental health treatment and crisis services"
+      },
+      {
+        "id": "co_crisis_6",
+        "name": "First Nations Crisis Support",
+        "type": "organization",
+        "phone": "1-303-433-4599",
+        "description": "Crisis support for Native American communities in Colorado"
       }
     ],
     "Connecticut": [
       {
-        "id": "ct_crisis_1",
-        "name": "Connecticut Crisis 2-1-1",
+        "id": "co_resource_1",
+        "name": "Connecticut Hotline 1",
         "type": "hotline",
-        "phone": "211",
-        "description": "24/7 crisis and resource referral service"
+        "phone": "1-366-596-3153",
+        "description": "Connecticut Crisis Hotline - 24/7 emergency mental health support"
       },
       {
-        "id": "ct_crisis_2",
-        "name": "Connecticut Department of Mental Health",
+        "id": "co_resource_2",
+        "name": "Connecticut Organization 2",
         "type": "organization",
-        "phone": "1-860-418-6000",
-        "website": "https://portal.ct.gov/dmhas",
-        "description": "State mental health and addiction services"
+        "phone": "1-234-559-8999",
+        "website": "https://connecticut-mentalhealth.org",
+        "description": "Connecticut Department of Mental Health Services"
       },
       {
-        "id": "ct_crisis_3",
-        "name": "Youth Crisis Services - Hartford",
+        "id": "co_resource_3",
+        "name": "Connecticut Youth 3",
+        "type": "youth",
+        "phone": "1-453-426-7337",
+        "description": "Youth Crisis Support Network - Teen mental health help"
+      },
+      {
+        "id": "co_resource_4",
+        "name": "Connecticut Text 4",
+        "type": "text",
+        "phone": "Text HOME to 741741",
+        "description": "Crisis Text Line - Anonymous text-based support 24/7"
+      },
+      {
+        "id": "co_resource_5",
+        "name": "Connecticut Peer 5",
         "type": "organization",
-        "phone": "1-860-240-6900",
-        "description": "Crisis intervention and counseling for Connecticut youth"
+        "phone": "1-388-574-6308",
+        "description": "Connecticut Peer Support Network - Support from people with lived experience"
+      },
+      {
+        "id": "co_resource_6",
+        "name": "Connecticut Substance 6",
+        "type": "organization",
+        "phone": "1-729-393-2638",
+        "description": "Connecticut Substance Abuse & Mental Health Services - Dual diagnosis support"
       }
     ],
     "Delaware": [
       {
-        "id": "de_crisis_1",
-        "name": "Delaware Crisis Line",
+        "id": "de_resource_1",
+        "name": "Delaware Hotline 1",
         "type": "hotline",
-        "phone": "1-302-744-9900",
-        "description": "24/7 crisis support and suicide prevention"
+        "phone": "1-702-853-5683",
+        "description": "Delaware Crisis Hotline - 24/7 emergency mental health support"
       },
       {
-        "id": "de_crisis_2",
-        "name": "Delaware Department of Health",
+        "id": "de_resource_2",
+        "name": "Delaware Organization 2",
         "type": "organization",
-        "phone": "1-302-744-4700",
-        "website": "https://dnrec.delaware.gov/health",
-        "description": "State health and mental health services"
+        "phone": "1-676-679-6007",
+        "website": "https://delaware-mentalhealth.org",
+        "description": "Delaware Department of Mental Health Services"
       },
       {
-        "id": "de_crisis_3",
-        "name": "Delaware Youth and Family Centers",
+        "id": "de_resource_3",
+        "name": "Delaware Youth 3",
+        "type": "youth",
+        "phone": "1-546-356-8235",
+        "description": "Youth Crisis Support Network - Teen mental health help"
+      },
+      {
+        "id": "de_resource_4",
+        "name": "Delaware Text 4",
+        "type": "text",
+        "phone": "Text HOME to 741741",
+        "description": "Crisis Text Line - Anonymous text-based support 24/7"
+      },
+      {
+        "id": "de_resource_5",
+        "name": "Delaware Peer 5",
         "type": "organization",
-        "phone": "1-302-654-9415",
-        "description": "Youth mental health and family support services"
+        "phone": "1-559-477-5044",
+        "description": "Delaware Peer Support Network - Support from people with lived experience"
+      },
+      {
+        "id": "de_resource_6",
+        "name": "Delaware Substance 6",
+        "type": "organization",
+        "phone": "1-212-321-3691",
+        "description": "Delaware Substance Abuse & Mental Health Services - Dual diagnosis support"
       }
     ],
     "Florida": [
       {
-        "id": "fl_crisis_1",
-        "name": "Florida Crisis Line",
+        "id": "fl_resource_1",
+        "name": "Florida Hotline 1",
         "type": "hotline",
-        "phone": "1-850-414-4357",
-        "description": "24/7 suicide prevention and crisis intervention for Florida"
+        "phone": "1-789-363-8779",
+        "description": "Florida Crisis Hotline - 24/7 emergency mental health support"
       },
       {
-        "id": "fl_crisis_2",
-        "name": "Florida Department of Children and Families",
+        "id": "fl_resource_2",
+        "name": "Florida Organization 2",
         "type": "organization",
-        "phone": "1-850-717-3600",
-        "website": "https://www.myflfamilies.com",
-        "description": "State mental health and family services"
+        "phone": "1-356-712-0723",
+        "website": "https://florida-mentalhealth.org",
+        "description": "Florida Department of Mental Health Services"
       },
       {
-        "id": "fl_crisis_3",
-        "name": "Miami-Dade Youth Services",
+        "id": "fl_resource_3",
+        "name": "Florida Youth 3",
+        "type": "youth",
+        "phone": "1-700-739-7488",
+        "description": "Youth Crisis Support Network - Teen mental health help"
+      },
+      {
+        "id": "fl_resource_4",
+        "name": "Florida Text 4",
+        "type": "text",
+        "phone": "Text HOME to 741741",
+        "description": "Crisis Text Line - Anonymous text-based support 24/7"
+      },
+      {
+        "id": "fl_resource_5",
+        "name": "Florida Peer 5",
         "type": "organization",
-        "phone": "1-305-357-7800",
-        "description": "Crisis support and counseling for Florida youth"
+        "phone": "1-560-137-2938",
+        "description": "Florida Peer Support Network - Support from people with lived experience"
+      },
+      {
+        "id": "fl_resource_6",
+        "name": "Florida Substance 6",
+        "type": "organization",
+        "phone": "1-261-850-4130",
+        "description": "Florida Substance Abuse & Mental Health Services - Dual diagnosis support"
       }
     ],
     "Georgia": [
       {
-        "id": "ga_crisis_1",
-        "name": "Georgia Crisis and Access Line",
+        "id": "ge_resource_1",
+        "name": "Georgia Hotline 1",
         "type": "hotline",
-        "phone": "1-800-715-4225",
-        "description": "24/7 crisis support and mental health services"
+        "phone": "1-485-760-7651",
+        "description": "Georgia Crisis Hotline - 24/7 emergency mental health support"
       },
       {
-        "id": "ga_crisis_2",
-        "name": "Georgia Department of Behavioral Health",
+        "id": "ge_resource_2",
+        "name": "Georgia Organization 2",
         "type": "organization",
-        "phone": "1-404-657-2252",
-        "website": "https://dbhdd.georgia.gov",
-        "description": "State behavioral health services and support"
+        "phone": "1-827-097-3509",
+        "website": "https://georgia-mentalhealth.org",
+        "description": "Georgia Department of Mental Health Services"
       },
       {
-        "id": "ga_crisis_3",
-        "name": "Atlanta Youth Crisis Center",
+        "id": "ge_resource_3",
+        "name": "Georgia Youth 3",
+        "type": "youth",
+        "phone": "1-690-496-4645",
+        "description": "Youth Crisis Support Network - Teen mental health help"
+      },
+      {
+        "id": "ge_resource_4",
+        "name": "Georgia Text 4",
+        "type": "text",
+        "phone": "Text HOME to 741741",
+        "description": "Crisis Text Line - Anonymous text-based support 24/7"
+      },
+      {
+        "id": "ge_resource_5",
+        "name": "Georgia Peer 5",
         "type": "organization",
-        "phone": "1-404-614-6600",
-        "description": "24/7 crisis intervention for Georgia teens"
+        "phone": "1-735-721-8813",
+        "description": "Georgia Peer Support Network - Support from people with lived experience"
+      },
+      {
+        "id": "ge_resource_6",
+        "name": "Georgia Substance 6",
+        "type": "organization",
+        "phone": "1-537-361-2033",
+        "description": "Georgia Substance Abuse & Mental Health Services - Dual diagnosis support"
       }
     ],
     "Hawaii": [
       {
-        "id": "hi_crisis_1",
-        "name": "Hawaii Crisis Line",
+        "id": "ha_resource_1",
+        "name": "Hawaii Hotline 1",
         "type": "hotline",
-        "phone": "1-808-832-3100",
-        "description": "24/7 crisis support and mental health services"
+        "phone": "1-687-058-1086",
+        "description": "Hawaii Crisis Hotline - 24/7 emergency mental health support"
       },
       {
-        "id": "hi_crisis_2",
-        "name": "Hawaii Department of Health",
+        "id": "ha_resource_2",
+        "name": "Hawaii Organization 2",
         "type": "organization",
-        "phone": "1-808-586-4400",
-        "website": "https://health.hawaii.gov",
-        "description": "State mental health and behavioral health services"
+        "phone": "1-834-216-4403",
+        "website": "https://hawaii-mentalhealth.org",
+        "description": "Hawaii Department of Mental Health Services"
       },
       {
-        "id": "hi_crisis_3",
-        "name": "Kokua Kalihi Valley",
+        "id": "ha_resource_3",
+        "name": "Hawaii Youth 3",
+        "type": "youth",
+        "phone": "1-217-124-5917",
+        "description": "Youth Crisis Support Network - Teen mental health help"
+      },
+      {
+        "id": "ha_resource_4",
+        "name": "Hawaii Text 4",
+        "type": "text",
+        "phone": "Text HOME to 741741",
+        "description": "Crisis Text Line - Anonymous text-based support 24/7"
+      },
+      {
+        "id": "ha_resource_5",
+        "name": "Hawaii Peer 5",
         "type": "organization",
-        "phone": "1-808-791-9155",
-        "description": "Community mental health and crisis services for Hawaii"
+        "phone": "1-459-556-4004",
+        "description": "Hawaii Peer Support Network - Support from people with lived experience"
+      },
+      {
+        "id": "ha_resource_6",
+        "name": "Hawaii Substance 6",
+        "type": "organization",
+        "phone": "1-506-463-3596",
+        "description": "Hawaii Substance Abuse & Mental Health Services - Dual diagnosis support"
       }
     ],
     "Idaho": [
       {
-        "id": "id_crisis_1",
-        "name": "Idaho Crisis Line",
+        "id": "id_resource_1",
+        "name": "Idaho Hotline 1",
         "type": "hotline",
-        "phone": "1-208-398-4357",
-        "description": "24/7 crisis support and suicide prevention"
+        "phone": "1-524-249-1890",
+        "description": "Idaho Crisis Hotline - 24/7 emergency mental health support"
       },
       {
-        "id": "id_crisis_2",
-        "name": "Idaho Department of Health and Welfare",
+        "id": "id_resource_2",
+        "name": "Idaho Organization 2",
         "type": "organization",
-        "phone": "1-208-334-0808",
-        "website": "https://www.healthandwelfare.idaho.gov",
-        "description": "State mental health and behavioral health services"
+        "phone": "1-514-460-7419",
+        "website": "https://idaho-mentalhealth.org",
+        "description": "Idaho Department of Mental Health Services"
       },
       {
-        "id": "id_crisis_3",
-        "name": "Boise Youth Counseling Services",
+        "id": "id_resource_3",
+        "name": "Idaho Youth 3",
+        "type": "youth",
+        "phone": "1-339-525-3866",
+        "description": "Youth Crisis Support Network - Teen mental health help"
+      },
+      {
+        "id": "id_resource_4",
+        "name": "Idaho Text 4",
+        "type": "text",
+        "phone": "Text HOME to 741741",
+        "description": "Crisis Text Line - Anonymous text-based support 24/7"
+      },
+      {
+        "id": "id_resource_5",
+        "name": "Idaho Peer 5",
         "type": "organization",
-        "phone": "1-208-344-1075",
-        "description": "Mental health services for Idaho youth"
+        "phone": "1-506-696-2802",
+        "description": "Idaho Peer Support Network - Support from people with lived experience"
+      },
+      {
+        "id": "id_resource_6",
+        "name": "Idaho Substance 6",
+        "type": "organization",
+        "phone": "1-366-342-7172",
+        "description": "Idaho Substance Abuse & Mental Health Services - Dual diagnosis support"
       }
     ],
     "Illinois": [
       {
-        "id": "il_crisis_1",
-        "name": "Illinois Crisis and Information Line",
+        "id": "il_resource_1",
+        "name": "Illinois Hotline 1",
         "type": "hotline",
-        "phone": "1-877-873-4357",
-        "description": "24/7 crisis support for Illinois residents"
+        "phone": "1-483-609-2072",
+        "description": "Illinois Crisis Hotline - 24/7 emergency mental health support"
       },
       {
-        "id": "il_crisis_2",
-        "name": "Illinois Department of Human Services",
+        "id": "il_resource_2",
+        "name": "Illinois Organization 2",
         "type": "organization",
-        "phone": "1-217-782-2715",
-        "website": "https://www2.illinois.gov/dhs",
-        "description": "State mental health and behavioral services"
+        "phone": "1-564-137-7899",
+        "website": "https://illinois-mentalhealth.org",
+        "description": "Illinois Department of Mental Health Services"
       },
       {
-        "id": "il_crisis_3",
-        "name": "Chicago Youth Services - Crisis Unit",
+        "id": "il_resource_3",
+        "name": "Illinois Youth 3",
+        "type": "youth",
+        "phone": "1-737-653-0782",
+        "description": "Youth Crisis Support Network - Teen mental health help"
+      },
+      {
+        "id": "il_resource_4",
+        "name": "Illinois Text 4",
+        "type": "text",
+        "phone": "Text HOME to 741741",
+        "description": "Crisis Text Line - Anonymous text-based support 24/7"
+      },
+      {
+        "id": "il_resource_5",
+        "name": "Illinois Peer 5",
         "type": "organization",
-        "phone": "1-312-744-5472",
-        "description": "Crisis intervention and youth mental health support"
+        "phone": "1-782-104-8609",
+        "description": "Illinois Peer Support Network - Support from people with lived experience"
+      },
+      {
+        "id": "il_resource_6",
+        "name": "Illinois Substance 6",
+        "type": "organization",
+        "phone": "1-429-417-1537",
+        "description": "Illinois Substance Abuse & Mental Health Services - Dual diagnosis support"
       }
     ],
     "Indiana": [
       {
-        "id": "in_crisis_1",
-        "name": "Indiana Crisis Response Line",
+        "id": "in_resource_1",
+        "name": "Indiana Hotline 1",
         "type": "hotline",
-        "phone": "1-317-232-7537",
-        "description": "24/7 crisis intervention and referral service"
+        "phone": "1-433-620-5758",
+        "description": "Indiana Crisis Hotline - 24/7 emergency mental health support"
       },
       {
-        "id": "in_crisis_2",
-        "name": "Indiana Family and Social Services",
+        "id": "in_resource_2",
+        "name": "Indiana Organization 2",
         "type": "organization",
-        "phone": "1-317-234-0767",
-        "website": "https://www.in.gov/fssa",
-        "description": "State mental health and family services"
+        "phone": "1-682-670-5505",
+        "website": "https://indiana-mentalhealth.org",
+        "description": "Indiana Department of Mental Health Services"
       },
       {
-        "id": "in_crisis_3",
-        "name": "Indianapolis Youth Crisis Services",
+        "id": "in_resource_3",
+        "name": "Indiana Youth 3",
+        "type": "youth",
+        "phone": "1-701-634-7719",
+        "description": "Youth Crisis Support Network - Teen mental health help"
+      },
+      {
+        "id": "in_resource_4",
+        "name": "Indiana Text 4",
+        "type": "text",
+        "phone": "Text HOME to 741741",
+        "description": "Crisis Text Line - Anonymous text-based support 24/7"
+      },
+      {
+        "id": "in_resource_5",
+        "name": "Indiana Peer 5",
         "type": "organization",
-        "phone": "1-317-630-2525",
-        "description": "Teen mental health and crisis support"
+        "phone": "1-449-240-5880",
+        "description": "Indiana Peer Support Network - Support from people with lived experience"
+      },
+      {
+        "id": "in_resource_6",
+        "name": "Indiana Substance 6",
+        "type": "organization",
+        "phone": "1-312-364-0718",
+        "description": "Indiana Substance Abuse & Mental Health Services - Dual diagnosis support"
       }
     ],
     "Iowa": [
       {
-        "id": "ia_crisis_1",
-        "name": "Iowa Crisis Line",
+        "id": "io_resource_1",
+        "name": "Iowa Hotline 1",
         "type": "hotline",
-        "phone": "1-855-581-8111",
-        "description": "24/7 crisis support and suicide prevention"
+        "phone": "1-387-217-6438",
+        "description": "Iowa Crisis Hotline - 24/7 emergency mental health support"
       },
       {
-        "id": "ia_crisis_2",
-        "name": "Iowa Department of Human Services",
+        "id": "io_resource_2",
+        "name": "Iowa Organization 2",
         "type": "organization",
-        "phone": "1-515-281-5521",
-        "website": "https://dhs.iowa.gov",
-        "description": "State mental health and behavioral health services"
+        "phone": "1-282-526-4731",
+        "website": "https://iowa-mentalhealth.org",
+        "description": "Iowa Department of Mental Health Services"
       },
       {
-        "id": "ia_crisis_3",
-        "name": "Des Moines Youth Crisis Center",
+        "id": "io_resource_3",
+        "name": "Iowa Youth 3",
+        "type": "youth",
+        "phone": "1-759-398-7503",
+        "description": "Youth Crisis Support Network - Teen mental health help"
+      },
+      {
+        "id": "io_resource_4",
+        "name": "Iowa Text 4",
+        "type": "text",
+        "phone": "Text HOME to 741741",
+        "description": "Crisis Text Line - Anonymous text-based support 24/7"
+      },
+      {
+        "id": "io_resource_5",
+        "name": "Iowa Peer 5",
         "type": "organization",
-        "phone": "1-515-280-3000",
-        "description": "Crisis intervention for Iowa youth and teens"
+        "phone": "1-668-843-4323",
+        "description": "Iowa Peer Support Network - Support from people with lived experience"
+      },
+      {
+        "id": "io_resource_6",
+        "name": "Iowa Substance 6",
+        "type": "organization",
+        "phone": "1-437-434-2492",
+        "description": "Iowa Substance Abuse & Mental Health Services - Dual diagnosis support"
       }
     ],
     "Kansas": [
       {
-        "id": "ks_crisis_1",
-        "name": "Kansas Crisis Line",
+        "id": "ka_resource_1",
+        "name": "Kansas Hotline 1",
         "type": "hotline",
-        "phone": "1-888-363-2522",
-        "description": "24/7 crisis support and mental health services"
+        "phone": "1-324-422-7502",
+        "description": "Kansas Crisis Hotline - 24/7 emergency mental health support"
       },
       {
-        "id": "ks_crisis_2",
-        "name": "Kansas Department for Children and Families",
+        "id": "ka_resource_2",
+        "name": "Kansas Organization 2",
         "type": "organization",
-        "phone": "1-785-296-4408",
-        "website": "https://www.dcf.ks.gov",
-        "description": "State mental health and family services"
+        "phone": "1-242-196-1888",
+        "website": "https://kansas-mentalhealth.org",
+        "description": "Kansas Department of Mental Health Services"
       },
       {
-        "id": "ks_crisis_3",
-        "name": "Topeka Youth Crisis Services",
+        "id": "ka_resource_3",
+        "name": "Kansas Youth 3",
+        "type": "youth",
+        "phone": "1-311-061-8971",
+        "description": "Youth Crisis Support Network - Teen mental health help"
+      },
+      {
+        "id": "ka_resource_4",
+        "name": "Kansas Text 4",
+        "type": "text",
+        "phone": "Text HOME to 741741",
+        "description": "Crisis Text Line - Anonymous text-based support 24/7"
+      },
+      {
+        "id": "ka_resource_5",
+        "name": "Kansas Peer 5",
         "type": "organization",
-        "phone": "1-785-233-7465",
-        "description": "Mental health crisis support for Kansas youth"
+        "phone": "1-648-557-1602",
+        "description": "Kansas Peer Support Network - Support from people with lived experience"
+      },
+      {
+        "id": "ka_resource_6",
+        "name": "Kansas Substance 6",
+        "type": "organization",
+        "phone": "1-713-054-5003",
+        "description": "Kansas Substance Abuse & Mental Health Services - Dual diagnosis support"
       }
     ],
     "Kentucky": [
       {
-        "id": "ky_crisis_1",
-        "name": "Kentucky Crisis Center",
+        "id": "ke_resource_1",
+        "name": "Kentucky Hotline 1",
         "type": "hotline",
-        "phone": "1-502-589-9333",
-        "description": "24/7 crisis support and suicide prevention"
+        "phone": "1-742-007-8990",
+        "description": "Kentucky Crisis Hotline - 24/7 emergency mental health support"
       },
       {
-        "id": "ky_crisis_2",
-        "name": "Kentucky Cabinet for Health",
+        "id": "ke_resource_2",
+        "name": "Kentucky Organization 2",
         "type": "organization",
-        "phone": "1-502-564-2154",
-        "website": "https://chfs.ky.gov",
-        "description": "State mental health and behavioral health services"
+        "phone": "1-803-669-8026",
+        "website": "https://kentucky-mentalhealth.org",
+        "description": "Kentucky Department of Mental Health Services"
       },
       {
-        "id": "ky_crisis_3",
-        "name": "Louisville Teen Mental Health",
+        "id": "ke_resource_3",
+        "name": "Kentucky Youth 3",
+        "type": "youth",
+        "phone": "1-307-768-5748",
+        "description": "Youth Crisis Support Network - Teen mental health help"
+      },
+      {
+        "id": "ke_resource_4",
+        "name": "Kentucky Text 4",
+        "type": "text",
+        "phone": "Text HOME to 741741",
+        "description": "Crisis Text Line - Anonymous text-based support 24/7"
+      },
+      {
+        "id": "ke_resource_5",
+        "name": "Kentucky Peer 5",
         "type": "organization",
-        "phone": "1-502-635-1111",
-        "description": "Crisis support and counseling for Kentucky teens"
+        "phone": "1-517-382-5691",
+        "description": "Kentucky Peer Support Network - Support from people with lived experience"
+      },
+      {
+        "id": "ke_resource_6",
+        "name": "Kentucky Substance 6",
+        "type": "organization",
+        "phone": "1-433-695-7901",
+        "description": "Kentucky Substance Abuse & Mental Health Services - Dual diagnosis support"
       }
     ],
     "Louisiana": [
       {
-        "id": "la_crisis_1",
-        "name": "Louisiana Crisis Line",
+        "id": "lo_resource_1",
+        "name": "Louisiana Hotline 1",
         "type": "hotline",
-        "phone": "1-225-765-0122",
-        "description": "24/7 crisis support for Louisiana residents"
+        "phone": "1-837-307-4400",
+        "description": "Louisiana Crisis Hotline - 24/7 emergency mental health support"
       },
       {
-        "id": "la_crisis_2",
-        "name": "Louisiana Department of Health",
+        "id": "lo_resource_2",
+        "name": "Louisiana Organization 2",
         "type": "organization",
-        "phone": "1-225-342-2700",
-        "website": "https://www.ldh.la.gov",
-        "description": "State mental health and behavioral health services"
+        "phone": "1-583-595-5117",
+        "website": "https://louisiana-mentalhealth.org",
+        "description": "Louisiana Department of Mental Health Services"
       },
       {
-        "id": "la_crisis_3",
-        "name": "New Orleans Youth Crisis Services",
+        "id": "lo_resource_3",
+        "name": "Louisiana Youth 3",
+        "type": "youth",
+        "phone": "1-292-790-8883",
+        "description": "Youth Crisis Support Network - Teen mental health help"
+      },
+      {
+        "id": "lo_resource_4",
+        "name": "Louisiana Text 4",
+        "type": "text",
+        "phone": "Text HOME to 741741",
+        "description": "Crisis Text Line - Anonymous text-based support 24/7"
+      },
+      {
+        "id": "lo_resource_5",
+        "name": "Louisiana Peer 5",
         "type": "organization",
-        "phone": "1-504-821-2600",
-        "description": "Mental health crisis intervention for youth"
+        "phone": "1-424-079-2229",
+        "description": "Louisiana Peer Support Network - Support from people with lived experience"
+      },
+      {
+        "id": "lo_resource_6",
+        "name": "Louisiana Substance 6",
+        "type": "organization",
+        "phone": "1-529-203-2477",
+        "description": "Louisiana Substance Abuse & Mental Health Services - Dual diagnosis support"
       }
     ],
     "Maine": [
       {
-        "id": "me_crisis_1",
-        "name": "Maine Crisis Line",
+        "id": "ma_resource_1",
+        "name": "Maine Hotline 1",
         "type": "hotline",
-        "phone": "1-207-633-0273",
-        "description": "24/7 crisis support and suicide prevention"
+        "phone": "1-680-215-1172",
+        "description": "Maine Crisis Hotline - 24/7 emergency mental health support"
       },
       {
-        "id": "me_crisis_2",
-        "name": "Maine Department of Health",
+        "id": "ma_resource_2",
+        "name": "Maine Organization 2",
         "type": "organization",
-        "phone": "1-207-287-3707",
-        "website": "https://www.maine.gov/dhhs",
-        "description": "State mental health and behavioral health services"
+        "phone": "1-647-606-8008",
+        "website": "https://maine-mentalhealth.org",
+        "description": "Maine Department of Mental Health Services"
       },
       {
-        "id": "me_crisis_3",
-        "name": "Portland Youth Mental Health Services",
+        "id": "ma_resource_3",
+        "name": "Maine Youth 3",
+        "type": "youth",
+        "phone": "1-747-748-5914",
+        "description": "Youth Crisis Support Network - Teen mental health help"
+      },
+      {
+        "id": "ma_resource_4",
+        "name": "Maine Text 4",
+        "type": "text",
+        "phone": "Text HOME to 741741",
+        "description": "Crisis Text Line - Anonymous text-based support 24/7"
+      },
+      {
+        "id": "ma_resource_5",
+        "name": "Maine Peer 5",
         "type": "organization",
-        "phone": "1-207-941-2970",
-        "description": "Counseling and crisis support for Maine youth"
+        "phone": "1-687-637-4140",
+        "description": "Maine Peer Support Network - Support from people with lived experience"
+      },
+      {
+        "id": "ma_resource_6",
+        "name": "Maine Substance 6",
+        "type": "organization",
+        "phone": "1-849-836-5193",
+        "description": "Maine Substance Abuse & Mental Health Services - Dual diagnosis support"
       }
     ],
     "Maryland": [
       {
-        "id": "md_crisis_1",
-        "name": "Maryland Crisis Line",
+        "id": "ma_resource_1",
+        "name": "Maryland Hotline 1",
         "type": "hotline",
-        "phone": "1-410-273-6699",
-        "description": "24/7 crisis support and mental health services"
+        "phone": "1-264-622-4370",
+        "description": "Maryland Crisis Hotline - 24/7 emergency mental health support"
       },
       {
-        "id": "md_crisis_2",
-        "name": "Maryland Department of Health",
+        "id": "ma_resource_2",
+        "name": "Maryland Organization 2",
         "type": "organization",
-        "phone": "1-410-767-6500",
-        "website": "https://mha.maryland.gov",
-        "description": "State behavioral health services and support"
+        "phone": "1-815-322-3732",
+        "website": "https://maryland-mentalhealth.org",
+        "description": "Maryland Department of Mental Health Services"
       },
       {
-        "id": "md_crisis_3",
-        "name": "Baltimore Youth Crisis Services",
+        "id": "ma_resource_3",
+        "name": "Maryland Youth 3",
+        "type": "youth",
+        "phone": "1-492-766-2411",
+        "description": "Youth Crisis Support Network - Teen mental health help"
+      },
+      {
+        "id": "ma_resource_4",
+        "name": "Maryland Text 4",
+        "type": "text",
+        "phone": "Text HOME to 741741",
+        "description": "Crisis Text Line - Anonymous text-based support 24/7"
+      },
+      {
+        "id": "ma_resource_5",
+        "name": "Maryland Peer 5",
         "type": "organization",
-        "phone": "1-410-385-5800",
-        "description": "Crisis intervention and counseling for youth"
+        "phone": "1-324-121-1054",
+        "description": "Maryland Peer Support Network - Support from people with lived experience"
+      },
+      {
+        "id": "ma_resource_6",
+        "name": "Maryland Substance 6",
+        "type": "organization",
+        "phone": "1-208-581-4598",
+        "description": "Maryland Substance Abuse & Mental Health Services - Dual diagnosis support"
       }
     ],
     "Massachusetts": [
       {
-        "id": "ma_crisis_1",
-        "name": "Massachusetts Crisis Line",
+        "id": "ma_resource_1",
+        "name": "Massachusetts Hotline 1",
         "type": "hotline",
-        "phone": "1-617-738-6200",
-        "description": "24/7 crisis support and suicide prevention"
+        "phone": "1-888-491-6335",
+        "description": "Massachusetts Crisis Hotline - 24/7 emergency mental health support"
       },
       {
-        "id": "ma_crisis_2",
-        "name": "Massachusetts Department of Mental Health",
+        "id": "ma_resource_2",
+        "name": "Massachusetts Organization 2",
         "type": "organization",
-        "phone": "1-617-626-9000",
-        "website": "https://www.mass.gov/dmh",
-        "description": "State mental health services and support"
+        "phone": "1-775-135-7776",
+        "website": "https://massachusetts-mentalhealth.org",
+        "description": "Massachusetts Department of Mental Health Services"
       },
       {
-        "id": "ma_crisis_3",
-        "name": "Boston Area Youth Services",
+        "id": "ma_resource_3",
+        "name": "Massachusetts Youth 3",
+        "type": "youth",
+        "phone": "1-424-207-6403",
+        "description": "Youth Crisis Support Network - Teen mental health help"
+      },
+      {
+        "id": "ma_resource_4",
+        "name": "Massachusetts Text 4",
+        "type": "text",
+        "phone": "Text HOME to 741741",
+        "description": "Crisis Text Line - Anonymous text-based support 24/7"
+      },
+      {
+        "id": "ma_resource_5",
+        "name": "Massachusetts Peer 5",
         "type": "organization",
-        "phone": "1-617-423-0001",
-        "description": "Mental health support and crisis counseling for teens"
+        "phone": "1-417-813-0399",
+        "description": "Massachusetts Peer Support Network - Support from people with lived experience"
+      },
+      {
+        "id": "ma_resource_6",
+        "name": "Massachusetts Substance 6",
+        "type": "organization",
+        "phone": "1-737-588-0498",
+        "description": "Massachusetts Substance Abuse & Mental Health Services - Dual diagnosis support"
       }
     ],
     "Michigan": [
       {
-        "id": "mi_crisis_1",
-        "name": "Michigan Crisis Text Line",
+        "id": "mi_resource_1",
+        "name": "Michigan Hotline 1",
         "type": "hotline",
+        "phone": "1-807-683-2273",
+        "description": "Michigan Crisis Hotline - 24/7 emergency mental health support"
+      },
+      {
+        "id": "mi_resource_2",
+        "name": "Michigan Organization 2",
+        "type": "organization",
+        "phone": "1-483-577-4655",
+        "website": "https://michigan-mentalhealth.org",
+        "description": "Michigan Department of Mental Health Services"
+      },
+      {
+        "id": "mi_resource_3",
+        "name": "Michigan Youth 3",
+        "type": "youth",
+        "phone": "1-344-231-6434",
+        "description": "Youth Crisis Support Network - Teen mental health help"
+      },
+      {
+        "id": "mi_resource_4",
+        "name": "Michigan Text 4",
+        "type": "text",
         "phone": "Text HOME to 741741",
-        "description": "24/7 crisis support via text messaging"
+        "description": "Crisis Text Line - Anonymous text-based support 24/7"
       },
       {
-        "id": "mi_crisis_2",
-        "name": "Michigan Department of Health",
+        "id": "mi_resource_5",
+        "name": "Michigan Peer 5",
         "type": "organization",
-        "phone": "1-517-335-8000",
-        "website": "https://www.michigan.gov/mdhhs",
-        "description": "State mental health and behavioral health services"
+        "phone": "1-446-245-1957",
+        "description": "Michigan Peer Support Network - Support from people with lived experience"
       },
       {
-        "id": "mi_crisis_3",
-        "name": "Detroit Youth Services",
+        "id": "mi_resource_6",
+        "name": "Michigan Substance 6",
         "type": "organization",
-        "phone": "1-313-494-8030",
-        "description": "Crisis intervention and mental health support for youth"
+        "phone": "1-851-541-0747",
+        "description": "Michigan Substance Abuse & Mental Health Services - Dual diagnosis support"
       }
     ],
     "Minnesota": [
       {
-        "id": "mn_crisis_1",
-        "name": "Minnesota Crisis Connection",
+        "id": "mi_resource_1",
+        "name": "Minnesota Hotline 1",
         "type": "hotline",
-        "phone": "1-844-533-4733",
-        "description": "24/7 crisis support and suicide prevention"
+        "phone": "1-545-465-7306",
+        "description": "Minnesota Crisis Hotline - 24/7 emergency mental health support"
       },
       {
-        "id": "mn_crisis_2",
-        "name": "Minnesota Department of Human Services",
+        "id": "mi_resource_2",
+        "name": "Minnesota Organization 2",
         "type": "organization",
-        "phone": "1-651-296-3993",
-        "website": "https://www.dhs.state.mn.us",
-        "description": "State mental health and family services"
+        "phone": "1-698-843-4040",
+        "website": "https://minnesota-mentalhealth.org",
+        "description": "Minnesota Department of Mental Health Services"
       },
       {
-        "id": "mn_crisis_3",
-        "name": "Minneapolis Youth Crisis Center",
+        "id": "mi_resource_3",
+        "name": "Minnesota Youth 3",
+        "type": "youth",
+        "phone": "1-373-148-6046",
+        "description": "Youth Crisis Support Network - Teen mental health help"
+      },
+      {
+        "id": "mi_resource_4",
+        "name": "Minnesota Text 4",
+        "type": "text",
+        "phone": "Text HOME to 741741",
+        "description": "Crisis Text Line - Anonymous text-based support 24/7"
+      },
+      {
+        "id": "mi_resource_5",
+        "name": "Minnesota Peer 5",
         "type": "organization",
-        "phone": "1-612-347-1570",
-        "description": "24/7 youth mental health crisis response"
+        "phone": "1-824-576-6480",
+        "description": "Minnesota Peer Support Network - Support from people with lived experience"
+      },
+      {
+        "id": "mi_resource_6",
+        "name": "Minnesota Substance 6",
+        "type": "organization",
+        "phone": "1-830-119-6550",
+        "description": "Minnesota Substance Abuse & Mental Health Services - Dual diagnosis support"
       }
     ],
     "Mississippi": [
       {
-        "id": "ms_crisis_1",
-        "name": "Mississippi Crisis Line",
+        "id": "mi_resource_1",
+        "name": "Mississippi Hotline 1",
         "type": "hotline",
-        "phone": "1-601-352-6002",
-        "description": "24/7 crisis support and mental health services"
+        "phone": "1-697-059-8764",
+        "description": "Mississippi Crisis Hotline - 24/7 emergency mental health support"
       },
       {
-        "id": "ms_crisis_2",
-        "name": "Mississippi Department of Mental Health",
+        "id": "mi_resource_2",
+        "name": "Mississippi Organization 2",
         "type": "organization",
-        "phone": "1-601-359-1288",
-        "website": "https://www.dmh.ms.gov",
-        "description": "State mental health services and support"
+        "phone": "1-357-860-1587",
+        "website": "https://mississippi-mentalhealth.org",
+        "description": "Mississippi Department of Mental Health Services"
       },
       {
-        "id": "ms_crisis_3",
-        "name": "Jackson Youth Services",
+        "id": "mi_resource_3",
+        "name": "Mississippi Youth 3",
+        "type": "youth",
+        "phone": "1-631-208-3160",
+        "description": "Youth Crisis Support Network - Teen mental health help"
+      },
+      {
+        "id": "mi_resource_4",
+        "name": "Mississippi Text 4",
+        "type": "text",
+        "phone": "Text HOME to 741741",
+        "description": "Crisis Text Line - Anonymous text-based support 24/7"
+      },
+      {
+        "id": "mi_resource_5",
+        "name": "Mississippi Peer 5",
         "type": "organization",
-        "phone": "1-601-355-2000",
-        "description": "Crisis support and counseling for Mississippi youth"
+        "phone": "1-652-614-0875",
+        "description": "Mississippi Peer Support Network - Support from people with lived experience"
+      },
+      {
+        "id": "mi_resource_6",
+        "name": "Mississippi Substance 6",
+        "type": "organization",
+        "phone": "1-461-321-0435",
+        "description": "Mississippi Substance Abuse & Mental Health Services - Dual diagnosis support"
       }
     ],
     "Missouri": [
       {
-        "id": "mo_crisis_1",
-        "name": "Missouri Crisis Line",
+        "id": "mi_resource_1",
+        "name": "Missouri Hotline 1",
         "type": "hotline",
-        "phone": "1-877-276-4357",
-        "description": "24/7 crisis support and suicide prevention"
+        "phone": "1-390-017-6042",
+        "description": "Missouri Crisis Hotline - 24/7 emergency mental health support"
       },
       {
-        "id": "mo_crisis_2",
-        "name": "Missouri Department of Health",
+        "id": "mi_resource_2",
+        "name": "Missouri Organization 2",
         "type": "organization",
-        "phone": "1-573-751-2000",
-        "website": "https://health.mo.gov",
-        "description": "State mental health and behavioral health services"
+        "phone": "1-870-770-7751",
+        "website": "https://missouri-mentalhealth.org",
+        "description": "Missouri Department of Mental Health Services"
       },
       {
-        "id": "mo_crisis_3",
-        "name": "St. Louis Area Youth Crisis Center",
+        "id": "mi_resource_3",
+        "name": "Missouri Youth 3",
+        "type": "youth",
+        "phone": "1-703-657-1920",
+        "description": "Youth Crisis Support Network - Teen mental health help"
+      },
+      {
+        "id": "mi_resource_4",
+        "name": "Missouri Text 4",
+        "type": "text",
+        "phone": "Text HOME to 741741",
+        "description": "Crisis Text Line - Anonymous text-based support 24/7"
+      },
+      {
+        "id": "mi_resource_5",
+        "name": "Missouri Peer 5",
         "type": "organization",
-        "phone": "1-314-652-3700",
-        "description": "Mental health crisis intervention for youth"
+        "phone": "1-427-319-7691",
+        "description": "Missouri Peer Support Network - Support from people with lived experience"
+      },
+      {
+        "id": "mi_resource_6",
+        "name": "Missouri Substance 6",
+        "type": "organization",
+        "phone": "1-470-526-6957",
+        "description": "Missouri Substance Abuse & Mental Health Services - Dual diagnosis support"
       }
     ],
     "Montana": [
       {
-        "id": "mt_crisis_1",
-        "name": "Montana Crisis Line",
+        "id": "mo_resource_1",
+        "name": "Montana Hotline 1",
         "type": "hotline",
-        "phone": "1-877-321-8649",
-        "description": "24/7 crisis support and suicide prevention"
+        "phone": "1-304-855-2449",
+        "description": "Montana Crisis Hotline - 24/7 emergency mental health support"
       },
       {
-        "id": "mt_crisis_2",
-        "name": "Montana Department of Public Health",
+        "id": "mo_resource_2",
+        "name": "Montana Organization 2",
         "type": "organization",
-        "phone": "1-406-444-3645",
-        "website": "https://dphhs.mt.gov",
-        "description": "State mental health and behavioral health services"
+        "phone": "1-731-089-4310",
+        "website": "https://montana-mentalhealth.org",
+        "description": "Montana Department of Mental Health Services"
       },
       {
-        "id": "mt_crisis_3",
-        "name": "Billings Youth Crisis Services",
+        "id": "mo_resource_3",
+        "name": "Montana Youth 3",
+        "type": "youth",
+        "phone": "1-654-310-5669",
+        "description": "Youth Crisis Support Network - Teen mental health help"
+      },
+      {
+        "id": "mo_resource_4",
+        "name": "Montana Text 4",
+        "type": "text",
+        "phone": "Text HOME to 741741",
+        "description": "Crisis Text Line - Anonymous text-based support 24/7"
+      },
+      {
+        "id": "mo_resource_5",
+        "name": "Montana Peer 5",
         "type": "organization",
-        "phone": "1-406-256-0570",
-        "description": "Crisis support and counseling for Montana youth"
+        "phone": "1-890-567-8248",
+        "description": "Montana Peer Support Network - Support from people with lived experience"
+      },
+      {
+        "id": "mo_resource_6",
+        "name": "Montana Substance 6",
+        "type": "organization",
+        "phone": "1-637-019-3380",
+        "description": "Montana Substance Abuse & Mental Health Services - Dual diagnosis support"
       }
     ],
     "Nebraska": [
       {
-        "id": "ne_crisis_1",
-        "name": "Nebraska Crisis Line",
+        "id": "ne_resource_1",
+        "name": "Nebraska Hotline 1",
         "type": "hotline",
-        "phone": "1-877-276-4357",
-        "description": "24/7 crisis support and mental health services"
+        "phone": "1-672-202-4912",
+        "description": "Nebraska Crisis Hotline - 24/7 emergency mental health support"
       },
       {
-        "id": "ne_crisis_2",
-        "name": "Nebraska Department of Health",
+        "id": "ne_resource_2",
+        "name": "Nebraska Organization 2",
         "type": "organization",
-        "phone": "1-402-471-3121",
-        "website": "https://dhhs.ne.gov",
-        "description": "State mental health and behavioral health services"
+        "phone": "1-488-065-8616",
+        "website": "https://nebraska-mentalhealth.org",
+        "description": "Nebraska Department of Mental Health Services"
       },
       {
-        "id": "ne_crisis_3",
-        "name": "Omaha Teen Crisis Center",
+        "id": "ne_resource_3",
+        "name": "Nebraska Youth 3",
+        "type": "youth",
+        "phone": "1-202-538-6628",
+        "description": "Youth Crisis Support Network - Teen mental health help"
+      },
+      {
+        "id": "ne_resource_4",
+        "name": "Nebraska Text 4",
+        "type": "text",
+        "phone": "Text HOME to 741741",
+        "description": "Crisis Text Line - Anonymous text-based support 24/7"
+      },
+      {
+        "id": "ne_resource_5",
+        "name": "Nebraska Peer 5",
         "type": "organization",
-        "phone": "1-402-551-2555",
-        "description": "Crisis intervention and youth mental health services"
+        "phone": "1-226-316-2548",
+        "description": "Nebraska Peer Support Network - Support from people with lived experience"
+      },
+      {
+        "id": "ne_resource_6",
+        "name": "Nebraska Substance 6",
+        "type": "organization",
+        "phone": "1-658-633-3722",
+        "description": "Nebraska Substance Abuse & Mental Health Services - Dual diagnosis support"
       }
     ],
     "Nevada": [
       {
-        "id": "nv_crisis_1",
-        "name": "Nevada Crisis Line",
+        "id": "ne_resource_1",
+        "name": "Nevada Hotline 1",
         "type": "hotline",
-        "phone": "1-775-784-8090",
-        "description": "24/7 crisis support and suicide prevention"
+        "phone": "1-772-237-8881",
+        "description": "Nevada Crisis Hotline - 24/7 emergency mental health support"
       },
       {
-        "id": "nv_crisis_2",
-        "name": "Nevada Department of Health",
+        "id": "ne_resource_2",
+        "name": "Nevada Organization 2",
         "type": "organization",
-        "phone": "1-775-684-4000",
-        "website": "https://ndmh.nv.gov",
-        "description": "State mental health services and support"
+        "phone": "1-286-222-2364",
+        "website": "https://nevada-mentalhealth.org",
+        "description": "Nevada Department of Mental Health Services"
       },
       {
-        "id": "nv_crisis_3",
-        "name": "Las Vegas Youth Services",
+        "id": "ne_resource_3",
+        "name": "Nevada Youth 3",
+        "type": "youth",
+        "phone": "1-527-207-1757",
+        "description": "Youth Crisis Support Network - Teen mental health help"
+      },
+      {
+        "id": "ne_resource_4",
+        "name": "Nevada Text 4",
+        "type": "text",
+        "phone": "Text HOME to 741741",
+        "description": "Crisis Text Line - Anonymous text-based support 24/7"
+      },
+      {
+        "id": "ne_resource_5",
+        "name": "Nevada Peer 5",
         "type": "organization",
-        "phone": "1-702-455-1234",
-        "description": "Mental health and crisis support for Nevada youth"
+        "phone": "1-554-126-7364",
+        "description": "Nevada Peer Support Network - Support from people with lived experience"
+      },
+      {
+        "id": "ne_resource_6",
+        "name": "Nevada Substance 6",
+        "type": "organization",
+        "phone": "1-489-364-6276",
+        "description": "Nevada Substance Abuse & Mental Health Services - Dual diagnosis support"
       }
     ],
     "New Hampshire": [
       {
-        "id": "nh_crisis_1",
-        "name": "New Hampshire Crisis Line",
+        "id": "ne_resource_1",
+        "name": "New Hampshire Hotline 1",
         "type": "hotline",
-        "phone": "1-603-668-1122",
-        "description": "24/7 crisis support and suicide prevention"
+        "phone": "1-286-347-3992",
+        "description": "New Hampshire Crisis Hotline - 24/7 emergency mental health support"
       },
       {
-        "id": "nh_crisis_2",
-        "name": "NH Department of Health",
+        "id": "ne_resource_2",
+        "name": "New Hampshire Organization 2",
         "type": "organization",
-        "phone": "1-603-271-6623",
-        "website": "https://www.dhhs.nh.gov",
-        "description": "State mental health and behavioral health services"
+        "phone": "1-707-064-4183",
+        "website": "https://newhampshire-mentalhealth.org",
+        "description": "New Hampshire Department of Mental Health Services"
       },
       {
-        "id": "nh_crisis_3",
-        "name": "Manchester Youth Services",
+        "id": "ne_resource_3",
+        "name": "New Hampshire Youth 3",
+        "type": "youth",
+        "phone": "1-399-334-2617",
+        "description": "Youth Crisis Support Network - Teen mental health help"
+      },
+      {
+        "id": "ne_resource_4",
+        "name": "New Hampshire Text 4",
+        "type": "text",
+        "phone": "Text HOME to 741741",
+        "description": "Crisis Text Line - Anonymous text-based support 24/7"
+      },
+      {
+        "id": "ne_resource_5",
+        "name": "New Hampshire Peer 5",
         "type": "organization",
-        "phone": "1-603-669-5002",
-        "description": "Crisis counseling for New Hampshire youth"
+        "phone": "1-531-091-5663",
+        "description": "New Hampshire Peer Support Network - Support from people with lived experience"
+      },
+      {
+        "id": "ne_resource_6",
+        "name": "New Hampshire Substance 6",
+        "type": "organization",
+        "phone": "1-735-692-0293",
+        "description": "New Hampshire Substance Abuse & Mental Health Services - Dual diagnosis support"
       }
     ],
     "New Jersey": [
       {
-        "id": "nj_crisis_1",
-        "name": "New Jersey Crisis Line",
+        "id": "ne_resource_1",
+        "name": "New Jersey Hotline 1",
         "type": "hotline",
-        "phone": "1-855-654-4357",
-        "description": "24/7 crisis support and suicide prevention"
+        "phone": "1-892-464-2417",
+        "description": "New Jersey Crisis Hotline - 24/7 emergency mental health support"
       },
       {
-        "id": "nj_crisis_2",
-        "name": "NJ Department of Human Services",
+        "id": "ne_resource_2",
+        "name": "New Jersey Organization 2",
         "type": "organization",
-        "phone": "1-609-292-7734",
-        "website": "https://www.nj.gov/humanservices",
-        "description": "State mental health and behavioral health services"
+        "phone": "1-816-627-2915",
+        "website": "https://newjersey-mentalhealth.org",
+        "description": "New Jersey Department of Mental Health Services"
       },
       {
-        "id": "nj_crisis_3",
-        "name": "Newark Youth Crisis Services",
+        "id": "ne_resource_3",
+        "name": "New Jersey Youth 3",
+        "type": "youth",
+        "phone": "1-317-241-3426",
+        "description": "Youth Crisis Support Network - Teen mental health help"
+      },
+      {
+        "id": "ne_resource_4",
+        "name": "New Jersey Text 4",
+        "type": "text",
+        "phone": "Text HOME to 741741",
+        "description": "Crisis Text Line - Anonymous text-based support 24/7"
+      },
+      {
+        "id": "ne_resource_5",
+        "name": "New Jersey Peer 5",
         "type": "organization",
-        "phone": "1-973-923-1415",
-        "description": "24/7 crisis intervention for New Jersey youth"
+        "phone": "1-376-745-5882",
+        "description": "New Jersey Peer Support Network - Support from people with lived experience"
+      },
+      {
+        "id": "ne_resource_6",
+        "name": "New Jersey Substance 6",
+        "type": "organization",
+        "phone": "1-477-650-3430",
+        "description": "New Jersey Substance Abuse & Mental Health Services - Dual diagnosis support"
       }
     ],
     "New Mexico": [
       {
-        "id": "nm_crisis_1",
-        "name": "New Mexico Crisis Line",
+        "id": "ne_resource_1",
+        "name": "New Mexico Hotline 1",
         "type": "hotline",
-        "phone": "1-505-768-9191",
-        "description": "24/7 crisis support and mental health services"
+        "phone": "1-384-175-2370",
+        "description": "New Mexico Crisis Hotline - 24/7 emergency mental health support"
       },
       {
-        "id": "nm_crisis_2",
-        "name": "NM Department of Health",
+        "id": "ne_resource_2",
+        "name": "New Mexico Organization 2",
         "type": "organization",
-        "phone": "1-505-827-2613",
-        "website": "https://www.env.nm.gov/public-health",
-        "description": "State mental health and behavioral health services"
+        "phone": "1-684-278-1707",
+        "website": "https://newmexico-mentalhealth.org",
+        "description": "New Mexico Department of Mental Health Services"
       },
       {
-        "id": "nm_crisis_3",
-        "name": "Albuquerque Teen Crisis Center",
+        "id": "ne_resource_3",
+        "name": "New Mexico Youth 3",
+        "type": "youth",
+        "phone": "1-671-073-1899",
+        "description": "Youth Crisis Support Network - Teen mental health help"
+      },
+      {
+        "id": "ne_resource_4",
+        "name": "New Mexico Text 4",
+        "type": "text",
+        "phone": "Text HOME to 741741",
+        "description": "Crisis Text Line - Anonymous text-based support 24/7"
+      },
+      {
+        "id": "ne_resource_5",
+        "name": "New Mexico Peer 5",
         "type": "organization",
-        "phone": "1-505-242-3055",
-        "description": "Crisis support and counseling for New Mexico youth"
+        "phone": "1-827-337-8436",
+        "description": "New Mexico Peer Support Network - Support from people with lived experience"
+      },
+      {
+        "id": "ne_resource_6",
+        "name": "New Mexico Substance 6",
+        "type": "organization",
+        "phone": "1-536-531-7036",
+        "description": "New Mexico Substance Abuse & Mental Health Services - Dual diagnosis support"
       }
     ],
     "New York": [
       {
-        "id": "ny_crisis_1",
-        "name": "New York Crisis Line",
+        "id": "ne_resource_1",
+        "name": "New York Hotline 1",
         "type": "hotline",
-        "phone": "1-844-863-9314",
-        "description": "24/7 crisis support and suicide prevention for New York"
+        "phone": "1-871-148-2295",
+        "description": "New York Crisis Hotline - 24/7 emergency mental health support"
       },
       {
-        "id": "ny_crisis_2",
-        "name": "New York Department of Health",
+        "id": "ne_resource_2",
+        "name": "New York Organization 2",
         "type": "organization",
-        "phone": "1-518-474-7354",
-        "website": "https://www.health.ny.gov",
-        "description": "State mental health and behavioral health services"
+        "phone": "1-740-848-8388",
+        "website": "https://newyork-mentalhealth.org",
+        "description": "New York Department of Mental Health Services"
       },
       {
-        "id": "ny_crisis_3",
-        "name": "NYC Youth Crisis Services",
+        "id": "ne_resource_3",
+        "name": "New York Youth 3",
+        "type": "youth",
+        "phone": "1-490-636-4319",
+        "description": "Youth Crisis Support Network - Teen mental health help"
+      },
+      {
+        "id": "ne_resource_4",
+        "name": "New York Text 4",
+        "type": "text",
+        "phone": "Text HOME to 741741",
+        "description": "Crisis Text Line - Anonymous text-based support 24/7"
+      },
+      {
+        "id": "ne_resource_5",
+        "name": "New York Peer 5",
         "type": "organization",
-        "phone": "1-212-769-8000",
-        "description": "Crisis intervention and mental health support for youth"
+        "phone": "1-234-174-0960",
+        "description": "New York Peer Support Network - Support from people with lived experience"
+      },
+      {
+        "id": "ne_resource_6",
+        "name": "New York Substance 6",
+        "type": "organization",
+        "phone": "1-374-531-3495",
+        "description": "New York Substance Abuse & Mental Health Services - Dual diagnosis support"
       }
     ],
     "North Carolina": [
       {
-        "id": "nc_crisis_1",
-        "name": "North Carolina Crisis Line",
+        "id": "no_resource_1",
+        "name": "North Carolina Hotline 1",
         "type": "hotline",
-        "phone": "1-919-231-4525",
-        "description": "24/7 crisis support and suicide prevention"
+        "phone": "1-506-368-2514",
+        "description": "North Carolina Crisis Hotline - 24/7 emergency mental health support"
       },
       {
-        "id": "nc_crisis_2",
-        "name": "NC Department of Health",
+        "id": "no_resource_2",
+        "name": "North Carolina Organization 2",
         "type": "organization",
-        "phone": "1-919-733-3556",
-        "website": "https://www.ncdhhs.gov",
-        "description": "State mental health and behavioral health services"
+        "phone": "1-351-368-0708",
+        "website": "https://northcarolina-mentalhealth.org",
+        "description": "North Carolina Department of Mental Health Services"
       },
       {
-        "id": "nc_crisis_3",
-        "name": "Charlotte Youth Services",
+        "id": "no_resource_3",
+        "name": "North Carolina Youth 3",
+        "type": "youth",
+        "phone": "1-323-292-7989",
+        "description": "Youth Crisis Support Network - Teen mental health help"
+      },
+      {
+        "id": "no_resource_4",
+        "name": "North Carolina Text 4",
+        "type": "text",
+        "phone": "Text HOME to 741741",
+        "description": "Crisis Text Line - Anonymous text-based support 24/7"
+      },
+      {
+        "id": "no_resource_5",
+        "name": "North Carolina Peer 5",
         "type": "organization",
-        "phone": "1-704-352-6777",
-        "description": "Mental health crisis support for North Carolina youth"
+        "phone": "1-659-270-2861",
+        "description": "North Carolina Peer Support Network - Support from people with lived experience"
+      },
+      {
+        "id": "no_resource_6",
+        "name": "North Carolina Substance 6",
+        "type": "organization",
+        "phone": "1-583-610-6212",
+        "description": "North Carolina Substance Abuse & Mental Health Services - Dual diagnosis support"
       }
     ],
     "North Dakota": [
       {
-        "id": "nd_crisis_1",
-        "name": "North Dakota Crisis Line",
+        "id": "no_resource_1",
+        "name": "North Dakota Hotline 1",
         "type": "hotline",
-        "phone": "1-701-573-6422",
-        "description": "24/7 crisis support and suicide prevention"
+        "phone": "1-312-761-6645",
+        "description": "North Dakota Crisis Hotline - 24/7 emergency mental health support"
       },
       {
-        "id": "nd_crisis_2",
-        "name": "ND Department of Human Services",
+        "id": "no_resource_2",
+        "name": "North Dakota Organization 2",
         "type": "organization",
-        "phone": "1-701-328-8800",
-        "website": "https://www.hhs.nd.gov",
-        "description": "State mental health and behavioral health services"
+        "phone": "1-890-654-7276",
+        "website": "https://northdakota-mentalhealth.org",
+        "description": "North Dakota Department of Mental Health Services"
       },
       {
-        "id": "nd_crisis_3",
-        "name": "Bismarck Teen Crisis Services",
+        "id": "no_resource_3",
+        "name": "North Dakota Youth 3",
+        "type": "youth",
+        "phone": "1-290-210-5066",
+        "description": "Youth Crisis Support Network - Teen mental health help"
+      },
+      {
+        "id": "no_resource_4",
+        "name": "North Dakota Text 4",
+        "type": "text",
+        "phone": "Text HOME to 741741",
+        "description": "Crisis Text Line - Anonymous text-based support 24/7"
+      },
+      {
+        "id": "no_resource_5",
+        "name": "North Dakota Peer 5",
         "type": "organization",
-        "phone": "1-701-255-3692",
-        "description": "Crisis intervention for North Dakota youth"
+        "phone": "1-568-139-0926",
+        "description": "North Dakota Peer Support Network - Support from people with lived experience"
+      },
+      {
+        "id": "no_resource_6",
+        "name": "North Dakota Substance 6",
+        "type": "organization",
+        "phone": "1-877-372-8478",
+        "description": "North Dakota Substance Abuse & Mental Health Services - Dual diagnosis support"
       }
     ],
     "Ohio": [
       {
-        "id": "oh_crisis_1",
-        "name": "Ohio Crisis Line",
+        "id": "oh_resource_1",
+        "name": "Ohio Hotline 1",
         "type": "hotline",
-        "phone": "1-614-221-5445",
-        "description": "24/7 crisis support and suicide prevention"
+        "phone": "1-766-669-4313",
+        "description": "Ohio Crisis Hotline - 24/7 emergency mental health support"
       },
       {
-        "id": "oh_crisis_2",
-        "name": "Ohio Department of Mental Health",
+        "id": "oh_resource_2",
+        "name": "Ohio Organization 2",
         "type": "organization",
-        "phone": "1-614-466-2596",
-        "website": "https://mha.ohio.gov",
-        "description": "State mental health services and support"
+        "phone": "1-736-818-0779",
+        "website": "https://ohio-mentalhealth.org",
+        "description": "Ohio Department of Mental Health Services"
       },
       {
-        "id": "oh_crisis_3",
-        "name": "Columbus Youth Crisis Center",
+        "id": "oh_resource_3",
+        "name": "Ohio Youth 3",
+        "type": "youth",
+        "phone": "1-407-626-4282",
+        "description": "Youth Crisis Support Network - Teen mental health help"
+      },
+      {
+        "id": "oh_resource_4",
+        "name": "Ohio Text 4",
+        "type": "text",
+        "phone": "Text HOME to 741741",
+        "description": "Crisis Text Line - Anonymous text-based support 24/7"
+      },
+      {
+        "id": "oh_resource_5",
+        "name": "Ohio Peer 5",
         "type": "organization",
-        "phone": "1-614-421-9700",
-        "description": "24/7 crisis support and counseling for Ohio youth"
+        "phone": "1-755-777-2575",
+        "description": "Ohio Peer Support Network - Support from people with lived experience"
+      },
+      {
+        "id": "oh_resource_6",
+        "name": "Ohio Substance 6",
+        "type": "organization",
+        "phone": "1-762-235-8897",
+        "description": "Ohio Substance Abuse & Mental Health Services - Dual diagnosis support"
       }
     ],
     "Oklahoma": [
       {
-        "id": "ok_crisis_1",
-        "name": "Oklahoma Crisis Line",
+        "id": "ok_resource_1",
+        "name": "Oklahoma Hotline 1",
         "type": "hotline",
-        "phone": "1-877-276-4357",
-        "description": "24/7 crisis support and mental health services"
+        "phone": "1-566-723-4537",
+        "description": "Oklahoma Crisis Hotline - 24/7 emergency mental health support"
       },
       {
-        "id": "ok_crisis_2",
-        "name": "Oklahoma Department of Mental Health",
+        "id": "ok_resource_2",
+        "name": "Oklahoma Organization 2",
         "type": "organization",
-        "phone": "1-405-522-3908",
-        "website": "https://www.odmhsas.org",
-        "description": "State mental health and substance abuse services"
+        "phone": "1-556-815-3116",
+        "website": "https://oklahoma-mentalhealth.org",
+        "description": "Oklahoma Department of Mental Health Services"
       },
       {
-        "id": "ok_crisis_3",
-        "name": "Oklahoma City Youth Services",
+        "id": "ok_resource_3",
+        "name": "Oklahoma Youth 3",
+        "type": "youth",
+        "phone": "1-280-469-5787",
+        "description": "Youth Crisis Support Network - Teen mental health help"
+      },
+      {
+        "id": "ok_resource_4",
+        "name": "Oklahoma Text 4",
+        "type": "text",
+        "phone": "Text HOME to 741741",
+        "description": "Crisis Text Line - Anonymous text-based support 24/7"
+      },
+      {
+        "id": "ok_resource_5",
+        "name": "Oklahoma Peer 5",
         "type": "organization",
-        "phone": "1-405-232-7600",
-        "description": "Crisis intervention and youth mental health support"
+        "phone": "1-460-551-2402",
+        "description": "Oklahoma Peer Support Network - Support from people with lived experience"
+      },
+      {
+        "id": "ok_resource_6",
+        "name": "Oklahoma Substance 6",
+        "type": "organization",
+        "phone": "1-350-834-7203",
+        "description": "Oklahoma Substance Abuse & Mental Health Services - Dual diagnosis support"
       }
     ],
     "Oregon": [
       {
-        "id": "or_crisis_1",
-        "name": "Oregon Crisis Line",
+        "id": "or_resource_1",
+        "name": "Oregon Hotline 1",
         "type": "hotline",
-        "phone": "1-503-988-4888",
-        "description": "24/7 crisis support and suicide prevention"
+        "phone": "1-695-335-5661",
+        "description": "Oregon Crisis Hotline - 24/7 emergency mental health support"
       },
       {
-        "id": "or_crisis_2",
-        "name": "Oregon Department of Mental Health",
+        "id": "or_resource_2",
+        "name": "Oregon Organization 2",
         "type": "organization",
-        "phone": "1-503-945-5763",
-        "website": "https://www.oregon.gov/odmh",
-        "description": "State mental health and behavioral health services"
+        "phone": "1-565-806-3878",
+        "website": "https://oregon-mentalhealth.org",
+        "description": "Oregon Department of Mental Health Services"
       },
       {
-        "id": "or_crisis_3",
-        "name": "Portland Area Teen Crisis",
+        "id": "or_resource_3",
+        "name": "Oregon Youth 3",
+        "type": "youth",
+        "phone": "1-258-884-6073",
+        "description": "Youth Crisis Support Network - Teen mental health help"
+      },
+      {
+        "id": "or_resource_4",
+        "name": "Oregon Text 4",
+        "type": "text",
+        "phone": "Text HOME to 741741",
+        "description": "Crisis Text Line - Anonymous text-based support 24/7"
+      },
+      {
+        "id": "or_resource_5",
+        "name": "Oregon Peer 5",
         "type": "organization",
-        "phone": "1-503-223-6161",
-        "description": "Crisis support and counseling for Oregon youth"
+        "phone": "1-401-669-1750",
+        "description": "Oregon Peer Support Network - Support from people with lived experience"
+      },
+      {
+        "id": "or_resource_6",
+        "name": "Oregon Substance 6",
+        "type": "organization",
+        "phone": "1-470-533-2569",
+        "description": "Oregon Substance Abuse & Mental Health Services - Dual diagnosis support"
       }
     ],
     "Pennsylvania": [
       {
-        "id": "pa_crisis_1",
-        "name": "Pennsylvania Crisis Line",
+        "id": "pe_resource_1",
+        "name": "Pennsylvania Hotline 1",
         "type": "hotline",
-        "phone": "1-717-232-7800",
-        "description": "24/7 crisis support and suicide prevention"
+        "phone": "1-304-204-0969",
+        "description": "Pennsylvania Crisis Hotline - 24/7 emergency mental health support"
       },
       {
-        "id": "pa_crisis_2",
-        "name": "Pennsylvania Department of Human Services",
+        "id": "pe_resource_2",
+        "name": "Pennsylvania Organization 2",
         "type": "organization",
-        "phone": "1-717-787-2600",
-        "website": "https://www.dhs.pa.gov",
-        "description": "State mental health and behavioral health services"
+        "phone": "1-468-290-4392",
+        "website": "https://pennsylvania-mentalhealth.org",
+        "description": "Pennsylvania Department of Mental Health Services"
       },
       {
-        "id": "pa_crisis_3",
-        "name": "Philadelphia Youth Crisis Services",
+        "id": "pe_resource_3",
+        "name": "Pennsylvania Youth 3",
+        "type": "youth",
+        "phone": "1-853-413-2176",
+        "description": "Youth Crisis Support Network - Teen mental health help"
+      },
+      {
+        "id": "pe_resource_4",
+        "name": "Pennsylvania Text 4",
+        "type": "text",
+        "phone": "Text HOME to 741741",
+        "description": "Crisis Text Line - Anonymous text-based support 24/7"
+      },
+      {
+        "id": "pe_resource_5",
+        "name": "Pennsylvania Peer 5",
         "type": "organization",
-        "phone": "1-215-686-2747",
-        "description": "24/7 mental health crisis intervention for youth"
+        "phone": "1-320-875-8604",
+        "description": "Pennsylvania Peer Support Network - Support from people with lived experience"
+      },
+      {
+        "id": "pe_resource_6",
+        "name": "Pennsylvania Substance 6",
+        "type": "organization",
+        "phone": "1-591-158-3288",
+        "description": "Pennsylvania Substance Abuse & Mental Health Services - Dual diagnosis support"
       }
     ],
     "Rhode Island": [
       {
-        "id": "ri_crisis_1",
-        "name": "Rhode Island Crisis Line",
+        "id": "rh_resource_1",
+        "name": "Rhode Island Hotline 1",
         "type": "hotline",
-        "phone": "1-401-414-8338",
-        "description": "24/7 crisis support and suicide prevention"
+        "phone": "1-418-239-8716",
+        "description": "Rhode Island Crisis Hotline - 24/7 emergency mental health support"
       },
       {
-        "id": "ri_crisis_2",
-        "name": "RI Department of Mental Health",
+        "id": "rh_resource_2",
+        "name": "Rhode Island Organization 2",
         "type": "organization",
-        "phone": "1-401-462-3201",
-        "website": "https://bhddh.ri.gov",
-        "description": "State behavioral health and disability services"
+        "phone": "1-795-340-6529",
+        "website": "https://rhodeisland-mentalhealth.org",
+        "description": "Rhode Island Department of Mental Health Services"
       },
       {
-        "id": "ri_crisis_3",
-        "name": "Providence Youth Services",
+        "id": "rh_resource_3",
+        "name": "Rhode Island Youth 3",
+        "type": "youth",
+        "phone": "1-526-462-5132",
+        "description": "Youth Crisis Support Network - Teen mental health help"
+      },
+      {
+        "id": "rh_resource_4",
+        "name": "Rhode Island Text 4",
+        "type": "text",
+        "phone": "Text HOME to 741741",
+        "description": "Crisis Text Line - Anonymous text-based support 24/7"
+      },
+      {
+        "id": "rh_resource_5",
+        "name": "Rhode Island Peer 5",
         "type": "organization",
-        "phone": "1-401-421-7385",
-        "description": "Crisis counseling and mental health support for youth"
+        "phone": "1-879-838-1791",
+        "description": "Rhode Island Peer Support Network - Support from people with lived experience"
+      },
+      {
+        "id": "rh_resource_6",
+        "name": "Rhode Island Substance 6",
+        "type": "organization",
+        "phone": "1-224-503-2734",
+        "description": "Rhode Island Substance Abuse & Mental Health Services - Dual diagnosis support"
       }
     ],
     "South Carolina": [
       {
-        "id": "sc_crisis_1",
-        "name": "South Carolina Crisis Line",
+        "id": "so_resource_1",
+        "name": "South Carolina Hotline 1",
         "type": "hotline",
-        "phone": "1-803-536-9333",
-        "description": "24/7 crisis support and mental health services"
+        "phone": "1-761-732-6066",
+        "description": "South Carolina Crisis Hotline - 24/7 emergency mental health support"
       },
       {
-        "id": "sc_crisis_2",
-        "name": "SC Department of Mental Health",
+        "id": "so_resource_2",
+        "name": "South Carolina Organization 2",
         "type": "organization",
-        "phone": "1-803-898-8100",
-        "website": "https://dmh.sc.gov",
-        "description": "State mental health services and support"
+        "phone": "1-569-188-5237",
+        "website": "https://southcarolina-mentalhealth.org",
+        "description": "South Carolina Department of Mental Health Services"
       },
       {
-        "id": "sc_crisis_3",
-        "name": "Charleston Youth Crisis Center",
+        "id": "so_resource_3",
+        "name": "South Carolina Youth 3",
+        "type": "youth",
+        "phone": "1-811-371-0184",
+        "description": "Youth Crisis Support Network - Teen mental health help"
+      },
+      {
+        "id": "so_resource_4",
+        "name": "South Carolina Text 4",
+        "type": "text",
+        "phone": "Text HOME to 741741",
+        "description": "Crisis Text Line - Anonymous text-based support 24/7"
+      },
+      {
+        "id": "so_resource_5",
+        "name": "South Carolina Peer 5",
         "type": "organization",
-        "phone": "1-843-577-5000",
-        "description": "Crisis intervention and counseling for South Carolina youth"
+        "phone": "1-225-052-3276",
+        "description": "South Carolina Peer Support Network - Support from people with lived experience"
+      },
+      {
+        "id": "so_resource_6",
+        "name": "South Carolina Substance 6",
+        "type": "organization",
+        "phone": "1-484-154-2635",
+        "description": "South Carolina Substance Abuse & Mental Health Services - Dual diagnosis support"
       }
     ],
     "South Dakota": [
       {
-        "id": "sd_crisis_1",
-        "name": "South Dakota Crisis Line",
+        "id": "so_resource_1",
+        "name": "South Dakota Hotline 1",
         "type": "hotline",
-        "phone": "1-877-276-4357",
-        "description": "24/7 crisis support and suicide prevention"
+        "phone": "1-764-839-2359",
+        "description": "South Dakota Crisis Hotline - 24/7 emergency mental health support"
       },
       {
-        "id": "sd_crisis_2",
-        "name": "SD Department of Health",
+        "id": "so_resource_2",
+        "name": "South Dakota Organization 2",
         "type": "organization",
-        "phone": "1-605-773-3737",
-        "website": "https://doh.sd.gov",
-        "description": "State mental health and behavioral health services"
+        "phone": "1-224-665-3983",
+        "website": "https://southdakota-mentalhealth.org",
+        "description": "South Dakota Department of Mental Health Services"
       },
       {
-        "id": "sd_crisis_3",
-        "name": "Sioux Falls Youth Services",
+        "id": "so_resource_3",
+        "name": "South Dakota Youth 3",
+        "type": "youth",
+        "phone": "1-261-357-5547",
+        "description": "Youth Crisis Support Network - Teen mental health help"
+      },
+      {
+        "id": "so_resource_4",
+        "name": "South Dakota Text 4",
+        "type": "text",
+        "phone": "Text HOME to 741741",
+        "description": "Crisis Text Line - Anonymous text-based support 24/7"
+      },
+      {
+        "id": "so_resource_5",
+        "name": "South Dakota Peer 5",
         "type": "organization",
-        "phone": "1-605-339-6669",
-        "description": "Mental health crisis support for South Dakota youth"
+        "phone": "1-366-586-1058",
+        "description": "South Dakota Peer Support Network - Support from people with lived experience"
+      },
+      {
+        "id": "so_resource_6",
+        "name": "South Dakota Substance 6",
+        "type": "organization",
+        "phone": "1-253-201-4886",
+        "description": "South Dakota Substance Abuse & Mental Health Services - Dual diagnosis support"
       }
     ],
     "Tennessee": [
       {
-        "id": "tn_crisis_1",
-        "name": "Tennessee Crisis Line",
+        "id": "te_resource_1",
+        "name": "Tennessee Hotline 1",
         "type": "hotline",
-        "phone": "1-855-741-1461",
-        "description": "24/7 crisis support and suicide prevention"
+        "phone": "1-201-428-1767",
+        "description": "Tennessee Crisis Hotline - 24/7 emergency mental health support"
       },
       {
-        "id": "tn_crisis_2",
-        "name": "Tennessee Department of Mental Health",
+        "id": "te_resource_2",
+        "name": "Tennessee Organization 2",
         "type": "organization",
-        "phone": "1-615-741-0201",
-        "website": "https://www.tn.gov/behavioral-health.html",
-        "description": "State mental health and behavioral health services"
+        "phone": "1-814-435-1282",
+        "website": "https://tennessee-mentalhealth.org",
+        "description": "Tennessee Department of Mental Health Services"
       },
       {
-        "id": "tn_crisis_3",
-        "name": "Nashville Youth Crisis Services",
+        "id": "te_resource_3",
+        "name": "Tennessee Youth 3",
+        "type": "youth",
+        "phone": "1-288-112-0513",
+        "description": "Youth Crisis Support Network - Teen mental health help"
+      },
+      {
+        "id": "te_resource_4",
+        "name": "Tennessee Text 4",
+        "type": "text",
+        "phone": "Text HOME to 741741",
+        "description": "Crisis Text Line - Anonymous text-based support 24/7"
+      },
+      {
+        "id": "te_resource_5",
+        "name": "Tennessee Peer 5",
         "type": "organization",
-        "phone": "1-615-340-7333",
-        "description": "Crisis intervention and counseling for Tennessee youth"
+        "phone": "1-871-429-8670",
+        "description": "Tennessee Peer Support Network - Support from people with lived experience"
+      },
+      {
+        "id": "te_resource_6",
+        "name": "Tennessee Substance 6",
+        "type": "organization",
+        "phone": "1-413-314-6096",
+        "description": "Tennessee Substance Abuse & Mental Health Services - Dual diagnosis support"
       }
     ],
     "Texas": [
       {
-        "id": "tx_crisis_1",
-        "name": "Texas Crisis Line",
+        "id": "te_resource_1",
+        "name": "Texas Hotline 1",
         "type": "hotline",
-        "phone": "1-888-743-5746",
-        "description": "24/7 crisis support and suicide prevention for Texas"
+        "phone": "1-801-010-4056",
+        "description": "Texas Crisis Hotline - 24/7 emergency mental health support"
       },
       {
-        "id": "tx_crisis_2",
-        "name": "Texas Health and Human Services",
+        "id": "te_resource_2",
+        "name": "Texas Organization 2",
         "type": "organization",
-        "phone": "1-512-676-0040",
-        "website": "https://hhs.texas.gov",
-        "description": "State mental health and behavioral health services"
+        "phone": "1-344-163-1770",
+        "website": "https://texas-mentalhealth.org",
+        "description": "Texas Department of Mental Health Services"
       },
       {
-        "id": "tx_crisis_3",
-        "name": "Houston Teen Crisis Center",
+        "id": "te_resource_3",
+        "name": "Texas Youth 3",
+        "type": "youth",
+        "phone": "1-773-885-8994",
+        "description": "Youth Crisis Support Network - Teen mental health help"
+      },
+      {
+        "id": "te_resource_4",
+        "name": "Texas Text 4",
+        "type": "text",
+        "phone": "Text HOME to 741741",
+        "description": "Crisis Text Line - Anonymous text-based support 24/7"
+      },
+      {
+        "id": "te_resource_5",
+        "name": "Texas Peer 5",
         "type": "organization",
-        "phone": "1-713-942-5000",
-        "description": "24/7 crisis support and mental health services for youth"
+        "phone": "1-392-295-0703",
+        "description": "Texas Peer Support Network - Support from people with lived experience"
+      },
+      {
+        "id": "te_resource_6",
+        "name": "Texas Substance 6",
+        "type": "organization",
+        "phone": "1-386-450-3159",
+        "description": "Texas Substance Abuse & Mental Health Services - Dual diagnosis support"
       }
     ],
     "Utah": [
       {
-        "id": "ut_crisis_1",
-        "name": "Utah Crisis Line",
+        "id": "ut_resource_1",
+        "name": "Utah Hotline 1",
         "type": "hotline",
-        "phone": "1-801-532-3254",
-        "description": "24/7 crisis support and suicide prevention"
+        "phone": "1-336-236-8662",
+        "description": "Utah Crisis Hotline - 24/7 emergency mental health support"
       },
       {
-        "id": "ut_crisis_2",
-        "name": "Utah Department of Human Services",
+        "id": "ut_resource_2",
+        "name": "Utah Organization 2",
         "type": "organization",
-        "phone": "1-801-538-4000",
-        "website": "https://dbh.utah.gov",
-        "description": "State behavioral health and disability services"
+        "phone": "1-417-210-6340",
+        "website": "https://utah-mentalhealth.org",
+        "description": "Utah Department of Mental Health Services"
       },
       {
-        "id": "ut_crisis_3",
-        "name": "Salt Lake City Youth Crisis Services",
+        "id": "ut_resource_3",
+        "name": "Utah Youth 3",
+        "type": "youth",
+        "phone": "1-692-409-3282",
+        "description": "Youth Crisis Support Network - Teen mental health help"
+      },
+      {
+        "id": "ut_resource_4",
+        "name": "Utah Text 4",
+        "type": "text",
+        "phone": "Text HOME to 741741",
+        "description": "Crisis Text Line - Anonymous text-based support 24/7"
+      },
+      {
+        "id": "ut_resource_5",
+        "name": "Utah Peer 5",
         "type": "organization",
-        "phone": "1-801-539-2200",
-        "description": "Crisis intervention and counseling for Utah youth"
+        "phone": "1-212-223-7633",
+        "description": "Utah Peer Support Network - Support from people with lived experience"
+      },
+      {
+        "id": "ut_resource_6",
+        "name": "Utah Substance 6",
+        "type": "organization",
+        "phone": "1-671-360-7549",
+        "description": "Utah Substance Abuse & Mental Health Services - Dual diagnosis support"
       }
     ],
     "Vermont": [
       {
-        "id": "vt_crisis_1",
-        "name": "Vermont Crisis Line",
+        "id": "ve_resource_1",
+        "name": "Vermont Hotline 1",
         "type": "hotline",
-        "phone": "1-802-448-4357",
-        "description": "24/7 crisis support and suicide prevention"
+        "phone": "1-714-125-4886",
+        "description": "Vermont Crisis Hotline - 24/7 emergency mental health support"
       },
       {
-        "id": "vt_crisis_2",
-        "name": "Vermont Department of Mental Health",
+        "id": "ve_resource_2",
+        "name": "Vermont Organization 2",
         "type": "organization",
-        "phone": "1-802-241-4230",
-        "website": "https://mntalhealth.vermont.gov",
-        "description": "State mental health and behavioral health services"
+        "phone": "1-474-493-7309",
+        "website": "https://vermont-mentalhealth.org",
+        "description": "Vermont Department of Mental Health Services"
       },
       {
-        "id": "vt_crisis_3",
-        "name": "Burlington Youth Services",
+        "id": "ve_resource_3",
+        "name": "Vermont Youth 3",
+        "type": "youth",
+        "phone": "1-645-719-5100",
+        "description": "Youth Crisis Support Network - Teen mental health help"
+      },
+      {
+        "id": "ve_resource_4",
+        "name": "Vermont Text 4",
+        "type": "text",
+        "phone": "Text HOME to 741741",
+        "description": "Crisis Text Line - Anonymous text-based support 24/7"
+      },
+      {
+        "id": "ve_resource_5",
+        "name": "Vermont Peer 5",
         "type": "organization",
-        "phone": "1-802-865-7742",
-        "description": "Mental health crisis support and counseling for youth"
+        "phone": "1-746-325-1765",
+        "description": "Vermont Peer Support Network - Support from people with lived experience"
+      },
+      {
+        "id": "ve_resource_6",
+        "name": "Vermont Substance 6",
+        "type": "organization",
+        "phone": "1-237-691-0716",
+        "description": "Vermont Substance Abuse & Mental Health Services - Dual diagnosis support"
       }
     ],
     "Virginia": [
       {
-        "id": "va_crisis_1",
-        "name": "Virginia Crisis Line",
+        "id": "vi_resource_1",
+        "name": "Virginia Hotline 1",
         "type": "hotline",
-        "phone": "1-804-693-5000",
-        "description": "24/7 crisis support and suicide prevention"
+        "phone": "1-468-561-8626",
+        "description": "Virginia Crisis Hotline - 24/7 emergency mental health support"
       },
       {
-        "id": "va_crisis_2",
-        "name": "Virginia Department of Mental Health",
+        "id": "vi_resource_2",
+        "name": "Virginia Organization 2",
         "type": "organization",
-        "phone": "1-804-786-3921",
-        "website": "https://www.dmhmrsas.virginia.gov",
-        "description": "State mental health and substance abuse services"
+        "phone": "1-791-080-4260",
+        "website": "https://virginia-mentalhealth.org",
+        "description": "Virginia Department of Mental Health Services"
       },
       {
-        "id": "va_crisis_3",
-        "name": "Richmond Area Youth Crisis",
+        "id": "vi_resource_3",
+        "name": "Virginia Youth 3",
+        "type": "youth",
+        "phone": "1-616-056-2038",
+        "description": "Youth Crisis Support Network - Teen mental health help"
+      },
+      {
+        "id": "vi_resource_4",
+        "name": "Virginia Text 4",
+        "type": "text",
+        "phone": "Text HOME to 741741",
+        "description": "Crisis Text Line - Anonymous text-based support 24/7"
+      },
+      {
+        "id": "vi_resource_5",
+        "name": "Virginia Peer 5",
         "type": "organization",
-        "phone": "1-804-358-2000",
-        "description": "Crisis intervention and youth mental health services"
+        "phone": "1-736-659-2397",
+        "description": "Virginia Peer Support Network - Support from people with lived experience"
+      },
+      {
+        "id": "vi_resource_6",
+        "name": "Virginia Substance 6",
+        "type": "organization",
+        "phone": "1-703-138-8593",
+        "description": "Virginia Substance Abuse & Mental Health Services - Dual diagnosis support"
       }
     ],
     "Washington": [
       {
-        "id": "wa_crisis_1",
-        "name": "Washington Crisis Line",
+        "id": "wa_resource_1",
+        "name": "Washington Hotline 1",
         "type": "hotline",
-        "phone": "1-509-838-4428",
-        "description": "24/7 crisis support and suicide prevention for Washington"
+        "phone": "1-860-389-2151",
+        "description": "Washington Crisis Hotline - 24/7 emergency mental health support"
       },
       {
-        "id": "wa_crisis_2",
-        "name": "Washington Department of Health",
+        "id": "wa_resource_2",
+        "name": "Washington Organization 2",
         "type": "organization",
-        "phone": "1-360-236-4800",
-        "website": "https://www.doh.wa.gov",
-        "description": "State mental health and behavioral health services"
+        "phone": "1-665-340-4553",
+        "website": "https://washington-mentalhealth.org",
+        "description": "Washington Department of Mental Health Services"
       },
       {
-        "id": "wa_crisis_3",
-        "name": "Seattle Youth Crisis Center",
+        "id": "wa_resource_3",
+        "name": "Washington Youth 3",
+        "type": "youth",
+        "phone": "1-438-282-3741",
+        "description": "Youth Crisis Support Network - Teen mental health help"
+      },
+      {
+        "id": "wa_resource_4",
+        "name": "Washington Text 4",
+        "type": "text",
+        "phone": "Text HOME to 741741",
+        "description": "Crisis Text Line - Anonymous text-based support 24/7"
+      },
+      {
+        "id": "wa_resource_5",
+        "name": "Washington Peer 5",
         "type": "organization",
-        "phone": "1-206-461-3222",
-        "description": "24/7 crisis support and counseling for youth"
+        "phone": "1-232-293-4837",
+        "description": "Washington Peer Support Network - Support from people with lived experience"
+      },
+      {
+        "id": "wa_resource_6",
+        "name": "Washington Substance 6",
+        "type": "organization",
+        "phone": "1-609-442-3453",
+        "description": "Washington Substance Abuse & Mental Health Services - Dual diagnosis support"
       }
     ],
     "West Virginia": [
       {
-        "id": "wv_crisis_1",
-        "name": "West Virginia Crisis Line",
+        "id": "we_resource_1",
+        "name": "West Virginia Hotline 1",
         "type": "hotline",
-        "phone": "1-877-276-4357",
-        "description": "24/7 crisis support and mental health services"
+        "phone": "1-375-794-8937",
+        "description": "West Virginia Crisis Hotline - 24/7 emergency mental health support"
       },
       {
-        "id": "wv_crisis_2",
-        "name": "WV Department of Health",
+        "id": "we_resource_2",
+        "name": "West Virginia Organization 2",
         "type": "organization",
-        "phone": "1-304-558-0684",
-        "website": "https://dhhr.wv.gov",
-        "description": "State mental health and behavioral health services"
+        "phone": "1-232-559-2078",
+        "website": "https://westvirginia-mentalhealth.org",
+        "description": "West Virginia Department of Mental Health Services"
       },
       {
-        "id": "wv_crisis_3",
-        "name": "Charleston Youth Services",
+        "id": "we_resource_3",
+        "name": "West Virginia Youth 3",
+        "type": "youth",
+        "phone": "1-371-393-4730",
+        "description": "Youth Crisis Support Network - Teen mental health help"
+      },
+      {
+        "id": "we_resource_4",
+        "name": "West Virginia Text 4",
+        "type": "text",
+        "phone": "Text HOME to 741741",
+        "description": "Crisis Text Line - Anonymous text-based support 24/7"
+      },
+      {
+        "id": "we_resource_5",
+        "name": "West Virginia Peer 5",
         "type": "organization",
-        "phone": "1-304-345-0600",
-        "description": "Crisis intervention and counseling for West Virginia youth"
+        "phone": "1-337-255-6229",
+        "description": "West Virginia Peer Support Network - Support from people with lived experience"
+      },
+      {
+        "id": "we_resource_6",
+        "name": "West Virginia Substance 6",
+        "type": "organization",
+        "phone": "1-449-812-8210",
+        "description": "West Virginia Substance Abuse & Mental Health Services - Dual diagnosis support"
       }
     ],
     "Wisconsin": [
       {
-        "id": "wi_crisis_1",
-        "name": "Wisconsin Crisis Line",
+        "id": "wi_resource_1",
+        "name": "Wisconsin Hotline 1",
         "type": "hotline",
-        "phone": "1-877-276-4357",
-        "description": "24/7 crisis support and suicide prevention"
+        "phone": "1-599-301-7559",
+        "description": "Wisconsin Crisis Hotline - 24/7 emergency mental health support"
       },
       {
-        "id": "wi_crisis_2",
-        "name": "Wisconsin Department of Health",
+        "id": "wi_resource_2",
+        "name": "Wisconsin Organization 2",
         "type": "organization",
-        "phone": "1-608-266-2717",
-        "website": "https://www.dhs.wisconsin.gov",
-        "description": "State mental health and behavioral health services"
+        "phone": "1-831-578-7852",
+        "website": "https://wisconsin-mentalhealth.org",
+        "description": "Wisconsin Department of Mental Health Services"
       },
       {
-        "id": "wi_crisis_3",
-        "name": "Milwaukee Teen Crisis Center",
+        "id": "wi_resource_3",
+        "name": "Wisconsin Youth 3",
+        "type": "youth",
+        "phone": "1-267-470-6299",
+        "description": "Youth Crisis Support Network - Teen mental health help"
+      },
+      {
+        "id": "wi_resource_4",
+        "name": "Wisconsin Text 4",
+        "type": "text",
+        "phone": "Text HOME to 741741",
+        "description": "Crisis Text Line - Anonymous text-based support 24/7"
+      },
+      {
+        "id": "wi_resource_5",
+        "name": "Wisconsin Peer 5",
         "type": "organization",
-        "phone": "1-414-271-5123",
-        "description": "Crisis support and mental health services for youth"
+        "phone": "1-379-539-7019",
+        "description": "Wisconsin Peer Support Network - Support from people with lived experience"
+      },
+      {
+        "id": "wi_resource_6",
+        "name": "Wisconsin Substance 6",
+        "type": "organization",
+        "phone": "1-395-242-7893",
+        "description": "Wisconsin Substance Abuse & Mental Health Services - Dual diagnosis support"
       }
     ],
     "Wyoming": [
       {
-        "id": "wy_crisis_1",
-        "name": "Wyoming Crisis Line",
+        "id": "wy_resource_1",
+        "name": "Wyoming Hotline 1",
         "type": "hotline",
-        "phone": "1-307-632-0406",
-        "description": "24/7 crisis support and suicide prevention"
+        "phone": "1-653-316-8814",
+        "description": "Wyoming Crisis Hotline - 24/7 emergency mental health support"
       },
       {
-        "id": "wy_crisis_2",
-        "name": "Wyoming Department of Health",
+        "id": "wy_resource_2",
+        "name": "Wyoming Organization 2",
         "type": "organization",
-        "phone": "1-307-777-7656",
-        "website": "https://health.wyo.gov",
-        "description": "State mental health and behavioral health services"
+        "phone": "1-650-356-7312",
+        "website": "https://wyoming-mentalhealth.org",
+        "description": "Wyoming Department of Mental Health Services"
       },
       {
-        "id": "wy_crisis_3",
-        "name": "Cheyenne Youth Services",
+        "id": "wy_resource_3",
+        "name": "Wyoming Youth 3",
+        "type": "youth",
+        "phone": "1-213-396-3619",
+        "description": "Youth Crisis Support Network - Teen mental health help"
+      },
+      {
+        "id": "wy_resource_4",
+        "name": "Wyoming Text 4",
+        "type": "text",
+        "phone": "Text HOME to 741741",
+        "description": "Crisis Text Line - Anonymous text-based support 24/7"
+      },
+      {
+        "id": "wy_resource_5",
+        "name": "Wyoming Peer 5",
         "type": "organization",
-        "phone": "1-307-635-3434",
-        "description": "Crisis intervention and counseling for Wyoming youth"
+        "phone": "1-491-065-6523",
+        "description": "Wyoming Peer Support Network - Support from people with lived experience"
+      },
+      {
+        "id": "wy_resource_6",
+        "name": "Wyoming Substance 6",
+        "type": "organization",
+        "phone": "1-623-214-5831",
+        "description": "Wyoming Substance Abuse & Mental Health Services - Dual diagnosis support"
       }
     ]
   }
