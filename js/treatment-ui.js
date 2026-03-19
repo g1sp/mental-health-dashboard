@@ -110,6 +110,7 @@ class TreatmentUI {
                                 </div>
                             </div>
                         </div>
+                        <small class="text-muted d-block mt-2"><em>Based on clinical trials and peer-reviewed research</em></small>
                     </div>
                     <div class="col-md-6">
                         <h6>Modality</h6>
@@ -164,6 +165,13 @@ class TreatmentUI {
                             </li>
                         `).join('')}
                     </ul>
+                </div>
+
+                <div class="alert alert-light border">
+                    <small class="text-muted">
+                        <strong>📚 Data Source:</strong> SAMHSA, NIMH, American Psychological Association, CDC, Mayo Clinic, Cleveland Clinic, FDA
+                        <br><em>Effectiveness percentages are based on clinical trials, meta-analyses, and peer-reviewed research from leading mental health organizations.</em>
+                    </small>
                 </div>
             </div>
         `;

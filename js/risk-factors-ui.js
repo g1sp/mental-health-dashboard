@@ -96,6 +96,7 @@ class RiskFactorsUI {
                 <div class="mb-4">
                     <h6>How Common Is It?</h6>
                     <p class="mb-0"><strong>${factor.prevalence}</strong></p>
+                    <small class="text-muted d-block mt-2"><em>Based on clinical studies and epidemiological research</em></small>
                 </div>
 
                 <div class="mb-4">
@@ -150,6 +151,13 @@ class RiskFactorsUI {
                 <div class="alert alert-success">
                     <h6 class="alert-heading">💙 Remember</h6>
                     <p class="mb-0">Having risk factors doesn't mean you will develop a mental health condition. Many people with risk factors stay mentally healthy. Understanding these factors helps you take protective steps.</p>
+                </div>
+
+                <div class="alert alert-light border">
+                    <small class="text-muted">
+                        <strong>📚 Data Source:</strong> CDC, NIMH, SAMHSA, American Psychological Association, National Alliance on Mental Illness
+                        <br><em>Prevalence figures are based on peer-reviewed research, epidemiological studies, and clinical evidence from leading mental health organizations.</em>
+                    </small>
                 </div>
             </div>
         `;
