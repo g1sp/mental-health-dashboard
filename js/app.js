@@ -82,6 +82,15 @@ class MentalHealthApp {
         // Populate risk factor filters
         this.populateRiskFactorFilters();
 
+        // Load parent guidance
+        const parentGuidanceLoaded = await parentHandler.loadGuidance();
+        if (!parentGuidanceLoaded) {
+            console.error('Failed to load parent guidance');
+        }
+
+        // Initialize parent UI
+        await parentUI.init();
+
         // Set up event listeners
         this.setupEventListeners();
         this.setupTreatmentEventListeners();

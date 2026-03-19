@@ -1,0 +1,458 @@
+{
+  "metadata": {
+    "source": "American Psychological Association, SAMHSA, Mayo Clinic, CDC, Gottman Institute, Parent-Child Interaction Therapy (PCIT), Evidence-based parenting research",
+    "description": "Evidence-based guidance for parents supporting youth mental health",
+    "note": "Created for parents co-using this dashboard with their teens",
+    "lastUpdated": "2026-03-18",
+    "phases": "Parent Guidance & Communication Strategies"
+  },
+  "sections": [
+    {
+      "id": "understanding",
+      "title": "Understanding Youth Mental Health",
+      "icon": "🧠",
+      "content": {
+        "overview": "Adolescent mental health challenges are more common than you think. Understanding what's normal teenage emotion vs. concerning patterns helps you respond effectively without overreacting or dismissing real struggles.",
+        "stats": [
+          "1 in 5 youth experience mental illness each year",
+          "70% of youth don't seek help (especially boys)",
+          "Early intervention reduces severity by 50%+",
+          "Family involvement increases treatment success by 20-30%"
+        ],
+        "normal_vs_concerning": {
+          "depression": {
+            "normal": "Sad mood for a few days after stress/disappointment; wanting alone time sometimes",
+            "concerning": "Persistent low mood 2+ weeks; loss of interest in everything; changes in sleep/appetite; inability to focus; thoughts of worthlessness"
+          },
+          "anxiety": {
+            "normal": "Nervousness about tests, social situations, or new experiences; temporary worry",
+            "concerning": "Constant worry interfering with daily life; physical symptoms (panic, racing heart) without cause; avoidance limiting activities; difficulty concentrating"
+          },
+          "self_harm": {
+            "normal": "Not normal; any self-harm signals distress and need for intervention",
+            "concerning": "Cutting, burning, hitting self; scratching until bleeding; hair pulling (trichotillomania); escalating pattern"
+          },
+          "social_changes": {
+            "normal": "Preferring peers over family sometimes; changing friend groups; experimenting with identity",
+            "concerning": "Complete social withdrawal; losing all friends; dramatic personality shift; engaging with harmful groups; sudden behavioral changes"
+          }
+        },
+        "brain_development_context": "Your teen's brain is still developing (especially the prefrontal cortex responsible for impulse control and emotional regulation). This is why teens seem emotionally intense, impulsive, or dramatic - it's neurobiology, not character flaw. Understanding this helps you stay calm and supportive rather than dismissive."
+      },
+      "subsections": [
+        {
+          "title": "The Teen Brain",
+          "content": "Ages 13-19: Rapid brain reorganization. Emotions are more intense. Decision-making is impulsive. Sleep patterns shift (natural bedtime moves later). Risk tolerance increases. This is NORMAL and temporary."
+        },
+        {
+          "title": "Risk Factors to Watch",
+          "content": "Social media comparison, perfectionism, academic pressure, peer stress, family conflict, trauma history, sleep deprivation, social isolation. Any of these + genetic predisposition can trigger mental health challenges."
+        }
+      ]
+    },
+    {
+      "id": "talking",
+      "title": "How to Talk About Mental Health",
+      "icon": "💬",
+      "content": {
+        "overview": "Most parents don't know how to start the conversation. Here's the evidence-based approach (Emotion Coaching framework from Gottman Institute).",
+        "framework": {
+          "step1": {
+            "name": "Awareness: Notice emotional cues",
+            "description": "Your teen looks withdrawn, snapping at everyone, or seemed upset. Don't ignore it, but also don't ambush them.",
+            "tips": [
+              "Wait for a calm moment (car rides, walks are better than dinnertime)",
+              "Observe before you react",
+              "Notice physical changes (sleep, appetite, energy, hygiene)"
+            ]
+          },
+          "step2": {
+            "name": "Connection: Validate before problem-solving",
+            "description": "This is the hardest part for most parents. You want to fix it, but your teen needs to feel heard first.",
+            "what_to_say": [
+              "\"I've noticed you seem down lately. What's going on?\"",
+              "\"You seem really stressed. I'm here to listen.\"",
+              "\"I care about you and I want to understand what you're experiencing.\""
+            ],
+            "what_NOT_to_say": [
+              "\"Just think positive\" (dismisses real struggle)",
+              "\"Other people have it worse\" (comparison, not connection)",
+              "\"When I was your age...\" (makes it about you)",
+              "Immediate advice (teen will shut down)"
+            ],
+            "key": "Listen 80%, talk 20%. Resist the urge to fix."
+          },
+          "step3": {
+            "name": "Labeling: Help them name the emotion",
+            "description": "Many teens can't articulate feelings. Help them identify what they're experiencing.",
+            "examples": [
+              "\"Sounds like you're feeling lonely/overwhelmed/frustrated. Is that it?\"",
+              "\"Help me understand - are you worried about how people see you?\"",
+              "\"This sounds really hard. That makes sense.\""
+            ]
+          },
+          "step4": {
+            "name": "Problem-solving: Only after connection",
+            "description": "Now you can offer ideas, but frame it as collaboration.",
+            "how": [
+              "\"What do you think might help?\" (ask first)",
+              "\"I have some ideas if you want to hear them\"",
+              "\"Let's figure this out together\""
+            ]
+          }
+        }
+      },
+      "subsections": [
+        {
+          "title": "Opening Conversation Starters",
+          "content": "- \"How are you really doing?\" (and wait for answer beyond 'fine')\n- \"What's been the hardest part of this week?\"\n- \"Is there anything I'm missing?\"\n- \"What would help right now?\"\nKey: Ask open-ended questions, not yes/no."
+        },
+        {
+          "title": "Reading Non-Verbal Cues",
+          "content": "Teens often won't verbally ask for help. Watch for:\n- Withdrawal from activities they loved\n- Changes in friend groups or social patterns\n- Sleep/appetite shifts\n- Academic changes\n- Increased irritability or anger\n- Neglecting hygiene\n- Increased phone/internet use\nThese are signals your teen needs connection."
+        }
+      ]
+    },
+    {
+      "id": "conditions",
+      "title": "Supporting Specific Conditions",
+      "icon": "💪",
+      "content": {
+        "overview": "Each condition responds to different parental supports. Here's what evidence shows works.",
+        "conditions": [
+          {
+            "name": "Depression",
+            "what_helps": [
+              "Encourage (don't force) gentle movement - even 10-min walk",
+              "Normalize low mood while encouraging small activities",
+              "Watch for self-harm or suicidal thoughts",
+              "Don't take withdrawal personally",
+              "Maintain routine (sleep, meals) even if teen resists"
+            ],
+            "what_hurts": [
+              "Toxic positivity (\"Just think happy thoughts\")",
+              "Punishment for mood-related behaviors",
+              "Overprotecting (preventing all challenge/growth)",
+              "Comparing to peers (\"Look how happy they are\")",
+              "Dismissing as laziness"
+            ],
+            "parent_self_care": "Depression is exhausting to witness. Take breaks. You can't fill from empty. Seek support."
+          },
+          {
+            "name": "Anxiety",
+            "what_helps": [
+              "Validate the fear (\"I know this feels real to you\") but don't reinforce avoidance",
+              "Encourage exposure to feared situations gradually (\"You're braver than you think\")",
+              "Teach grounding techniques together (5-4-3-2-1, breathing)",
+              "Model calm in your own anxiety",
+              "Celebrate courage, not just success"
+            ],
+            "what_hurts": [
+              "Reassurance loops (answering same worry 10 times)",
+              "Enabling avoidance (letting them skip school to avoid anxiety)",
+              "Expressing your own anxiety (they'll absorb it)",
+              "Pushing too hard too fast (\"Just do it\")",
+              "Treating anxiety as weakness"
+            ],
+            "parent_self_care": "Anxious teens have anxious parents often. Work on your own anxiety - they'll mirror your calmness."
+          },
+          {
+            "name": "Self-Harm",
+            "what_helps": [
+              "Stay calm (your panic makes them defensive)",
+              "Listen without judgment first",
+              "Understand the function (emotional release? Tangibility of internal pain?)",
+              "Help find alternatives (ice cube, drawing on skin, intense exercise)",
+              "Professional help is essential - don't try to manage alone",
+              "Keep sharp objects in safe place without making it obvious you're restricting"
+            ],
+            "what_hurts": [
+              "Shame or anger (pushes them underground)",
+              "Punishment (doesn't address underlying pain)",
+              "Overreaction (panicked response adds pressure)",
+              "Dismissal (\"Lots of kids do this\")",
+              "Attempting to be sole support without professional help"
+            ],
+            "parent_self_care": "This is heavy. Get your own therapist. Self-harm is a sign your teen needs professional help NOW."
+          },
+          {
+            "name": "Social Anxiety",
+            "what_helps": [
+              "Gradual exposure (one social situation at a time)",
+              "Celebrate showing up, not social \"success\"",
+              "Practice social scenarios at home (role-play)",
+              "Don't force; encourage gently",
+              "Help them find small-group activities (easier than large groups)",
+              "Validate that social anxiety is real (not 'just shyness')"
+            ],
+            "what_hurts": [
+              "Forcing participation in large group situations",
+              "Labeling as 'shy' or 'anti-social'",
+              "Your own social anxiety modeling",
+              "Punishment for social avoidance",
+              "Assuming they're being dramatic"
+            ],
+            "parent_self_care": "Remember: your anxious teen needs calm, consistent support. You are the stable base."
+          }
+        ]
+      }
+    },
+    {
+      "id": "red_flags",
+      "title": "Red Flags: When to Seek Professional Help",
+      "icon": "🚨",
+      "content": {
+        "overview": "Not every mood dip needs therapy, but these signs warrant professional evaluation.",
+        "immediate_crisis": [
+          "Suicidal statements (\"I'd be better off dead\", \"Everyone would be happier without me\")",
+          "Giving away possessions",
+          "Sudden calmness after depression (paradoxical recovery can signal plan)",
+          "Talking about suicide methods",
+          "Active self-harm (cutting, burning) with increasing severity",
+          "Substance use escalating",
+          "Complete social withdrawal lasting 2+ weeks"
+        ],
+        "call_crisis_line": "If any of above: 988 (Suicide & Crisis Lifeline) or 911",
+        "seek_therapist_if": [
+          "Persistent low mood, anxiety, or emotional dysregulation for 2+ weeks despite normal support",
+          "Academic performance dropping significantly",
+          "Withdrawal from previously enjoyed activities for 2+ weeks",
+          "Sleep or appetite changes lasting weeks",
+          "Social isolation or relationship conflicts worsening",
+          "Any self-harm behavior, even if mild",
+          "Substance use experimentation becoming regular",
+          "Family conflict escalating despite your efforts",
+          "Traumatic event (loss, abuse, accident) happened recently",
+          "You (parent) are consistently unable to de-escalate conflicts"
+        ],
+        "finding_therapist": {
+          "step1": "Insurance: Call provider, ask for youth mental health providers in your area; most cover therapy",
+          "step2": "Credentials: Look for LCSW (Licensed Clinical Social Worker), LPC (Licensed Professional Counselor), PhD/PsyD Psychologist, or MD Psychiatrist",
+          "step3": "Modality: Does your teen need CBT? DBT? Trauma-informed? Family therapy?",
+          "step4": "Interview: Most therapists offer 15-min initial calls. Ask about their experience with your teen's condition",
+          "step5": "First session: Watch for: Does therapist listen to your teen? Do they explain approach? Do they seem to get your family?",
+          "tip": "First therapist may not be the right fit. It's okay to try another."
+        }
+      }
+    },
+    {
+      "id": "strategies",
+      "title": "Practical Support Strategies",
+      "icon": "🛠️",
+      "content": {
+        "overview": "Evidence-based things you can do right now to support mental health.",
+        "strategies": [
+          {
+            "name": "Sleep Environment",
+            "why": "Sleep deprivation is the #1 risk factor for depression/anxiety in teens. Adolescents biologically need 8-10 hours. Late phone use delays sleep by 1-2 hours.",
+            "what_to_do": [
+              "Phones out of bedroom by 9pm (at least 1 hour before sleep)",
+              "Consistent bedtime/wake time (even weekends)",
+              "Dark, cool room (65-68°F optimal)",
+              "No screens 30-60 min before bed",
+              "Avoid caffeine after 2pm"
+            ],
+            "how_to_approach": "Frame as family rule ('We're all doing this'), not punishment. Your sleep habits matter too - model good sleep."
+          },
+          {
+            "name": "Physical Activity",
+            "why": "Exercise = natural antidepressant. 30 min/day reduces depression by 47%, anxiety by 42% (research).",
+            "what_to_do": [
+              "Find activity they enjoy (not forced sports - could be walks, skateboarding, dancing, YouTube videos)",
+              "Start small (10 min) if they're resistant",
+              "Do it together sometimes (not all the time)",
+              "Celebrate consistency, not performance"
+            ],
+            "how_to_approach": "\"Want to go for a walk?\" (casual) vs \"You need exercise\" (resistance invitation). Option is key."
+          },
+          {
+            "name": "Nutrition",
+            "why": "Blood sugar, omega-3s, B vitamins affect mood. Erratic eating worsens anxiety and depression.",
+            "what_to_do": [
+              "Regular meals (skipping breakfast = worse mood)",
+              "Protein + complex carbs (stabilizes mood)",
+              "Limit sugar/energy drinks (spike then crash)",
+              "Model healthy eating (you matter)"
+            ],
+            "how_to_approach": "Not about weight/appearance. Frame as 'food is fuel for your brain.' Invite them to cook together."
+          },
+          {
+            "name": "Social Connection",
+            "why": "Loneliness is 2.5x risk for depression/anxiety. Teens isolate when struggling, but isolation worsens it.",
+            "what_to_do": [
+              "Normalize spending time with friends (don't require it if anxious, but gently encourage)",
+              "Create space for teen's friends at home (even if chaotic)",
+              "Don't force socializing, but don't allow complete withdrawal",
+              "Watch for online-only friendships (can support, but not replace in-person)"
+            ],
+            "how_to_approach": "\"I know you're struggling. Research shows connecting with people helps. What if you...\" (offer options, not demands)"
+          },
+          {
+            "name": "Limiting Harmful Comparisons",
+            "why": "Social media comparison is #1 driver of teen depression/anxiety. Instagram highlights ≠ reality.",
+            "what_to_do": [
+              "Teach critical media literacy ('That's a filtered highlight reel')",
+              "Set time limits on social media (not bans - backfire)",
+              "Follow positive accounts yourself (model media diet)",
+              "Discuss unrealistic standards (Photoshop, surgery, filters)"
+            ],
+            "how_to_approach": "Not anti-technology. Help them use it consciously. \"Does this account make you feel better or worse?\""
+          }
+        ]
+      }
+    },
+    {
+      "id": "mistakes",
+      "title": "Common Parenting Mistakes to Avoid",
+      "icon": "⚠️",
+      "content": {
+        "mistakes": [
+          {
+            "mistake": "Toxic positivity (\"Just think positive!\")",
+            "why_it_backfires": "Invalidates their real experience. Signals you don't understand. They stop sharing.",
+            "instead": "\"This is really hard. I'm here. Let's figure this out together.\""
+          },
+          {
+            "mistake": "Reassurance loops (answering same worry repeatedly)",
+            "why_it_backfires": "Temporarily relieves anxiety, but reinforces that worry is dangerous. Creates dependency on reassurance.",
+            "instead": "First time: answer. After that: \"You already know the answer. What would happen if you sat with this worry?\""
+          },
+          {
+            "mistake": "Overprotecting (preventing all difficulty/challenge)",
+            "why_it_backfires": "Teaches that they can't handle anything. Reduces confidence. Anxiety grows.",
+            "instead": "Support while they face manageable challenges. Encourage gradual exposure."
+          },
+          {
+            "mistake": "Punishing mental health symptoms",
+            "why_it_backfires": "Depression/anxiety aren't choices. Punishment teaches shame, not change.",
+            "instead": "Separate behavior from condition. 'I understand you're anxious. I also need you to go to school.' Both can be true."
+          },
+          {
+            "mistake": "Making it about you",
+            "why_it_backfires": "Teen feels guilty for causing YOUR stress. Stops opening up.",
+            "instead": "Get your own support. Process with other adults or therapist, not your teen."
+          },
+          {
+            "mistake": "Dismissing as 'phase' or 'normal'",
+            "why_it_backfires": "Real suffering gets ignored. Condition worsens. Teen feels unsupported.",
+            "instead": "Take it seriously while maintaining perspective. 'This is hard AND we can get through it.'"
+          },
+          {
+            "mistake": "Comparing to peers",
+            "why_it_backfires": "Teen already compares themselves constantly. This amplifies shame.",
+            "instead": "Focus on YOUR teen's experience and growth. 'I'm proud of how you're handling this.'"
+          }
+        ]
+      }
+    },
+    {
+      "id": "self_care",
+      "title": "Parent Self-Care: You Can't Pour From Empty",
+      "icon": "❤️",
+      "content": {
+        "overview": "Supporting a struggling teen is emotionally draining. Your wellbeing directly impacts their recovery.",
+        "reality": "If you're burned out, anxious, or depressed, your teen will absorb it. Your calm is contagious. Your panic is contagious.",
+        "priorities": [
+          {
+            "item": "Your mental health",
+            "why": "You need your own therapist/support. Not weakness - necessity. Your teen's condition may trigger your own trauma.",
+            "action": "Find a therapist. Even 1x/month helps."
+          },
+          {
+            "item": "Your marriage/partnership (if applicable)",
+            "why": "Parenting a struggling teen tests relationships. Stay connected to your partner.",
+            "action": "Weekly 20-min check-in with partner about how you're each handling it. United front = easier parenting."
+          },
+          {
+            "item": "Your sleep",
+            "why": "Sleep deprivation makes everything worse. Parental worry often kills sleep.",
+            "action": "Protect your sleep like you protect your teen's. Even if worried, sleep helps you problem-solve better."
+          },
+          {
+            "item": "Your physical health",
+            "why": "Exercise and nutrition aren't luxuries. They're baseline for managing stress.",
+            "action": "30 min movement 3x/week. Non-negotiable."
+          },
+          {
+            "item": "Your social connection",
+            "why": "Isolation worsens parental stress and depression. You need people outside your family.",
+            "action": "One friend date/activity per week that's just for you."
+          }
+        ],
+        "permission_to_rest": "You don't have to have all the answers. You don't have to 'fix' your teen. You just have to show up, stay calm, and get professional help when needed. That's enough. You're doing better than you think."
+      }
+    },
+    {
+      "id": "resources",
+      "title": "Resources for Parents",
+      "icon": "📚",
+      "content": {
+        "crisis": [
+          {
+            "name": "National Suicide Prevention Lifeline",
+            "contact": "988 (call or text)",
+            "availability": "24/7",
+            "for_what": "Immediate crisis support for suicidal thoughts"
+          },
+          {
+            "name": "Crisis Text Line",
+            "contact": "Text HOME to 741741",
+            "availability": "24/7",
+            "for_what": "Text-based crisis support"
+          }
+        ],
+        "organizations": [
+          {
+            "name": "NAMI (National Alliance on Mental Illness)",
+            "website": "https://www.nami.org/",
+            "offers": "Parent support groups, educational classes, crisis resources"
+          },
+          {
+            "name": "AFSP (American Foundation for Suicide Prevention)",
+            "website": "https://afsp.org/",
+            "offers": "Education, support, resources for loss survivors"
+          },
+          {
+            "name": "SAMHSA (Substance Abuse & Mental Health Services Administration)",
+            "website": "https://www.samhsa.gov/",
+            "offers": "Treatment locator, helpline, evidence-based resources"
+          }
+        ],
+        "books": [
+          {
+            "title": "The Whole-Brain Child",
+            "author": "Daniel Siegel & Tina Payne Bryson",
+            "why": "Understanding teen brain development and why they react the way they do"
+          },
+          {
+            "title": "Emotional Intelligence",
+            "author": "Daniel Goleman",
+            "why": "How to develop emotional regulation - for you AND your teen"
+          },
+          {
+            "title": "Untangled: Guiding Teenage Girls Through the Seven Transitions",
+            "author": "Lisa Damour",
+            "why": "For parents of teen girls - normalizes struggles, provides guidance"
+          },
+          {
+            "title": "Raising Resilience",
+            "author": "Ginsburg & Jablow",
+            "why": "Building confidence and coping in your teen"
+          }
+        ],
+        "podcasts": [
+          {
+            "name": "TED Talks",
+            "topic": "Search: 'adolescent mental health', 'parenting teens', 'teen anxiety'",
+            "why": "Research-backed, accessible overviews"
+          },
+          {
+            "name": "The Anxiety Coaches Podcast",
+            "topic": "Parenting anxious kids",
+            "why": "Practical strategies for anxiety specifically"
+          }
+        ]
+      }
+    }
+  ]
+}

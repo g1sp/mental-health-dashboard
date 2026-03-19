@@ -61,6 +61,11 @@
                 </button>
             </li>
             <li class="nav-item" role="presentation">
+                <button class="nav-link" id="parentGuidanceTab" data-bs-toggle="tab" data-bs-target="#parentGuidanceContent" type="button" role="tab" aria-controls="parentGuidanceContent" aria-selected="false">
+                    👥 For Parents & Caregivers
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
                 <button class="nav-link" id="learningTab" data-bs-toggle="tab" data-bs-target="#learningContent" type="button" role="tab" aria-controls="learningContent" aria-selected="false">
                     📚 How to Build This App
                 </button>
@@ -562,6 +567,32 @@
             </div>
         </div>
 
+        <!-- Parent Guidance Tab -->
+        <div class="tab-pane fade" id="parentGuidanceContent" role="tabpanel" aria-labelledby="parentGuidanceTab">
+            <div class="container-fluid">
+                <div class="row mb-5">
+                    <div class="col-12">
+                        <h1 class="mb-2">👥 Parent & Caregiver Guidance</h1>
+                        <p class="lead text-muted">Evidence-based guidance for supporting your teen's mental health journey</p>
+                    </div>
+                </div>
+
+                <!-- Section Navigation -->
+                <div class="row mb-5">
+                    <div class="col-12">
+                        <div id="parentSectionList"></div>
+                    </div>
+                </div>
+
+                <!-- Section Content -->
+                <div class="row mb-5">
+                    <div class="col-12">
+                        <div id="parentSectionContent"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Learning Tab -->
         <div class="tab-pane fade" id="learningContent" role="tabpanel" aria-labelledby="learningTab">
             <div class="container-fluid">
@@ -858,6 +889,8 @@
     <script src="js/journal-ui.js"></script>
     <script src="js/coping-handler.js"></script>
     <script src="js/coping-ui.js"></script>
+    <script src="js/parent-handler.js"></script>
+    <script src="js/parent-ui.js"></script>
     <script src="js/app.js"></script>
 </body>
 </html>
