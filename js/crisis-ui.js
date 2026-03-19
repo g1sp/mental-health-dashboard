@@ -9,6 +9,7 @@ class CrisisUI {
         this.setupDashboardCard();
         this.setupModal();
         this.setupNavbarButton();
+        this.setupTabContent();
     }
 
     setupBanner() {
@@ -21,12 +22,8 @@ class CrisisUI {
     }
 
     setupNavbarButton() {
-        const crisisBtn = document.getElementById('crisisHelpBtn');
-        if (crisisBtn) {
-            crisisBtn.addEventListener('click', () => {
-                this.showCrisisModal();
-            });
-        }
+        // Crisis help is now accessed via the Crisis Resources tab
+        // The navbar button has been removed in favor of the dedicated tab
     }
 
     setupDashboardCard() {
@@ -145,6 +142,56 @@ class CrisisUI {
         if (modalElement) {
             this.modal = new bootstrap.Modal(modalElement);
         }
+    }
+
+    setupTabContent() {
+        const container = document.getElementById('crisisResourcesContainer');
+        if (!container) return;
+
+        const resources = crisisHandler.getAllResources();
+
+        let html = '';
+        resources.forEach(resource => {
+            html += `
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body">
+                            <h5 class="card-title mb-2">
+                                <span class="fs-4">${resource.icon}</span> ${resource.name}
+                            </h5>
+                            <p class="text-muted mb-3 small">${resource.description}</p>
+                            <p class="mb-3">${resource.fullDescription}</p>
+
+                            <div class="mb-3">
+                                <strong class="d-block mb-2">How to reach:</strong>
+                                <div class="list-group list-group-sm">
+                                    ${resource.methods.map(method => `
+                                        <div class="list-group-item border-0 px-0 py-2 bg-transparent">
+                                            <span class="me-2">${method.icon}</span>
+                                            <strong>${method.type}:</strong>
+                                            ${method.url ? `
+                                                <a href="${method.url}" target="_blank" class="ms-1 text-decoration-none">
+                                                    ${method.value}
+                                                </a>
+                                            ` : `
+                                                <span class="ms-1 font-monospace fw-bold">${method.value}</span>
+                                            `}
+                                        </div>
+                                    `).join('')}
+                                </div>
+                            </div>
+
+                            <div>
+                                <strong class="d-block mb-1">Best for:</strong>
+                                <p class="text-muted small mb-0">${resource.bestFor}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+        });
+
+        container.innerHTML = html;
     }
 
     showCrisisModal(state = '') {
