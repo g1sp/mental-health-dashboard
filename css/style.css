@@ -648,19 +648,8 @@ footer {
     background-color: var(--info-color);
 }
 
-/* Coping skills grid */
-#copingSkillsGrid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 1rem;
-}
-
-/* Favorites grid (same as skills grid) */
-#copingFavoritesGrid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 1rem;
-}
+/* Coping skills grid - uses Bootstrap flexbox (row/col) like treatments and risk factors */
+/* No custom grid CSS - let Bootstrap handle the layout */
 
 /* Coping skill cards */
 .coping-skill-card {
@@ -763,11 +752,6 @@ footer {
 
 /* Responsive coping */
 @media (max-width: 768px) {
-    #copingSkillsGrid,
-    #copingFavoritesGrid {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 1rem;
-    }
 
     .coping-tab-btn {
         font-size: 0.875rem;
