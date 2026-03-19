@@ -1,0 +1,413 @@
+[
+  {
+    "id": 1,
+    "name": "Behavioral Activation",
+    "category": "Behavioral Therapy",
+    "condition": "depression",
+    "description": "Systematic scheduling of meaningful activities to counteract depression-related withdrawal and anhedonia.",
+    "effectiveness": "68% for mild-moderate depression",
+    "timeToEffect": "2-4 weeks",
+    "difficulty": "Low",
+    "ageGroup": ["13-17", "18-25"],
+    "mechanism": "Breaks avoidance cycle; increases behavioral momentum and social contact; builds positive reinforcement",
+    "steps": [
+      "Create a list of activities you find or used to find meaningful (hobby, sports, time with friends, learning)",
+      "Rate each activity by difficulty (1-10) and by how much it would help your mood if completed",
+      "Start with low-difficulty activities this week (even 15-30 min counts)",
+      "Schedule one activity daily, tracking your mood before and after",
+      "Gradually add more challenging activities as you build momentum",
+      "Notice patterns: which activities help most? When do you have most energy?",
+      "Adjust schedule based on what works for your depression"
+    ],
+    "benefits": [
+      "Breaks the depression-avoidance cycle",
+      "Increases positive experiences and reinforcement",
+      "Builds behavioral momentum and motivation",
+      "Increases social contact naturally",
+      "Provides sense of accomplishment"
+    ],
+    "bestFor": [
+      "Teens struggling with motivation or feeling like 'nothing matters'",
+      "Those withdrawn from activities they used to enjoy",
+      "Early stage depression or anhedonia",
+      "Those resistant to talk therapy initially"
+    ],
+    "toolsNeeded": ["Activity list", "Mood tracking", "Schedule/calendar"],
+    "appSupport": ["Moodpath", "Headspace", "Done"],
+    "resourceLinks": [
+      "https://www.samhsa.gov/",
+      "https://www.apa.org/"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Exposure & Response Prevention (ERP) - Youth Adapted",
+    "category": "Psychotherapy",
+    "condition": "anxiety",
+    "description": "Gradual exposure to feared situations combined with deliberately NOT engaging in anxiety-reducing behaviors (compulsions). Highly effective for OCD, social anxiety, and specific phobias.",
+    "effectiveness": "75-85% for anxiety disorders (gold standard for OCD)",
+    "timeToEffect": "4-8 weeks",
+    "difficulty": "Moderate-High",
+    "ageGroup": ["10-17", "18-25"],
+    "mechanism": "Habituation - anxiety naturally decreases with prolonged exposure; breaks anxiety-avoidance cycle; builds distress tolerance",
+    "steps": [
+      "Work with therapist to identify specific fear (e.g., social situations, contamination, uncertainty)",
+      "Create 'exposure ladder' - list feared situations ranked by anxiety level (1-10)",
+      "Start with moderate anxiety situations (5-6 level)",
+      "Intentionally enter anxiety situation WITHOUT doing the compulsion (reassurance seeking, checking, avoidance)",
+      "Stay in situation for 20-45 min until anxiety naturally decreases (habituation curve)",
+      "Record: situation, anxiety level before/after, compulsion urges resisted",
+      "Repeat exposures; anxiety response weakens with practice",
+      "Gradually work up to higher-anxiety situations"
+    ],
+    "benefits": [
+      "Proven most effective for OCD and anxiety in youth",
+      "Breaks anxiety-compulsion cycle permanently",
+      "Builds confidence handling anxiety",
+      "Increases freedom (less life organized around avoidance)",
+      "Superior to medication alone when combined"
+    ],
+    "bestFor": [
+      "Teens with specific phobias (social anxiety, heights, animals, contamination)",
+      "OCD symptoms (intrusive thoughts + compulsions)",
+      "Panic disorder with agoraphobia",
+      "Those willing to tolerate temporary discomfort for lasting relief"
+    ],
+    "toolsNeeded": ["Exposure ladder", "Anxiety tracking", "Willingness to feel discomfort"],
+    "appSupport": ["Exposure Therapy Assistant", "oVRcome (VR)", "Daylio (tracking)"],
+    "requiresTherapist": true,
+    "resourceLinks": [
+      "https://iocdf.org/",
+      "https://www.apa.org/ptsd-guideline"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "CBT-I: Cognitive Behavioral Therapy for Insomnia",
+    "category": "Behavioral",
+    "condition": "sleep",
+    "description": "Evidence-based sleep intervention combining sleep restriction, stimulus control, sleep hygiene, and cognitive restructuring. Condensed for adolescents (4-6 sessions).",
+    "effectiveness": "75-80% for adolescent insomnia; each hour of sleep gained reduces depression by 11%",
+    "timeToEffect": "1-2 weeks for sleep improvement; 3-4 weeks for mood/anxiety improvement",
+    "difficulty": "Low-Moderate",
+    "ageGroup": ["13-17", "18-25"],
+    "mechanism": "Improves sleep architecture and circadian rhythm regulation; secondary benefit to mood and anxiety via increased sleep",
+    "steps": [
+      "Track sleep for 1 week: when do you go to bed, how long to fall asleep, how many times awake, when wake up?",
+      "Calculate your average sleep duration and 'sleep efficiency' (sleep time / time in bed)",
+      "Sleep Restriction: Start spending LESS time in bed (often counterintuitive!) - go to bed only when sleepy",
+      "Stimulus Control: Use bed ONLY for sleep/sex - no screens, studying, worrying in bed",
+      "Sleep Hygiene: No caffeine after 2pm, no screens 30-60 min before bed, consistent sleep schedule (±30 min)",
+      "Challenge sleep anxiety: 'Racing thoughts' and 'can't sleep' thoughts themselves keep you awake - notice them, don't fight",
+      "Keep tracking; gradually expand sleep window as efficiency improves (usually 2-4 weeks)"
+    ],
+    "benefits": [
+      "Directly improves sleep quality and duration",
+      "Secondary improvement in mood, anxiety, focus, immune function",
+      "Highly practical and self-directed (after initial assessment)",
+      "Effects compound over weeks",
+      "Works alongside other treatments"
+    ],
+    "bestFor": [
+      "Teens with insomnia or irregular sleep patterns",
+      "Those with depression/anxiety worsened by poor sleep",
+      "Everyone (foundational for mental health)",
+      "Can be used alongside all other treatments"
+    ],
+    "toolsNeeded": ["Sleep log/tracker", "Consistent schedule", "Bedroom optimization"],
+    "appSupport": ["CBT-i Coach (free, NIH)", "Sleep Cycle", "Calm", "Headspace"],
+    "requiresTherapist": false,
+    "resourceLinks": [
+      "https://www.aasm.org/",
+      "https://www.ninds.nih.gov/Disorders/All-Disorders/Insomnia-Information-Page"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Problem-Solving Therapy",
+    "category": "Psychotherapy",
+    "condition": "stress",
+    "description": "Structured approach teaching youth to define problems clearly, generate solutions, evaluate options, implement, and learn. Highly practical for real-world teen challenges.",
+    "effectiveness": "65-70% for depression and anxiety related to stress; excellent for adjustment disorders",
+    "timeToEffect": "2-4 weeks to solve first problem; ongoing skill building",
+    "difficulty": "Low",
+    "ageGroup": ["11-17", "18-25"],
+    "mechanism": "Increases perceived control and agency; reduces rumination and helplessness; builds problem-solving efficacy",
+    "steps": [
+      "Define the problem specifically (not 'I'm depressed' but 'I feel isolated because I haven't talked to friends in 2 weeks')",
+      "Brainstorm ALL possible solutions without judgment (even silly ones count)",
+      "For top 3 solutions, evaluate pros and cons realistically",
+      "Choose best solution (or combination)",
+      "Make concrete action plan: what, when, who, how?",
+      "Implement the plan",
+      "Evaluate: did it work? What would you do differently next time?"
+    ],
+    "benefits": [
+      "Breaks rumination cycles",
+      "Builds sense of agency and control",
+      "Practical and immediately applicable",
+      "Teaches transferable skill for life",
+      "Empowering for teens (they solve their own problems)"
+    ],
+    "bestFor": [
+      "Teens feeling overwhelmed by problems",
+      "Those stuck in rumination or 'nothing works' thinking",
+      "Adjustment disorders and stress",
+      "Prevention - can be taught in schools to all youth"
+    ],
+    "toolsNeeded": ["Notebook for problem-solving worksheet", "Time for thinking"],
+    "appSupport": ["Done", "Todoist", "Google Keep"],
+    "requiresTherapist": false,
+    "resourceLinks": [
+      "https://www.samhsa.gov/",
+      "https://www.cdc.gov/mentalhealth/"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Emotion Regulation Skills (DBT-Based)",
+    "category": "Skills Training",
+    "condition": "self_harm",
+    "description": "Foundational DBT skills teaching emotion physiology, identification, and active regulation strategies. Essential for preventing crisis escalation.",
+    "effectiveness": "85% as part of full DBT; foundational for all emotional dysregulation",
+    "timeToEffect": "1-2 weeks to notice first skills working; mastery over 8-12 weeks",
+    "difficulty": "Low-Moderate",
+    "ageGroup": ["9-17", "18-25"],
+    "mechanism": "Increases emotional awareness; builds distress tolerance and coping; prevents crisis escalation; reduces self-harm urges",
+    "steps": [
+      "Learn emotion physiology: fight/flight/freeze response, how emotions live in body (chest, stomach, face)",
+      "Identify emotion triggers - events that start the feeling",
+      "Name emotions precisely (not just 'bad' - frustrated? disappointed? guilty? ashamed?)",
+      "ABC PLEASE: Attend to Physical needs first (eat, sleep, exercise, medications)",
+      "Check-in: What am I feeling right now, 0-10?",
+      "Choose regulation strategy: Opposite Action (do opposite of emotion urge - anxious → approach; angry → kind), or",
+      "Distress Tolerance: TIPP skills (Temperature, Intense exercise, Paced breathing, Paired muscle relaxation)",
+      "Track: What worked? Use again next time"
+    ],
+    "benefits": [
+      "Foundational skill for all emotional dysregulation",
+      "Prevents escalation to crisis/self-harm",
+      "Increases emotional awareness and flexibility",
+      "Can be used anywhere, anytime",
+      "Builds confidence managing difficult feelings"
+    ],
+    "bestFor": [
+      "All youth (foundational)",
+      "Especially those with self-harm, anger, or anxiety",
+      "Critical ages 13-17",
+      "Can be taught in schools and clinical groups"
+    ],
+    "toolsNeeded": ["Emotion thermometer", "Skill list/reminder card"],
+    "appSupport": ["DBT Coach", "Sanvello", "Youper"],
+    "requiresTherapist": false,
+    "resourceLinks": [
+      "https://www.linehaninstitute.org/",
+      "https://www.samhsa.gov/"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Virtual Reality Exposure Therapy (VRET)",
+    "category": "Tech-Enabled Psychotherapy",
+    "condition": "anxiety",
+    "description": "FDA-cleared VR environments for exposure therapy. Highly engaging for digital-native youth. Addresses social anxiety, phobias, and specific fears in controlled setting.",
+    "effectiveness": "71-80% comparable to in-vivo exposure; 95% engagement in youth",
+    "timeToEffect": "4-8 weeks; often faster than traditional exposure",
+    "difficulty": "Moderate",
+    "ageGroup": ["13-17", "18-25"],
+    "mechanism": "Safe habituation to feared situations; flexible, data-driven exposure; real-world practice built on VR foundation",
+    "steps": [
+      "Work with therapist trained in VRET",
+      "Therapist guides setup of VR scenario matching your specific fear",
+      "Put on VR headset - immersion in safe simulation",
+      "Therapist adjusts difficulty in real-time (increase crowds, speaking time, etc.)",
+      "Practice staying in anxiety-provoking VR situation until anxiety decreases",
+      "Repeat sessions; transfer learning to real-world situations",
+      "Real-world homework between sessions"
+    ],
+    "benefits": [
+      "Highly engaging for tech-savvy youth",
+      "Completely safe (can pause/remove headset anytime)",
+      "Flexible scaling of difficulty",
+      "Data tracking of progress (therapist sees your anxiety curve)",
+      "Faster habituation for some than real-world exposure",
+      "FDA-cleared devices available"
+    ],
+    "bestFor": [
+      "Tech-savvy teens and young adults",
+      "Social anxiety (public speaking, crowds, social situations)",
+      "Specific phobias (heights, flying, animals, driving)",
+      "When real-world exposure not feasible"
+    ],
+    "toolsNeeded": ["VR headset (Meta Quest, Valve Index, HTC Vive)", "Therapist trained in VRET"],
+    "appSupport": ["oVRcome (FDA-cleared, social anxiety + public speaking)", "AppliedVR (enterprise)", "Limbix (PTSD + anxiety)"],
+    "requiresTherapist": true,
+    "costBarrier": "Currently $100-300/session; growing insurance coverage",
+    "resourceLinks": [
+      "https://www.apa.org/science/about/psa/virtual-reality",
+      "https://www.vrphobia.com/"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Social Connection & Community Interventions",
+    "category": "Social/Preventive",
+    "condition": "depression",
+    "description": "Structured approaches to address epidemic of youth loneliness through quality social connections. Evidence shows loneliness is 2.5x risk factor for depression/anxiety.",
+    "effectiveness": "58-72% for depression related to isolation; preventive benefit across all conditions",
+    "timeToEffect": "2-4 weeks to feel connection; 8-12 weeks for sustained benefit",
+    "difficulty": "Moderate (requires bravery for anxious youth)",
+    "ageGroup": ["10-17", "18-25"],
+    "mechanism": "Reduces loneliness; increases sense of belonging; improves all mental health outcomes through social support",
+    "steps": [
+      "Identify what kind of social connection appeals to you (1:1, small group, large group; activity-based, talk-based)",
+      "Explore options: clubs at school, community groups, online communities with moderation, meetups by interest",
+      "Start small: one low-pressure activity or group",
+      "Commit to showing up regularly (consistency builds connection)",
+      "Quality over quantity: one genuine friend better than 100 surface connections",
+      "Be curious about others: ask questions, listen",
+      "Notice how you feel before/after social contact"
+    ],
+    "benefits": [
+      "Addresses epidemic of youth loneliness",
+      "Improves all mental health outcomes",
+      "Builds sense of belonging and acceptance",
+      "Preventive - reduces depression/anxiety risk",
+      "Sustainable long-term benefit"
+    ],
+    "bestFor": [
+      "All youth (preventive)",
+      "Those with depression/anxiety related to isolation",
+      "Socially anxious youth (gradual, low-pressure groups)",
+      "Post-pandemic isolation recovery"
+    ],
+    "toolsNeeded": ["Willingness to try", "List of potential groups/communities"],
+    "appSupport": ["Meetup", "Discord communities", "Bumble BFF", "Internations (young adults)", "Crisis Text Line (peer support)"],
+    "requiresTherapist": false,
+    "resourceLinks": [
+      "https://www.cdc.gov/mentalhealth/",
+      "https://www.surgeongeneral.gov/priorities/social-connection"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Acceptance & Commitment Therapy (ACT) - Youth Metaphors",
+    "category": "Psychotherapy",
+    "condition": "anxiety",
+    "description": "Uses metaphors and experiential exercises to teach psychological flexibility. Teaches youth to make room for uncomfortable feelings while living aligned with values.",
+    "effectiveness": "70-75% for anxiety and depression; particularly strong for perfectionism",
+    "timeToEffect": "2-4 weeks for concepts; 8-12 weeks for behavior change",
+    "difficulty": "Moderate",
+    "ageGroup": ["14-17", "18-25"],
+    "mechanism": "Shifts from symptom-reduction to values-aligned living; builds psychological flexibility and distress tolerance",
+    "steps": [
+      "Identify values: what matters most to you? (relationships, learning, creativity, adventure, integrity)",
+      "Notice your struggle with anxiety/worry: Try to fight it? Try to avoid it? How's that working?",
+      "'Leaves on Stream' exercise: imagine thoughts/feelings as leaves floating by - you don't grab them or push them away",
+      "'Expansion' exercise: instead of fighting anxiety, make room for it - breathe into it, say 'yes, this too'",
+      "Choose one value-aligned action THIS WEEK (even small) - do it despite anxiety",
+      "Notice: did the anxiety control you, or did you move toward what matters?",
+      "Repeat: values + committed action, regardless of feelings"
+    ],
+    "benefits": [
+      "Addresses perfectionism and performance anxiety",
+      "Breaks 'try harder to feel better' cycle",
+      "Builds psychological flexibility",
+      "Highly engaging for teens (metaphors, exercises)",
+      "Shifts focus from symptoms to meaningful living"
+    ],
+    "bestFor": [
+      "Teens caught in perfectionism or avoidance",
+      "Those motivated by 'values' more than 'symptoms'",
+      "Performance anxiety, social anxiety",
+      "Prevention and resilience building"
+    ],
+    "toolsNeeded": ["Journal for values clarification", "Willingness to feel discomfort"],
+    "appSupport": ["ACT Companion", "Headspace", "Insight Timer"],
+    "requiresTherapist": false,
+    "resourceLinks": [
+      "https://contextualscience.org/",
+      "https://www.apa.org/ptsd-guideline"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Movement & Somatic Therapy",
+    "category": "Body-Based Therapy",
+    "condition": "anxiety",
+    "description": "Uses body awareness, dance/movement, and grounding to process emotions stored physically. Highly effective for trauma, dissociation, and anxiety disconnection from body.",
+    "effectiveness": "62-70% for anxiety and depression; 65% improvement in body awareness",
+    "timeToEffect": "1-3 weeks for felt sense of relief; ongoing benefits with practice",
+    "difficulty": "Low (if group available)",
+    "ageGroup": ["10-17", "18-25"],
+    "mechanism": "Releases stored trauma/tension; increases body awareness; activates parasympathetic nervous system",
+    "steps": [
+      "Start with body scan: where do you feel tension? (chest, shoulders, stomach, jaw)",
+      "Slow, intentional movement: stretch that area gently, without forcing",
+      "Notice what feelings come up (anger, sadness, relief, nothing)",
+      "Dance or move authentically to music (no 'right way') - your body leads",
+      "Ground: feel your feet on floor, hands in your lap, weight in your seat",
+      "Notice: how do you feel after movement?"
+    ],
+    "benefits": [
+      "Releases physical tension and stored trauma",
+      "Increases body awareness and felt sense",
+      "Activates parasympathetic (calming) nervous system",
+      "Highly engaging; community aspect builds connection",
+      "Alternative to talk therapy for processing"
+    ],
+    "bestFor": [
+      "Youth disconnected from body (dissociation, trauma)",
+      "Those who move naturally or enjoy dance",
+      "Anxiety and depression with physical tension",
+      "Group formats highly beneficial"
+    ],
+    "toolsNeeded": ["Safe space", "Music (optional)"],
+    "appSupport": ["YouTube somatic therapy videos", "Insight Timer (dance + somatic)"],
+    "requiresTherapist": false,
+    "resourceLinks": [
+      "https://www.aamft.org/",
+      "https://www.aata.org/"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Arts & Expressive Therapies",
+    "category": "Creative Therapy",
+    "condition": "depression",
+    "description": "Non-verbal processing through art, music, drama, or writing. Particularly effective for trauma, grief, and emotions difficult to express in talk therapy.",
+    "effectiveness": "65-72% for depression and emotional expression; particularly strong for trauma",
+    "timeToEffect": "Immediate expression; 4-6 weeks for integration",
+    "difficulty": "Low (if group available)",
+    "ageGroup": ["10-17", "18-25"],
+    "mechanism": "Externalizes internal experience; builds agency through creation; processes without words; builds community",
+    "steps": [
+      "Choose medium: visual art, music, writing, drama (no 'skill' needed)",
+      "Set intention: What feeling/experience are you expressing?",
+      "Create without judgment: this isn't about 'good art,' it's about expression",
+      "Share (optional) with trusted person or group",
+      "Reflect: What did you notice? What surprised you?"
+    ],
+    "benefits": [
+      "Processes emotions non-verbally",
+      "No skill required (not about 'good art')",
+      "Externalizes internal struggle",
+      "Builds creative agency",
+      "Builds community through sharing",
+      "Particularly powerful for trauma"
+    ],
+    "bestFor": [
+      "Creatively-minded youth",
+      "Trauma and grief processing",
+      "Those with limited verbal expression",
+      "School settings (accessible, low cost)"
+    ],
+    "toolsNeeded": ["Art supplies, instrument, journal, or willingness"],
+    "appSupport": ["YouTube art therapy videos", "Insight Timer (music therapy)"],
+    "requiresTherapist": false,
+    "resourceLinks": [
+      "https://www.aata.org/",
+      "https://www.aamft.org/"
+    ]
+  }
+]
