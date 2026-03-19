@@ -1,0 +1,59 @@
+{
+  "metadata": {
+    "source": "Evidence-based therapy techniques",
+    "description": "Guided journaling prompts for mental health reflection",
+    "note": "Prompts are based on CBT and DBT therapeutic principles"
+  },
+  "general_prompts": [
+    "What are three things that went well today?",
+    "What triggered my current mood? What happened?",
+    "What coping skill did I use today? How did it help?",
+    "What am I grateful for today?",
+    "How did my body feel today? Any physical sensations?",
+    "What thought patterns did I notice today?",
+    "Who or what made me feel supported today?",
+    "What can I do differently tomorrow?",
+    "What am I worried about? Is it within my control?",
+    "How did I practice self-care today?"
+  ],
+  "mood_specific": {
+    "depression": [
+      "What small activity could I do right now to feel better?",
+      "Who could I reach out to? What would I say?",
+      "What negative thoughts am I having? Are they facts or feelings?",
+      "When have I felt better before? What was different?",
+      "What's one thing I accomplished today, no matter how small?"
+    ],
+    "anxiety": [
+      "What am I anxious about? How likely is it to actually happen?",
+      "What's one thing I can control right now?",
+      "What's my worry trying to protect me from?",
+      "What grounding techniques helped me today?",
+      "What evidence do I have against this worry?"
+    ],
+    "self_harm": [
+      "What emotions led to this urge?",
+      "What alternatives did I try? Which helped most?",
+      "What do I need right now?",
+      "Who can I contact if this happens again?",
+      "What am I proud of myself for today?"
+    ],
+    "stress": [
+      "What's causing my stress? Can I break it into smaller pieces?",
+      "What's within my control? What's not?",
+      "How can I take care of myself during this stressful time?",
+      "What support do I need?",
+      "What will I feel proud of after handling this?"
+    ]
+  },
+  "reflection_questions": [
+    "How are my sleep and eating habits?",
+    "Did I move my body today? How did it feel?",
+    "How much time did I spend on social media?",
+    "Did I do something kind for myself or others?",
+    "What am I learning about myself through journaling?",
+    "How is my energy level today?",
+    "What made me laugh today?",
+    "What challenged me today? How did I handle it?"
+  ]
+}

@@ -503,3 +503,134 @@ footer {
         margin-top: 0.5rem;
     }
 }
+
+/* Journal & Mood Tracking Styles */
+
+/* Mood buttons */
+.mood-btn {
+    font-size: 1.5rem;
+    padding: 0.5rem 0.75rem;
+    border: 2px solid #dee2e6;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    background-color: white;
+}
+
+.mood-btn:hover {
+    border-color: var(--info-color);
+    transform: scale(1.1);
+}
+
+.mood-btn.active {
+    background-color: var(--info-color);
+    border-color: var(--info-color);
+    color: white;
+}
+
+/* Journal tab buttons */
+.journal-tab-btn {
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    font-weight: 600;
+}
+
+.journal-tab-btn.active {
+    background-color: var(--info-color);
+}
+
+/* Journal entries */
+.journal-entries {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.journal-entries .card {
+    transition: all 0.2s ease;
+}
+
+.journal-entries .card:hover {
+    box-shadow: 0 8px 16px rgba(52, 152, 219, 0.2) !important;
+}
+
+/* Mood distribution chart */
+.mood-distribution {
+    padding: 1rem 0;
+}
+
+/* Textarea focus */
+#journalNote {
+    resize: vertical;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#journalNote:focus {
+    border-color: var(--info-color);
+    box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+}
+
+/* Stats cards */
+#journalStatsContainer .card {
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+}
+
+#journalStatsContainer .fs-3 {
+    color: var(--info-color);
+    font-weight: 700;
+}
+
+/* Insights */
+.insights-list .alert {
+    border-left: 4px solid var(--info-color);
+    background-color: #ecf5fb;
+}
+
+/* Journal prompt section */
+#journalPrompt {
+    font-style: italic;
+    color: var(--primary-color);
+    line-height: 1.6;
+}
+
+/* Responsive journal */
+@media (max-width: 768px) {
+    .mood-btn {
+        font-size: 1.25rem;
+        padding: 0.4rem 0.6rem;
+    }
+
+    .mood-btn:hover {
+        transform: scale(1.05);
+    }
+
+    #journalNote {
+        min-height: 150px;
+    }
+
+    .journal-entries .card {
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .mood-btn {
+        font-size: 1rem;
+        padding: 0.3rem 0.5rem;
+    }
+
+    #journalStatsContainer .row {
+        margin-left: -0.25rem;
+        margin-right: -0.25rem;
+    }
+
+    #journalStatsContainer .col-md-6 {
+        padding-left: 0.25rem;
+        padding-right: 0.25rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .journal-tab-btn {
+        font-size: 0.875rem;
+        padding: 0.4rem 0.6rem;
+    }
+}

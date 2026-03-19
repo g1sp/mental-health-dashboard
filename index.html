@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mental Health Youth Dashboard</title>
+    <title>Mental Health Dashboard For Youth - CDC YRBS Data & Tools</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -18,7 +18,7 @@
 
     <nav class="navbar navbar-dark bg-dark">
         <div class="container-fluid">
-            <span class="navbar-brand mb-0 h1">🧠 Mental Health Youth Dashboard</span>
+            <span class="navbar-brand mb-0 h1">🧠 Mental Health Dashboard For Youth</span>
             <div class="d-flex align-items-center">
                 <small class="text-muted me-3 d-none d-md-inline">CDC YRBS Data Visualization</small>
                 <button type="button" class="btn btn-danger btn-sm" id="crisisHelpBtn" title="View crisis resources">
@@ -39,13 +39,18 @@
                 </button>
             </li>
             <li class="nav-item" role="presentation">
+                <button class="nav-link" id="riskFactorsTab" data-bs-toggle="tab" data-bs-target="#riskFactorsContent" type="button" role="tab" aria-controls="riskFactorsContent" aria-selected="false">
+                    ⚠️ Risk Factors & Causes
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
                 <button class="nav-link" id="treatmentsTab" data-bs-toggle="tab" data-bs-target="#treatmentsContent" type="button" role="tab" aria-controls="treatmentsContent" aria-selected="false">
                     💊 Evidence-Based Treatments
                 </button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="riskFactorsTab" data-bs-toggle="tab" data-bs-target="#riskFactorsContent" type="button" role="tab" aria-controls="riskFactorsContent" aria-selected="false">
-                    ⚠️ Risk Factors & Causes
+                <button class="nav-link" id="journalTab" data-bs-toggle="tab" data-bs-target="#journalContent" type="button" role="tab" aria-controls="journalContent" aria-selected="false">
+                    📔 My Journal & Mood Tracking
                 </button>
             </li>
             <li class="nav-item" role="presentation">
@@ -298,6 +303,142 @@
             </div>
         </div>
 
+        <!-- Journal Tab -->
+        <div class="tab-pane fade" id="journalContent" role="tabpanel" aria-labelledby="journalTab">
+            <div class="container-fluid">
+                <!-- Journal Sub-Tabs -->
+                <div class="row mb-4">
+                    <div class="col-12">
+                        <ul class="nav nav-pills mb-3" role="tablist">
+                            <li class="nav-item">
+                                <button class="nav-link active journal-tab-btn" data-tab="Entry" role="tab">
+                                    ✍️ Write Entry
+                                </button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link journal-tab-btn" data-tab="History" role="tab">
+                                    📖 Your History
+                                </button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link journal-tab-btn" data-tab="Stats" role="tab">
+                                    📊 Your Stats
+                                </button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link journal-tab-btn" data-tab="Insights" role="tab">
+                                    💡 Insights
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Entry Section -->
+                <div id="journalEntry" class="journal-tab-content">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="card border-0 shadow-sm mb-4">
+                                <div class="card-body">
+                                    <h5 class="card-title mb-4">📝 How Are You Feeling Today?</h5>
+
+                                    <!-- Mood Selector -->
+                                    <div class="mb-4">
+                                        <label class="form-label mb-3"><strong>Select Your Mood (1-10)</strong></label>
+                                        <div class="d-flex gap-2 mb-3 flex-wrap">
+                                            <button class="mood-btn btn btn-lg btn-light" data-mood="1" title="Very Bad">😢</button>
+                                            <button class="mood-btn btn btn-lg btn-light" data-mood="2" title="Bad">😔</button>
+                                            <button class="mood-btn btn btn-lg btn-light" data-mood="3" title="Poor">😐</button>
+                                            <button class="mood-btn btn btn-lg btn-light" data-mood="4" title="Low">🙁</button>
+                                            <button class="mood-btn btn btn-lg btn-light" data-mood="5" title="Okay">🙂</button>
+                                            <button class="mood-btn btn btn-lg btn-light" data-mood="6" title="Good">😊</button>
+                                            <button class="mood-btn btn btn-lg btn-light" data-mood="7" title="Great">😄</button>
+                                            <button class="mood-btn btn btn-lg btn-light" data-mood="8" title="Very Great">🤩</button>
+                                            <button class="mood-btn btn btn-lg btn-light" data-mood="9" title="Excellent">🌟</button>
+                                            <button class="mood-btn btn btn-lg btn-light" data-mood="10" title="Amazing">💖</button>
+                                        </div>
+                                        <div id="selectedMoodDisplay"></div>
+                                    </div>
+
+                                    <!-- Condition Selection -->
+                                    <div class="mb-4">
+                                        <label for="journalConditionSelect" class="form-label"><strong>What are you dealing with? (Optional)</strong></label>
+                                        <select id="journalConditionSelect" class="form-select">
+                                            <option value="">General feelings</option>
+                                            <option value="depression">Depression</option>
+                                            <option value="anxiety">Anxiety</option>
+                                            <option value="self_harm">Self-Harm Urges</option>
+                                            <option value="stress">Stress</option>
+                                        </select>
+                                    </div>
+
+                                    <!-- Prompt Section -->
+                                    <div class="mb-4 p-3 bg-light rounded" style="display: none;">
+                                        <p class="text-muted mb-0"><strong>💭 Reflection Prompt:</strong></p>
+                                        <p id="journalPrompt" class="mb-0 mt-2"></p>
+                                        <button id="getNewPrompt" class="btn btn-sm btn-link mt-2">Get another prompt →</button>
+                                    </div>
+
+                                    <!-- Journal Note -->
+                                    <div class="mb-4">
+                                        <label for="journalNote" class="form-label"><strong>What's on your mind?</strong></label>
+                                        <textarea id="journalNote" class="form-control" rows="6" placeholder="Write freely. No one will see this except you. You can write about your feelings, what happened today, or anything on your mind..."></textarea>
+                                        <small class="text-muted d-block mt-2">💾 Your entries are saved only on your device. They're completely private.</small>
+                                    </div>
+
+                                    <!-- Submit Button -->
+                                    <button id="submitJournalEntry" class="btn btn-primary btn-lg w-100">
+                                        💾 Save Entry
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- History Section -->
+                <div id="journalHistory" class="journal-tab-content" style="display: none;">
+                    <div class="row mb-4">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="card border-0 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title mb-3">🔍 Search Your Entries</h5>
+                                    <input type="text" id="journalSearchInput" class="form-control" placeholder="Search by keywords, mood, or condition...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div id="journalHistoryContainer"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stats Section -->
+                <div id="journalStats" class="journal-tab-content" style="display: none;">
+                    <div class="row">
+                        <div class="col-lg-10 mx-auto">
+                            <div id="journalStatsContainer"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Insights Section -->
+                <div id="journalInsights" class="journal-tab-content" style="display: none;">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div id="journalInsightsContainer"></div>
+                            <div class="mt-4">
+                                <button id="exportEntriesBtn" class="btn btn-outline-primary me-2">📥 Export Journal</button>
+                                <button id="clearAllEntriesBtn" class="btn btn-outline-danger">🗑️ Clear All</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Learning Tab -->
         <div class="tab-pane fade" id="learningContent" role="tabpanel" aria-labelledby="learningTab">
             <div class="container-fluid">
@@ -481,6 +622,22 @@
         </div>
     </div>
 
+    <!-- Journal Entry Modal -->
+    <div class="modal fade" id="journalEntryModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">📔 Full Entry</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body" id="journalEntryModalBody"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Crisis Resources Modal -->
     <div class="modal fade" id="crisisModal" tabindex="-1">
         <div class="modal-dialog modal-lg">
@@ -517,6 +674,8 @@
     <script src="js/risk-factors-ui.js"></script>
     <script src="js/crisis-handler.js"></script>
     <script src="js/crisis-ui.js"></script>
+    <script src="js/journal-handler.js"></script>
+    <script src="js/journal-ui.js"></script>
     <script src="js/app.js"></script>
 </body>
 </html>

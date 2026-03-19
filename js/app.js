@@ -49,6 +49,18 @@ class MentalHealthApp {
             return;
         }
 
+        // Load journal prompts
+        const promptsLoaded = await journalHandler.loadPrompts();
+        if (!promptsLoaded) {
+            console.error('Failed to load journal prompts');
+        }
+
+        // Load existing journal entries
+        journalHandler.loadEntries();
+
+        // Initialize journal UI
+        journalUI.init();
+
         // Populate filter dropdowns
         this.populateDropdowns();
 
