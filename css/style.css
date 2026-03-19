@@ -634,3 +634,165 @@ footer {
         padding: 0.4rem 0.6rem;
     }
 }
+
+/* Coping Skills & Exercises Styles */
+
+/* Coping tab buttons */
+.coping-tab-btn {
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    font-weight: 600;
+}
+
+.coping-tab-btn.active {
+    background-color: var(--info-color);
+}
+
+/* Coping skills grid */
+#copingSkillsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Coping skill cards */
+.coping-skill-card {
+    border: 1px solid #e0e0e0;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.coping-skill-card:hover {
+    border-color: var(--info-color);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(52, 152, 219, 0.2) !important;
+}
+
+.coping-skill-card .badge {
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-right: 0.25rem;
+}
+
+.favorite-icon {
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.favorite-icon:hover {
+    transform: scale(1.2);
+}
+
+/* Timer modal styles */
+#copingBreathingCircle {
+    animation: fadeIn 0.3s ease-in;
+}
+
+#copingProgressBar {
+    animation: fadeIn 0.3s ease-in;
+}
+
+#copingCountdown {
+    animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Breathing circle animation */
+#breathingCircle {
+    transition: fill 0.5s ease, r 0.5s ease;
+}
+
+/* Progress bar animation */
+.progress-bar-striped {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-size: 1rem 1rem;
+    animation: progress-bar-stripes 1s linear infinite;
+}
+
+@keyframes progress-bar-stripes {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 1rem 0;
+    }
+}
+
+/* Completion modal */
+#copingCompletionModal .alert {
+    border-radius: 6px;
+}
+
+/* Stats cards */
+#copingStatsContainer .card {
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    border: 1px solid #e0e0e0;
+}
+
+#copingStatsContainer .card:hover {
+    border-color: var(--info-color);
+    box-shadow: 0 8px 16px rgba(52, 152, 219, 0.1) !important;
+}
+
+#copingStatsContainer h3 {
+    color: var(--info-color);
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+/* Exercise filters */
+.form-select {
+    max-width: 100%;
+}
+
+/* Responsive coping */
+@media (max-width: 768px) {
+    #copingSkillsGrid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1rem;
+    }
+
+    .coping-tab-btn {
+        font-size: 0.875rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    .coping-skill-card .card-body {
+        padding: 1rem;
+    }
+
+    #copingTimerContainer {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    #copingSkillsGrid {
+        grid-template-columns: 1fr;
+    }
+
+    #copingStatsContainer .row {
+        margin-left: -0.25rem;
+        margin-right: -0.25rem;
+    }
+
+    #copingStatsContainer .col-md-6,
+    #copingStatsContainer .col-lg-3 {
+        padding-left: 0.25rem;
+        padding-right: 0.25rem;
+        margin-bottom: 0.5rem;
+    }
+
+    #copingTimerContainer h1 {
+        font-size: 3rem !important;
+    }
+}

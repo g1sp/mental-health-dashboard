@@ -49,6 +49,11 @@
                 </button>
             </li>
             <li class="nav-item" role="presentation">
+                <button class="nav-link" id="copingTab" data-bs-toggle="tab" data-bs-target="#copingContent" type="button" role="tab" aria-controls="copingContent" aria-selected="false">
+                    🧘 Coping Skills & Exercises
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
                 <button class="nav-link" id="journalTab" data-bs-toggle="tab" data-bs-target="#journalContent" type="button" role="tab" aria-controls="journalContent" aria-selected="false">
                     📔 My Journal & Mood Tracking
                 </button>
@@ -299,6 +304,92 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Coping Skills Tab -->
+        <div class="tab-pane fade" id="copingContent" role="tabpanel" aria-labelledby="copingTab">
+            <div class="container-fluid">
+                <!-- Coping Skills Sub-Tabs -->
+                <div class="row mb-4">
+                    <div class="col-12">
+                        <ul class="nav nav-pills mb-3" role="tablist">
+                            <li class="nav-item">
+                                <button class="nav-link active coping-tab-btn" data-tab="All" role="tab">
+                                    📚 All Skills
+                                </button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link coping-tab-btn" data-tab="Favorites" role="tab">
+                                    ❤️ My Favorites
+                                </button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link coping-tab-btn" data-tab="Stats" role="tab">
+                                    📊 My Progress
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- All Skills Section -->
+                <div id="copingAll" class="coping-tab-content">
+                    <!-- Filters -->
+                    <div class="row mb-4">
+                        <div class="col-12">
+                            <div class="card border-0 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title mb-3">Find Coping Skills</h5>
+                                    <div class="row g-3">
+                                        <div class="col-md-6 col-lg-3">
+                                            <label for="copingCategorySelect" class="form-label">Category</label>
+                                            <select id="copingCategorySelect" class="form-select">
+                                                <option value="">All Categories</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-6 col-lg-3">
+                                            <label for="copingDifficultySelect" class="form-label">Difficulty</label>
+                                            <select id="copingDifficultySelect" class="form-select">
+                                                <option value="">All Levels</option>
+                                                <option value="beginner">Beginner</option>
+                                                <option value="intermediate">Intermediate</option>
+                                                <option value="advanced">Advanced</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-6 col-lg-3">
+                                            <label for="copingConditionSelect" class="form-label">Best For</label>
+                                            <select id="copingConditionSelect" class="form-select">
+                                                <option value="">All Conditions</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-6 col-lg-3">
+                                            <label for="copingSearchInput" class="form-label">Search</label>
+                                            <input type="text" id="copingSearchInput" class="form-control" placeholder="Search skills...">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skills Grid -->
+                    <div class="row g-4" id="copingSkillsGrid">
+                        <div class="col-12 text-center text-muted py-5">Loading coping skills...</div>
+                    </div>
+                </div>
+
+                <!-- Favorites Section -->
+                <div id="copingFavorites" class="coping-tab-content" style="display: none;">
+                    <div class="row g-4" id="copingFavoritesGrid">
+                        <div class="col-12 text-center text-muted py-5">No favorites yet. Add some by clicking the heart icon!</div>
+                    </div>
+                </div>
+
+                <!-- Stats Section -->
+                <div id="copingStats" class="coping-tab-content" style="display: none;">
+                    <div id="copingStatsContainer"></div>
                 </div>
             </div>
         </div>
@@ -638,6 +729,63 @@
         </div>
     </div>
 
+    <!-- Coping Exercise Detail Modal -->
+    <div class="modal fade" id="copingExerciseModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="copingExerciseTitle"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p id="copingExerciseDescription" class="text-muted mb-4"></p>
+                    <div id="copingExerciseDetails" class="mb-4"></div>
+                    <div id="copingExerciseBenefits" class="mb-4"></div>
+                    <div id="copingExerciseSteps" class="mb-4"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-primary" id="copingToggleFavoriteBtn">🤍 Add to Favorites</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary" id="startExerciseBtn">▶️ Start Exercise</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Coping Exercise Timer Modal -->
+    <div class="modal fade" id="copingTimerModal" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="copingTimerTitle"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body" style="min-height: 400px; display: flex; align-items: center; justify-content: center;">
+                    <div id="copingTimerContainer" class="w-100"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" id="cancelExerciseBtn">⏹️ Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Coping Exercise Completion Modal -->
+    <div class="modal fade" id="copingCompletionModal" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title">Exercise Complete!</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body" id="copingCompletionBody"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Crisis Resources Modal -->
     <div class="modal fade" id="crisisModal" tabindex="-1">
         <div class="modal-dialog modal-lg">
@@ -676,6 +824,8 @@
     <script src="js/crisis-ui.js"></script>
     <script src="js/journal-handler.js"></script>
     <script src="js/journal-ui.js"></script>
+    <script src="js/coping-handler.js"></script>
+    <script src="js/coping-ui.js"></script>
     <script src="js/app.js"></script>
 </body>
 </html>

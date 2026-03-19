@@ -1,0 +1,830 @@
+[
+  {
+    "id": 1,
+    "name": "Box Breathing",
+    "category": "breathing",
+    "description": "A calming technique that equalizes your breathing pattern to reduce anxiety and stress immediately.",
+    "difficulty": "beginner",
+    "duration": 120,
+    "for_conditions": ["anxiety", "stress"],
+    "timer_visual": "breathing_circle",
+    "steps": [
+      {
+        "number": 1,
+        "instruction": "Breathe in through your nose",
+        "duration": 4,
+        "phase": "inhale"
+      },
+      {
+        "number": 2,
+        "instruction": "Hold your breath",
+        "duration": 4,
+        "phase": "hold"
+      },
+      {
+        "number": 3,
+        "instruction": "Breathe out through your mouth",
+        "duration": 4,
+        "phase": "exhale"
+      },
+      {
+        "number": 4,
+        "instruction": "Hold empty",
+        "duration": 4,
+        "phase": "hold"
+      }
+    ],
+    "repeat_times": 8,
+    "benefits": ["Reduces anxiety immediately", "Slows heart rate", "Increases calm", "Improves focus"]
+  },
+  {
+    "id": 2,
+    "name": "4-7-8 Breathing",
+    "category": "breathing",
+    "description": "A powerful relaxation technique that helps you fall asleep and reduces worry by slowing your nervous system.",
+    "difficulty": "beginner",
+    "duration": 180,
+    "for_conditions": ["anxiety", "stress", "depression"],
+    "timer_visual": "breathing_circle",
+    "steps": [
+      {
+        "number": 1,
+        "instruction": "Breathe in for 4 counts",
+        "duration": 4,
+        "phase": "inhale"
+      },
+      {
+        "number": 2,
+        "instruction": "Hold for 7 counts",
+        "duration": 7,
+        "phase": "hold"
+      },
+      {
+        "number": 3,
+        "instruction": "Exhale for 8 counts",
+        "duration": 8,
+        "phase": "exhale"
+      }
+    ],
+    "repeat_times": 4,
+    "benefits": ["Promotes deep relaxation", "Helps with sleep", "Reduces racing thoughts", "Calms nervous system"]
+  },
+  {
+    "id": 3,
+    "name": "Deep Belly Breathing",
+    "category": "breathing",
+    "description": "A simple breathing technique that activates your body's relaxation response using your diaphragm.",
+    "difficulty": "beginner",
+    "duration": 180,
+    "for_conditions": ["anxiety", "stress", "depression"],
+    "timer_visual": "breathing_circle",
+    "steps": [
+      {
+        "number": 1,
+        "instruction": "Breathe in slowly through your nose, filling your belly (not chest)",
+        "duration": 5,
+        "phase": "inhale"
+      },
+      {
+        "number": 2,
+        "instruction": "Hold for 2 counts",
+        "duration": 2,
+        "phase": "hold"
+      },
+      {
+        "number": 3,
+        "instruction": "Exhale slowly through your mouth",
+        "duration": 5,
+        "phase": "exhale"
+      }
+    ],
+    "repeat_times": 6,
+    "benefits": ["Increases oxygen intake", "Calms nervous system", "Reduces tension", "Improves mental clarity"]
+  },
+  {
+    "id": 4,
+    "name": "Alternate Nostril Breathing",
+    "category": "breathing",
+    "description": "A yogic technique that balances your mind and body by breathing through one nostril at a time.",
+    "difficulty": "intermediate",
+    "duration": 180,
+    "for_conditions": ["anxiety", "stress"],
+    "timer_visual": "breathing_circle",
+    "steps": [
+      {
+        "number": 1,
+        "instruction": "Close right nostril, breathe in left for 4 counts",
+        "duration": 4,
+        "phase": "inhale"
+      },
+      {
+        "number": 2,
+        "instruction": "Close left nostril, exhale right for 4 counts",
+        "duration": 4,
+        "phase": "exhale"
+      },
+      {
+        "number": 3,
+        "instruction": "Breathe in right for 4 counts",
+        "duration": 4,
+        "phase": "inhale"
+      },
+      {
+        "number": 4,
+        "instruction": "Close right nostril, exhale left for 4 counts",
+        "duration": 4,
+        "phase": "exhale"
+      }
+    ],
+    "repeat_times": 5,
+    "benefits": ["Balances hemispheres of brain", "Reduces stress", "Improves focus", "Promotes emotional balance"]
+  },
+  {
+    "id": 5,
+    "name": "Coherent Breathing",
+    "category": "breathing",
+    "description": "A gentle 5-minute breathing pattern that synchronizes breathing with heart rhythm to promote relaxation.",
+    "difficulty": "intermediate",
+    "duration": 300,
+    "for_conditions": ["anxiety", "stress", "depression"],
+    "timer_visual": "breathing_circle",
+    "steps": [
+      {
+        "number": 1,
+        "instruction": "Breathe in for 5 counts",
+        "duration": 5,
+        "phase": "inhale"
+      },
+      {
+        "number": 2,
+        "instruction": "Breathe out for 5 counts",
+        "duration": 5,
+        "phase": "exhale"
+      }
+    ],
+    "repeat_times": 30,
+    "benefits": ["Reduces anxiety", "Improves heart rate variability", "Promotes deep relaxation", "Boosts mood"]
+  },
+  {
+    "id": 6,
+    "name": "5-4-3-2-1 Sensory Grounding",
+    "category": "grounding",
+    "description": "Engage your five senses to anchor yourself in the present moment and reduce anxiety or panic.",
+    "difficulty": "beginner",
+    "duration": 300,
+    "for_conditions": ["anxiety", "panic", "stress"],
+    "timer_visual": "progress_bar",
+    "steps": [
+      {
+        "number": 1,
+        "instruction": "Identify 5 things you can SEE around you. Notice colors, shapes, and textures.",
+        "duration": 60,
+        "phase": "instruction"
+      },
+      {
+        "number": 2,
+        "instruction": "Notice 4 things you can TOUCH. Feel the textures.",
+        "duration": 60,
+        "phase": "instruction"
+      },
+      {
+        "number": 3,
+        "instruction": "Listen for 3 things you can HEAR. Be still and listen.",
+        "duration": 60,
+        "phase": "instruction"
+      },
+      {
+        "number": 4,
+        "instruction": "Identify 2 things you can SMELL or taste.",
+        "duration": 60,
+        "phase": "instruction"
+      },
+      {
+        "number": 5,
+        "instruction": "Acknowledge 1 thing you can TASTE or a previous sense you enjoyed.",
+        "duration": 60,
+        "phase": "instruction"
+      }
+    ],
+    "repeat_times": 1,
+    "benefits": ["Anchors you in present", "Reduces anxiety", "Interrupts panic spirals", "Engages all senses"]
+  },
+  {
+    "id": 7,
+    "name": "Cold Water Plunge (TIPP Skill)",
+    "category": "grounding",
+    "description": "Activate your body's dive response by splashing cold water on your face to quickly shift your emotional state.",
+    "difficulty": "beginner",
+    "duration": 60,
+    "for_conditions": ["anxiety", "panic", "self_harm"],
+    "timer_visual": "countdown",
+    "steps": [
+      {
+        "number": 1,
+        "instruction": "Get a bowl of cold water or splash cold water on your face",
+        "duration": 15,
+        "phase": "instruction"
+      },
+      {
+        "number": 2,
+        "instruction": "Take a few slow breaths to notice the change in your body",
+        "duration": 45,
+        "phase": "instruction"
+      }
+    ],
+    "repeat_times": 1,
+    "benefits": ["Activates relaxation response", "Shifts emotional state quickly", "Interrupts self-harm urges", "Physically grounding"]
+  },
+  {
+    "id": 8,
+    "name": "Pressure Release (Progressive Muscle Tension)",
+    "category": "grounding",
+    "description": "Systematically tense and release different muscle groups to release physical tension and anxiety.",
+    "difficulty": "beginner",
+    "duration": 240,
+    "for_conditions": ["anxiety", "stress"],
+    "timer_visual": "progress_bar",
+    "steps": [
+      {
+        "number": 1,
+        "instruction": "Tense your feet for 5 seconds, then release. Notice the difference.",
+        "duration": 30,
+        "phase": "instruction"
+      },
+      {
+        "number": 2,
+        "instruction": "Tense your legs for 5 seconds, then release",
+        "duration": 30,
+        "phase": "instruction"
+      },
+      {
+        "number": 3,
+        "instruction": "Tense your stomach and chest for 5 seconds, then release",
+        "duration": 30,
+        "phase": "instruction"
+      },
+      {
+        "number": 4,
+        "instruction": "Tense your arms and hands for 5 seconds, then release",
+        "duration": 30,
+        "phase": "instruction"
+      },
+      {
+        "number": 5,
+        "instruction": "Tense your face and neck for 5 seconds, then release",
+        "duration": 30,
+        "phase": "instruction"
+      },
+      {
+        "number": 6,
+        "instruction": "Tense your whole body, then fully release. Feel the calm.",
+        "duration": 60,
+        "phase": "instruction"
+      }
+    ],
+    "repeat_times": 1,
+    "benefits": ["Releases physical tension", "Builds body awareness", "Reduces anxiety", "Promotes relaxation"]
+  },
+  {
+    "id": 9,
+    "name": "Body Scan Meditation",
+    "category": "mindfulness",
+    "description": "Slowly move your attention through your body, noticing sensations without judgment, to reduce stress and increase awareness.",
+    "difficulty": "beginner",
+    "duration": 300,
+    "for_conditions": ["anxiety", "stress", "depression"],
+    "timer_visual": "progress_bar",
+    "steps": [
+      {
+        "number": 1,
+        "instruction": "Close your eyes and take 3 deep breaths. Get comfortable.",
+        "duration": 30,
+        "phase": "instruction"
+      },
+      {
+        "number": 2,
+        "instruction": "Notice your feet. Any sensations? Just observe without changing anything.",
+        "duration": 45,
+        "phase": "instruction"
+      },
+      {
+        "number": 3,
+        "instruction": "Move attention to your legs. Feel any tension or ease?",
+        "duration": 45,
+        "phase": "instruction"
+      },
+      {
+        "number": 4,
+        "instruction": "Notice your torso and stomach. Any tightness or relaxation?",
+        "duration": 45,
+        "phase": "instruction"
+      },
+      {
+        "number": 5,
+        "instruction": "Bring awareness to your arms and hands. Observe sensations.",
+        "duration": 45,
+        "phase": "instruction"
+      },
+      {
+        "number": 6,
+        "instruction": "Focus on your head, face, and neck. Notice any tension.",
+        "duration": 45,
+        "phase": "instruction"
+      },
+      {
+        "number": 7,
+        "instruction": "Take 3 deep breaths, slowly opening your eyes when ready",
+        "duration": 30,
+        "phase": "instruction"
+      }
+    ],
+    "repeat_times": 1,
+    "benefits": ["Increases body awareness", "Reduces stress", "Improves sleep", "Promotes relaxation"]
+  },
+  {
+    "id": 10,
+    "name": "Mindful Observation",
+    "category": "mindfulness",
+    "description": "Pick one object and observe it deeply for several minutes to anchor your mind in the present moment.",
+    "difficulty": "beginner",
+    "duration": 300,
+    "for_conditions": ["anxiety", "stress"],
+    "timer_visual": "progress_bar",
+    "steps": [
+      {
+        "number": 1,
+        "instruction": "Pick one object nearby (plant, cup, etc.)",
+        "duration": 30,
+        "phase": "instruction"
+      },
+      {
+        "number": 2,
+        "instruction": "Observe its colors. What shades do you see?",
+        "duration": 60,
+        "phase": "instruction"
+      },
+      {
+        "number": 3,
+        "instruction": "Notice its shape and texture. How does light reflect on it?",
+        "duration": 60,
+        "phase": "instruction"
+      },
+      {
+        "number": 4,
+        "instruction": "Consider its purpose. What is it made of?",
+        "duration": 60,
+        "phase": "instruction"
+      },
+      {
+        "number": 5,
+        "instruction": "Let your mind simply rest on this object for the remaining time",
+        "duration": 90,
+        "phase": "instruction"
+      }
+    ],
+    "repeat_times": 1,
+    "benefits": ["Anchors you in present", "Reduces worry about future", "Builds concentration", "Calms racing thoughts"]
+  },
+  {
+    "id": 11,
+    "name": "Loving-Kindness Meditation",
+    "category": "mindfulness",
+    "description": "Send wishes of wellness and peace to yourself and others to cultivate compassion and reduce self-criticism.",
+    "difficulty": "intermediate",
+    "duration": 300,
+    "for_conditions": ["depression", "anxiety", "self_harm"],
+    "timer_visual": "progress_bar",
+    "steps": [
+      {
+        "number": 1,
+        "instruction": "Close your eyes. Place your hand on your heart.",
+        "duration": 30,
+        "phase": "instruction"
+      },
+      {
+        "number": 2,
+        "instruction": "Say to yourself: 'May I be safe. May I be healthy. May I be happy.'",
+        "duration": 60,
+        "phase": "instruction"
+      },
+      {
+        "number": 3,
+        "instruction": "Think of someone you love. Say: 'May you be safe. May you be healthy. May you be happy.'",
+        "duration": 60,
+        "phase": "instruction"
+      },
+      {
+        "number": 4,
+        "instruction": "Think of someone neutral. Send them the same wishes.",
+        "duration": 60,
+        "phase": "instruction"
+      },
+      {
+        "number": 5,
+        "instruction": "Think of someone difficult. Send them compassion anyway.",
+        "duration": 60,
+        "phase": "instruction"
+      },
+      {
+        "number": 6,
+        "instruction": "Expand to all beings. 'May all beings be safe, healthy, and happy.'",
+        "duration": 30,
+        "phase": "instruction"
+      }
+    ],
+    "repeat_times": 1,
+    "benefits": ["Increases self-compassion", "Reduces shame", "Cultivates empathy", "Reduces depression symptoms"]
+  },
+  {
+    "id": 12,
+    "name": "Mindful Eating",
+    "category": "mindfulness",
+    "description": "Eat one small snack slowly and mindfully, engaging all your senses to find peace in the present moment.",
+    "difficulty": "beginner",
+    "duration": 180,
+    "for_conditions": ["stress", "anxiety"],
+    "timer_visual": "progress_bar",
+    "steps": [
+      {
+        "number": 1,
+        "instruction": "Choose a small snack (raisin, piece of chocolate, berry)",
+        "duration": 30,
+        "phase": "instruction"
+      },
+      {
+        "number": 2,
+        "instruction": "Look at it closely. Notice its color, shape, and texture.",
+        "duration": 45,
+        "phase": "instruction"
+      },
+      {
+        "number": 3,
+        "instruction": "Smell it. What aromas do you notice?",
+        "duration": 45,
+        "phase": "instruction"
+      },
+      {
+        "number": 4,
+        "instruction": "Put it in your mouth without chewing. Notice the taste and texture.",
+        "duration": 30,
+        "phase": "instruction"
+      },
+      {
+        "number": 5,
+        "instruction": "Slowly chew, noticing flavors developing and changing",
+        "duration": 30,
+        "phase": "instruction"
+      }
+    ],
+    "repeat_times": 1,
+    "benefits": ["Engages all senses", "Promotes present-moment awareness", "Reduces stress eating", "Improves digestion"]
+  },
+  {
+    "id": 13,
+    "name": "Jumping Jacks & Movement",
+    "category": "physical",
+    "description": "Do 50 jumping jacks or other vigorous movement to release energy and shift your mood through exercise.",
+    "difficulty": "beginner",
+    "duration": 120,
+    "for_conditions": ["anxiety", "depression", "stress"],
+    "timer_visual": "countdown",
+    "steps": [
+      {
+        "number": 1,
+        "instruction": "Do 50 jumping jacks at your own pace",
+        "duration": 60,
+        "phase": "instruction"
+      },
+      {
+        "number": 2,
+        "instruction": "Catch your breath. Stretch your arms and legs.",
+        "duration": 30,
+        "phase": "instruction"
+      },
+      {
+        "number": 3,
+        "instruction": "Notice how you feel. You've released energy!",
+        "duration": 30,
+        "phase": "instruction"
+      }
+    ],
+    "repeat_times": 1,
+    "benefits": ["Releases nervous energy", "Boosts mood with endorphins", "Improves circulation", "Provides immediate relief"]
+  },
+  {
+    "id": 14,
+    "name": "Progressive Muscle Relaxation",
+    "category": "physical",
+    "description": "Systematically relax muscle groups after tensing them to release physical tension and promote deep relaxation.",
+    "difficulty": "beginner",
+    "duration": 300,
+    "for_conditions": ["anxiety", "stress"],
+    "timer_visual": "progress_bar",
+    "steps": [
+      {
+        "number": 1,
+        "instruction": "Tense your right hand and arm for 5 seconds. Release and notice the relaxation.",
+        "duration": 30,
+        "phase": "instruction"
+      },
+      {
+        "number": 2,
+        "instruction": "Tense your left hand and arm. Hold for 5 seconds. Release.",
+        "duration": 30,
+        "phase": "instruction"
+      },
+      {
+        "number": 3,
+        "instruction": "Tense your forehead. Hold. Release.",
+        "duration": 30,
+        "phase": "instruction"
+      },
+      {
+        "number": 4,
+        "instruction": "Tense your jaw. Hold. Release.",
+        "duration": 30,
+        "phase": "instruction"
+      },
+      {
+        "number": 5,
+        "instruction": "Tense your shoulders. Hold. Release.",
+        "duration": 30,
+        "phase": "instruction"
+      },
+      {
+        "number": 6,
+        "instruction": "Tense your chest. Hold. Release.",
+        "duration": 30,
+        "phase": "instruction"
+      },
+      {
+        "number": 7,
+        "instruction": "Tense your stomach. Hold. Release.",
+        "duration": 30,
+        "phase": "instruction"
+      },
+      {
+        "number": 8,
+        "instruction": "Tense your right leg. Hold. Release.",
+        "duration": 30,
+        "phase": "instruction"
+      },
+      {
+        "number": 9,
+        "instruction": "Tense your left leg. Hold. Release.",
+        "duration": 30,
+        "phase": "instruction"
+      },
+      {
+        "number": 10,
+        "instruction": "Relax your entire body. Feel the deep calm.",
+        "duration": 30,
+        "phase": "instruction"
+      }
+    ],
+    "repeat_times": 1,
+    "benefits": ["Reduces muscle tension", "Promotes deep relaxation", "Improves sleep", "Reduces anxiety"]
+  },
+  {
+    "id": 15,
+    "name": "Dance or Stretch",
+    "category": "physical",
+    "description": "Put on your favorite song and dance or do gentle stretches to release tension and improve mood.",
+    "difficulty": "beginner",
+    "duration": 180,
+    "for_conditions": ["depression", "anxiety", "stress"],
+    "timer_visual": "progress_bar",
+    "steps": [
+      {
+        "number": 1,
+        "instruction": "Choose your favorite upbeat song or put on music you love",
+        "duration": 30,
+        "phase": "instruction"
+      },
+      {
+        "number": 2,
+        "instruction": "Dance freely for the song, moving your body however it feels good",
+        "duration": 120,
+        "phase": "instruction"
+      },
+      {
+        "number": 3,
+        "instruction": "Gently stretch your body to cool down",
+        "duration": 30,
+        "phase": "instruction"
+      }
+    ],
+    "repeat_times": 1,
+    "benefits": ["Releases endorphins", "Boosts mood", "Reduces depression symptoms", "Increases energy"]
+  },
+  {
+    "id": 16,
+    "name": "A Brief Walk",
+    "category": "physical",
+    "description": "Take a short walk outside to connect with nature, clear your mind, and shift your emotional state.",
+    "difficulty": "beginner",
+    "duration": 300,
+    "for_conditions": ["depression", "anxiety", "stress"],
+    "timer_visual": "countdown",
+    "steps": [
+      {
+        "number": 1,
+        "instruction": "Step outside or to a window. Get some fresh air.",
+        "duration": 30,
+        "phase": "instruction"
+      },
+      {
+        "number": 2,
+        "instruction": "Walk at a comfortable pace for 5 minutes. Notice your surroundings.",
+        "duration": 300,
+        "phase": "instruction"
+      },
+      {
+        "number": 3,
+        "instruction": "Come back inside. Notice how you feel.",
+        "duration": 30,
+        "phase": "instruction"
+      }
+    ],
+    "repeat_times": 1,
+    "benefits": ["Gets fresh air and sunlight", "Clears mental fog", "Reduces rumination", "Improves mood"]
+  },
+  {
+    "id": 17,
+    "name": "Positive Affirmations",
+    "category": "thoughts",
+    "description": "Repeat positive statements about yourself to challenge negative thoughts and build self-compassion.",
+    "difficulty": "beginner",
+    "duration": 180,
+    "for_conditions": ["depression", "anxiety", "self_harm"],
+    "timer_visual": "progress_bar",
+    "steps": [
+      {
+        "number": 1,
+        "instruction": "Find a quiet space. Take 3 deep breaths to center yourself.",
+        "duration": 30,
+        "phase": "instruction"
+      },
+      {
+        "number": 2,
+        "instruction": "Say to yourself: 'I am worthy. I am strong. I deserve kindness.'",
+        "duration": 60,
+        "phase": "instruction"
+      },
+      {
+        "number": 3,
+        "instruction": "Say: 'I am capable. I can handle difficult moments. This will pass.'",
+        "duration": 60,
+        "phase": "instruction"
+      },
+      {
+        "number": 4,
+        "instruction": "Say your own affirmations that resonate with you",
+        "duration": 30,
+        "phase": "instruction"
+      }
+    ],
+    "repeat_times": 1,
+    "benefits": ["Challenges negative self-talk", "Builds confidence", "Increases self-worth", "Reduces depression"]
+  },
+  {
+    "id": 18,
+    "name": "Gratitude Reflection",
+    "category": "thoughts",
+    "description": "Think about or write down things you're grateful for to shift focus from problems to positivity.",
+    "difficulty": "beginner",
+    "duration": 180,
+    "for_conditions": ["depression", "anxiety"],
+    "timer_visual": "progress_bar",
+    "steps": [
+      {
+        "number": 1,
+        "instruction": "Get a pen and paper or your phone",
+        "duration": 30,
+        "phase": "instruction"
+      },
+      {
+        "number": 2,
+        "instruction": "Write down 3-5 things you're grateful for, big or small",
+        "duration": 90,
+        "phase": "instruction"
+      },
+      {
+        "number": 3,
+        "instruction": "For each item, write one sentence about why it matters to you",
+        "duration": 60,
+        "phase": "instruction"
+      }
+    ],
+    "repeat_times": 1,
+    "benefits": ["Shifts focus to positives", "Increases gratitude", "Reduces rumination", "Improves mood"]
+  },
+  {
+    "id": 19,
+    "name": "Self-Compassion Break",
+    "category": "thoughts",
+    "description": "Practice speaking to yourself with kindness during difficult moments using this mindful self-compassion technique.",
+    "difficulty": "intermediate",
+    "duration": 180,
+    "for_conditions": ["depression", "anxiety", "self_harm"],
+    "timer_visual": "progress_bar",
+    "steps": [
+      {
+        "number": 1,
+        "instruction": "Notice you're struggling. Say: 'This is a moment of suffering.'",
+        "duration": 45,
+        "phase": "instruction"
+      },
+      {
+        "number": 2,
+        "instruction": "Remember: 'Suffering is part of life. I'm not alone in this.'",
+        "duration": 45,
+        "phase": "instruction"
+      },
+      {
+        "number": 3,
+        "instruction": "Place your hand on your heart. Say: 'May I be kind to myself. May I give myself the compassion I need.'",
+        "duration": 90,
+        "phase": "instruction"
+      }
+    ],
+    "repeat_times": 1,
+    "benefits": ["Reduces self-criticism", "Builds self-compassion", "Decreases depression/anxiety", "Promotes emotional resilience"]
+  },
+  {
+    "id": 20,
+    "name": "Worry Time Container",
+    "category": "thoughts",
+    "description": "Set aside 10 minutes to worry deliberately, then consciously put your worries aside for the rest of the day.",
+    "difficulty": "intermediate",
+    "duration": 600,
+    "for_conditions": ["anxiety"],
+    "timer_visual": "countdown",
+    "steps": [
+      {
+        "number": 1,
+        "instruction": "Write down all your worries on paper for 10 minutes",
+        "duration": 600,
+        "phase": "instruction"
+      },
+      {
+        "number": 2,
+        "instruction": "When done, fold the paper. Say: 'I've acknowledged my worries. I can handle them later.'",
+        "duration": 30,
+        "phase": "instruction"
+      },
+      {
+        "number": 3,
+        "instruction": "Set the paper aside. For the rest of your day, redirect worry thoughts: 'That's for worry time.'",
+        "duration": 30,
+        "phase": "instruction"
+      }
+    ],
+    "repeat_times": 1,
+    "benefits": ["Reduces constant worry", "Builds sense of control", "Improves focus", "Reduces anxiety"]
+  },
+  {
+    "id": 21,
+    "name": "Visualization: Safe Place",
+    "category": "thoughts",
+    "description": "Imagine a peaceful, safe place in detail to calm your nervous system and find mental refuge.",
+    "difficulty": "intermediate",
+    "duration": 300,
+    "for_conditions": ["anxiety", "stress", "depression"],
+    "timer_visual": "progress_bar",
+    "steps": [
+      {
+        "number": 1,
+        "instruction": "Close your eyes. Take 3 deep breaths.",
+        "duration": 30,
+        "phase": "instruction"
+      },
+      {
+        "number": 2,
+        "instruction": "Imagine a place where you feel completely safe and peaceful.",
+        "duration": 60,
+        "phase": "instruction"
+      },
+      {
+        "number": 3,
+        "instruction": "See the colors, shapes, and details of this place",
+        "duration": 60,
+        "phase": "instruction"
+      },
+      {
+        "number": 4,
+        "instruction": "Notice sounds, smells, and textures in this safe place",
+        "duration": 60,
+        "phase": "instruction"
+      },
+      {
+        "number": 5,
+        "instruction": "Stay here as long as you'd like. When ready, slowly return.",
+        "duration": 90,
+        "phase": "instruction"
+      }
+    ],
+    "repeat_times": 1,
+    "benefits": ["Activates relaxation response", "Provides mental refuge", "Reduces anxiety", "Promotes calm"]
+  }
+]

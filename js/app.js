@@ -49,7 +49,19 @@ class MentalHealthApp {
             return;
         }
 
-        // Load journal prompts
+        // Load coping skills
+        const copingLoaded = await copingHandler.loadCopingSkills();
+        if (!copingLoaded) {
+            console.error('Failed to load coping skills');
+        }
+
+        // Initialize coping UI
+        copingUI.init();
+
+        // Populate coping filters
+        this.populateCopingFilters();
+
+        // Journal prompts
         const promptsLoaded = await journalHandler.loadPrompts();
         if (!promptsLoaded) {
             console.error('Failed to load journal prompts');
@@ -264,6 +276,15 @@ class MentalHealthApp {
         document.getElementById('riskFactorConditionSelect').value = '';
         document.getElementById('riskFactorCategorySelect').value = '';
         this.updateRiskFactorsDisplay();
+    }
+
+    // Populate coping skill filters
+    populateCopingFilters() {
+        const categories = copingHandler.getCategories();
+        const conditions = copingHandler.getConditions();
+
+        this.populateSelect('copingCategorySelect', categories);
+        this.populateSelect('copingConditionSelect', conditions);
     }
 }
 
