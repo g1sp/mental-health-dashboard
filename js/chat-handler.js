@@ -78,8 +78,8 @@ class ChatHandler {
         // Get recent journal entries if available
         if (typeof journalHandler !== 'undefined') {
             const stats = journalHandler.getMoodStats(30);
-            context.recentMood = stats.currentMood || null;
-            context.moodTrend = stats.trend || 'stable';
+            context.recentMood = stats ? stats.average : null;
+            context.moodTrend = stats ? stats.trend : 'stable';
 
             // Get last 3 entries
             context.recentEntries = journalHandler.entries.slice(-3).map(e => ({
