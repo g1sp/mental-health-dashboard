@@ -127,11 +127,9 @@ class ChatUI {
             skillBtn.className = 'btn btn-sm btn-outline-primary';
             skillBtn.textContent = skill.name;
             skillBtn.addEventListener('click', () => {
-                // Open coping exercise modal
+                // Open coping exercise modal without switching tabs
                 if (typeof copingUI !== 'undefined' && skill.id) {
                     copingUI.showExerciseDetail(skill.id);
-                    // Switch to coping tab
-                    document.getElementById('copingTab')?.click();
                 }
             });
             skillsContainer.appendChild(skillBtn);
