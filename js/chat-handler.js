@@ -7,10 +7,11 @@ class ChatHandler {
         this.apiKey = null;
         this.isLoading = false;
         this.crisisKeywords = [
-            'suicide', 'suicidal', 'kill myself', 'end it', 'hurt myself',
+            'suicide', 'suicidal', 'kill myself', 'end it', 'hurt myself', 'hurting myself',
             'self harm', 'cutting', 'self-harm', 'harm', 'harm myself',
             'die', 'death', 'dead', 'gone', 'severe pain', 'can\'t take it',
-            'unbearable', 'hopeless', 'worthless', 'no point', 'no reason to live'
+            'unbearable', 'hopeless', 'worthless', 'no point', 'no reason to live',
+            'want to hurt', 'thinking about hurt', 'going to hurt'
         ];
     }
 
@@ -62,7 +63,9 @@ class ChatHandler {
     // Detect crisis language in user message
     detectCrisis(userMessage) {
         const lowercaseMsg = userMessage.toLowerCase();
-        return this.crisisKeywords.some(keyword => lowercaseMsg.includes(keyword));
+        const isCrisis = this.crisisKeywords.some(keyword => lowercaseMsg.includes(keyword));
+        if (isCrisis) console.log('🚨 CRISIS DETECTED:', userMessage);
+        return isCrisis;
     }
 
     // Get user context from their data
