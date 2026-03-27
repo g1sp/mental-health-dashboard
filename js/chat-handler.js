@@ -149,15 +149,23 @@ CURRENT USER CONTEXT:`;
         const messageLower = userMessage.toLowerCase();
         const allSkills = copingHandler.getCopingSkills();
 
-        // Smarter keyword matching that handles word variations
+        // Map of condition aliases (what users might say vs what's in the database)
+        const conditionAliases = {
+            'anxiety': ['anxiety', 'anxious', 'worried', 'nervous'],
+            'stress': ['stress', 'stressed', 'overwhelmed'],
+            'depression': ['depression', 'depressed', 'sad'],
+            'self_harm': ['self harm', 'self-harm', 'cutting', 'hurt'],
+            'panic': ['panic', 'panicking']
+        };
+
         const relevant = allSkills.filter(skill => {
             // Check if category matches
             if (messageLower.includes(skill.category)) return true;
 
-            // Check if any condition matches (including partial matches for word variations)
+            // Check if any condition matches
             for (let cond of skill.for_conditions) {
-                // Match exact condition or word stems (e.g., "anxious" matches "anxiety")
-                if (messageLower.includes(cond) || messageLower.includes(cond.substring(0, cond.length - 1))) {
+                const aliases = conditionAliases[cond] || [cond];
+                if (aliases.some(alias => messageLower.includes(alias))) {
                     return true;
                 }
             }
