@@ -91,6 +91,11 @@ class MentalHealthApp {
         // Initialize parent UI
         await parentUI.init();
 
+        // Initialize chat
+        await chatHandler.init();
+        chatUI.init();
+        this.setupChatEventListeners();
+
         // Set up event listeners
         this.setupEventListeners();
         this.setupTreatmentEventListeners();
@@ -294,6 +299,42 @@ class MentalHealthApp {
 
         this.populateSelect('copingCategorySelect', categories);
         this.populateSelect('copingConditionSelect', conditions);
+    }
+
+    // Setup chat event listeners
+    setupChatEventListeners() {
+        // Export button
+        document.getElementById('chatExportBtn')?.addEventListener('click', () => {
+            chatUI.exportChat();
+        });
+
+        // Clear button
+        document.getElementById('chatClearBtn')?.addEventListener('click', () => {
+            chatUI.clearChat();
+        });
+
+        // API Key modal save button
+        document.getElementById('apiKeySaveBtn')?.addEventListener('click', () => {
+            const apiKey = document.getElementById('apiKeyInput')?.value;
+            const saveCheckbox = document.getElementById('saveApiKey')?.checked;
+
+            if (!apiKey) {
+                alert('Please enter an API key');
+                return;
+            }
+
+            chatHandler.apiKey = apiKey;
+            if (saveCheckbox) {
+                localStorage.setItem('anthropic_api_key', apiKey);
+            }
+
+            // Close modal
+            const modal = bootstrap.Modal.getInstance(document.getElementById('apiKeyModal'));
+            modal?.hide();
+
+            // Retry sending message
+            chatUI.handleSendMessage();
+        });
     }
 }
 
