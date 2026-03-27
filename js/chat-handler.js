@@ -146,14 +146,23 @@ CURRENT USER CONTEXT:`;
     getRelevantCopingSkills(userMessage) {
         if (typeof copingHandler === 'undefined') return [];
 
-        const keywords = userMessage.toLowerCase();
+        const messageLower = userMessage.toLowerCase();
         const allSkills = copingHandler.getCopingSkills();
 
-        // Simple keyword matching
+        // Smarter keyword matching that handles word variations
         const relevant = allSkills.filter(skill => {
-            const skillText = (skill.name + ' ' + skill.description + ' ' + skill.for_conditions.join(' ')).toLowerCase();
-            return keywords.includes(skill.category) ||
-                   skill.for_conditions.some(cond => keywords.includes(cond));
+            // Check if category matches
+            if (messageLower.includes(skill.category)) return true;
+
+            // Check if any condition matches (including partial matches for word variations)
+            for (let cond of skill.for_conditions) {
+                // Match exact condition or word stems (e.g., "anxious" matches "anxiety")
+                if (messageLower.includes(cond) || messageLower.includes(cond.substring(0, cond.length - 1))) {
+                    return true;
+                }
+            }
+
+            return false;
         });
 
         return relevant.slice(0, 2); // Return top 2
