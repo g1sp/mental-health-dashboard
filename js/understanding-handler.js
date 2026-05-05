@@ -25,6 +25,8 @@ class UnderstandingHandler {
     const target = document.getElementById(targetId);
 
     if (source && target) {
+      source.style.display = '';
+      source.style.visibility = 'visible';
       target.appendChild(source);
     }
   }
