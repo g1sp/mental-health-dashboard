@@ -1,6 +1,5 @@
 class PersonaHandler {
   constructor() {
-    this.currentPersona = localStorage.getItem('selectedPersona') || 'teen';
     this.personas = {
       teen: {
         label: '👤 Teen',
@@ -13,6 +12,9 @@ class PersonaHandler {
         tabOrder: ['parentGuidanceTab', 'treatmentsTab', 'understandingTab', 'crisisResourcesTab']
       }
     };
+
+    let saved = localStorage.getItem('selectedPersona');
+    this.currentPersona = (saved && this.personas[saved]) ? saved : 'teen';
   }
 
   init() {
