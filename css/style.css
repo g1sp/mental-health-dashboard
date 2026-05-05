@@ -940,6 +940,7 @@ footer {
 
 .persona-selector small {
     font-size: 0.75rem;
+    color: white;
 }
 
 .persona-selector .form-select-sm {
