@@ -56,15 +56,14 @@ class PersonaHandler {
     const tabContainer = document.getElementById('mainTabs');
     if (!tabContainer) return;
 
-    const tabs = Array.from(tabContainer.querySelectorAll('.persona-tab'));
-    const visibleTabs = tabs.filter(tab => tab.style.display !== 'none');
+    // Use CSS order instead of DOM reordering to avoid breaking Bootstrap tabs
+    tabContainer.style.display = 'flex';
+    tabContainer.style.flexDirection = 'row';
 
-    const sortedTabs = tabOrder
-      .map(tabId => visibleTabs.find(tab => tab.querySelector(`#${tabId}`)))
-      .filter(tab => tab !== undefined);
-
-    sortedTabs.forEach(tab => {
-      tabContainer.appendChild(tab);
+    document.querySelectorAll('.persona-tab').forEach((tab, index) => {
+      const tabId = tab.querySelector('[data-bs-toggle="tab"]')?.id;
+      const orderIndex = tabOrder.indexOf(tabId);
+      tab.style.order = orderIndex !== -1 ? orderIndex : 999;
     });
   }
 

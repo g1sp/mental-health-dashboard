@@ -44,13 +44,15 @@ class UnderstandingHandler {
 
   embedDashboardContent() {
     const container = document.getElementById('dashboardEmbedded');
-    if (!container) return;
-
     const dashboardContent = document.getElementById('dashboardContent');
-    if (dashboardContent) {
-      container.innerHTML = dashboardContent.innerHTML;
+
+    if (!container || !dashboardContent) return;
+
+    container.innerHTML = dashboardContent.innerHTML;
+
+    setTimeout(() => {
       this.reinitializeDashboardHandlers();
-    }
+    }, 100);
   }
 
   embedRootCausesContent() {
@@ -76,8 +78,11 @@ class UnderstandingHandler {
   }
 
   reinitializeDashboardHandlers() {
-    if (window.dataHandler) {
-      window.dataHandler.applyFilters();
+    if (window.chartManager && window.dataHandler) {
+      setTimeout(() => {
+        window.chartManager.initCharts();
+        window.dataHandler.applyFilters();
+      }, 50);
     }
   }
 
