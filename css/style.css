@@ -932,9 +932,14 @@ footer {
 /* Persona Selector */
 .persona-selector {
     background-color: rgba(255, 255, 255, 0.1);
-    padding: 0.5rem 1rem;
+    padding: 0.4rem 0.8rem;
     border-radius: 6px;
     border: 1px solid rgba(255, 255, 255, 0.2);
+    white-space: nowrap;
+}
+
+.persona-selector small {
+    font-size: 0.75rem;
 }
 
 .persona-selector .form-select-sm {
@@ -943,10 +948,26 @@ footer {
     color: var(--primary-color);
     font-weight: 600;
     padding: 0.25rem 0.5rem;
-    font-size: 0.875rem;
+    font-size: 0.8rem;
+    min-width: 100px;
 }
 
 .persona-selector .form-select-sm:focus {
     border-color: var(--info-color);
     box-shadow: 0 0 0 0.15rem rgba(52, 152, 219, 0.25);
+}
+
+@media (max-width: 768px) {
+    .persona-selector {
+        padding: 0.3rem 0.5rem;
+    }
+
+    .persona-selector small {
+        display: none;
+    }
+
+    .persona-selector .form-select-sm {
+        min-width: 80px;
+        font-size: 0.75rem;
+    }
 }

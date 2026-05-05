@@ -9,7 +9,7 @@ class PersonaHandler {
       parent: {
         label: '👨‍👩‍👧 Parent',
         description: 'Focus on understanding and supporting your teen',
-        tabOrder: ['parentGuidanceTab', 'treatmentsTab', 'understandingTab', 'crisisResourcesTab']
+        tabOrder: ['understandingTab', 'treatmentsTab', 'parentCrisisTab']
       }
     };
 

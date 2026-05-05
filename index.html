@@ -58,8 +58,8 @@
                 </button>
             </li>
             <li class="nav-item persona-tab" data-personas="parent" role="presentation">
-                <button class="nav-link active" id="parentGuidanceTab" data-bs-toggle="tab" data-bs-target="#parentGuidanceContent" type="button" role="tab" aria-controls="parentGuidanceContent" aria-selected="true">
-                    👥 Parent Guidance
+                <button class="nav-link active" id="understandingTab" data-bs-toggle="tab" data-bs-target="#understandingContent" type="button" role="tab" aria-controls="understandingContent" aria-selected="true">
+                    📊 Understanding Youth Mental Health
                 </button>
             </li>
             <li class="nav-item persona-tab" data-personas="parent" role="presentation">
@@ -68,13 +68,8 @@
                 </button>
             </li>
             <li class="nav-item persona-tab" data-personas="parent" role="presentation">
-                <button class="nav-link" id="understandingTab" data-bs-toggle="tab" data-bs-target="#understandingContent" type="button" role="tab" aria-controls="understandingContent" aria-selected="false">
-                    📊 Understanding Youth Mental Health
-                </button>
-            </li>
-            <li class="nav-item persona-tab" data-personas="parent" role="presentation">
                 <button class="nav-link" id="parentCrisisTab" data-bs-toggle="tab" data-bs-target="#crisisResourcesContent" type="button" role="tab" aria-controls="crisisResourcesContent" aria-selected="false">
-                    🆘 24/7 Crisis Support
+                    🆘 Emergency Resources
                 </button>
             </li>
         </ul>
@@ -828,8 +823,8 @@
             </div>
         </div>
 
-        <!-- Parent Guidance Tab -->
-        <div class="tab-pane fade" id="parentGuidanceContent" role="tabpanel" aria-labelledby="parentGuidanceTab">
+        <!-- Parent Guidance Tab (Hidden - content integrated into Understanding Youth Mental Health) -->
+        <div class="tab-pane fade" id="parentGuidanceContent" role="tabpanel" aria-labelledby="parentGuidanceTab" style="display: none;">
             <div class="container-fluid">
                 <div class="row mb-5">
                     <div class="col-12">
@@ -932,6 +927,11 @@
                                     ⚠️ Risk Factors
                                 </button>
                             </li>
+                            <li class="nav-item">
+                                <button class="nav-link understanding-tab-btn" data-tab="ParentGuidance" role="tab">
+                                    👥 Parent Guidance
+                                </button>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -949,6 +949,11 @@
                 <!-- Risk Factors Tab (Risk Factors embedded) -->
                 <div id="understandingRisks" class="understanding-tab-content" style="display: none;">
                     <div id="riskFactorsEmbedded"></div>
+                </div>
+
+                <!-- Parent Guidance Tab (Parent Guidance embedded) -->
+                <div id="understandingParentGuidance" class="understanding-tab-content" style="display: none;">
+                    <div id="parentGuidanceEmbedded"></div>
                 </div>
             </div>
         </div>

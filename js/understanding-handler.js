@@ -39,6 +39,7 @@ class UnderstandingHandler {
     this.embedDashboardContent();
     this.embedRootCausesContent();
     this.embedRiskFactorsContent();
+    this.embedParentGuidanceContent();
   }
 
   embedDashboardContent() {
@@ -95,6 +96,23 @@ class UnderstandingHandler {
   reinitializeRiskFactorsHandlers() {
     if (window.riskFactorsUI) {
       window.riskFactorsUI.attachCardClickListeners();
+    }
+  }
+
+  embedParentGuidanceContent() {
+    const container = document.getElementById('parentGuidanceEmbedded');
+    if (!container) return;
+
+    const parentGuidanceContent = document.getElementById('parentGuidanceContent');
+    if (parentGuidanceContent) {
+      container.innerHTML = parentGuidanceContent.innerHTML;
+      this.reinitializeParentGuidanceHandlers();
+    }
+  }
+
+  reinitializeParentGuidanceHandlers() {
+    if (window.parentHandler && window.parentUI) {
+      window.parentUI.populateSectionList();
     }
   }
 }
