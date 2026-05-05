@@ -4,6 +4,12 @@ class UnderstandingHandler {
   }
 
   init() {
+    // Move original tab contents into Understanding container
+    this.moveContent('dashboardContent', 'understandingData');
+    this.moveContent('whyStruggleContent', 'understandingRootCauses');
+    this.moveContent('riskFactorsContent', 'understandingRisks');
+    this.moveContent('parentGuidanceContent', 'understandingParentGuidance');
+
     const tabButtons = document.querySelectorAll('.understanding-tab-btn');
     tabButtons.forEach(btn => {
       btn.addEventListener('click', (e) => {
@@ -11,113 +17,54 @@ class UnderstandingHandler {
       });
     });
 
-    this.embedContent();
     this.switchTab('Data');
+  }
+
+  moveContent(sourceId, targetId) {
+    const source = document.getElementById(sourceId);
+    const target = document.getElementById(targetId);
+
+    if (source && target) {
+      target.appendChild(source);
+    }
   }
 
   switchTab(tabName) {
     this.currentTab = tabName;
 
+    // Hide all understanding tab contents
     document.querySelectorAll('.understanding-tab-content').forEach(el => {
       el.style.display = 'none';
     });
 
+    // Deactivate all buttons
     document.querySelectorAll('.understanding-tab-btn').forEach(el => {
       el.classList.remove('active');
     });
 
+    // Show selected tab content
     const contentId = `understanding${tabName}`;
     const content = document.getElementById(contentId);
     if (content) {
       content.style.display = '';
     }
 
+    // Activate clicked button
     document.querySelector(`[data-tab="${tabName}"]`).classList.add('active');
+
+    // Trigger handler updates if needed
+    this.triggerTabHandlers(tabName);
   }
 
-  embedContent() {
-    this.embedDashboardContent();
-    this.embedRootCausesContent();
-    this.embedRiskFactorsContent();
-    this.embedParentGuidanceContent();
-  }
-
-  embedDashboardContent() {
-    const container = document.getElementById('dashboardEmbedded');
-    const dashboardContent = document.getElementById('dashboardContent');
-
-    if (!container || !dashboardContent) return;
-
-    container.innerHTML = dashboardContent.innerHTML;
-
-    setTimeout(() => {
-      this.reinitializeDashboardHandlers();
-    }, 100);
-  }
-
-  embedRootCausesContent() {
-    const container = document.getElementById('whyStruggleEmbedded');
-    if (!container) return;
-
-    const whyStruggleContent = document.getElementById('whyStruggleContent');
-    if (whyStruggleContent) {
-      container.innerHTML = whyStruggleContent.innerHTML;
-      this.reinitializeWhyStruggleHandlers();
-    }
-  }
-
-  embedRiskFactorsContent() {
-    const container = document.getElementById('riskFactorsEmbedded');
-    if (!container) return;
-
-    const riskFactorsContent = document.getElementById('riskFactorsContent');
-    if (riskFactorsContent) {
-      container.innerHTML = riskFactorsContent.innerHTML;
-      this.reinitializeRiskFactorsHandlers();
-    }
-  }
-
-  reinitializeDashboardHandlers() {
-    if (window.chartManager && window.dataHandler) {
-      setTimeout(() => {
-        window.chartManager.initCharts();
-        window.dataHandler.applyFilters();
-      }, 50);
-    }
-  }
-
-  reinitializeWhyStruggleHandlers() {
-    document.querySelectorAll('.cause-link').forEach(link => {
-      link.addEventListener('click', (e) => {
-        e.preventDefault();
-        const cause = e.target.dataset.cause;
-        if (window.whyStruggleHandler) {
-          window.whyStruggleHandler.showCauseDetail(cause);
-        }
-      });
-    });
-  }
-
-  reinitializeRiskFactorsHandlers() {
-    if (window.riskFactorsUI) {
-      window.riskFactorsUI.attachCardClickListeners();
-    }
-  }
-
-  embedParentGuidanceContent() {
-    const container = document.getElementById('parentGuidanceEmbedded');
-    if (!container) return;
-
-    const parentGuidanceContent = document.getElementById('parentGuidanceContent');
-    if (parentGuidanceContent) {
-      container.innerHTML = parentGuidanceContent.innerHTML;
-      this.reinitializeParentGuidanceHandlers();
-    }
-  }
-
-  reinitializeParentGuidanceHandlers() {
-    if (window.parentHandler && window.parentUI) {
-      window.parentUI.populateSectionList();
+  triggerTabHandlers(tabName) {
+    if (tabName === 'Data' && window.dataHandler) {
+      window.dataHandler.applyFilters();
+    } else if (tabName === 'RootCauses' && window.whyStruggleHandler) {
+      // Root causes already initialized
+    } else if (tabName === 'Risks' && window.riskFactorsHandler) {
+      // Risk factors already initialized
+    } else if (tabName === 'ParentGuidance' && window.parentHandler) {
+      // Parent guidance already initialized
     }
   }
 }
