@@ -1,0 +1,98 @@
+class PersonaHandler {
+  constructor() {
+    this.currentPersona = localStorage.getItem('selectedPersona') || 'teen';
+    this.personas = {
+      teen: {
+        label: '👤 Teen',
+        description: 'Focus on support tools and self-help resources',
+        tabOrder: ['crisisResourcesTab', 'chatTab', 'copingTab', 'journalTab', 'dashboardTab', 'treatmentsTab', 'whyStruggleTab', 'riskFactorsTab']
+      },
+      parent: {
+        label: '👨‍👩‍👧 Parent',
+        description: 'Focus on understanding and supporting your teen',
+        tabOrder: ['parentGuidanceTab', 'dashboardTab', 'treatmentsTab', 'whyStruggleTab', 'riskFactorsTab', 'crisisResourcesTab', 'chatTab']
+      },
+      researcher: {
+        label: '🔬 Researcher',
+        description: 'Focus on data, evidence, and research insights',
+        tabOrder: ['dashboardTab', 'treatmentsTab', 'whyStruggleTab', 'riskFactorsTab', 'crisisResourcesTab']
+      }
+    };
+  }
+
+  init() {
+    const select = document.getElementById('personaSelect');
+    if (!select) return;
+
+    select.value = this.currentPersona;
+    this.applyPersona(this.currentPersona);
+
+    select.addEventListener('change', (e) => {
+      this.setPersona(e.target.value);
+    });
+  }
+
+  setPersona(persona) {
+    if (!this.personas[persona]) return;
+    this.currentPersona = persona;
+    localStorage.setItem('selectedPersona', persona);
+    this.applyPersona(persona);
+  }
+
+  applyPersona(persona) {
+    const personaConfig = this.personas[persona];
+
+    document.querySelectorAll('.persona-tab').forEach(tab => {
+      const allowedPersonas = tab.dataset.personas.split(',');
+      if (allowedPersonas.includes(persona)) {
+        tab.style.display = '';
+      } else {
+        tab.style.display = 'none';
+      }
+    });
+
+    this.reorderTabs(personaConfig.tabOrder);
+    this.ensureValidActiveTab(persona);
+  }
+
+  reorderTabs(tabOrder) {
+    const tabContainer = document.getElementById('mainTabs');
+    if (!tabContainer) return;
+
+    const tabs = Array.from(tabContainer.querySelectorAll('.persona-tab'));
+    const visibleTabs = tabs.filter(tab => tab.style.display !== 'none');
+
+    const sortedTabs = tabOrder
+      .map(tabId => visibleTabs.find(tab => tab.querySelector(`#${tabId}`)))
+      .filter(tab => tab !== undefined);
+
+    sortedTabs.forEach(tab => {
+      tabContainer.appendChild(tab);
+    });
+  }
+
+  ensureValidActiveTab(persona) {
+    const activeTab = document.querySelector('.nav-link.active');
+    const activeParent = activeTab?.closest('.persona-tab');
+
+    if (activeParent && activeParent.style.display === 'none') {
+      const visibleTabs = document.querySelectorAll('.persona-tab:not([style*="display: none"])');
+      if (visibleTabs.length > 0) {
+        const firstVisibleButton = visibleTabs[0].querySelector('.nav-link');
+        if (firstVisibleButton) {
+          firstVisibleButton.click();
+        }
+      }
+    }
+  }
+
+  getPersona() {
+    return this.currentPersona;
+  }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const personaHandler = new PersonaHandler();
+  personaHandler.init();
+  window.personaHandler = personaHandler;
+});

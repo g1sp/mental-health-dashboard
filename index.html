@@ -19,8 +19,16 @@
     <nav class="navbar navbar-dark bg-dark">
         <div class="container-fluid">
             <span class="navbar-brand mb-0 h1">🧠 Mental Health Dashboard For Youth</span>
-            <div class="d-flex align-items-center">
-                <small class="text-muted me-3 d-none d-md-inline">CDC YRBS Data Visualization</small>
+            <div class="d-flex align-items-center gap-3">
+                <div class="persona-selector d-flex align-items-center gap-2">
+                    <small class="text-muted">View as:</small>
+                    <select id="personaSelect" class="form-select form-select-sm" style="width: auto;">
+                        <option value="teen">👤 Teen</option>
+                        <option value="parent">👨‍👩‍👧 Parent</option>
+                        <option value="researcher">🔬 Researcher</option>
+                    </select>
+                </div>
+                <small class="text-muted me-2 d-none d-md-inline">CDC YRBS Data Visualization</small>
             </div>
         </div>
     </nav>
@@ -30,52 +38,52 @@
         <!-- Tab Navigation with some margin top -->
         <div style="margin-top: 0.5rem;"></div>
         <ul class="nav nav-tabs" id="mainTabs" role="tablist">
-            <li class="nav-item" role="presentation">
+            <li class="nav-item persona-tab" data-personas="teen,parent,researcher" role="presentation">
                 <button class="nav-link active" id="dashboardTab" data-bs-toggle="tab" data-bs-target="#dashboardContent" type="button" role="tab" aria-controls="dashboardContent" aria-selected="true">
                     📊 Dashboard
                 </button>
             </li>
-            <li class="nav-item" role="presentation">
+            <li class="nav-item persona-tab" data-personas="parent,researcher" role="presentation">
                 <button class="nav-link" id="riskFactorsTab" data-bs-toggle="tab" data-bs-target="#riskFactorsContent" type="button" role="tab" aria-controls="riskFactorsContent" aria-selected="false">
                     ⚠️ Risk Factors & Causes
                 </button>
             </li>
-            <li class="nav-item" role="presentation">
+            <li class="nav-item persona-tab" data-personas="parent,researcher" role="presentation">
                 <button class="nav-link" id="whyStruggleTab" data-bs-toggle="tab" data-bs-target="#whyStruggleContent" type="button" role="tab" aria-controls="whyStruggleContent" aria-selected="false">
                     🔍 Why Teens Struggle
                 </button>
             </li>
-            <li class="nav-item" role="presentation">
+            <li class="nav-item persona-tab" data-personas="teen,parent,researcher" role="presentation">
                 <button class="nav-link" id="treatmentsTab" data-bs-toggle="tab" data-bs-target="#treatmentsContent" type="button" role="tab" aria-controls="treatmentsContent" aria-selected="false">
                     💊 Evidence-Based Treatments
                 </button>
             </li>
-            <li class="nav-item" role="presentation">
+            <li class="nav-item persona-tab" data-personas="teen" role="presentation">
                 <button class="nav-link" id="copingTab" data-bs-toggle="tab" data-bs-target="#copingContent" type="button" role="tab" aria-controls="copingContent" aria-selected="false">
                     🧘 Coping Skills & Exercises
                 </button>
             </li>
-            <li class="nav-item" role="presentation">
+            <li class="nav-item persona-tab" data-personas="teen" role="presentation">
                 <button class="nav-link" id="journalTab" data-bs-toggle="tab" data-bs-target="#journalContent" type="button" role="tab" aria-controls="journalContent" aria-selected="false">
                     📔 My Journal & Mood Tracking
                 </button>
             </li>
-            <li class="nav-item" role="presentation">
+            <li class="nav-item persona-tab" data-personas="teen,parent,researcher" role="presentation">
                 <button class="nav-link" id="crisisResourcesTab" data-bs-toggle="tab" data-bs-target="#crisisResourcesContent" type="button" role="tab" aria-controls="crisisResourcesContent" aria-selected="false">
                     🆘 Crisis Resources & Help
                 </button>
             </li>
-            <li class="nav-item" role="presentation">
+            <li class="nav-item persona-tab" data-personas="parent" role="presentation">
                 <button class="nav-link" id="parentGuidanceTab" data-bs-toggle="tab" data-bs-target="#parentGuidanceContent" type="button" role="tab" aria-controls="parentGuidanceContent" aria-selected="false">
                     👥 For Parents & Caregivers
                 </button>
             </li>
-            <li class="nav-item" role="presentation">
+            <li class="nav-item persona-tab" data-personas="teen,parent" role="presentation">
                 <button class="nav-link" id="chatTab" data-bs-toggle="tab" data-bs-target="#chatContent" type="button" role="tab" aria-controls="chatContent" aria-selected="false">
                     🤖 AI Companion Chat
                 </button>
             </li>
-            <li class="nav-item" role="presentation">
+            <li class="nav-item persona-tab" data-personas="teen,researcher" role="presentation">
                 <button class="nav-link" id="learningTab" data-bs-toggle="tab" data-bs-target="#learningContent" type="button" role="tab" aria-controls="learningContent" aria-selected="false">
                     📚 How to Build This App
                 </button>
@@ -1218,6 +1226,7 @@
     <script src="js/chat-ui.js"></script>
     <script src="js/chat-test.js"></script>
     <script src="js/why-struggle-handler.js"></script>
+    <script src="js/persona-handler.js"></script>
     <script src="js/app.js"></script>
 </body>
 </html>
