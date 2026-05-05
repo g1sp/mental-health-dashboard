@@ -5,17 +5,12 @@ class PersonaHandler {
       teen: {
         label: '👤 Teen',
         description: 'Focus on support tools and self-help resources',
-        tabOrder: ['crisisResourcesTab', 'chatTab', 'copingTab', 'journalTab', 'dashboardTab', 'treatmentsTab', 'whyStruggleTab', 'riskFactorsTab']
+        tabOrder: ['crisisResourcesTab', 'copingTab', 'journalTab', 'chatTab']
       },
       parent: {
         label: '👨‍👩‍👧 Parent',
         description: 'Focus on understanding and supporting your teen',
-        tabOrder: ['parentGuidanceTab', 'dashboardTab', 'treatmentsTab', 'whyStruggleTab', 'riskFactorsTab', 'crisisResourcesTab', 'chatTab']
-      },
-      researcher: {
-        label: '🔬 Researcher',
-        description: 'Focus on data, evidence, and research insights',
-        tabOrder: ['dashboardTab', 'treatmentsTab', 'whyStruggleTab', 'riskFactorsTab', 'crisisResourcesTab']
+        tabOrder: ['parentGuidanceTab', 'treatmentsTab', 'understandingTab', 'crisisResourcesTab']
       }
     };
   }

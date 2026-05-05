@@ -25,7 +25,6 @@
                     <select id="personaSelect" class="form-select form-select-sm" style="width: auto;">
                         <option value="teen">👤 Teen</option>
                         <option value="parent">👨‍👩‍👧 Parent</option>
-                        <option value="researcher">🔬 Researcher</option>
                     </select>
                 </div>
                 <small class="text-muted me-2 d-none d-md-inline">CDC YRBS Data Visualization</small>
@@ -38,24 +37,9 @@
         <!-- Tab Navigation with some margin top -->
         <div style="margin-top: 0.5rem;"></div>
         <ul class="nav nav-tabs" id="mainTabs" role="tablist">
-            <li class="nav-item persona-tab" data-personas="teen,parent,researcher" role="presentation">
-                <button class="nav-link active" id="dashboardTab" data-bs-toggle="tab" data-bs-target="#dashboardContent" type="button" role="tab" aria-controls="dashboardContent" aria-selected="true">
-                    📊 Dashboard
-                </button>
-            </li>
-            <li class="nav-item persona-tab" data-personas="parent,researcher" role="presentation">
-                <button class="nav-link" id="riskFactorsTab" data-bs-toggle="tab" data-bs-target="#riskFactorsContent" type="button" role="tab" aria-controls="riskFactorsContent" aria-selected="false">
-                    ⚠️ Risk Factors & Causes
-                </button>
-            </li>
-            <li class="nav-item persona-tab" data-personas="parent,researcher" role="presentation">
-                <button class="nav-link" id="whyStruggleTab" data-bs-toggle="tab" data-bs-target="#whyStruggleContent" type="button" role="tab" aria-controls="whyStruggleContent" aria-selected="false">
-                    🔍 Why Teens Struggle
-                </button>
-            </li>
-            <li class="nav-item persona-tab" data-personas="teen,parent,researcher" role="presentation">
-                <button class="nav-link" id="treatmentsTab" data-bs-toggle="tab" data-bs-target="#treatmentsContent" type="button" role="tab" aria-controls="treatmentsContent" aria-selected="false">
-                    💊 Evidence-Based Treatments
+            <li class="nav-item persona-tab" data-personas="teen" role="presentation">
+                <button class="nav-link active" id="crisisResourcesTab" data-bs-toggle="tab" data-bs-target="#crisisResourcesContent" type="button" role="tab" aria-controls="crisisResourcesContent" aria-selected="true">
+                    🆘 Crisis Resources & Help
                 </button>
             </li>
             <li class="nav-item persona-tab" data-personas="teen" role="presentation">
@@ -68,24 +52,29 @@
                     📔 My Journal & Mood Tracking
                 </button>
             </li>
-            <li class="nav-item persona-tab" data-personas="teen,parent,researcher" role="presentation">
-                <button class="nav-link" id="crisisResourcesTab" data-bs-toggle="tab" data-bs-target="#crisisResourcesContent" type="button" role="tab" aria-controls="crisisResourcesContent" aria-selected="false">
-                    🆘 Crisis Resources & Help
-                </button>
-            </li>
-            <li class="nav-item persona-tab" data-personas="parent" role="presentation">
-                <button class="nav-link" id="parentGuidanceTab" data-bs-toggle="tab" data-bs-target="#parentGuidanceContent" type="button" role="tab" aria-controls="parentGuidanceContent" aria-selected="false">
-                    👥 For Parents & Caregivers
-                </button>
-            </li>
-            <li class="nav-item persona-tab" data-personas="teen,parent" role="presentation">
+            <li class="nav-item persona-tab" data-personas="teen" role="presentation">
                 <button class="nav-link" id="chatTab" data-bs-toggle="tab" data-bs-target="#chatContent" type="button" role="tab" aria-controls="chatContent" aria-selected="false">
                     🤖 AI Companion Chat
                 </button>
             </li>
-            <li class="nav-item persona-tab" data-personas="teen,researcher" role="presentation">
-                <button class="nav-link" id="learningTab" data-bs-toggle="tab" data-bs-target="#learningContent" type="button" role="tab" aria-controls="learningContent" aria-selected="false">
-                    📚 How to Build This App
+            <li class="nav-item persona-tab" data-personas="parent" role="presentation">
+                <button class="nav-link active" id="parentGuidanceTab" data-bs-toggle="tab" data-bs-target="#parentGuidanceContent" type="button" role="tab" aria-controls="parentGuidanceContent" aria-selected="true">
+                    👥 For Parents & Caregivers
+                </button>
+            </li>
+            <li class="nav-item persona-tab" data-personas="parent" role="presentation">
+                <button class="nav-link" id="treatmentsTab" data-bs-toggle="tab" data-bs-target="#treatmentsContent" type="button" role="tab" aria-controls="treatmentsContent" aria-selected="false">
+                    💊 Evidence-Based Treatments
+                </button>
+            </li>
+            <li class="nav-item persona-tab" data-personas="parent" role="presentation">
+                <button class="nav-link" id="understandingTab" data-bs-toggle="tab" data-bs-target="#understandingContent" type="button" role="tab" aria-controls="understandingContent" aria-selected="false">
+                    📚 Understanding Mental Health
+                </button>
+            </li>
+            <li class="nav-item persona-tab" data-personas="parent" role="presentation">
+                <button class="nav-link" id="parentCrisisTab" data-bs-toggle="tab" data-bs-target="#crisisResourcesContent" type="button" role="tab" aria-controls="crisisResourcesContent" aria-selected="false">
+                    🆘 Crisis Resources & Help
                 </button>
             </li>
         </ul>
@@ -93,8 +82,8 @@
 
     <!-- Tab Content -->
     <div class="tab-content" id="mainTabContent">
-        <!-- Dashboard Tab -->
-        <div class="tab-pane fade show active" id="dashboardContent" role="tabpanel" aria-labelledby="dashboardTab">
+        <!-- Dashboard Tab (Hidden - Embedded in Understanding Mental Health for parents) -->
+        <div class="tab-pane fade" id="dashboardContent" role="tabpanel" aria-labelledby="dashboardTab" style="display: none;">
     <div class="container-fluid">
         <!-- Dashboard Header with Data Source -->
         <div class="row mb-4">
@@ -273,8 +262,8 @@
             </div>
         </div>
 
-        <!-- Why Teens Struggle Tab -->
-        <div class="tab-pane fade" id="whyStruggleContent" role="tabpanel" aria-labelledby="whyStruggleTab">
+        <!-- Why Teens Struggle Tab (Hidden - Embedded in Understanding Mental Health for parents) -->
+        <div class="tab-pane fade" id="whyStruggleContent" role="tabpanel" aria-labelledby="whyStruggleTab" style="display: none;">
             <div class="container-fluid">
                 <!-- Header -->
                 <div class="row mb-5">
@@ -489,8 +478,8 @@
             </div>
         </div>
 
-        <!-- Risk Factors Tab -->
-        <div class="tab-pane fade" id="riskFactorsContent" role="tabpanel" aria-labelledby="riskFactorsTab">
+        <!-- Risk Factors Tab (Hidden - Embedded in Understanding Mental Health for parents) -->
+        <div class="tab-pane fade" id="riskFactorsContent" role="tabpanel" aria-labelledby="riskFactorsTab" style="display: none;">
             <div class="container-fluid">
                 <!-- Risk Factors Filter -->
                 <div class="row mb-4">
@@ -878,8 +867,51 @@
             </div>
         </div>
 
-        <!-- Learning Tab -->
-        <div class="tab-pane fade" id="learningContent" role="tabpanel" aria-labelledby="learningTab">
+        <!-- Understanding Mental Health Tab (Parent) - Consolidates Dashboard, Risk Factors, Why Teens Struggle -->
+        <div class="tab-pane fade" id="understandingContent" role="tabpanel" aria-labelledby="understandingTab">
+            <div class="container-fluid">
+                <!-- Sub-tabs -->
+                <div class="row mb-4">
+                    <div class="col-12">
+                        <ul class="nav nav-pills mb-3" role="tablist">
+                            <li class="nav-item">
+                                <button class="nav-link active understanding-tab-btn" data-tab="Data" role="tab">
+                                    📊 Youth Mental Health Data
+                                </button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link understanding-tab-btn" data-tab="RootCauses" role="tab">
+                                    🔍 Root Causes
+                                </button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link understanding-tab-btn" data-tab="Risks" role="tab">
+                                    ⚠️ Risk Factors
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Data Tab (Dashboard content embedded) -->
+                <div id="understandingData" class="understanding-tab-content">
+                    <div id="dashboardEmbedded"></div>
+                </div>
+
+                <!-- Root Causes Tab (Why Teens Struggle embedded) -->
+                <div id="understandingRootCauses" class="understanding-tab-content" style="display: none;">
+                    <div id="whyStruggleEmbedded"></div>
+                </div>
+
+                <!-- Risk Factors Tab (Risk Factors embedded) -->
+                <div id="understandingRisks" class="understanding-tab-content" style="display: none;">
+                    <div id="riskFactorsEmbedded"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Learning Tab (Hidden - Not needed for Teen/Parent personas) -->
+        <div class="tab-pane fade" id="learningContent" role="tabpanel" aria-labelledby="learningTab" style="display: none;">
             <div class="container-fluid">
                 <div class="row mb-4">
                     <div class="col-12">
@@ -1227,6 +1259,7 @@
     <script src="js/chat-test.js"></script>
     <script src="js/why-struggle-handler.js"></script>
     <script src="js/persona-handler.js"></script>
+    <script src="js/understanding-handler.js"></script>
     <script src="js/app.js"></script>
 </body>
 </html>
