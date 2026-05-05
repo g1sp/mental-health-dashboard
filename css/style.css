@@ -890,3 +890,41 @@ footer {
         min-height: 300px;
     }
 }
+
+/* Why Struggle - MECE Causes Section */
+.cause-card {
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.cause-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15) !important;
+}
+
+.cause-link {
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.cause-link:hover {
+    text-decoration: underline;
+}
+
+#causeDetailModal .modal-body h6 {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+#causeDetailModal .bg-light {
+    background-color: #f8f9fa !important;
+}
+
+#causeDetailModal ul li {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
