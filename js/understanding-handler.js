@@ -25,9 +25,10 @@ class UnderstandingHandler {
     const target = document.getElementById(targetId);
 
     if (source && target) {
-      source.classList.remove('tab-pane', 'fade');
-      source.style.display = '';
+      source.classList.remove('tab-pane', 'fade', 'show', 'active');
+      source.style.display = 'block';
       source.style.visibility = 'visible';
+      source.style.opacity = '1';
       target.appendChild(source);
     }
   }
