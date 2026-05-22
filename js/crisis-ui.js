@@ -120,21 +120,11 @@ class CrisisUI {
 
         html += `
                     </div>
-                    <div class="mt-3 text-center">
-                        <button type="button" class="btn btn-outline-secondary btn-sm" id="viewAllCrisisResources">
-                            View All Resources →
-                        </button>
-                    </div>
                 </div>
             </div>
         `;
 
         container.innerHTML = html;
-
-        // Add event listener for "View All" button
-        document.getElementById('viewAllCrisisResources')?.addEventListener('click', () => {
-            this.showCrisisModal(state);
-        });
     }
 
     setupModal() {
