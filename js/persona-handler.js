@@ -4,12 +4,12 @@ class PersonaHandler {
       teen: {
         label: '👤 Teen',
         description: 'Focus on support tools and self-help resources',
-        tabOrder: ['teenRealityTab', 'teenChallengesTab', 'familyChallengeTab', 'copingTab', 'journalTab', 'chatTab', 'crisisResourcesTab']
+        tabOrder: ['teenRealityTab', 'teenChallengesTab', 'familyChallengeTab', 'copingTab', 'journalTab', 'chatTab', 'crisisResourcesTab', 'teenSourcesTab']
       },
       parent: {
         label: '👨‍👩‍👧 Parent',
         description: 'Focus on understanding and supporting your teen',
-        tabOrder: ['parentRealityTab', 'understandingTab', 'familyChallengeTab', 'parentHowToHelpTab', 'treatmentsTab', 'parentCrisisTab']
+        tabOrder: ['parentRealityTab', 'understandingTab', 'familyChallengeTab', 'parentHowToHelpTab', 'treatmentsTab', 'parentCrisisTab', 'parentSourcesTab']
       }
     };
 

@@ -97,6 +97,16 @@
                     🆘 Emergency Resources
                 </button>
             </li>
+            <li class="nav-item persona-tab" data-personas="teen" role="presentation">
+                <button class="nav-link" id="teenSourcesTab" data-bs-toggle="tab" data-bs-target="#teenSourcesContent" type="button" role="tab" aria-controls="teenSourcesContent" aria-selected="false">
+                    📚 Sources & Research
+                </button>
+            </li>
+            <li class="nav-item persona-tab" data-personas="parent" role="presentation">
+                <button class="nav-link" id="parentSourcesTab" data-bs-toggle="tab" data-bs-target="#parentSourcesContent" type="button" role="tab" aria-controls="parentSourcesContent" aria-selected="false">
+                    📚 Sources & Research
+                </button>
+            </li>
         </ul>
     </div>
 
@@ -870,6 +880,20 @@
                         </p>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <!-- Teen Sources & Research Tab -->
+        <div class="tab-pane fade" id="teenSourcesContent" role="tabpanel" aria-labelledby="teenSourcesTab">
+            <div class="container-fluid">
+                <div id="teenSourcesContainer"></div>
+            </div>
+        </div>
+
+        <!-- Parent Sources & Research Tab -->
+        <div class="tab-pane fade" id="parentSourcesContent" role="tabpanel" aria-labelledby="parentSourcesTab">
+            <div class="container-fluid">
+                <div id="parentSourcesContainer"></div>
             </div>
         </div>
 
@@ -1829,6 +1853,9 @@
     <script src="js/family-challenge-handler.js"></script>
     <script src="js/family-challenge-ui.js"></script>
     <script src="js/reality-ui-handler.js"></script>
+    <script src="js/teen-sources-handler.js"></script>
+    <script src="js/parent-sources-handler.js"></script>
+    <script src="js/sources-ui-handler.js"></script>
     <script src="js/persona-handler.js"></script>
     <script src="js/understanding-handler.js?v=3"></script>
     <script src="js/app.js"></script>
