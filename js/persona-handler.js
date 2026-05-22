@@ -76,7 +76,22 @@ class PersonaHandler {
       if (visibleTabs.length > 0) {
         const firstVisibleButton = visibleTabs[0].querySelector('.nav-link');
         if (firstVisibleButton) {
+          // Remove .show.active from all panes
+          document.querySelectorAll('.tab-pane').forEach(pane => {
+            pane.classList.remove('show', 'active');
+          });
+
+          // Click the button to activate the new tab
           firstVisibleButton.click();
+
+          // Ensure the target pane is shown
+          const target = firstVisibleButton.getAttribute('data-bs-target');
+          if (target) {
+            const pane = document.querySelector(target);
+            if (pane) {
+              pane.classList.add('show', 'active');
+            }
+          }
         }
       }
     }
