@@ -38,6 +38,21 @@
         <div style="margin-top: 0.5rem;"></div>
         <ul class="nav nav-tabs" id="mainTabs" role="tablist">
             <li class="nav-item persona-tab" data-personas="teen" role="presentation">
+                <button class="nav-link" id="teenRealityTab" data-bs-toggle="tab" data-bs-target="#teenRealityContent" type="button" role="tab" aria-controls="teenRealityContent" aria-selected="false">
+                    💯 What's Real
+                </button>
+            </li>
+            <li class="nav-item persona-tab" data-personas="teen" role="presentation">
+                <button class="nav-link" id="teenChallengesTab" data-bs-toggle="tab" data-bs-target="#teenChallengesContent" type="button" role="tab" aria-controls="teenChallengesContent" aria-selected="false">
+                    🔍 Why You're Struggling
+                </button>
+            </li>
+            <li class="nav-item persona-tab" data-personas="teen,parent" role="presentation">
+                <button class="nav-link" id="familyChallengeTab" data-bs-toggle="tab" data-bs-target="#familyChallengeContent" type="button" role="tab" aria-controls="familyChallengeContent" aria-selected="false">
+                    👥 Family Challenge
+                </button>
+            </li>
+            <li class="nav-item persona-tab" data-personas="teen" role="presentation">
                 <button class="nav-link" id="crisisResourcesTab" data-bs-toggle="tab" data-bs-target="#crisisResourcesContent" type="button" role="tab" aria-controls="crisisResourcesContent" aria-selected="false">
                     🆘 24/7 Crisis Support
                 </button>
@@ -58,8 +73,18 @@
                 </button>
             </li>
             <li class="nav-item persona-tab" data-personas="parent" role="presentation">
-                <button class="nav-link active" id="understandingTab" data-bs-toggle="tab" data-bs-target="#understandingContent" type="button" role="tab" aria-controls="understandingContent" aria-selected="true">
+                <button class="nav-link" id="parentRealityTab" data-bs-toggle="tab" data-bs-target="#parentRealityContent" type="button" role="tab" aria-controls="parentRealityContent" aria-selected="false">
+                    📋 The Picture
+                </button>
+            </li>
+            <li class="nav-item persona-tab" data-personas="parent" role="presentation">
+                <button class="nav-link" id="understandingTab" data-bs-toggle="tab" data-bs-target="#understandingContent" type="button" role="tab" aria-controls="understandingContent" aria-selected="false">
                     📊 Understanding Youth Mental Health
+                </button>
+            </li>
+            <li class="nav-item persona-tab" data-personas="parent" role="presentation">
+                <button class="nav-link" id="parentHowToHelpTab" data-bs-toggle="tab" data-bs-target="#parentHowToHelpContent" type="button" role="tab" aria-controls="parentHowToHelpContent" aria-selected="false">
+                    🛠️ How to Help (6-Week Plan)
                 </button>
             </li>
             <li class="nav-item persona-tab" data-personas="parent" role="presentation">
@@ -78,7 +103,7 @@
     <!-- Tab Content -->
     <div class="tab-content" id="mainTabContent">
         <!-- Dashboard Tab (Hidden - Embedded in Understanding Mental Health for parents) -->
-        <div class="tab-pane fade" id="dashboardContent" role="tabpanel" aria-labelledby="dashboardTab" style="display: none;">
+        <div class="tab-pane fade" id="dashboardContent" role="tabpanel" aria-labelledby="dashboardTab" style="display: none !important;">
     <div class="container-fluid">
         <!-- Dashboard Header with Data Source -->
         <div class="row mb-4">
@@ -203,7 +228,7 @@
                 <div class="row mb-5">
                     <div class="col-12">
                         <h2 class="mb-2">💊 Evidence-Based Treatment Options</h2>
-                        <p class="text-muted lead">Explore proven, research-backed treatments for common mental health conditions. Learn about different therapeutic approaches and find what might work best.</p>
+                        <p class="text-muted lead">Getting help isn't always straightforward. Waiting lists exist. Cost is real. Your teen might resist therapy. That's normal, not a failure. Here's what treatments exist, what the research says actually works, and what matters most: your teen's readiness and your willingness to support change at home. The treatment only works if they're in it with you.</p>
                         <hr>
                     </div>
                 </div>
@@ -549,7 +574,7 @@
                 <div class="row mb-4">
                     <div class="col-12">
                         <h2 class="mb-2">🧘 Coping Strategies & Guided Exercises</h2>
-                        <p class="text-muted lead">Learn practical techniques to manage stress, anxiety, and challenging emotions. Choose from guided exercises with timers to help you calm down and regain focus.</p>
+                        <p class="text-muted lead">You already know the problems. Here's what actually helps. These are tools you can use right now when anxiety hits, when you need focus, or when sleep won't come. They work because they address the root cause—not because you "should" use them.</p>
                         <hr>
                     </div>
                 </div>
@@ -644,7 +669,7 @@
                 <div class="row mb-4">
                     <div class="col-12">
                         <h2 class="mb-2">📔 Mood Tracking & Journaling</h2>
-                        <p class="text-muted lead">Track your mood daily, reflect on your feelings, and discover patterns over time. Your journal is private and stored only on your device.</p>
+                        <p class="text-muted lead">Most teens don't realize what actually affects their mood—until they look back and see the patterns. Track what you're feeling and what was happening. You'll start noticing: phones do affect sleep. Going outside does help. Real conversations do change your mood more than scrolling. This is about insight, not judgment.</p>
                         <hr>
                     </div>
                 </div>
@@ -712,6 +737,8 @@
                                             <option value="anxiety">Anxiety</option>
                                             <option value="self_harm">Self-Harm Urges</option>
                                             <option value="stress">Stress</option>
+                                            <option value="boundary">Setting a Boundary</option>
+                                            <option value="isolation">Room Isolation</option>
                                         </select>
                                     </div>
 
@@ -778,6 +805,29 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Family Challenge Tab -->
+        <div class="tab-pane fade" id="familyChallengeContent" role="tabpanel" aria-labelledby="familyChallengeTab">
+            <div class="container-fluid" id="familyChallengeContainer">
+                <div class="row mb-4">
+                    <div class="col-12 text-center py-5">
+                        <p class="text-muted">Loading...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Family Challenge Pairing Modal -->
+        <div class="modal fade" id="familyPairingModal" tabindex="-1">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body" id="familyPairingModalBody"></div>
                 </div>
             </div>
         </div>
@@ -855,7 +905,7 @@
                 <!-- Header -->
                 <div class="row mb-3">
                     <div class="col-12">
-                        <p class="text-muted small mb-3">💬 Talk to an AI companion trained to understand mental health. Share what's on your mind and get personalized support and coping suggestions.</p>
+                        <p class="text-muted small mb-3">💬 Sometimes you need to talk when a therapist isn't available. This AI is trained to understand teen mental health. It's not therapy—it's a bridge. It can listen, validate what you're experiencing, and suggest strategies. If you're in crisis, go straight to 988 or emergency resources.</p>
                     </div>
                 </div>
 
@@ -896,14 +946,485 @@
             </div>
         </div>
 
-        <!-- Understanding Mental Health Tab (Parent) - Consolidates Dashboard, Risk Factors, Why Teens Struggle -->
-        <div class="tab-pane fade show active" id="understandingContent" role="tabpanel" aria-labelledby="understandingTab">
+        <!-- Teen Reality Tab -->
+        <div class="tab-pane fade" id="teenRealityContent" role="tabpanel" aria-labelledby="teenRealityTab">
+            <div class="container-fluid">
+                <div class="row mb-4">
+                    <div class="col-12">
+                        <h2 class="mb-2">💯 What's Actually Real</h2>
+                        <p class="text-muted lead">You're not broken. But something is designed to break you. Here's what's actually happening.</p>
+                        <hr>
+                    </div>
+                </div>
+
+                <!-- Gen Z Quotes Section -->
+                <div class="row mb-5">
+                    <div class="col-12">
+                        <h3 class="mb-3">What Gen Z Actually Says</h3>
+                        <p class="text-muted mb-4">These aren't therapist opinions. These are real teens saying what they're experiencing.</p>
+                    </div>
+                </div>
+
+                <div class="row g-3 mb-5" id="teenQuotesContainer"></div>
+
+                <!-- The Pattern Section -->
+                <div class="row mb-5">
+                    <div class="col-12">
+                        <h3 class="mb-3">The Pattern Nobody Talks About</h3>
+                    </div>
+                </div>
+
+                <div class="row g-3 mb-5" id="teenPatternContainer"></div>
+
+                <!-- You're Not Alone Section -->
+                <div class="row mb-5">
+                    <div class="col-12">
+                        <div class="card border-0 shadow-sm bg-light">
+                            <div class="card-body">
+                                <h3 class="card-title mb-4">You're Not Alone In This</h3>
+                                <ul class="list-unstyled">
+                                    <li class="mb-3"><strong>✓</strong> You're not lazy for staying in your room—you're overwhelmed</li>
+                                    <li class="mb-3"><strong>✓</strong> You're not broken for feeling lonely despite being online—the system is broken</li>
+                                    <li class="mb-3"><strong>✓</strong> You're not weak for struggling—41% of teens are struggling too</li>
+                                    <li class="mb-3"><strong>✓</strong> You're not the problem—the problem is designed to break you</li>
+                                    <li class="mb-3"><strong>✓</strong> Your phone isn't just a phone—it's engineered to keep you hooked</li>
+                                    <li><strong>✓</strong> Social media isn't just social—it's algorithmically designed for comparison anxiety</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Why It Matters -->
+                <div class="row mb-5">
+                    <div class="col-12">
+                        <h3 class="mb-3">Why You Should Care About This</h3>
+                    </div>
+                </div>
+
+                <div class="row g-3 mb-5" id="teenWhyMattersContainer"></div>
+
+                <!-- CTA -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="alert alert-info">
+                            <h5 class="mb-2">Now You Know What's Real</h5>
+                            <p class="mb-0">Next: Check out "Why You're Struggling" to see the specific patterns. Then "Interactive Challenges" to experience them yourself. Then you'll know exactly what to do.</p>
+                            <a href="#teenChallengesContent" class="btn btn-info mt-3" data-bs-toggle="tab" data-bs-target="#teenChallengesContent">Go to Challenges →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Teen Challenges Tab -->
+        <div class="tab-pane fade" id="teenChallengesContent" role="tabpanel" aria-labelledby="teenChallengesTab">
             <div class="container-fluid">
                 <!-- Header -->
                 <div class="row mb-4">
                     <div class="col-12">
-                        <h2 class="mb-2">📊 Understanding Youth Mental Health</h2>
-                        <p class="text-muted lead">Explore the data on youth mental health trends, understand the root causes of teen struggles, and learn about key risk factors.</p>
+                        <h2 class="mb-2">🔍 Why You're Struggling (Interactive Challenges)</h2>
+                        <p class="text-muted lead">Research shows four main things drive teen anxiety and depression. Instead of just reading about them, try these challenges to see them in action. You'll understand why it's happening, and you'll discover what actually helps.</p>
+                        <div class="alert alert-light border-start border-info ps-3 small mb-3">
+                            <strong>💙 What this is:</strong> This app is support for when you need it. If you have access to a therapist, keep seeing them—this complements that, not replaces it. If you don't have access right now, this is a bridge.
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+
+                <!-- Challenge Selection -->
+                <div class="row mb-4">
+                    <div class="col-12">
+                        <div class="row g-3">
+                            <div class="col-lg-4">
+                                <div class="card border-0 shadow-sm h-100" style="cursor: pointer;" onclick="teenEngagementHandler.showTeenChallenge('spotTheAlgorithm'); new bootstrap.Modal(document.getElementById('teenChallengeModal')).show();">
+                                    <div class="card-body text-center">
+                                        <div style="font-size: 2.5rem; margin-bottom: 1rem;">🔍</div>
+                                        <h5 class="card-title">Spot the Algorithm</h5>
+                                        <p class="text-muted small mb-0">5 min challenge</p>
+                                        <p class="small mt-2">See how algorithms manipulate your feed</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="card border-0 shadow-sm h-100" style="cursor: pointer;" onclick="teenEngagementHandler.showTeenChallenge('phonePresenceTest'); new bootstrap.Modal(document.getElementById('teenChallengeModal')).show();">
+                                    <div class="card-body text-center">
+                                        <div style="font-size: 2.5rem; margin-bottom: 1rem;">📱</div>
+                                        <h5 class="card-title">Phone Presence Test</h5>
+                                        <p class="text-muted small mb-0">10 min challenge</p>
+                                        <p class="small mt-2">Feel how your phone breaks your focus</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="card border-0 shadow-sm h-100" style="cursor: pointer;" onclick="teenEngagementHandler.showTeenChallenge('sleepExperiment'); new bootstrap.Modal(document.getElementById('teenChallengeModal')).show();">
+                                    <div class="card-body text-center">
+                                        <div style="font-size: 2.5rem; margin-bottom: 1rem;">😴</div>
+                                        <h5 class="card-title">Sleep Experiment</h5>
+                                        <p class="text-muted small mb-0">3 nights</p>
+                                        <p class="small mt-2">See how your sleep improves without screens</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mb-4">
+                    <div class="col-12">
+                        <div class="row g-3">
+                            <div class="col-lg-4">
+                                <div class="card border-0 shadow-sm h-100" style="cursor: pointer;" onclick="teenEngagementHandler.showTeenChallenge('connectionAudit'); new bootstrap.Modal(document.getElementById('teenChallengeModal')).show();">
+                                    <div class="card-body text-center">
+                                        <div style="font-size: 2.5rem; margin-bottom: 1rem;">🤝</div>
+                                        <h5 class="card-title">Connection Audit</h5>
+                                        <p class="text-muted small mb-0">15 min challenge</p>
+                                        <p class="small mt-2">Discover real vs. surface connections</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="card border-0 shadow-sm h-100" style="cursor: pointer;" onclick="teenEngagementHandler.showTeenChallenge('activityInventory'); new bootstrap.Modal(document.getElementById('teenChallengeModal')).show();">
+                                    <div class="card-body text-center">
+                                        <div style="font-size: 2.5rem; margin-bottom: 1rem;">🎯</div>
+                                        <h5 class="card-title">Activity Inventory</h5>
+                                        <p class="text-muted small mb-0">10 min challenge</p>
+                                        <p class="small mt-2">Find what builds your resilience</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Avoidance Trap Challenges Section -->
+                <div class="row mb-4">
+                    <div class="col-12">
+                        <h3 class="mb-3">🚪 Why You Stay In Your Room (And Why That's The Problem)</h3>
+                    </div>
+                </div>
+
+                <div class="row mb-4">
+                    <div class="col-12">
+                        <div class="row g-3">
+                            <div class="col-lg-4">
+                                <div class="card border-0 shadow-sm h-100" style="cursor: pointer;" onclick="teenEngagementHandler.showTeenChallenge('anxietyNoticing'); new bootstrap.Modal(document.getElementById('teenChallengeModal')).show();">
+                                    <div class="card-body text-center">
+                                        <div style="font-size: 2.5rem; margin-bottom: 1rem;">🧠</div>
+                                        <h5 class="card-title">Anxiety Noticing Test</h5>
+                                        <p class="text-muted small mb-0">15 min challenge</p>
+                                        <p class="small mt-2">Understand what's really driving avoidance</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="card border-0 shadow-sm h-100" style="cursor: pointer;" onclick="teenEngagementHandler.showTeenChallenge('connectionVsScroll'); new bootstrap.Modal(document.getElementById('teenChallengeModal')).show();">
+                                    <div class="card-body text-center">
+                                        <div style="font-size: 2.5rem; margin-bottom: 1rem;">📱</div>
+                                        <h5 class="card-title">Connection vs Scroll</h5>
+                                        <p class="text-muted small mb-0">30 min + reflection</p>
+                                        <p class="small mt-2">Feel the difference immediately</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="card border-0 shadow-sm h-100" style="cursor: pointer;" onclick="teenEngagementHandler.showTeenChallenge('skillAnxietyExperiment'); new bootstrap.Modal(document.getElementById('teenChallengeModal')).show();">
+                                    <div class="card-body text-center">
+                                        <div style="font-size: 2.5rem; margin-bottom: 1rem;">💪</div>
+                                        <h5 class="card-title">Skill Anxiety Experiment</h5>
+                                        <p class="text-muted small mb-0">3 attempts over 1 week</p>
+                                        <p class="small mt-2">Prove anxiety decreases after you do it</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mb-4">
+                    <div class="col-12">
+                        <div class="row g-3">
+                            <div class="col-lg-4">
+                                <div class="card border-0 shadow-sm h-100" style="cursor: pointer;" onclick="teenEngagementHandler.showTeenChallenge('roomVsWorldEnergy'); new bootstrap.Modal(document.getElementById('teenChallengeModal')).show();">
+                                    <div class="card-body text-center">
+                                        <div style="font-size: 2.5rem; margin-bottom: 1rem;">⚡</div>
+                                        <h5 class="card-title">Room vs World Energy</h5>
+                                        <p class="text-muted small mb-0">3 days tracking</p>
+                                        <p class="small mt-2">See how isolation drains you</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Identity & Values Setup Modal -->
+                <div class="modal fade" id="identityValuesModal" tabindex="-1" data-bs-backdrop="static">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header border-0">
+                                <h5 class="modal-title">Before We Start: Who Are You?</h5>
+                            </div>
+                            <div class="modal-body">
+                                <p class="text-muted mb-4">Research shows: teens who understand their identity and values have stronger mental health. Let's start there.</p>
+
+                                <div class="mb-4">
+                                    <h6 class="mb-3">What do you identify as? (Check all that apply)</h6>
+                                    <div class="row g-2">
+                                        <div class="col-6"><label class="form-check"><input type="checkbox" class="form-check-input identity-check" value="creative"> Creative person</label></div>
+                                        <div class="col-6"><label class="form-check"><input type="checkbox" class="form-check-input identity-check" value="athlete"> Athlete</label></div>
+                                        <div class="col-6"><label class="form-check"><input type="checkbox" class="form-check-input identity-check" value="artist"> Artist</label></div>
+                                        <div class="col-6"><label class="form-check"><input type="checkbox" class="form-check-input identity-check" value="introvert"> Introvert</label></div>
+                                        <div class="col-6"><label class="form-check"><input type="checkbox" class="form-check-input identity-check" value="gamer"> Gamer</label></div>
+                                        <div class="col-6"><label class="form-check"><input type="checkbox" class="form-check-input identity-check" value="intellectual"> Intellectual</label></div>
+                                        <div class="col-6"><label class="form-check"><input type="checkbox" class="form-check-input identity-check" value="friend"> Good friend</label></div>
+                                        <div class="col-6"><label class="form-check"><input type="checkbox" class="form-check-input identity-check" value="leader"> Leader</label></div>
+                                        <div class="col-6"><label class="form-check"><input type="checkbox" class="form-check-input identity-check" value="empathetic"> Empathetic</label></div>
+                                        <div class="col-6"><label class="form-check"><input type="checkbox" class="form-check-input identity-check" value="ambitious"> Ambitious</label></div>
+                                    </div>
+                                    <div class="mt-3">
+                                        <input type="text" id="customIdentity" class="form-control form-control-sm" placeholder="Add your own...">
+                                        <button class="btn btn-sm btn-outline-primary mt-2" onclick="addCustomIdentity()">Add</button>
+                                    </div>
+                                </div>
+
+                                <hr>
+
+                                <div class="mb-4">
+                                    <h6 class="mb-3">What matters most to you? (Check all that apply)</h6>
+                                    <div class="row g-2">
+                                        <div class="col-6"><label class="form-check"><input type="checkbox" class="form-check-input values-check" value="relationships"> Relationships</label></div>
+                                        <div class="col-6"><label class="form-check"><input type="checkbox" class="form-check-input values-check" value="growth"> Personal growth</label></div>
+                                        <div class="col-6"><label class="form-check"><input type="checkbox" class="form-check-input values-check" value="creativity"> Creativity</label></div>
+                                        <div class="col-6"><label class="form-check"><input type="checkbox" class="form-check-input values-check" value="authenticity"> Being myself</label></div>
+                                        <div class="col-6"><label class="form-check"><input type="checkbox" class="form-check-input values-check" value="belonging"> Belonging</label></div>
+                                        <div class="col-6"><label class="form-check"><input type="checkbox" class="form-check-input values-check" value="independence"> Independence</label></div>
+                                        <div class="col-6"><label class="form-check"><input type="checkbox" class="form-check-input values-check" value="impact"> Making an impact</label></div>
+                                        <div class="col-6"><label class="form-check"><input type="checkbox" class="form-check-input values-check" value="peace"> Peace/calm</label></div>
+                                        <div class="col-6"><label class="form-check"><input type="checkbox" class="form-check-input values-check" value="learning"> Learning</label></div>
+                                        <div class="col-6"><label class="form-check"><input type="checkbox" class="form-check-input values-check" value="fun"> Having fun</label></div>
+                                    </div>
+                                    <div class="mt-3">
+                                        <input type="text" id="customValue" class="form-control form-control-sm" placeholder="Add your own...">
+                                        <button class="btn btn-sm btn-outline-primary mt-2" onclick="addCustomValue()">Add</button>
+                                    </div>
+                                </div>
+
+                                <div class="alert alert-info">
+                                    <small>Why this matters: Teens who see their identity as personally meaningful have significantly lower rates of depression and anxiety. We'll connect what you choose here to the coping strategies that actually work for you.</small>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-primary" onclick="completeIdentitySetup()">Got It</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Challenge Modal -->
+                <div class="modal fade" id="teenChallengeModal" tabindex="-1">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Challenge</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body" id="teenChallengeContainer"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Challenge Result Modal -->
+                <div class="modal fade" id="challengeResultModal" tabindex="-1">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header bg-success text-white">
+                                <h5 class="modal-title">You Did It! 🎉</h5>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body" id="challengeResultBody"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Parent How to Help Tab -->
+        <div class="tab-pane fade" id="parentHowToHelpContent" role="tabpanel" aria-labelledby="parentHowToHelpTab">
+            <div class="container-fluid">
+                <!-- Header -->
+                <div class="row mb-4">
+                    <div class="col-12">
+                        <h2 class="mb-2">🛠️ How to Help Your Teen (6-Week Implementation Plan)</h2>
+                        <p class="text-muted lead">Your teen won't change overnight—but with the right approach, you can create the conditions for real change. This 6-week plan gives you specific conversations, scripts, and actions for each root cause. It's designed to build understanding and buy-in, not create conflict.</p>
+                        <hr>
+                    </div>
+                </div>
+
+                <!-- Weekly Playbook Overview -->
+                <div class="row mb-5">
+                    <div class="col-12">
+                        <h3 class="mb-3">📅 6-Week Playbook</h3>
+                        <div class="row g-3" id="weeklyPlaybookContainer"></div>
+                    </div>
+                </div>
+
+                <!-- Implementation Guides by Root Cause -->
+                <div class="row mb-5">
+                    <div class="col-12">
+                        <h3 class="mb-3">🎯 Deep Dives by Root Cause</h3>
+                    </div>
+                </div>
+
+                <div class="row g-4 mb-5">
+                    <div class="col-lg-6">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-header bg-danger text-white">
+                                <h5 class="mb-0">Algorithm-Driven Distortion</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="text-muted small mb-3">Your teen's feed shows unrealistic comparisons</p>
+                                <button class="btn btn-outline-danger w-100" data-bs-toggle="modal" data-bs-target="#implementationModal" onclick="showImplementationGuide('algorithmDrivenDistortion')">
+                                    View Action Plan →
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-header bg-warning text-white">
+                                <h5 class="mb-0">Attention Fragmentation</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="text-muted small mb-3">Phones prevent stress recovery and good sleep</p>
+                                <button class="btn btn-outline-warning w-100" data-bs-toggle="modal" data-bs-target="#implementationModal" onclick="showImplementationGuide('attentionFragmentation')">
+                                    View Action Plan →
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-4 mb-5">
+                    <div class="col-lg-6">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-header bg-success text-white">
+                                <h5 class="mb-0">Missing Real-World Protection</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="text-muted small mb-3">Screen time replaces relationships and hobbies</p>
+                                <button class="btn btn-outline-success w-100" data-bs-toggle="modal" data-bs-target="#implementationModal" onclick="showImplementationGuide('missingProtection')">
+                                    View Action Plan →
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Implementation Modal -->
+                <div class="modal fade" id="implementationModal" tabindex="-1">
+                    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Implementation Guide</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body" id="implementationGuideContainer"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Parent Reality Tab -->
+        <div class="tab-pane fade" id="parentRealityContent" role="tabpanel" aria-labelledby="parentRealityTab">
+            <div class="container-fluid">
+                <div class="row mb-4">
+                    <div class="col-12">
+                        <h2 class="mb-2">📋 The Picture</h2>
+                        <p class="text-muted lead">Here's what the data actually shows. You're not overreacting.</p>
+                        <hr>
+                    </div>
+                </div>
+
+                <!-- The Numbers Section -->
+                <div class="row mb-5">
+                    <div class="col-12">
+                        <h3 class="mb-3">The Numbers Are Real</h3>
+                        <p class="text-muted mb-4">This isn't fear-mongering. This is data.</p>
+                    </div>
+                </div>
+
+                <div class="row g-3 mb-5" id="parentNumbersContainer"></div>
+
+                <!-- Protective Factors Section -->
+                <div class="row mb-5">
+                    <div class="col-12">
+                        <h3 class="mb-3">What Actually Prevents Depression</h3>
+                        <p class="text-muted mb-4">The good news: Science knows what works.</p>
+                    </div>
+                </div>
+
+                <div class="row g-3 mb-5" id="parentProtectiveContainer"></div>
+
+                <!-- Access Gap Section -->
+                <div class="row mb-5">
+                    <div class="col-12">
+                        <div class="card border-0 shadow-sm border-left border-warning">
+                            <div class="card-body">
+                                <h4 class="card-title mb-3">The Therapy Access Crisis</h4>
+                                <p class="text-muted mb-3"><strong>Half of teens who want mental health care can't get it.</strong></p>
+                                <ul class="small">
+                                    <li class="mb-2"><strong>Cost:</strong> Average therapy costs $100-250/session</li>
+                                    <li class="mb-2"><strong>Availability:</strong> Months-long waiting lists, even in urban areas</li>
+                                    <li class="mb-2"><strong>Stigma:</strong> Teens won't ask due to shame</li>
+                                    <li><strong>Crisis Bottleneck:</strong> Crisis lines are overwhelmed; preventive support is scarce</li>
+                                </ul>
+                                <p class="small text-muted mt-3"><strong>Why this matters:</strong> This app exists to fill that gap. Not instead of therapy—alongside it.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Why It Matters -->
+                <div class="row mb-5">
+                    <div class="col-12">
+                        <h3 class="mb-3">Why You're Not Overreacting</h3>
+                    </div>
+                </div>
+
+                <div class="row g-3 mb-5" id="parentWhyMattersContainer"></div>
+
+                <!-- What Works -->
+                <div class="row mb-5">
+                    <div class="col-12">
+                        <h3 class="mb-3">What Does Work</h3>
+                    </div>
+                </div>
+
+                <div class="row g-3 mb-5" id="parentWhatWorksContainer"></div>
+
+                <!-- CTA -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="alert alert-success">
+                            <h5 class="mb-2">You Understand the Problem Now</h5>
+                            <p class="mb-0">Next: "Understanding Youth Mental Health" for deeper context and root causes. Then "How to Help" for concrete strategies. Your teen has their own journey starting with "What's Real."</p>
+                            <a href="#understandingContent" class="btn btn-success mt-3" data-bs-toggle="tab" data-bs-target="#understandingContent">Go to Deep Dive →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Understanding Mental Health Tab (Parent) - Consolidates Dashboard, Risk Factors, Why Teens Struggle -->
+        <div class="tab-pane fade" id="understandingContent" role="tabpanel" aria-labelledby="understandingTab">
+            <div class="container-fluid">
+                <!-- Header -->
+                <div class="row mb-4">
+                    <div class="col-12">
+                        <h2 class="mb-2">📊 Understanding Youth Mental Health (Deep Dive)</h2>
+                        <p class="text-muted lead">You saw the patterns in "The Picture." Now connect the dots deeper. Here's the data on what's actually driving teen depression and anxiety, the barriers to getting help, what actually prevents it, and what research says really works. This isn't just information—it's the evidence you need to know you're not overreacting.</p>
                         <hr>
                     </div>
                 </div>
@@ -1298,8 +1819,18 @@
     <script src="js/chat-ui.js"></script>
     <script src="js/chat-test.js"></script>
     <script src="js/why-struggle-handler.js?v=2"></script>
+    <script src="js/identity-values-handler.js"></script>
+    <script src="js/prevalence-stats.js"></script>
+    <script src="js/teen-reality-handler.js"></script>
+    <script src="js/parent-reality-handler.js"></script>
+    <script src="js/teen-engagement-handler.js"></script>
+    <script src="js/parent-implementation-handler.js"></script>
+    <script src="js/parent-ui-handler.js"></script>
+    <script src="js/family-challenge-handler.js"></script>
+    <script src="js/family-challenge-ui.js"></script>
+    <script src="js/reality-ui-handler.js"></script>
     <script src="js/persona-handler.js"></script>
-    <script src="js/understanding-handler.js"></script>
+    <script src="js/understanding-handler.js?v=3"></script>
     <script src="js/app.js"></script>
 </body>
 </html>

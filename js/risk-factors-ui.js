@@ -49,13 +49,6 @@ class RiskFactorsUI {
                         <p class="card-text text-muted small mb-3">${factor.description}</p>
 
                         <div class="mb-3">
-                            <div class="d-flex justify-content-between mb-2">
-                                <small class="fw-bold">Prevalence</small>
-                                <small class="fw-bold">${factor.prevalence}</small>
-                            </div>
-                        </div>
-
-                        <div class="mb-3">
                             <small class="d-block text-muted mb-2">
                                 <strong>Affects:</strong> ${details.conditionsList}
                             </small>

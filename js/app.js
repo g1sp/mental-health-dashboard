@@ -338,8 +338,58 @@ class MentalHealthApp {
     }
 }
 
+// Identity & Values Setup Functions
+function addCustomIdentity() {
+    const input = document.getElementById('customIdentity');
+    if (input.value.trim()) {
+        identityValuesHandler.addIdentity(input.value.trim());
+        input.value = '';
+        alert('Added: ' + input.value);
+    }
+}
+
+function addCustomValue() {
+    const input = document.getElementById('customValue');
+    if (input.value.trim()) {
+        identityValuesHandler.addValue(input.value.trim());
+        input.value = '';
+        alert('Added: ' + input.value);
+    }
+}
+
+function completeIdentitySetup() {
+    // Collect checkboxes
+    const identities = Array.from(document.querySelectorAll('.identity-check:checked')).map(cb => cb.value);
+    const values = Array.from(document.querySelectorAll('.values-check:checked')).map(cb => cb.value);
+
+    if (identities.length === 0 || values.length === 0) {
+        alert('Please select at least one identity and one value');
+        return;
+    }
+
+    // Save
+    identityValuesHandler.data.identities = identities;
+    identityValuesHandler.data.values = values;
+    identityValuesHandler.markCompleted();
+
+    // Close modal
+    bootstrap.Modal.getInstance(document.getElementById('identityValuesModal')).hide();
+}
+
+function showIdentityValuesOnFirstVisit() {
+    const persona = personaHandler ? personaHandler.getPersona() : 'teen';
+    if (persona === 'teen' && !identityValuesHandler.isCompleted()) {
+        setTimeout(() => {
+            new bootstrap.Modal(document.getElementById('identityValuesModal')).show();
+        }, 500);
+    }
+}
+
 // Initialize app when DOM is ready
 document.addEventListener('DOMContentLoaded', async () => {
     const app = new MentalHealthApp();
     await app.init();
+
+    // Show identity setup for teens on first visit
+    showIdentityValuesOnFirstVisit();
 });

@@ -4,12 +4,12 @@ class PersonaHandler {
       teen: {
         label: '👤 Teen',
         description: 'Focus on support tools and self-help resources',
-        tabOrder: ['crisisResourcesTab', 'copingTab', 'journalTab', 'chatTab']
+        tabOrder: ['teenRealityTab', 'teenChallengesTab', 'familyChallengeTab', 'copingTab', 'journalTab', 'chatTab', 'crisisResourcesTab']
       },
       parent: {
         label: '👨‍👩‍👧 Parent',
         description: 'Focus on understanding and supporting your teen',
-        tabOrder: ['understandingTab', 'treatmentsTab', 'parentCrisisTab']
+        tabOrder: ['parentRealityTab', 'understandingTab', 'familyChallengeTab', 'parentHowToHelpTab', 'treatmentsTab', 'parentCrisisTab']
       }
     };
 
@@ -39,6 +39,12 @@ class PersonaHandler {
   applyPersona(persona) {
     const personaConfig = this.personas[persona];
 
+    // First, remove active class from ALL tab buttons
+    document.querySelectorAll('.nav-link').forEach(btn => {
+      btn.classList.remove('active');
+    });
+
+    // Hide/show tabs based on persona
     document.querySelectorAll('.persona-tab').forEach(tab => {
       const allowedPersonas = tab.dataset.personas.split(',');
       if (allowedPersonas.includes(persona)) {
@@ -49,7 +55,7 @@ class PersonaHandler {
     });
 
     this.reorderTabs(personaConfig.tabOrder);
-    this.ensureValidActiveTab(persona);
+    this.activateFirstVisibleTab(personaConfig.tabOrder);
   }
 
   reorderTabs(tabOrder) {
@@ -67,16 +73,31 @@ class PersonaHandler {
     });
   }
 
-  ensureValidActiveTab(persona) {
-    const activeTab = document.querySelector('.nav-link.active');
-    const activeParent = activeTab?.closest('.persona-tab');
+  activateFirstVisibleTab(tabOrder) {
+    // Find the first visible tab in the correct order
+    for (const tabId of tabOrder) {
+      const button = document.getElementById(tabId);
+      if (button) {
+        const tab = button.closest('.persona-tab');
+        if (tab && tab.style.display !== 'none') {
+          // Set button as active
+          button.classList.add('active');
+          button.setAttribute('aria-selected', 'true');
 
-    if (activeParent && activeParent.style.display === 'none') {
-      const visibleTabs = document.querySelectorAll('.persona-tab:not([style*="display: none"])');
-      if (visibleTabs.length > 0) {
-        const firstVisibleButton = visibleTabs[0].querySelector('.nav-link');
-        if (firstVisibleButton) {
-          firstVisibleButton.click();
+          // Show corresponding pane
+          const targetId = button.getAttribute('data-bs-target');
+          if (targetId) {
+            const pane = document.querySelector(targetId);
+            if (pane) {
+              // Remove active/show from all panes
+              document.querySelectorAll('.tab-pane').forEach(p => {
+                p.classList.remove('active', 'show');
+              });
+              // Add to this pane
+              pane.classList.add('active', 'show');
+            }
+          }
+          return;
         }
       }
     }

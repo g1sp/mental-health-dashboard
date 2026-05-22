@@ -12,7 +12,7 @@ class CopingHandler {
     // Load coping skills from JSON
     async loadCopingSkills() {
         try {
-            const response = await fetch('data/coping-skills-data.json');
+            const response = await fetch('data/coping-skills-data.json?v=2');
             if (!response.ok) throw new Error('Failed to load coping skills');
             this.skills = await response.json();
             this.loadFavorites();
