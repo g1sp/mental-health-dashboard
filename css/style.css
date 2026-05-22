@@ -144,18 +144,21 @@ footer {
     font-weight: 600;
     border: none;
     border-bottom: 3px solid transparent;
+    background-color: transparent;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
     transition: all 0.3s ease;
 }
 
 .nav-tabs .nav-link:hover {
     color: var(--info-color);
-    border-bottom-color: var(--info-color);
+    background-color: rgba(52, 152, 219, 0.1);
 }
 
 .nav-tabs .nav-link.active {
-    color: var(--info-color);
-    border-bottom-color: var(--info-color);
-    background-color: transparent;
+    color: white;
+    background-color: var(--info-color);
+    border-bottom-color: transparent;
 }
 
 /* Treatment Grid */
