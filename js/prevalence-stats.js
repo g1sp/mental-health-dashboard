@@ -24,7 +24,7 @@ const prevalenceStats = {
   },
 
   avoidance: {
-    room_isolation: '47% of Gen Z reports spending most free time alone in their room',
+    room_isolation: '47% of teens report spending most free time alone in their room',
     social_anxiety_increase: 'Social anxiety among teens increased 48% in past 5 years',
     avoidance_cycle: '62% of teens with social anxiety avoid social situations, which increases anxiety',
     suicidal_ideation: '16% of high school students seriously considered suicide (including avoidance as risk factor)'

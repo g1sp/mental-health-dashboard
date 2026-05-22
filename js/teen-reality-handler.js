@@ -1,24 +1,24 @@
-// Teen Reality Tab - What's Actually Happening (Synthesized Gen Z Voice)
+// Teen Reality Tab - What's Actually Happening (Teen Voices)
 // Purpose: Establish common ground before moving to challenges
 // Note: All data is US-based research and statistics
 
 class TeenRealityHandler {
   constructor() {
     this.sections = {
-      whatGenZSays: {
-        title: "What Gen Z Actually Says",
+      whatTeensSay: {
+        title: "What Teens Actually Say",
         intro: "These aren't therapist opinions. These are real teens talking about what they're experiencing.",
         quotes: [
           {
-            stat: "47% of Gen Z spend most free time alone in their room",
+            stat: "47% of teens spend most free time alone in their room",
             context: "And they feel trapped, not relaxed"
           },
           {
-            stat: "60% say social media makes them feel worse about themselves",
+            stat: "60% of teens say social media makes them feel worse about themselves",
             context: "Even though they keep checking it"
           },
           {
-            stat: "71% use 2+ social media platforms daily",
+            stat: "71% of teens use 2+ social media platforms daily",
             context: "But feel MORE lonely, not less connected"
           },
           {
@@ -26,11 +26,11 @@ class TeenRealityHandler {
             context: "Because their phone keeps them up"
           },
           {
-            stat: "88% bring their phone to bed",
+            stat: "88% of teens bring their phone to bed",
             context: "Even though it ruins their sleep"
           },
           {
-            stat: "36% report feeling lonely at school",
+            stat: "36% of teens report feeling lonely at school",
             context: "Despite being \"connected\" online"
           }
         ]

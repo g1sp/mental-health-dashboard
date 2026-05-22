@@ -34,8 +34,8 @@ class RealityUIHandler {
 
     // Quotes
     const quotesContainer = document.getElementById('teenQuotesContainer');
-    if (quotesContainer && data.whatGenZSays) {
-      quotesContainer.innerHTML = data.whatGenZSays.quotes.map(q => `
+    if (quotesContainer && data.whatTeensSay) {
+      quotesContainer.innerHTML = data.whatTeensSay.quotes.map(q => `
         <div class="col-lg-6">
           <div class="card border-0 shadow-sm h-100">
             <div class="card-body">
