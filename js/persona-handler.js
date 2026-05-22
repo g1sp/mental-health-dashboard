@@ -14,7 +14,7 @@ class PersonaHandler {
     };
 
     let saved = localStorage.getItem('selectedPersona');
-    this.currentPersona = (saved && this.personas[saved]) ? saved : 'teen';
+    this.currentPersona = (saved && this.personas[saved]) ? saved : 'parent';
   }
 
   init() {
