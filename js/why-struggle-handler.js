@@ -8,19 +8,15 @@ class WhyStruggleHandler {
         problems: [
           {
             heading: 'Curated Content Effect',
-            description: 'Social media shows edited, filtered versions of reality. Algorithms prioritize engaging content, which is often extreme or aspirational.'
+            description: 'Social media shows edited, filtered versions of reality. Algorithms prioritize engaging (often extreme or aspirational) content.'
           },
           {
             heading: 'Upward Social Comparison',
-            description: 'Teens compare their "behind-the-scenes" lives with others\' "highlight reels," creating an illusion that everyone else is more successful, happier, or better-looking.'
+            description: 'Teens compare their "behind-the-scenes" lives with others\' "highlight reels," creating an illusion that everyone else is happier and more successful.'
           },
           {
             heading: 'Impossible Standards',
             description: 'Exposure to heavily edited images and curated success stories sets unrealistic expectations for appearance, achievement, and social life.'
-          },
-          {
-            heading: 'Algorithmic Amplification of Negatives',
-            description: 'Platforms prioritize content that generates engagement—often anxiety-provoking, controversial, or negative material.'
           }
         ],
         mechanism: 'Distorted Perception → Self-Esteem Erosion → Depression',
@@ -63,19 +59,15 @@ class WhyStruggleHandler {
         problems: [
           {
             heading: 'Attention Fragmentation',
-            description: 'Constant notifications and phone access break sustained focus. Research shows even the presence of a phone (even off) reduces cognitive capacity.'
+            description: 'Constant notifications and phone access break sustained focus. Even a phone\'s presence reduces cognitive capacity by ~10%.'
           },
           {
             heading: 'Sleep Disruption',
-            description: 'Blue light from screens interferes with melatonin production. Notifications interrupt sleep cycles, impairing emotional regulation and resilience.'
+            description: 'Blue light and notifications interrupt sleep cycles, impairing emotional regulation and stress resilience.'
           },
           {
             heading: 'No Recovery Time',
-            description: 'Without uninterrupted periods, the nervous system cannot return to baseline. Stress response stays activated, exhausting emotional resources.'
-          },
-          {
-            heading: 'Cognitive Load Overload',
-            description: 'Media multitasking (constant app-switching) trains the brain to fragment attention, making sustained coping focus difficult.'
+            description: 'Without uninterrupted periods, the nervous system cannot return to baseline. Stress stays activated, exhausting emotional resources.'
           }
         ],
         mechanism: 'Fragmented Attention → Sleep Loss → Dysregulated Nervous System → Inability to Cope',
@@ -118,19 +110,15 @@ class WhyStruggleHandler {
         problems: [
           {
             heading: 'Social Media Replaces Real Connection',
-            description: 'Likes and comments are not equivalent to real relationships. Teens spend time on social media instead of building deep, supportive friendships.'
+            description: 'Likes and comments are not equivalent to real relationships. Teens miss deep, supportive friendships and community involvement.'
           },
           {
             heading: 'Physical Activity Decline',
-            description: 'More screen time = less exercise. Physical activity is a proven stress buffer, releasing endorphins and improving mood regulation.'
+            description: 'More screen time means less exercise. Physical activity is a proven stress buffer, releasing endorphins and improving mood.'
           },
           {
             heading: 'Loss of Hobbies & Flow',
-            description: 'Sports, music, art, and other hobbies that create "flow" states are displaced by passive social media consumption. Flow states build competence and resilience.'
-          },
-          {
-            heading: 'Reduced Community Involvement',
-            description: 'Fewer clubs, teams, and group activities mean fewer supportive adult relationships and peer networks.'
+            description: 'Sports, music, art, and hobbies that create "flow" states are displaced by passive social media. Flow states build resilience and competence.'
           }
         ],
         mechanism: 'Social Isolation → Physical Inactivity → Loss of Accomplishment → Increased Vulnerability to Stress',
