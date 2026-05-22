@@ -78,6 +78,38 @@ class TeenRealityHandler {
         ]
       },
 
+      theWorldRightNow: {
+        title: "The World Right Now",
+        intro: "Your stress isn't just about your phone.",
+        stressors: [
+          {
+            issue: "War and Conflict",
+            reality: "You grew up watching wars on repeat in your feed. That's trauma, not weakness."
+          },
+          {
+            issue: "Political Division",
+            reality: "Politicians and online fights turned disagreement into personal attack. Your nervous system learned early: people you disagree with are threats."
+          },
+          {
+            issue: "Immigration, Identity, National Division",
+            reality: "Constant messaging about who belongs and who doesn't. If you're an immigrant or minority, that's directed at you. That's stress."
+          },
+          {
+            issue: "Climate Anxiety",
+            reality: "You were told the world is on fire, literally and figuratively. Adults told you to fix it while doing nothing. That's cognitive dissonance and rage."
+          },
+          {
+            issue: "Economic Uncertainty",
+            reality: "You watch adults panic about economy. Student debt. Housing costs. Your future feels like a threat, not an opportunity."
+          },
+          {
+            issue: "Institutional Breakdown",
+            reality: "Schools that feel unsafe. Police you don't trust. Politicians who don't listen. Adults who say 'your generation will fix this.' You're 15."
+          }
+        ],
+        validation: "Your stress isn't weakness. It's a rational nervous system responding to a genuinely stressful world. The anxiety you feel is real because the world IS anxiety-inducing."
+      },
+
       whyItMatters: {
         title: "Why You Should Care About This",
         points: [

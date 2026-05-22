@@ -66,6 +66,32 @@ class RealityUIHandler {
       `).join('');
     }
 
+    // The World Right Now
+    const worldContainer = document.getElementById('teenWorldContainer');
+    if (worldContainer && data.theWorldRightNow) {
+      worldContainer.innerHTML = `
+        <div class="row mb-5">
+          <div class="col-12">
+            <div class="card border-0 shadow-sm border-start border-warning border-4 bg-light">
+              <div class="card-body">
+                <h4 class="card-title mb-4">${data.theWorldRightNow.title}</h4>
+                <p class="text-muted mb-4">${data.theWorldRightNow.intro}</p>
+                ${data.theWorldRightNow.stressors.map(s => `
+                  <div class="mb-4 pb-3 border-bottom">
+                    <h6 class="text-warning mb-2">${s.issue}</h6>
+                    <p class="small mb-0">${s.reality}</p>
+                  </div>
+                `).join('')}
+                <div class="alert alert-info mt-4 mb-0">
+                  <p class="mb-0"><strong>💙</strong> ${data.theWorldRightNow.validation}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
     // Why Matters
     const whyContainer = document.getElementById('teenWhyMattersContainer');
     if (whyContainer && data.whyItMatters) {
@@ -115,6 +141,32 @@ class RealityUIHandler {
           </div>
         </div>
       `).join('');
+    }
+
+    // The World Right Now
+    const worldContainer = document.getElementById('parentWorldContainer');
+    if (worldContainer && data.theWorldRightNow) {
+      worldContainer.innerHTML = `
+        <div class="row mb-5">
+          <div class="col-12">
+            <div class="card border-0 shadow-sm border-start border-warning border-4 bg-light">
+              <div class="card-body">
+                <h4 class="card-title mb-4">${data.theWorldRightNow.title}</h4>
+                <p class="text-muted mb-4">${data.theWorldRightNow.intro}</p>
+                ${data.theWorldRightNow.stressors.map(s => `
+                  <div class="mb-4 pb-3 border-bottom">
+                    <h6 class="text-warning mb-2">${s.issue}</h6>
+                    <p class="small mb-0">${s.reality}</p>
+                  </div>
+                `).join('')}
+                <div class="alert alert-info mt-4 mb-0">
+                  <p class="mb-0"><strong>💙</strong> ${data.theWorldRightNow.validation}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
     }
 
     // Why Matters

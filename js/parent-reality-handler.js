@@ -125,6 +125,38 @@ class ParentRealityHandler {
             how: "When you and your teen do hard things together, trust rebuilds. That's where real change happens."
           }
         ]
+      },
+
+      theWorldRightNow: {
+        title: "The World Your Teen Is Growing Up In",
+        intro: "Your teen's anxiety isn't just about algorithms. It's about living in genuinely intense times.",
+        stressors: [
+          {
+            issue: "War and Conflict",
+            reality: "They grew up watching wars on repeat in their feed. That's processed trauma, not weakness."
+          },
+          {
+            issue: "Political Division Turned Personal",
+            reality: "Disagreement became personal attack. Their nervous system learned early: different viewpoints = threat. That's hypervigilance."
+          },
+          {
+            issue: "Immigration, Identity, Belonging",
+            reality: "If your teen is an immigrant, a minority, or has immigrant friends, they've absorbed years of messaging about who belongs. That's chronic stress."
+          },
+          {
+            issue: "Climate Anxiety",
+            reality: "They were told the world is burning. Then told to fix it. Then watched adults do nothing. That's cognitive dissonance, rage, and learned helplessness."
+          },
+          {
+            issue: "Economic Precarity",
+            reality: "They watch you panic about economy, debt, housing. They absorb that their future is threatened, not promising. That's existential anxiety."
+          },
+          {
+            issue: "Institutional Breakdown",
+            reality: "Schools that don't feel safe. Police they don't trust. Politicians who don't listen. Adults saying 'your generation will fix this' while the teen is 15. That's abandoned responsibility."
+          }
+        ],
+        validation: "Your teen isn't anxious for no reason. The world IS anxiety-inducing right now. Part of supporting them is acknowledging that their stress is rational, not pathological. The phone is a symptom, not the cause."
       }
     };
   }
