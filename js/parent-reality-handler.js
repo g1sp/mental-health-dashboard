@@ -1,12 +1,13 @@
-// Parent Reality Tab - The Actual Picture (Evidence-Based)
+// Parent Reality Tab - What Parents Need to Know (Evidence-Based)
 // Purpose: Validate parent concerns and show why this matters
+// Note: All data is US-based research and statistics
 
 class ParentRealityHandler {
   constructor() {
     this.sections = {
       theNumbers: {
         title: "The Numbers Are Real",
-        intro: "This isn't fear-mongering. This is data.",
+        intro: "This isn't fear-mongering. This is US research data.",
         critical: [
           {
             stat: "41% of high school students report persistent sadness or hopelessness",

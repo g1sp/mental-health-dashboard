@@ -1,5 +1,6 @@
 // Teen Reality Tab - What's Actually Happening (Synthesized Gen Z Voice)
 // Purpose: Establish common ground before moving to challenges
+// Note: All data is US-based research and statistics
 
 class TeenRealityHandler {
   constructor() {

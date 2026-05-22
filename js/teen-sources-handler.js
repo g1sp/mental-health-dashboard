@@ -4,7 +4,7 @@ class TeenSourcesHandler {
   constructor() {
     this.sources = {
       title: "Where This Information Comes From",
-      intro: "All the statistics, research, and tools in this app come from peer-reviewed studies, government surveys, and mental health organizations. This isn't opinion—it's data. All information is for educational purposes.",
+      intro: "All the statistics, research, and tools in this app come from peer-reviewed studies, government surveys, university research, and mental health organizations. All data is US-based research. This isn't opinion—it's data. All information is for educational purposes.",
       categories: [
         {
           category: "Youth Mental Health Trends",
@@ -137,6 +137,63 @@ class TeenSourcesHandler {
               description: "Substance Abuse and Mental Health Services Administration support",
               stats: "Free, confidential, 24/7 treatment referral",
               url: "https://www.samhsa.gov/find-help/national-helpline"
+            }
+          ]
+        },
+        {
+          category: "Books That Get It",
+          sources: [
+            {
+              name: "The Anxious Generation",
+              description: "Jonathan Haidt on why your generation is struggling and what actually helps",
+              stats: "How algorithms are designed to keep you hooked, why real connection matters",
+              url: "https://www.anxiousgeneration.com/"
+            },
+            {
+              name: "Lost Connections",
+              description: "Johann Hari on depression, disconnection, and what actually helps",
+              stats: "Why sadness isn't weakness, how real relationships heal",
+              url: "https://www.johannhari.com/lost-connections"
+            }
+          ]
+        },
+        {
+          category: "Research You Can Read",
+          sources: [
+            {
+              name: "JAMA Pediatrics",
+              description: "Real studies on teen health, social media, and mental health",
+              stats: "The research behind the statistics in this app",
+              url: "https://jamanetwork.com/journals/jamapediatrics"
+            },
+            {
+              name: "Journal of Adolescent Health",
+              description: "Peer-reviewed research on teen development and wellness",
+              stats: "Sleep, digital wellness, depression and anxiety",
+              url: "https://www.jahonline.org/"
+            },
+            {
+              name: "Developmental Psychology",
+              description: "Research on how teens actually develop and change",
+              stats: "Why your brain works the way it does, resilience factors",
+              url: "https://www.apa.org/pubs/journals/dev"
+            }
+          ]
+        },
+        {
+          category: "University Research Centers",
+          sources: [
+            {
+              name: "Stanford Adolescent Development Lab",
+              description: "Research on teen psychology, social media, and digital life",
+              stats: "Long-term studies on what actually affects teen mental health",
+              url: "https://www.stanford.edu/"
+            },
+            {
+              name: "UCLA Semel Institute for Neuroscience",
+              description: "Brain research on how teens process stress and emotion",
+              stats: "Why your brain works the way it does, how to build resilience",
+              url: "https://www.semel.ucla.edu/"
             }
           ]
         }
