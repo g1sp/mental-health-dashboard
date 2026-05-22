@@ -25,7 +25,8 @@ class UnderstandingHandler {
     const target = document.getElementById(targetId);
 
     if (source && target) {
-      source.style.display = '';
+      source.classList.remove('tab-pane', 'fade');
+      source.style.display = 'none';
       source.style.visibility = 'visible';
       target.appendChild(source);
     }

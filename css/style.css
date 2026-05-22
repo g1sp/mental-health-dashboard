@@ -132,6 +132,11 @@ footer {
     border-bottom: 2px solid #dee2e6;
     margin-left: 0;
     margin-right: 0;
+    gap: 1rem;
+}
+
+.nav-tabs .nav-item {
+    flex-shrink: 0;
 }
 
 .nav-tabs .nav-link {
