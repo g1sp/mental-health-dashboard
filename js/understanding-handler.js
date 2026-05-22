@@ -26,7 +26,7 @@ class UnderstandingHandler {
 
     if (source && target) {
       source.classList.remove('tab-pane', 'fade');
-      source.style.display = 'none';
+      source.style.display = '';
       source.style.visibility = 'visible';
       target.appendChild(source);
     }
