@@ -826,5 +826,125 @@
     ],
     "repeat_times": 1,
     "benefits": ["Activates relaxation response", "Provides mental refuge", "Reduces anxiety", "Promotes calm"]
+  },
+  {
+    "id": 22,
+    "name": "Phone-Free Hour",
+    "category": "digital_wellness",
+    "description": "Designate one hour daily with no phone or social media. This directly addresses the root cause of attention fragmentation and sleep disruption.",
+    "difficulty": "intermediate",
+    "duration": 3600,
+    "for_conditions": ["anxiety", "depression", "stress"],
+    "timer_visual": "progress_bar",
+    "steps": [
+      {
+        "number": 1,
+        "instruction": "Choose a specific time each day (ideally before bed)",
+        "duration": 60,
+        "phase": "instruction"
+      },
+      {
+        "number": 2,
+        "instruction": "Put your phone in another room or in a drawer",
+        "duration": 30,
+        "phase": "instruction"
+      },
+      {
+        "number": 3,
+        "instruction": "Do an offline activity: read, draw, talk, hobby, or rest",
+        "duration": 3300,
+        "phase": "instruction"
+      },
+      {
+        "number": 4,
+        "instruction": "Notice how you feel after this time",
+        "duration": 30,
+        "phase": "instruction"
+      }
+    ],
+    "repeat_times": 1,
+    "benefits": ["Improves sleep quality", "Restores attention span", "Reduces anxiety", "Allows nervous system recovery"]
+  },
+  {
+    "id": 23,
+    "name": "Social Media Detox Day",
+    "category": "digital_wellness",
+    "description": "One full day per week without social media. This breaks comparison cycles and gives your brain recovery time.",
+    "difficulty": "intermediate",
+    "duration": 86400,
+    "for_conditions": ["depression", "anxiety"],
+    "timer_visual": "progress_bar",
+    "steps": [
+      {
+        "number": 1,
+        "instruction": "Choose a day (weekend is often easier)",
+        "duration": 60,
+        "phase": "instruction"
+      },
+      {
+        "number": 2,
+        "instruction": "Logout from all social apps or use app blockers",
+        "duration": 300,
+        "phase": "instruction"
+      },
+      {
+        "number": 3,
+        "instruction": "Plan alternative activities: sports, hobbies, time with friends",
+        "duration": 600,
+        "phase": "instruction"
+      },
+      {
+        "number": 4,
+        "instruction": "Notice the reduction in comparison thoughts and anxiety",
+        "duration": 300,
+        "phase": "instruction"
+      }
+    ],
+    "repeat_times": 1,
+    "benefits": ["Breaks comparison cycles", "Reduces depressive thoughts", "Restores focus on real life", "Builds resilience"]
+  },
+  {
+    "id": 24,
+    "name": "Unfollow & Mute Strategy",
+    "category": "digital_wellness",
+    "description": "Actively curate your feed by unfollowing accounts that trigger comparison or negative feelings. Replace with positive, educational content.",
+    "difficulty": "beginner",
+    "duration": 900,
+    "for_conditions": ["depression", "anxiety"],
+    "timer_visual": "progress_bar",
+    "steps": [
+      {
+        "number": 1,
+        "instruction": "Open a social media app you use most",
+        "duration": 60,
+        "phase": "instruction"
+      },
+      {
+        "number": 2,
+        "instruction": "Identify 3-5 accounts that make you feel bad about yourself",
+        "duration": 300,
+        "phase": "instruction"
+      },
+      {
+        "number": 3,
+        "instruction": "Unfollow or mute these accounts",
+        "duration": 180,
+        "phase": "instruction"
+      },
+      {
+        "number": 4,
+        "instruction": "Follow 3 accounts that inspire or educate you instead",
+        "duration": 300,
+        "phase": "instruction"
+      },
+      {
+        "number": 5,
+        "instruction": "Notice the difference in how your feed feels",
+        "duration": 60,
+        "phase": "instruction"
+      }
+    ],
+    "repeat_times": 1,
+    "benefits": ["Reduces comparison triggers", "Improves feed quality", "Protects self-esteem", "Empowers agency"]
   }
 ]
