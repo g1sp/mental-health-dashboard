@@ -5,7 +5,6 @@ class CrisisUI {
     }
 
     init() {
-        this.setupBanner();
         this.setupDashboardCard();
         this.setupModal();
         this.setupNavbarButton();
@@ -26,15 +25,6 @@ class CrisisUI {
                 pane.appendChild(wrapper);
             }
         }, 100);
-    }
-
-    setupBanner() {
-        // Crisis banner is shown/hidden via CSS and can be dismissed
-        const banner = document.getElementById('crisisBanner');
-        if (banner) {
-            // Ensure banner is visible on page load
-            banner.style.display = 'block';
-        }
     }
 
     setupNavbarButton() {
