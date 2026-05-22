@@ -4,6 +4,29 @@ class RealityUIHandler {
   init() {
     this.renderTeenReality();
     this.renderParentReality();
+    this.attachFooters();
+  }
+
+  attachFooters() {
+    setTimeout(() => {
+      const teenPane = document.getElementById('teenRealityContent');
+      if (teenPane && !teenPane.querySelector('.source-footer')) {
+        const footer = FooterHelper.getSourceFooter('teenSourcesTab');
+        const wrapper = document.createElement('div');
+        wrapper.innerHTML = footer;
+        wrapper.classList.add('source-footer');
+        teenPane.appendChild(wrapper);
+      }
+
+      const parentPane = document.getElementById('parentRealityContent');
+      if (parentPane && !parentPane.querySelector('.source-footer')) {
+        const footer = FooterHelper.getSourceFooter('parentSourcesTab');
+        const wrapper = document.createElement('div');
+        wrapper.innerHTML = footer;
+        wrapper.classList.add('source-footer');
+        parentPane.appendChild(wrapper);
+      }
+    }, 100);
   }
 
   renderTeenReality() {

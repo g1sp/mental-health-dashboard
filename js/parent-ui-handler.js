@@ -7,6 +7,20 @@ class ParentUIHandler {
 
   init() {
     this.renderWeeklyPlaybook();
+    this.attachFooters();
+  }
+
+  attachFooters() {
+    setTimeout(() => {
+      const pane = document.getElementById('parentHowToHelpContent');
+      if (pane && !pane.querySelector('.source-footer')) {
+        const footer = FooterHelper.getSourceFooter('parentSourcesTab');
+        const wrapper = document.createElement('div');
+        wrapper.innerHTML = footer;
+        wrapper.classList.add('source-footer');
+        pane.appendChild(wrapper);
+      }
+    }, 100);
   }
 
   renderWeeklyPlaybook() {

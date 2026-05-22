@@ -27,6 +27,21 @@ class TreatmentUI {
                 if (treatment) this.showTreatmentDetail(treatment);
             });
         });
+
+        this.attachFooter();
+    }
+
+    attachFooter() {
+        setTimeout(() => {
+            const pane = document.getElementById('treatmentsContent');
+            if (pane && !pane.querySelector('.source-footer')) {
+                const footer = FooterHelper.getSourceFooter('parentSourcesTab');
+                const wrapper = document.createElement('div');
+                wrapper.innerHTML = footer;
+                wrapper.classList.add('source-footer');
+                pane.appendChild(wrapper);
+            }
+        }, 100);
     }
 
     // Create individual treatment card HTML

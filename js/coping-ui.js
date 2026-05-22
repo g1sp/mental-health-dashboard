@@ -13,6 +13,20 @@ class CopingUI {
     init() {
         this.setupEventListeners();
         this.renderSkillsGrid(copingHandler.getCopingSkills());
+        this.attachFooter();
+    }
+
+    attachFooter() {
+        setTimeout(() => {
+            const pane = document.getElementById('copingContent');
+            if (pane && !pane.querySelector('.source-footer')) {
+                const footer = FooterHelper.getSourceFooter('teenSourcesTab');
+                const wrapper = document.createElement('div');
+                wrapper.innerHTML = footer;
+                wrapper.classList.add('source-footer');
+                pane.appendChild(wrapper);
+            }
+        }, 100);
     }
 
     // Setup event listeners

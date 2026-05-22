@@ -8,6 +8,22 @@ class FamilyChallengeUI {
   init() {
     this.setupEventListeners();
     this.updateDisplay();
+    this.attachFooter();
+  }
+
+  attachFooter() {
+    setTimeout(() => {
+      const pane = document.getElementById('familyChallengeContent');
+      if (pane && !pane.querySelector('.source-footer')) {
+        const currentPersona = window.personaHandler ? window.personaHandler.getPersona() : 'teen';
+        const tabId = currentPersona === 'parent' ? 'parentSourcesTab' : 'teenSourcesTab';
+        const footer = FooterHelper.getSourceFooter(tabId);
+        const wrapper = document.createElement('div');
+        wrapper.innerHTML = footer;
+        wrapper.classList.add('source-footer');
+        pane.appendChild(wrapper);
+      }
+    }, 100);
   }
 
   setupEventListeners() {
