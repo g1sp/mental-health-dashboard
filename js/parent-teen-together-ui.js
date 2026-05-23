@@ -1,6 +1,6 @@
-// Family Challenge UI - Display and interact with shared family challenges
+// Parent & Teen Together UI - Display and interact with shared parent-teen challenges
 
-class FamilyChallengeUI {
+class ParentTeenTogetherUI {
   constructor() {
     this.modal = null;
   }
@@ -13,7 +13,7 @@ class FamilyChallengeUI {
 
   attachFooter() {
     setTimeout(() => {
-      const pane = document.getElementById('familyChallengeContent');
+      const pane = document.getElementById('parentTeenTogetherContent');
       if (pane && !pane.querySelector('.source-footer')) {
         const currentPersona = window.personaHandler ? window.personaHandler.getPersona() : 'teen';
         const tabId = currentPersona === 'parent' ? 'parentSourcesTab' : 'teenSourcesTab';
@@ -28,7 +28,7 @@ class FamilyChallengeUI {
 
   setupEventListeners() {
     // Start pairing
-    const pairingBtn = document.getElementById('startFamilyPairingBtn');
+    const pairingBtn = document.getElementById('startParentTeenTogetherBtn');
     if (pairingBtn) {
       pairingBtn.addEventListener('click', () => this.showPairingFlow());
     }
@@ -50,7 +50,7 @@ class FamilyChallengeUI {
 
   // Show pairing modal for parent
   showParentPairingSetup() {
-    const code = familyChallengeHandler.generatePairingCode();
+    const code = parentTeenTogetherHandler.generatePairingCode();
 
     const html = `
       <div class="text-center mb-4">
@@ -70,8 +70,8 @@ class FamilyChallengeUI {
         <div class="card-body">
           <h5 class="card-title">How it works:</h5>
           <ol class="mb-0 small">
-            <li>Your teen opens the Family Challenge on their phone</li>
-            <li>They select "Join Family Challenge"</li>
+            <li>Your teen opens Parent & Teen Together on their phone</li>
+            <li>They select "Join Parent & Teen Together"</li>
             <li>They enter your pairing code: <strong>${code}</strong></li>
             <li>You're connected! Now do challenges together.</li>
           </ol>
@@ -92,7 +92,7 @@ class FamilyChallengeUI {
     const html = `
       <div class="text-center mb-4">
         <div style="font-size: 3rem; margin-bottom: 1rem;">🤝</div>
-        <h4>Join Your Parent's Family Challenge</h4>
+        <h4>Join Your Parent's Parent & Teen Together Program</h4>
       </div>
 
       <div class="card border-0 bg-light mb-4">
@@ -103,7 +103,7 @@ class FamilyChallengeUI {
             <input type="text" id="pairingCodeInput" class="form-control form-control-lg"
                    placeholder="4-digit code" maxlength="4" inputmode="numeric" style="text-align: center; font-size: 1.5rem; letter-spacing: 0.5rem;">
           </div>
-          <button class="btn btn-primary w-100 btn-lg" onclick="familyChallengeUI.submitPairingCode()">
+          <button class="btn btn-primary w-100 btn-lg" onclick="parentTeenTogetherUI.submitPairingCode()">
             Connect
           </button>
         </div>
@@ -136,7 +136,7 @@ class FamilyChallengeUI {
       return;
     }
 
-    const result = familyChallengeHandler.pairWithParent(code);
+    const result = parentTeenTogetherHandler.pairWithParent(code);
     if (result.success) {
       alert(result.message);
       bootstrap.Modal.getInstance(document.getElementById('familyPairingModal')).hide();
@@ -148,12 +148,12 @@ class FamilyChallengeUI {
 
   // Display current challenge
   updateDisplay() {
-    const container = document.getElementById('familyChallengeContainer');
+    const container = document.getElementById('parentTeenTogetherContainer');
     if (!container) return;
 
-    const progress = familyChallengeHandler.getProgress();
-    const challenge = familyChallengeHandler.getCurrentChallenge();
-    const sharedProgress = familyChallengeHandler.getSharedProgress();
+    const progress = parentTeenTogetherHandler.getProgress();
+    const challenge = parentTeenTogetherHandler.getCurrentChallenge();
+    const sharedProgress = parentTeenTogetherHandler.getSharedProgress();
 
     if (!progress.isPaired) {
       container.innerHTML = this.getUnpairedHTML();
@@ -171,7 +171,7 @@ class FamilyChallengeUI {
           <div class="card border-0 shadow-sm border-top border-primary border-4">
             <div class="card-body text-center py-5">
               <div style="font-size: 3rem; margin-bottom: 1rem;">👥</div>
-              <h3 class="card-title mb-3">Family Challenge Mode</h3>
+              <h3 class="card-title mb-3">Parent & Teen Together Mode</h3>
               <p class="text-muted mb-4">Fix your phone habits together. Parent and teen do the same challenges, see each other's progress, and rebuild connection.</p>
               <button class="btn btn-primary btn-lg" id="startFamilyPairingBtn">
                 Get Started
@@ -314,7 +314,7 @@ class FamilyChallengeUI {
                       <div class="card border-0 text-center ${isComplete ? 'bg-success bg-opacity-10' : isCurrent ? 'border-primary border-2' : ''}">
                         <div class="card-body p-2">
                           <h6 class="card-title mb-1">Week ${weekNum}</h6>
-                          <small class="text-muted">${familyChallengeHandler.weeklySharedChallenges[i].title.substring(0, 12)}...</small>
+                          <small class="text-muted">${parentTeenTogetherHandler.weeklySharedChallenges[i].title.substring(0, 12)}...</small>
                           ${isComplete ? '<div style="font-size: 1.5rem;">✓</div>' : ''}
                         </div>
                       </div>
@@ -336,20 +336,20 @@ class FamilyChallengeUI {
               ${persona === 'parent' ? `
                 <div class="mb-3">
                   <textarea class="form-control" id="parentAffirmationInput" placeholder="Tell your teen why you value them..." rows="3"></textarea>
-                  <button class="btn btn-sm btn-outline-primary mt-2 w-100" onclick="familyChallengeUI.addAffirmation('parent')">Send Affirmation</button>
+                  <button class="btn btn-sm btn-outline-primary mt-2 w-100" onclick="parentTeenTogetherUI.addAffirmation('parent')">Send Affirmation</button>
                 </div>
                 <div class="alert alert-light small p-2">
                   <small><strong>From your teen:</strong></small>
-                  ${familyChallengeHandler.getTeenAffirmations().slice(-2).map(a => `<p class="small mb-2 text-success">"${a.message}"</p>`).join('')}
+                  ${parentTeenTogetherHandler.getTeenAffirmations().slice(-2).map(a => `<p class="small mb-2 text-success">"${a.message}"</p>`).join('')}
                 </div>
               ` : `
                 <div class="mb-3">
                   <textarea class="form-control" id="teenAffirmationInput" placeholder="Tell your parent why you appreciate them..." rows="3"></textarea>
-                  <button class="btn btn-sm btn-outline-info mt-2 w-100" onclick="familyChallengeUI.addAffirmation('teen')">Send Affirmation</button>
+                  <button class="btn btn-sm btn-outline-info mt-2 w-100" onclick="parentTeenTogetherUI.addAffirmation('teen')">Send Affirmation</button>
                 </div>
                 <div class="alert alert-light small p-2">
                   <small><strong>From your parent:</strong></small>
-                  ${familyChallengeHandler.getParentAffirmations().slice(-2).map(a => `<p class="small mb-2 text-primary">"${a.message}"</p>`).join('')}
+                  ${parentTeenTogetherHandler.getParentAffirmations().slice(-2).map(a => `<p class="small mb-2 text-primary">"${a.message}"</p>`).join('')}
                 </div>
               `}
             </div>
@@ -360,7 +360,7 @@ class FamilyChallengeUI {
   }
 
   logCompletion(persona) {
-    const success = familyChallengeHandler.logCompletion(persona);
+    const success = parentTeenTogetherHandler.logCompletion(persona);
     if (success) {
       const msg = persona === 'parent' ? 'Great job, parent! 👏' : 'You did it! 🎉';
       alert(msg);
@@ -369,7 +369,7 @@ class FamilyChallengeUI {
   }
 
   moveToNextWeek() {
-    familyChallengeHandler.completeWeek();
+    parentTeenTogetherHandler.completeWeek();
     this.updateDisplay();
   }
 
@@ -383,9 +383,9 @@ class FamilyChallengeUI {
     }
 
     if (persona === 'parent') {
-      familyChallengeHandler.addParentAffirmation(input.value.trim());
+      parentTeenTogetherHandler.addParentAffirmation(input.value.trim());
     } else {
-      familyChallengeHandler.addTeenAffirmation(input.value.trim());
+      parentTeenTogetherHandler.addTeenAffirmation(input.value.trim());
     }
 
     input.value = '';
@@ -394,7 +394,7 @@ class FamilyChallengeUI {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  const familyChallengeUI = new FamilyChallengeUI();
-  familyChallengeUI.init();
-  window.familyChallengeUI = familyChallengeUI;
+  const parentTeenTogetherUI = new ParentTeenTogetherUI();
+  parentTeenTogetherUI.init();
+  window.parentTeenTogetherUI = parentTeenTogetherUI;
 });

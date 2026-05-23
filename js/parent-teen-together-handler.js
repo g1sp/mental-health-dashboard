@@ -1,10 +1,10 @@
-// Family Challenge Handler - Shared parent-teen accountability system
+// Parent & Teen Together Handler - Shared parent-teen accountability system
 // Core logic for pairing families, tracking shared challenges, and celebrating progress together
 
-class FamilyChallengeHandler {
+class ParentTeenTogetherHandler {
   constructor() {
-    this.storageKey = 'familyChallenge';
-    this.affirmationKey = 'familyAffirmations';
+    this.storageKey = 'parentTeenTogether';
+    this.affirmationKey = 'parentTeenTogetherAffirmations';
     this.familyData = this.loadFamilyData();
     this.affirmations = this.loadAffirmations();
     this.currentPersona = 'teen'; // Will be set by app
@@ -284,9 +284,9 @@ class FamilyChallengeHandler {
   }
 
   init() {
-    window.familyChallengeHandler = this;
+    window.parentTeenTogetherHandler = this;
   }
 }
 
-const familyChallengeHandler = new FamilyChallengeHandler();
-familyChallengeHandler.init();
+const parentTeenTogetherHandler = new ParentTeenTogetherHandler();
+parentTeenTogetherHandler.init();
