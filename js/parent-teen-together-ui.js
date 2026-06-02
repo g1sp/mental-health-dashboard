@@ -28,7 +28,7 @@ class ParentTeenTogetherUI {
 
   setupEventListeners() {
     // Start pairing
-    const pairingBtn = document.getElementById('startParentTeenTogetherBtn');
+    const pairingBtn = document.getElementById('startFamilyPairingBtn');
     if (pairingBtn) {
       pairingBtn.addEventListener('click', () => this.showPairingFlow());
     }
@@ -150,6 +150,12 @@ class ParentTeenTogetherUI {
   updateDisplay() {
     const container = document.getElementById('parentTeenTogetherContainer');
     if (!container) return;
+
+    if (!parentTeenTogetherHandler) {
+      console.error('parentTeenTogetherHandler not available');
+      container.innerHTML = '<p class="text-danger">Error: Handler not loaded</p>';
+      return;
+    }
 
     const progress = parentTeenTogetherHandler.getProgress();
     const challenge = parentTeenTogetherHandler.getCurrentChallenge();
@@ -393,8 +399,5 @@ class ParentTeenTogetherUI {
   }
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  const parentTeenTogetherUI = new ParentTeenTogetherUI();
-  parentTeenTogetherUI.init();
-  window.parentTeenTogetherUI = parentTeenTogetherUI;
-});
+const parentTeenTogetherUI = new ParentTeenTogetherUI();
+window.parentTeenTogetherUI = parentTeenTogetherUI;

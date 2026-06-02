@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Youth Mental Health Crisis: Problem & Solution</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .post {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .content {
+            padding: 50px 40px;
+        }
+
+        .section {
+            margin-bottom: 50px;
+        }
+
+        .section-title {
+            font-size: 1.6em;
+            color: #2c3e50;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #667eea;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .icon {
+            font-size: 1.8em;
+        }
+
+        .stat-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 25px 0;
+        }
+
+        @media (max-width: 600px) {
+            .stat-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .stat-card {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 8px;
+            border-left: 4px solid #e74c3c;
+        }
+
+        .stat-card.positive {
+            border-left-color: #27ae60;
+        }
+
+        .stat-number {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #2c3e50;
+            line-height: 1;
+        }
+
+        .stat-label {
+            font-size: 0.95em;
+            color: #7f8c8d;
+            margin-top: 10px;
+        }
+
+        .problem-statement {
+            background: #fff5f5;
+            padding: 30px;
+            border-radius: 8px;
+            border-left: 6px solid #e74c3c;
+            margin: 20px 0;
+            font-size: 1.1em;
+            line-height: 1.8;
+            color: #2c3e50;
+        }
+
+        .the-gap {
+            background: #fffaf0;
+            padding: 30px;
+            border-radius: 8px;
+            border-left: 6px solid #f39c12;
+            margin: 20px 0;
+            font-size: 1.05em;
+            line-height: 1.8;
+            color: #2c3e50;
+        }
+
+        .solution {
+            background: #f0fff4;
+            padding: 30px;
+            border-radius: 8px;
+            border-left: 6px solid #27ae60;
+            margin: 20px 0;
+        }
+
+        .solution ul {
+            list-style: none;
+            margin: 15px 0 0 0;
+        }
+
+        .solution li {
+            padding: 10px 0;
+            padding-left: 30px;
+            position: relative;
+            font-size: 1em;
+            color: #2c3e50;
+        }
+
+        .solution li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #27ae60;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .research-highlight {
+            background: #e8f4f8;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 15px 0;
+            font-size: 0.95em;
+            line-height: 1.7;
+            color: #2c3e50;
+        }
+
+        .research-highlight strong {
+            color: #2980b9;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 8px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .cta-section h3 {
+            font-size: 1.6em;
+            margin-bottom: 20px;
+        }
+
+        .cta-section p {
+            font-size: 1.05em;
+            margin-bottom: 25px;
+            opacity: 0.95;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: #667eea;
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.05em;
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: 2px solid white;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        .footer {
+            background: #ecf0f1;
+            padding: 30px 40px;
+            text-align: center;
+            color: #7f8c8d;
+            font-size: 0.95em;
+            border-top: 1px solid #bdc3c7;
+        }
+
+        .footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .quote {
+            font-size: 1.15em;
+            font-style: italic;
+            color: #667eea;
+            margin: 20px 0;
+            padding: 20px;
+            border-left: 4px solid #667eea;
+        }
+
+        .action-item {
+            background: white;
+            border: 2px solid #ecf0f1;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 8px;
+            line-height: 1.7;
+            color: #2c3e50;
+        }
+
+        strong {
+            color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="post">
+            <!-- Header -->
+            <div class="header">
+                <h1>🧠 The Youth Mental Health Crisis: The Gap Between Knowing & Doing</h1>
+                <p>Why teens and parents struggle to find answers—and what we can do about it</p>
+            </div>
+
+            <!-- Content -->
+            <div class="content">
+                <!-- Problem Statement -->
+                <div class="section">
+                    <div class="section-title">
+                        <span class="icon">⚠️</span>
+                        <span>The Problem</span>
+                    </div>
+
+                    <div class="stat-grid">
+                        <div class="stat-card">
+                            <div class="stat-number">27.8%</div>
+                            <div class="stat-label">of teens aged 13-17 report depression symptoms (CDC YRBS 2023)</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">26.8%</div>
+                            <div class="stat-label">report anxiety symptoms</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">15.7%</div>
+                            <div class="stat-label">report self-harm behaviors</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">36.3%</div>
+                            <div class="stat-label">have access to professional treatment</div>
+                        </div>
+                    </div>
+
+                    <div class="problem-statement">
+                        <strong>Translation:</strong> Nearly 1 in 3 teens are struggling with depression. 1 in 4 have anxiety. Yet only about 1 in 3 are getting professional help. The crisis is real—and it's being underserved.
+                    </div>
+                </div>
+
+                <!-- Research & Data -->
+                <div class="section">
+                    <div class="section-title">
+                        <span class="icon">📊</span>
+                        <span>What the Research Tells Us</span>
+                    </div>
+
+                    <div class="research-highlight">
+                        <strong>Treatments That Work:</strong> We know evidence-based therapies work. CBT, DBT, mindfulness, medication when appropriate—these are proven interventions. The research is solid. The interventions are available.
+                    </div>
+
+                    <div class="research-highlight">
+                        <strong>Coping Skills Save Lives:</strong> Breathing exercises, grounding techniques, journaling, physical activity—teens who learn coping strategies show measurable improvements in mood, stress management, and crisis recovery.
+                    </div>
+
+                    <div class="research-highlight">
+                        <strong>Early Intervention Matters:</strong> When teens learn about their mental health early—when they understand what's normal and what isn't—they reach out sooner, get help faster, and recover better.
+                    </div>
+
+                    <div class="research-highlight">
+                        <strong>Parents Are Critical But Lost:</strong> Parents want to help their teens but don't know where to start. They don't understand the treatments. They're unsure how to talk about mental health. They feel helpless.
+                    </div>
+                </div>
+
+                <!-- The Gap -->
+                <div class="section">
+                    <div class="section-title">
+                        <span class="icon">🔗</span>
+                        <span>The Gap: Knowing vs. Doing</span>
+                    </div>
+
+                    <div class="the-gap">
+                        We know what works. But teens don't know how to find it. Parents don't know how to start. There's no bridge between the research and the living room conversation.
+                    </div>
+
+                    <p style="font-size: 1.05em; line-height: 1.8; color: #2c3e50; margin: 20px 0;">
+                        The barriers:
+                    </p>
+
+                    <div class="action-item">
+                        <strong>For Teens:</strong> "I know I'm struggling, but I don't know what it's called, what's normal, or what to do about it. I'm afraid of judgment. I don't know where to start."
+                    </div>
+
+                    <div class="action-item">
+                        <strong>For Parents:</strong> "I see my teen is suffering, but I don't understand depression vs. anxiety vs. normal teen moods. I don't know which treatments are evidence-based. I don't know how to talk about it without making it worse."
+                    </div>
+
+                    <div class="action-item">
+                        <strong>System-Wide:</strong> Crisis resources exist, but they're fragmented. Treatment options are scattered. No single place answers: "What's happening to me?" + "What do I do now?" + "How do I get help?"
+                    </div>
+                </div>
+
+                <!-- Solution -->
+                <div class="section">
+                    <div class="section-title">
+                        <span class="icon">✨</span>
+                        <span>The Bridge: What I Built</span>
+                    </div>
+
+                    <p style="font-size: 1.05em; line-height: 1.8; color: #2c3e50; margin-bottom: 25px;">
+                        A free, open-source mental health dashboard that turns research into action:
+                    </p>
+
+                    <div class="solution">
+                        <strong>For Teens:</strong>
+                        <ul>
+                            <li>Real CDC data so you know what's normal and what isn't</li>
+                            <li>21 interactive coping exercises you can do right now—with timers and step-by-step guidance</li>
+                            <li>Mood tracking to understand your patterns over 30 days</li>
+                            <li>Crisis resources available 24/7 (988, 911, state-specific help)</li>
+                            <li>AI companion chat for judgment-free support and personalized exercise suggestions</li>
+                        </ul>
+                    </div>
+
+                    <div class="solution">
+                        <strong>For Parents:</strong>
+                        <ul>
+                            <li>Clear explanation of what depression, anxiety, and risk factors actually are</li>
+                            <li>25 evidence-based treatment options with how they work and what to expect</li>
+                            <li>6-week guide to starting the conversation and taking action</li>
+                            <li>Understanding the CDC data specific to your state and teen's age</li>
+                            <li>All crisis resources and how to know when to call 911</li>
+                        </ul>
+                    </div>
+
+                    <p style="font-size: 1.05em; line-height: 1.8; color: #2c3e50; margin: 30px 0;">
+                        <strong>Result:</strong> The gap closes. Research becomes actionable. Teens get support. Parents get confidence.
+                    </p>
+                </div>
+
+                <!-- Key Numbers -->
+                <div class="section">
+                    <div class="section-title">
+                        <span class="icon">📈</span>
+                        <span>By The Numbers</span>
+                    </div>
+
+                    <div class="stat-grid">
+                        <div class="stat-card positive">
+                            <div class="stat-number">25</div>
+                            <div class="stat-label">Evidence-based treatments documented</div>
+                        </div>
+                        <div class="stat-card positive">
+                            <div class="stat-number">21</div>
+                            <div class="stat-label">Interactive coping exercises with guided timers</div>
+                        </div>
+                        <div class="stat-card positive">
+                            <div class="stat-number">1,800</div>
+                            <div class="stat-label">CDC YRBS data points visualized (50 states, 3 years)</div>
+                        </div>
+                        <div class="stat-card positive">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Free, open source, no paywall</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Actions -->
+                <div class="section">
+                    <div class="section-title">
+                        <span class="icon">⚡</span>
+                        <span>What You Can Do Right Now</span>
+                    </div>
+
+                    <div class="action-item">
+                        <strong>If you're a teen:</strong> Visit the dashboard. Look at the data. Try one coping exercise. You're not alone, and there's real help available.
+                    </div>
+
+                    <div class="action-item">
+                        <strong>If you're a parent:</strong> Read the "For Parents" section. Start with understanding what your teen might be experiencing. Have the conversation.
+                    </div>
+
+                    <div class="action-item">
+                        <strong>If you're an educator or counselor:</strong> Share this with your students, patients, or students' families. It's free. It's evidence-based. It might save a life.
+                    </div>
+
+                    <div class="action-item">
+                        <strong>If you're building mental health solutions:</strong> Use this as a template. The problem is massive. We need more tools, more transparency, more action.
+                    </div>
+                </div>
+
+                <!-- Closing -->
+                <div class="section">
+                    <div class="quote">
+                        "The distance between knowing something works and actually doing it is often measured in confusion, fear, and isolation. Let's close that gap."
+                    </div>
+
+                    <p style="font-size: 1.05em; line-height: 1.8; color: #2c3e50; margin-top: 25px;">
+                        This isn't a perfect solution. It's a bridge. It's open source so it can improve. It's free so money isn't a barrier. It's clear so anyone can use it.
+                    </p>
+
+                    <p style="font-size: 1.05em; line-height: 1.8; color: #2c3e50; margin-top: 15px;">
+                        The research is done. The tools work. What's left is reaching the teens and parents who need it.
+                    </p>
+                </div>
+            </div>
+
+            <!-- CTA Section -->
+            <div class="content">
+                <div class="cta-section">
+                    <h3>Ready to Close the Gap?</h3>
+                    <p>Explore the dashboard, learn the treatments, master a coping skill, or share this with someone who needs it.</p>
+                    <a href="https://g1sp.github.io/mental-health-dashboard" class="cta-button">Visit the Dashboard</a>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="footer">
+                <p>
+                    <strong>Source:</strong> CDC Youth Risk Behavior Survey (YRBS) 2019-2023 |
+                    <strong>Data:</strong> 50 states, 1,800+ data points |
+                    <strong>Built with:</strong> Evidence-based research, public data, and a commitment to access
+                </p>
+                <p style="margin-top: 15px;">
+                    Questions? <a href="https://github.com/g1sp/mental-health-dashboard">Star the repo</a> or reach out.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

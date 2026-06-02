@@ -91,6 +91,9 @@ class MentalHealthApp {
         // Initialize parent UI
         await parentUI.init();
 
+        // Initialize parent & teen together
+        parentTeenTogetherUI.init();
+
         // Initialize chat
         await chatHandler.init();
         chatUI.init();
