@@ -156,6 +156,8 @@ class ParentTeenTogetherUI {
         return;
       }
 
+      container.style.backgroundColor = '#ffffff';
+
       if (!parentTeenTogetherHandler) {
         console.error('parentTeenTogetherHandler not available');
         container.innerHTML = '<p class="text-danger">Error: Handler not loaded</p>';
