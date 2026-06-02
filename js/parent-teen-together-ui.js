@@ -6,6 +6,7 @@ class ParentTeenTogetherUI {
   }
 
   init() {
+    console.log('ParentTeenTogetherUI.init() called');
     this.setupEventListeners();
     this.updateDisplay();
     this.attachFooter();
