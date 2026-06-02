@@ -946,5 +946,181 @@
     ],
     "repeat_times": 1,
     "benefits": ["Reduces comparison triggers", "Improves feed quality", "Protects self-esteem", "Empowers agency"]
+  },
+  {
+    "id": 25,
+    "name": "Alternate Nostril Breathing (Nadi Shodhana)",
+    "category": "breathing",
+    "description": "Ancient yogic breathing that balances both brain hemispheres, calms the nervous system, and reduces anxiety and racing thoughts.",
+    "difficulty": "intermediate",
+    "duration": 300,
+    "for_conditions": ["anxiety", "racing-thoughts", "stress"],
+    "timer_visual": "countdown",
+    "steps": [
+      {
+        "number": 1,
+        "instruction": "Sit comfortably with spine straight",
+        "duration": 30,
+        "phase": "setup"
+      },
+      {
+        "number": 2,
+        "instruction": "Close right nostril with thumb, inhale slowly through left",
+        "duration": 4,
+        "phase": "inhale"
+      },
+      {
+        "number": 3,
+        "instruction": "Close left nostril with finger, hold both closed",
+        "duration": 4,
+        "phase": "hold"
+      },
+      {
+        "number": 4,
+        "instruction": "Release right, exhale slowly through right nostril",
+        "duration": 4,
+        "phase": "exhale"
+      },
+      {
+        "number": 5,
+        "instruction": "Inhale through right, switch and exhale through left",
+        "duration": 4,
+        "phase": "cycle"
+      }
+    ],
+    "repeat_times": 10,
+    "benefits": ["Balances brain hemispheres", "Calms nervous system", "Reduces anxiety", "Improves mental clarity"]
+  },
+  {
+    "id": 26,
+    "name": "ACT Values Clarification Exercise",
+    "category": "mindfulness",
+    "description": "Acceptance & Commitment Therapy exercise: identify your core values (relationships, growth, health, creativity) and commit to small aligned actions. Builds meaning and resilience.",
+    "difficulty": "intermediate",
+    "duration": 900,
+    "for_conditions": ["anxiety", "depression", "perfectionism", "meaninglessness"],
+    "timer_visual": "countdown",
+    "steps": [
+      {
+        "number": 1,
+        "instruction": "Identify 5 life areas: relationships, health, growth, creativity, contribution",
+        "duration": 180,
+        "phase": "reflection"
+      },
+      {
+        "number": 2,
+        "instruction": "For each area, ask: 'If there were no barriers, what would matter most?'",
+        "duration": 300,
+        "phase": "reflection"
+      },
+      {
+        "number": 3,
+        "instruction": "Write 1-2 core values per area (e.g., 'deep connection' not 'have friends')",
+        "duration": 180,
+        "phase": "writing"
+      },
+      {
+        "number": 4,
+        "instruction": "Choose ONE value and identify ONE small action you can do today/this week",
+        "duration": 180,
+        "phase": "commitment"
+      },
+      {
+        "number": 5,
+        "instruction": "Notice what comes up (excitement, fear, resistance). Stay with it—don't need to feel ready",
+        "duration": 60,
+        "phase": "reflection"
+      }
+    ],
+    "repeat_times": 1,
+    "benefits": ["Builds meaning and purpose", "Reduces perfectionism paralysis", "Increases psychological flexibility", "Connects actions to values"]
+  },
+  {
+    "id": 27,
+    "name": "Digital Detox Challenge",
+    "category": "behavioral",
+    "description": "Structured screen-free time to reset dopamine, reduce anxiety, and reconnect with offline activities. Addresses digital addiction and social comparison fatigue.",
+    "difficulty": "intermediate",
+    "duration": 3600,
+    "for_conditions": ["digital-addiction", "anxiety", "sleep", "depression"],
+    "timer_visual": "countdown",
+    "steps": [
+      {
+        "number": 1,
+        "instruction": "Set a 60-minute timer. Put phone in another room (not just silent)",
+        "duration": 120,
+        "phase": "setup"
+      },
+      {
+        "number": 2,
+        "instruction": "Choose ONE offline activity: walk, read, draw, cook, play instrument, journal, stretch",
+        "duration": 60,
+        "phase": "planning"
+      },
+      {
+        "number": 3,
+        "instruction": "Do the activity fully present. Notice urges to check phone without acting on them",
+        "duration": 2400,
+        "phase": "practice"
+      },
+      {
+        "number": 4,
+        "instruction": "When timer ends, notice: mood, energy, focus. Did you feel different?",
+        "duration": 180,
+        "phase": "reflection"
+      },
+      {
+        "number": 5,
+        "instruction": "Commit: Can you do this 3x this week? Track how you feel",
+        "duration": 60,
+        "phase": "commitment"
+      }
+    ],
+    "repeat_times": 1,
+    "benefits": ["Resets dopamine sensitivity", "Improves focus and presence", "Reduces comparison anxiety", "Better sleep"]
+  },
+  {
+    "id": 28,
+    "name": "Somatic Awareness & Body Scan for Anxiety",
+    "category": "grounding",
+    "description": "Slow, intentional body awareness to interrupt anxiety patterns and reconnect with your body. Addresses 'stuck' anxiety and helps release stored tension.",
+    "difficulty": "beginner",
+    "duration": 600,
+    "for_conditions": ["anxiety", "panic", "dissociation", "stress"],
+    "timer_visual": "countdown",
+    "steps": [
+      {
+        "number": 1,
+        "instruction": "Lie down or sit comfortably. Close eyes. Take 3 deep breaths",
+        "duration": 30,
+        "phase": "setup"
+      },
+      {
+        "number": 2,
+        "instruction": "Start at toes: notice temperature, texture, pressure. Any tension? Just observe—don't try to change it",
+        "duration": 60,
+        "phase": "scan"
+      },
+      {
+        "number": 3,
+        "instruction": "Move slowly up: feet, legs, belly, chest. Name what you feel: 'tightness in chest,' 'heaviness'",
+        "duration": 180,
+        "phase": "scan"
+      },
+      {
+        "number": 4,
+        "instruction": "If you find tension, breathe INTO that spot. Imagine space and ease. Stay curious",
+        "duration": 120,
+        "phase": "release"
+      },
+      {
+        "number": 5,
+        "instruction": "Finish at head/face. Notice: where did your anxiety live? Any shifts?",
+        "duration": 90,
+        "phase": "reflection"
+      }
+    ],
+    "repeat_times": 1,
+    "benefits": ["Interrupts anxiety spiral", "Releases stored tension", "Builds body awareness", "Improves interoception"]
   }
 ]

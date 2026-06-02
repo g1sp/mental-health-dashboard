@@ -94,6 +94,161 @@
       "forTeens": true,
       "icon": "🤝",
       "color": "success"
+    },
+    {
+      "id": "seven_cups",
+      "name": "7 Cups - Free Peer Support",
+      "description": "Free emotional support from trained listeners",
+      "fullDescription": "7 Cups offers free, confidential conversations with trained emotional support listeners. No cost, no accounts, completely anonymous chat support available 24/7.",
+      "methods": [
+        {
+          "type": "Chat",
+          "value": "7cups.com",
+          "url": "https://www.7cups.com",
+          "icon": "💬"
+        }
+      ],
+      "bestFor": "Anonymous peer support, affordable mental health access, loneliness, stress",
+      "forTeens": true,
+      "icon": "🌈",
+      "color": "info",
+      "cost": "FREE"
+    },
+    {
+      "id": "samhsa_helpline",
+      "name": "SAMHSA National Helpline",
+      "description": "Free, confidential 24/7 referral and information service",
+      "fullDescription": "SAMHSA's National Helpline is a free, confidential, 24/7 treatment referral and information service. Completely free support for mental health and substance use issues.",
+      "methods": [
+        {
+          "type": "Call",
+          "value": "1-800-662-4357",
+          "icon": "📞"
+        }
+      ],
+      "bestFor": "Treatment referrals, information, free resources, substance use support",
+      "forTeens": true,
+      "icon": "🆘",
+      "color": "info",
+      "cost": "FREE"
+    },
+    {
+      "id": "nami_helpline",
+      "name": "NAMI Helpline - Free Mental Health Support",
+      "description": "Free peer support for mental health conditions",
+      "fullDescription": "NAMI (National Alliance on Mental Illness) offers free, confidential support via phone/text. Staffed by people with lived experience of mental illness.",
+      "methods": [
+        {
+          "type": "Call",
+          "value": "1-800-950-6264",
+          "icon": "📞"
+        },
+        {
+          "type": "Text",
+          "value": "Text 'HELLO' to 62640",
+          "icon": "💬"
+        }
+      ],
+      "bestFor": "Mental health info, peer support, understanding conditions",
+      "forTeens": true,
+      "icon": "🤝",
+      "color": "info",
+      "cost": "FREE"
+    },
+    {
+      "id": "cbt_coach_app",
+      "name": "CBT-i Coach (Free App)",
+      "description": "Free app for anxiety, insomnia, depression",
+      "fullDescription": "Free government-backed app using Cognitive Behavioral Therapy techniques for insomnia, anxiety, and depression. Download on any smartphone.",
+      "methods": [
+        {
+          "type": "Download",
+          "value": "iOS/Android - 'CBT-i Coach' or 'CBTi Coach'",
+          "icon": "📱"
+        },
+        {
+          "type": "Website",
+          "value": "VA.gov - free CBT apps",
+          "url": "https://www.va.gov/mobilehealth/apps.asp",
+          "icon": "🌐"
+        }
+      ],
+      "bestFor": "Self-directed anxiety/depression/insomnia treatment, accessible mental health",
+      "forTeens": true,
+      "icon": "📱",
+      "color": "info",
+      "cost": "FREE"
+    },
+    {
+      "id": "sliding_scale_therapy",
+      "name": "Sliding Scale & Low-Cost Therapy",
+      "description": "Find affordable therapy in your area",
+      "fullDescription": "Many therapists offer sliding scale fees based on income. Psychology Today, TherapyDen, and GoodTherapy allow you to filter by cost. Also check IFCC (Institute for Family-Centered Care) directories.",
+      "methods": [
+        {
+          "type": "Website",
+          "value": "psychologytoday.com (filter by cost)",
+          "url": "https://www.psychologytoday.com",
+          "icon": "🔍"
+        },
+        {
+          "type": "Website",
+          "value": "communitycounseling.org",
+          "url": "https://www.communitycounseling.org",
+          "icon": "🌐"
+        }
+      ],
+      "bestFor": "Affordable long-term therapy, access for uninsured/underinsured",
+      "forTeens": true,
+      "icon": "💰",
+      "color": "success",
+      "cost": "$0-50/session"
+    },
+    {
+      "id": "headspace_free",
+      "name": "Free Mental Health Apps & Meditation",
+      "description": "Free meditation and mental health content",
+      "fullDescription": "Headspace, Calm, Insight Timer offer free trials or free tiers with meditation, mindfulness, and sleep guidance. YouTube has thousands of free guided exercises.",
+      "methods": [
+        {
+          "type": "Download",
+          "value": "Headspace, Calm, Insight Timer (free tiers)",
+          "icon": "📱"
+        },
+        {
+          "type": "YouTube",
+          "value": "Search 'guided meditation' or 'anxiety relief'",
+          "icon": "▶️"
+        }
+      ],
+      "bestFor": "Meditation, sleep support, daily stress management, anxiety",
+      "forTeens": true,
+      "icon": "🧘",
+      "color": "info",
+      "cost": "FREE"
+    },
+    {
+      "id": "school_counselor",
+      "name": "School Counselor or Nurse",
+      "description": "Free mental health support at school",
+      "fullDescription": "Your school counselor or nurse can provide mental health screening, referrals, and support for free. This is one of the most accessible resources.",
+      "methods": [
+        {
+          "type": "In-person",
+          "value": "Visit your school counselor's office",
+          "icon": "🏫"
+        },
+        {
+          "type": "Ask",
+          "value": "Request confidential appointment",
+          "icon": "🤔"
+        }
+      ],
+      "bestFor": "Easy access, school-based support, referrals",
+      "forTeens": true,
+      "icon": "🏫",
+      "color": "success",
+      "cost": "FREE"
     }
   ]
 }

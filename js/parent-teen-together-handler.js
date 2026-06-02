@@ -75,6 +75,72 @@ class ParentTeenTogetherHandler {
         successMetric: 'Completed reflection together',
         whyItMatters: 'Progress is only real if you notice it and decide to keep it.',
         trackingUnit: 'reflection completed'
+      },
+      {
+        week: 7,
+        title: 'Loneliness & Real Connection',
+        description: 'Combat epidemic-scale loneliness with quality one-on-one time',
+        duration: '2 meaningful conversations this week',
+        parentChallenge: 'Ask your teen about a real struggle and actually listen. Don\'t fix it—just understand.',
+        teenChallenge: 'Share something real. It doesn\'t need to be solved. Being heard matters most.',
+        successMetric: 'Both completed 2 deep conversations',
+        whyItMatters: 'Lacking connection doubles depression risk. Quality beats quantity. Real understanding heals.',
+        trackingUnit: 'conversations completed'
+      },
+      {
+        week: 8,
+        title: 'Social Connection Challenge',
+        description: 'Build peer relationships beyond family',
+        duration: 'Teen: 1 offline hangout with friend; Parent: 1 with friend/family',
+        parentChallenge: 'Model connection by spending quality time with your friend or family member.',
+        teenChallenge: 'Do something offline with a friend. No phones. If lonely, reach out to 1 person.',
+        successMetric: 'Both completed 1 offline connection activity',
+        whyItMatters: 'Peer friendships are foundational for teen mental health. Parents modeling connection matters.',
+        trackingUnit: 'connection activities'
+      },
+      {
+        week: 9,
+        title: 'Social Media Reality Check',
+        description: 'Curate feeds intentionally; reduce comparison triggers',
+        duration: '2 feed audits this week',
+        parentChallenge: 'Unfollow 5 accounts that trigger you. Follow 3 that educate or inspire.',
+        teenChallenge: 'Audit your feeds. Unfollow comparison triggers. Follow creators you actually learn from.',
+        successMetric: 'Both completed feed audit',
+        whyItMatters: '60% of teens say social media makes them feel worse about themselves. Your feed is your choice.',
+        trackingUnit: 'audits completed'
+      },
+      {
+        week: 10,
+        title: 'Perfectionism Release',
+        description: 'Let go of \"perfect\" for a week. Focus on progress.',
+        duration: 'All week practice',
+        parentChallenge: 'Do something imperfectly and let it go. Show your teen that good enough is good enough.',
+        teenChallenge: 'Turn in work that\'s good, not perfect. Fail at something small. Notice you survive.',
+        successMetric: 'Both completed imperfection practice',
+        whyItMatters: 'Perfectionism drives anxiety & depression. Done is better than perfect. Failure teaches resilience.',
+        trackingUnit: 'imperfect acts completed'
+      },
+      {
+        week: 11,
+        title: 'Tech Boundaries & Digital Wellness',
+        description: 'Create healthy digital boundaries for whole family',
+        duration: 'Commit to 1 boundary all week',
+        parentChallenge: 'Pick 1: No screens 1 hour after dinner, OR no work email after 7pm. Just one boundary.',
+        teenChallenge: 'Pick 1: No TikTok/Insta before school, OR 1 phone-free hour daily. Your choice.',
+        successMetric: 'Both maintained boundary 5+ days',
+        whyItMatters: 'Digital addiction disrupts sleep, hijacks dopamine, feeds anxiety. One boundary creates momentum.',
+        trackingUnit: 'days boundary maintained'
+      },
+      {
+        week: 12,
+        title: 'Values & Meaning-Making',
+        description: 'Identify and align with what truly matters',
+        duration: '1 values conversation + 1 aligned action',
+        parentChallenge: 'Share your top 3 values. Tell your teen why they matter and how you live them.',
+        teenChallenge: 'Identify what matters most to you (not what you think should matter). Do 1 small aligned action.',
+        successMetric: 'Completed values conversation + both took 1 action',
+        whyItMatters: 'Academic & social pressure override teen values. Meaning-making prevents crisis. Connection heals.',
+        trackingUnit: 'values actions completed'
       }
     ];
   }
@@ -139,7 +205,13 @@ class ParentTeenTogetherHandler {
       3: 3, // 3 sessions
       4: 1, // 1 activity
       5: 1, // 1 conversation
-      6: 1  // 1 reflection
+      6: 1, // 1 reflection
+      7: 2, // 2 conversations
+      8: 1, // 1 connection activity
+      9: 2, // 2 feed audits
+      10: 1, // imperfection practice
+      11: 5, // 5 days boundary maintained
+      12: 1  // values conversation + action
     };
     return targets[week] || 1;
   }

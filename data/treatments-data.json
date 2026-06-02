@@ -1,10 +1,10 @@
 {
   "metadata": {
     "source": "SAMHSA, NIMH, American Psychological Association, CDC, Mayo Clinic, Cleveland Clinic, FDA, TED Talks",
-    "description": "Evidence-based mental health treatments for youth - expanded with 10 additional modalities",
+    "description": "Evidence-based mental health treatments for youth - expanded with 14 additional modalities",
     "note": "Effectiveness percentages based on clinical trials, meta-analyses, and peer-reviewed research",
-    "totalTreatments": 25,
-    "phases": "Original 15 treatments + Phase 2: 10 new evidence-based modalities"
+    "totalTreatments": 29,
+    "phases": "Original 15 treatments + Phase 2: 10 new evidence-based modalities + Phase 3: 4 emerging treatments (2025-2026)"
   },
   "treatments": [
     {
@@ -556,6 +556,96 @@
         "Prevents relapse"
       ],
       "considerations": "Often neglected; must combine with other treatments; habit-building takes 21-30 days"
+    },
+    {
+      "id": 26,
+      "name": "Academic Pressure & Perfectionism Coaching",
+      "category": "Psychotherapy",
+      "conditions": ["anxiety", "depression", "academic-stress"],
+      "description": "Specialized coaching combining ACT, behavioral strategies, and values clarification for perfectionism and academic stress. Increasingly needed: teens report rising academic pressure and performance anxiety.",
+      "effectiveness": 71,
+      "age_groups": ["12-17", "18-25"],
+      "duration": "8-12 sessions",
+      "modality": "Individual or Group",
+      "resources": [
+        "https://www.apa.org/science/about/psa/perfectionism",
+        "https://www.samhsa.gov/"
+      ],
+      "key_benefits": [
+        "Reduces perfectionism spiral",
+        "Addresses performance anxiety",
+        "Builds resilience to academic stress",
+        "Improves work-life balance"
+      ],
+      "considerations": "Emerging concern in 2025-2026; integrates ACT principles; highly relevant to achievement-oriented teens"
+    },
+    {
+      "id": 27,
+      "name": "Digital Wellness & Screen Time Management",
+      "category": "Behavioral Therapy",
+      "conditions": ["digital-addiction", "anxiety", "sleep", "depression"],
+      "description": "Structured approach to healthy digital boundaries, recognizing social media as both tool and stressor. Addresses emerging digital addiction and AI-related anxiety.",
+      "effectiveness": 68,
+      "age_groups": ["10-17", "18-25"],
+      "duration": "6-8 sessions + ongoing habits",
+      "modality": "Individual or Family",
+      "resources": [
+        "https://www.commonsensemedia.org/",
+        "https://www.apa.org/monitor/2024/01/digital-wellness"
+      ],
+      "key_benefits": [
+        "Reduces digital addiction",
+        "Improves sleep quality",
+        "Decreases social comparison anxiety",
+        "Builds healthy tech relationship"
+      ],
+      "considerations": "New category in 2025; family involvement helpful; requires practical boundary-setting; growing research base"
+    },
+    {
+      "id": 28,
+      "name": "Loneliness & Social Connection Building",
+      "category": "Preventive/Community",
+      "conditions": ["depression", "isolation", "anxiety", "loneliness"],
+      "description": "Targeted intervention for epidemic-scale loneliness: peer connection programs, school connectedness, quality relationships over quantity. Lacking social connection doubles depression risk.",
+      "effectiveness": 74,
+      "age_groups": ["10-17", "18-25"],
+      "duration": "Ongoing; 4-12 weeks to see effects",
+      "modality": "Group/Community/Supported",
+      "resources": [
+        "https://www.surgeongeneral.gov/priorities/social-connection",
+        "https://www.cdc.gov/mentalhealth/"
+      ],
+      "key_benefits": [
+        "Addresses loneliness epidemic",
+        "Prevents depression (2.5x protective)",
+        "Builds sense of belonging",
+        "Accessible through schools"
+      ],
+      "considerations": "Critical emerging need; social anxiety may require support; quality over quantity matters; sustainable through community"
+    },
+    {
+      "id": 29,
+      "name": "Cost-Free & Accessible Mental Health Resources",
+      "category": "Access/Support",
+      "conditions": ["depression", "anxiety", "crisis", "all"],
+      "description": "Comprehensive guide to free/low-cost mental health: crisis lines (988), peer support (7 Cups), apps (CBT-i Coach), hotlines, teletherapy sliding scales, school resources.",
+      "effectiveness": 70,
+      "age_groups": ["9-12", "13-17", "18-25"],
+      "duration": "As needed; variable by resource",
+      "modality": "Digital/Phone/In-person",
+      "resources": [
+        "https://988lifeline.org/",
+        "https://www.7cups.com/",
+        "https://www.samhsa.gov/find-help/national-helpline",
+        "https://www.psychologytoday.com/us/basics/therapy/sliding-scale"
+      ],
+      "key_benefits": [
+        "Removes affordability barrier",
+        "Addresses access gap",
+        "24/7 availability",
+        "No insurance required"
+      ],
+      "considerations": "Addresses critical resource gap identified by teens; equity issue; complements professional care"
     }
   ]
 }

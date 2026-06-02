@@ -404,6 +404,72 @@
         "Crisis lines",
         "Advocacy for access"
       ]
+    },
+    {
+      "id": 21,
+      "name": "Digital Addiction & Social Media Dependency",
+      "category": "Behavioral/Environmental",
+      "conditions": ["anxiety", "depression", "sleep", "social-anxiety"],
+      "description": "Excessive screen time, social media use, and digital addiction disrupt sleep, increase social comparison, and correlate with anxiety and depression. Emerging concern in 2025-2026.",
+      "prevalence": "71% of teens use 2+ social media platforms daily; 1 in 5 show internet addiction symptoms",
+      "warning_signs": ["Excessive phone use (6+ hours/day)", "Sleep disruption", "Social withdrawal", "Anxiety when phone unavailable", "Reduced face-to-face interaction"],
+      "resources": [
+        "https://www.commonsensemedia.org/",
+        "https://www.apa.org/monitor/2024/01/digital-wellness"
+      ],
+      "prevention_tips": [
+        "Set screen-free zones/times",
+        "Digital detox periods (1 hour/day offline)",
+        "Curate social media feeds intentionally",
+        "Use app timers to limit usage",
+        "Prioritize offline activities",
+        "Sleep hygiene: no phones 1 hour before bed"
+      ]
+    },
+    {
+      "id": 22,
+      "name": "Preteen Suicide Risk & Early-Onset Mental Illness",
+      "category": "Biological/Warning",
+      "conditions": ["depression", "self_harm", "suicide-risk"],
+      "description": "Preteen suicide (ages 8-12) increasing ~8% annually since 2008—an emerging and worsening crisis. Early mental illness in childhood predicts adult outcomes.",
+      "prevalence": "Preteen suicide: ~600/year in US; rates rising; affects children as young as 5",
+      "warning_signs": ["Talking about suicide or death", "Giving away possessions", "Sudden mood changes", "Hopelessness", "Isolation", "Behavioral changes in school"],
+      "resources": [
+        "https://988lifeline.org/",
+        "https://suicidepreventionlifeline.org/",
+        "https://www.samhsa.gov/find-help/national-helpline"
+      ],
+      "prevention_tips": [
+        "Take any suicide talk seriously—always report",
+        "Establish strong adult connection and mentorship",
+        "Create safety plan with family",
+        "Emergency services: 988 or 911",
+        "School screening and intervention programs",
+        "Teach coping skills early",
+        "Reduce access to means (medication, weapons, ties)"
+      ]
+    },
+    {
+      "id": 23,
+      "name": "Academic Pressure & Perfectionism",
+      "category": "Environmental/Psychological",
+      "conditions": ["anxiety", "depression", "self-harm"],
+      "description": "Rising academic pressure, performance anxiety, and perfectionism drive mental health decline. Young adults increasingly perfectionistic; 50-year trend of worsening performance monitoring.",
+      "prevalence": "60%+ of high school students report academic stress; perfectionism increasing",
+      "warning_signs": ["Excessive worry about grades", "Sleep loss before exams", "Self-criticism", "Avoidance of challenges", "Physical stress symptoms", "Loss of enjoyment in learning"],
+      "resources": [
+        "https://www.apa.org/science/about/psa/perfectionism",
+        "https://www.samhsa.gov/"
+      ],
+      "prevention_tips": [
+        "Reframe failure as learning",
+        "Set realistic expectations",
+        "Practice self-compassion exercises",
+        "Balance achievement with wellbeing",
+        "Use ACT values work to clarify priorities",
+        "Reduce comparison (especially social media)",
+        "Professional help for anxiety or depression"
+      ]
     }
   ]
 }
