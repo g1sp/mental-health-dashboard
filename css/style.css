@@ -17,8 +17,9 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
 
+.tab-content,
 .tab-pane {
-    background-color: #ffffff;
+    background-color: #ffffff !important;
 }
 
 .navbar {
