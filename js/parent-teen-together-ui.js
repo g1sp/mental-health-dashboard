@@ -148,26 +148,37 @@ class ParentTeenTogetherUI {
 
   // Display current challenge
   updateDisplay() {
-    const container = document.getElementById('parentTeenTogetherContainer');
-    if (!container) return;
+    try {
+      const container = document.getElementById('parentTeenTogetherContainer');
+      if (!container) {
+        console.error('parentTeenTogetherContainer not found');
+        return;
+      }
 
-    if (!parentTeenTogetherHandler) {
-      console.error('parentTeenTogetherHandler not available');
-      container.innerHTML = '<p class="text-danger">Error: Handler not loaded</p>';
-      return;
+      if (!parentTeenTogetherHandler) {
+        console.error('parentTeenTogetherHandler not available');
+        container.innerHTML = '<p class="text-danger">Error: Handler not loaded</p>';
+        return;
+      }
+
+      const progress = parentTeenTogetherHandler.getProgress();
+      const challenge = parentTeenTogetherHandler.getCurrentChallenge();
+      const sharedProgress = parentTeenTogetherHandler.getSharedProgress();
+
+      if (!progress.isPaired) {
+        container.innerHTML = this.getUnpairedHTML();
+      } else {
+        container.innerHTML = this.getPairedHTML(challenge, sharedProgress, progress);
+      }
+
+      this.setupEventListeners();
+    } catch (error) {
+      console.error('Error in updateDisplay:', error);
+      const container = document.getElementById('parentTeenTogetherContainer');
+      if (container) {
+        container.innerHTML = `<p class="text-danger">Error loading tab: ${error.message}</p>`;
+      }
     }
-
-    const progress = parentTeenTogetherHandler.getProgress();
-    const challenge = parentTeenTogetherHandler.getCurrentChallenge();
-    const sharedProgress = parentTeenTogetherHandler.getSharedProgress();
-
-    if (!progress.isPaired) {
-      container.innerHTML = this.getUnpairedHTML();
-    } else {
-      container.innerHTML = this.getPairedHTML(challenge, sharedProgress, progress);
-    }
-
-    this.setupEventListeners();
   }
 
   getUnpairedHTML() {
