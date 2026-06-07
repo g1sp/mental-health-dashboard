@@ -305,12 +305,29 @@ class MentalHealthApp {
             const targetId = button.getAttribute('data-bs-target');
             if (!targetId) return;
 
-            // Find the actual nav tab button that triggers this tab
-            const navTabButton = document.querySelector(`#mainTabs [data-bs-target="${targetId}"]`);
-            if (!navTabButton) return;
+            const targetPane = document.querySelector(targetId);
+            if (!targetPane) return;
 
-            // Programmatically click the nav button to trigger Bootstrap's native handler
-            navTabButton.click();
+            // Hide all tab panes
+            document.querySelectorAll('.tab-pane').forEach(pane => {
+                pane.classList.remove('show', 'active');
+            });
+
+            // Deactivate all nav buttons
+            document.querySelectorAll('#mainTabs [data-bs-toggle="tab"]').forEach(btn => {
+                btn.classList.remove('active');
+                btn.setAttribute('aria-selected', 'false');
+            });
+
+            // Show target pane
+            targetPane.classList.add('show', 'active');
+
+            // Activate target nav button
+            const navButton = document.querySelector(`#mainTabs [data-bs-target="${targetId}"]`);
+            if (navButton) {
+                navButton.classList.add('active');
+                navButton.setAttribute('aria-selected', 'true');
+            }
         });
     }
 
