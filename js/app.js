@@ -389,7 +389,12 @@ function showIdentityValuesOnFirstVisit() {
 }
 
 // Global function to switch tabs
-window.switchTab = function(tabSelector) {
+window.switchTab = function(tabSelector, event) {
+    if (event) {
+        event.preventDefault();
+        event.stopImmediatePropagation();
+    }
+
     const tabPane = document.querySelector(tabSelector);
     if (!tabPane) return;
 
