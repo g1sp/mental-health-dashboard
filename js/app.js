@@ -103,7 +103,6 @@ class MentalHealthApp {
         this.setupEventListeners();
         this.setupTreatmentEventListeners();
         this.setupRiskFactorEventListeners();
-        this.setupTabNavigationButtons();
 
         // Initial chart load
         this.updateAllCharts();
@@ -294,41 +293,6 @@ class MentalHealthApp {
         document.getElementById('riskFactorConditionSelect').value = '';
         document.getElementById('riskFactorCategorySelect').value = '';
         this.updateRiskFactorsDisplay();
-    }
-
-    // Setup tab navigation buttons (CTA buttons that switch tabs)
-    setupTabNavigationButtons() {
-        document.addEventListener('click', (e) => {
-            const button = e.target.closest('button[data-bs-toggle="tab"]');
-            if (!button) return;
-
-            const targetId = button.getAttribute('data-bs-target');
-            if (!targetId) return;
-
-            const targetPane = document.querySelector(targetId);
-            if (!targetPane) return;
-
-            // Hide all tab panes
-            document.querySelectorAll('.tab-pane').forEach(pane => {
-                pane.classList.remove('show', 'active');
-            });
-
-            // Deactivate all nav buttons
-            document.querySelectorAll('#mainTabs [data-bs-toggle="tab"]').forEach(btn => {
-                btn.classList.remove('active');
-                btn.setAttribute('aria-selected', 'false');
-            });
-
-            // Show target pane
-            targetPane.classList.add('show', 'active');
-
-            // Activate target nav button
-            const navButton = document.querySelector(`#mainTabs [data-bs-target="${targetId}"]`);
-            if (navButton) {
-                navButton.classList.add('active');
-                navButton.setAttribute('aria-selected', 'true');
-            }
-        });
     }
 
     // Populate coping skill filters
