@@ -380,12 +380,13 @@ function completeIdentitySetup() {
 }
 
 function showIdentityValuesOnFirstVisit() {
-    const persona = personaHandler ? personaHandler.getPersona() : 'teen';
-    if (persona === 'teen' && !identityValuesHandler.isCompleted()) {
-        setTimeout(() => {
-            new bootstrap.Modal(document.getElementById('identityValuesModal')).show();
-        }, 500);
-    }
+    // Disabled: was causing greyed out screen on load
+    // const persona = personaHandler ? personaHandler.getPersona() : 'teen';
+    // if (persona === 'teen' && !identityValuesHandler.isCompleted()) {
+    //     setTimeout(() => {
+    //         new bootstrap.Modal(document.getElementById('identityValuesModal')).show();
+    //     }, 500);
+    // }
 }
 
 // CTA button click handler
