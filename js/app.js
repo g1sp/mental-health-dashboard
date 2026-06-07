@@ -103,6 +103,7 @@ class MentalHealthApp {
         this.setupEventListeners();
         this.setupTreatmentEventListeners();
         this.setupRiskFactorEventListeners();
+        this.setupTabNavigationButtons();
 
         // Initial chart load
         this.updateAllCharts();
@@ -293,6 +294,32 @@ class MentalHealthApp {
         document.getElementById('riskFactorConditionSelect').value = '';
         document.getElementById('riskFactorCategorySelect').value = '';
         this.updateRiskFactorsDisplay();
+    }
+
+    // Setup tab navigation buttons (CTA buttons that switch tabs)
+    setupTabNavigationButtons() {
+        document.addEventListener('click', (e) => {
+            const button = e.target.closest('button[data-bs-toggle="tab"]');
+            if (!button) return;
+
+            const targetId = button.getAttribute('data-bs-target');
+            if (!targetId) return;
+
+            const targetTab = document.querySelector(targetId);
+            if (!targetTab) return;
+
+            const tabTrigger = document.querySelector(`[data-bs-target="${targetId}"]`);
+            if (tabTrigger && tabTrigger !== button) {
+                const tab = new bootstrap.Tab(tabTrigger);
+                tab.show();
+            } else {
+                const navButton = document.querySelector(`[role="tab"][data-bs-target="${targetId}"]`);
+                if (navButton) {
+                    const tab = new bootstrap.Tab(navButton);
+                    tab.show();
+                }
+            }
+        });
     }
 
     // Populate coping skill filters
