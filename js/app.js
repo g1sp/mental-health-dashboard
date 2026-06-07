@@ -309,9 +309,8 @@ class MentalHealthApp {
             const navTabButton = document.querySelector(`#mainTabs [data-bs-target="${targetId}"]`);
             if (!navTabButton) return;
 
-            // Use Bootstrap's Tab API on the nav button
-            const tab = new bootstrap.Tab(navTabButton);
-            tab.show();
+            // Programmatically click the nav button to trigger Bootstrap's native handler
+            navTabButton.click();
         });
     }
 
