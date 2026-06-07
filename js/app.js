@@ -388,6 +388,33 @@ function showIdentityValuesOnFirstVisit() {
     }
 }
 
+// Global function to switch tabs
+window.switchTab = function(tabSelector) {
+    const tabPane = document.querySelector(tabSelector);
+    if (!tabPane) return;
+
+    // Hide all tab panes
+    document.querySelectorAll('.tab-pane').forEach(pane => {
+        pane.classList.remove('show', 'active');
+    });
+
+    // Deactivate all nav buttons
+    document.querySelectorAll('#mainTabs button[data-bs-toggle="tab"]').forEach(btn => {
+        btn.classList.remove('active');
+        btn.setAttribute('aria-selected', 'false');
+    });
+
+    // Show target pane
+    tabPane.classList.add('show', 'active');
+
+    // Activate target nav button
+    const navButton = document.querySelector(`#mainTabs button[data-bs-target="${tabSelector}"]`);
+    if (navButton) {
+        navButton.classList.add('active');
+        navButton.setAttribute('aria-selected', 'true');
+    }
+};
+
 // Initialize app when DOM is ready
 document.addEventListener('DOMContentLoaded', async () => {
     const app = new MentalHealthApp();
