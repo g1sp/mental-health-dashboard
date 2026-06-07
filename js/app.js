@@ -388,26 +388,12 @@ function showIdentityValuesOnFirstVisit() {
     }
 }
 
-// CTA button click handler with logging
+// CTA button click handler
 window.clickCTAButton = function(navButtonId, targetPaneId) {
-    console.log(`[CTA] Button clicked: navButtonId=${navButtonId}, targetPaneId=${targetPaneId}`);
-
     const navBtn = document.getElementById(navButtonId);
-    console.log(`[CTA] Nav button found: ${!!navBtn}`);
-
-    if (!navBtn) {
-        console.error(`[CTA] ERROR: Nav button #${navButtonId} not found`);
-        return;
+    if (navBtn) {
+        navBtn.click();
     }
-
-    console.log(`[CTA] Nav button element:`, navBtn);
-    console.log(`[CTA] Nav button class:`, navBtn.className);
-    console.log(`[CTA] data-bs-toggle:`, navBtn.getAttribute('data-bs-toggle'));
-    console.log(`[CTA] data-bs-target:`, navBtn.getAttribute('data-bs-target'));
-
-    console.log(`[CTA] Clicking nav button...`);
-    navBtn.click();
-    console.log(`[CTA] Click completed`);
 };
 
 // Initialize app when DOM is ready
